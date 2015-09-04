@@ -4,8 +4,7 @@ module DoxyHaml
 
     def link_to *args, &block
       if block_given?
-        url = args[0]
-        # TODO
+        # TODO url = args[0]
       else
         name, url = args[0], args[1]
         "<a href='#{url}'>#{name}</a>"

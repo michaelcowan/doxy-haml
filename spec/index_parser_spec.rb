@@ -1,7 +1,4 @@
-require 'rspec'
-
-require_relative 'helpers'
-require_relative '../lib/parser'
+require 'spec_helper'
 
 describe "DoxyHaml Index Parser" do
 

@@ -1,3 +1,9 @@
+require 'simplecov'
+
+SimpleCov.start
+
+require_relative '../lib/parser'
+
 def map_node node
   list = []
   node.each do |node|

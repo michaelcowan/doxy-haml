@@ -1,7 +1,4 @@
-require 'rspec'
-
-require_relative 'helpers'
-require_relative '../lib/parser'
+require 'spec_helper'
 
 describe "DoxyHaml Class Parser" do
 
@@ -10,6 +7,11 @@ describe "DoxyHaml Class Parser" do
     parser = DoxyHaml::Parser.new "spec/xml"
     @classes = parser.index.namespaces.first.classes
     @graphics = class_by_name "Graphics"
+  end
+
+  it "should have a name" do
+    expect(@graphics.name).to eq "Graphics"
+    expect(@graphics.html_name).to eq "<a href='classeve_1_1Graphics.html'>Graphics</a>"
   end
 
   it "should have a qualified name" do

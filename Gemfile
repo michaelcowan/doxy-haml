@@ -2,4 +2,8 @@ source 'https://rubygems.org'
 
 gem 'nokogiri'
 gem 'haml'
-gem 'rspec'
+
+group :test do
+  gem 'rspec'
+  gem 'simplecov'
+end

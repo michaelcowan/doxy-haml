@@ -1,7 +1,4 @@
-require 'rspec'
-
-require_relative 'helpers'
-require_relative '../lib/parser'
+require 'spec_helper'
 
 describe "DoxyHaml Namespace Parser" do
 
@@ -10,6 +7,11 @@ describe "DoxyHaml Namespace Parser" do
     
     parser = DoxyHaml::Parser.new "spec/xml"
     @namespace = parser.index.namespaces.first
+  end
+
+  it "should have a name" do
+    expect(@namespace.name).to eq "eve"
+    expect(@namespace.html_name).to eq "<a href='namespaceeve.html'>eve</a>"
   end
 
   it "should have class(es)" do
