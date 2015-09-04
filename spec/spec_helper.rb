@@ -1,8 +1,11 @@
 require 'simplecov'
+require 'coveralls'
 
 SimpleCov.start do
   add_filter "/vendor/bundle/"
 end
+
+Coveralls.wear!
 
 require_relative '../lib/parser'
 

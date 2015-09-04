@@ -1,4 +1,5 @@
-![Build Status](https://api.travis-ci.org/michaelcowan/doxy-haml.svg?branch=master)
+[![Build Status](https://travis-ci.org/michaelcowan/doxy-haml.svg?branch=master)](https://travis-ci.org/michaelcowan/doxy-haml)
+[![Coverage Status](https://coveralls.io/repos/michaelcowan/doxy-haml/badge.svg?branch=master&service=github)](https://coveralls.io/github/michaelcowan/doxy-haml?branch=master)
 
 # doxy-haml
 Ruby script to parse Doxygen XML and render it using HAML
