@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.9.1">
+  <compounddef id="viewport_8h" kind="file" language="C++">
+    <compoundname>viewport.h</compoundname>
+    <includes refid="rect_8h" local="yes">core/rect.h</includes>
+    <includedby refid="eve_8h" local="yes">/Users/mike/svn/eve/development/trunk/sdk/inc/eve.h</includedby>
+    <incdepgraph>
+      <node id="413">
+        <label>stdint.h</label>
+      </node>
+      <node id="411">
+        <label>core/rect.h</label>
+        <link refid="rect_8h"/>
+        <childnode refid="412" relation="include">
+        </childnode>
+      </node>
+      <node id="410">
+        <label>/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/viewport.h</label>
+        <link refid="viewport.h"/>
+        <childnode refid="411" relation="include">
+        </childnode>
+      </node>
+      <node id="412">
+        <label>core/types.h</label>
+        <link refid="types_8h"/>
+        <childnode refid="413" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="415">
+        <label>/Users/mike/svn/eve/development/trunk/sdk/inc/eve.h</label>
+        <link refid="eve_8h"/>
+      </node>
+      <node id="414">
+        <label>/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/viewport.h</label>
+        <link refid="viewport.h"/>
+        <childnode refid="415" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classeve_1_1Viewport" prot="public">eve::Viewport</innerclass>
+    <innernamespace refid="namespaceeve">eve</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/viewport.h"/>
+  </compounddef>
+</doxygen>

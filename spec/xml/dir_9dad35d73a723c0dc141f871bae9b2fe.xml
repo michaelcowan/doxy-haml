@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.9.1">
+  <compounddef id="dir_9dad35d73a723c0dc141f871bae9b2fe" kind="dir">
+    <compoundname>/Users/mike/svn/eve/development/trunk/sdk/inc/core</compoundname>
+    <innerfile refid="global_8h">global.h</innerfile>
+    <innerfile refid="integer_8h">integer.h</innerfile>
+    <innerfile refid="log_8h">log.h</innerfile>
+    <innerfile refid="rect_8h">rect.h</innerfile>
+    <innerfile refid="string_8h">string.h</innerfile>
+    <innerfile refid="types_8h">types.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/core/"/>
+  </compounddef>
+</doxygen>

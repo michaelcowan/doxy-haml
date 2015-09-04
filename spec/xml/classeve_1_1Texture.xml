@@ -1,0 +1,269 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.9.1">
+  <compounddef id="classeve_1_1Texture" kind="class" language="C++" prot="public">
+    <compoundname>eve::Texture</compoundname>
+    <basecompoundref refid="classeve_1_1Renderable" prot="public" virt="non-virtual">eve::Renderable</basecompoundref>
+    <includes refid="texture_8h" local="no">texture.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classeve_1_1Texture_1ab4434a003db55b8e2062e2b93379a5a7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>eve::Texture::Texture</definition>
+        <argsstring>()</argsstring>
+        <name>Texture</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/texture.h" line="26" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classeve_1_1Texture_1ae9fc79251ada8d6216a456ba5094d029" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>eve::Texture::~Texture</definition>
+        <argsstring>()</argsstring>
+        <name>~Texture</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/texture.h" line="28" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classeve_1_1Texture_1a216be7e6d9335dd99f222e7322ffe2fc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool eve::Texture::initWithInfo</definition>
+        <argsstring>(TextureInfo &amp;info)</argsstring>
+        <name>initWithInfo</name>
+        <param>
+          <type><ref refid="classeve_1_1TextureInfo" kindref="compound">TextureInfo</ref> &amp;</type>
+          <declname>info</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/texture.h" line="32" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classeve_1_1Texture_1a0793cf9febd0ec1313605b0705827536" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool eve::Texture::initWithStream</definition>
+        <argsstring>(InputStream &amp;stream, TextureInfo::PixelFormat format, TextureHint *hints)</argsstring>
+        <name>initWithStream</name>
+        <param>
+          <type><ref refid="classeve_1_1InputStream" kindref="compound">InputStream</ref> &amp;</type>
+          <declname>stream</declname>
+        </param>
+        <param>
+          <type><ref refid="classeve_1_1TextureInfo_1a0bdf1424693eaaa72f515d388980b8fb" kindref="member">TextureInfo::PixelFormat</ref></type>
+          <declname>format</declname>
+        </param>
+        <param>
+          <type><ref refid="classeve_1_1TextureHint" kindref="compound">TextureHint</ref> *</type>
+          <declname>hints</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/texture.h" line="34" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classeve_1_1Texture_1a3e51ae29370f6235f7e22b49cb1a543a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool eve::Texture::initWithFilename</definition>
+        <argsstring>(const String &amp;filename, TextureInfo::PixelFormat format, TextureHint *hints)</argsstring>
+        <name>initWithFilename</name>
+        <param>
+          <type>const <ref refid="classeve_1_1String" kindref="compound">String</ref> &amp;</type>
+          <declname>filename</declname>
+        </param>
+        <param>
+          <type><ref refid="classeve_1_1TextureInfo_1a0bdf1424693eaaa72f515d388980b8fb" kindref="member">TextureInfo::PixelFormat</ref></type>
+          <declname>format</declname>
+        </param>
+        <param>
+          <type><ref refid="classeve_1_1TextureHint" kindref="compound">TextureHint</ref> *</type>
+          <declname>hints</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/texture.h" line="36" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classeve_1_1Texture_1ae300c63e938aaae7958c37bd18e6b3d2" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool eve::Texture::setRenderableFormat</definition>
+        <argsstring>(RenderableFormat format)</argsstring>
+        <name>setRenderableFormat</name>
+        <reimplements refid="classeve_1_1Renderable_1afab7bc0f1f6ccdaeccf41b8e6307b549">setRenderableFormat</reimplements>
+        <param>
+          <type><ref refid="classeve_1_1RenderableFormat" kindref="compound">RenderableFormat</ref></type>
+          <declname>format</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TODOC </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/texture.h" line="43" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classeve_1_1Texture_1a6416e8c21d0d47c6ff0bb8929c62d8fb" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>int</type>
+        <definition>virtual int eve::Texture::width</definition>
+        <argsstring>() const </argsstring>
+        <name>width</name>
+        <reimplements refid="classeve_1_1Renderable_1a7c34ee93b7731cefc1e0ba0755b85f6c">width</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the width of the <ref refid="classeve_1_1Texture" kindref="compound">Texture</ref>.</para><para><simplesect kind="return"><para>Width of the <ref refid="classeve_1_1Texture" kindref="compound">Texture</ref> else 0 on error. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/texture.h" line="50" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classeve_1_1Texture_1a72d87eca8f7e858826cd083796470795" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>int</type>
+        <definition>virtual int eve::Texture::height</definition>
+        <argsstring>() const </argsstring>
+        <name>height</name>
+        <reimplements refid="classeve_1_1Renderable_1a222465fd5467fb81480554a3f8ad81ca">height</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the height of the <ref refid="classeve_1_1Texture" kindref="compound">Texture</ref>.</para><para><simplesect kind="return"><para>Height of the <ref refid="classeve_1_1Texture" kindref="compound">Texture</ref> else 0 on error. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/texture.h" line="57" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classeve_1_1Texture_1aac50db8ef7aa14b4e7429a2f483771d0" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>float</type>
+        <definition>virtual float eve::Texture::aspectRatio</definition>
+        <argsstring>() const </argsstring>
+        <name>aspectRatio</name>
+        <reimplements refid="classeve_1_1Renderable_1adf23b93e0294606bcef46ea35a83bf52">aspectRatio</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the aspect ratio of the <ref refid="classeve_1_1Texture" kindref="compound">Texture</ref>.</para><para><simplesect kind="return"><para>Aspect ratio of the <ref refid="classeve_1_1Texture" kindref="compound">Texture</ref> else 0.0f on error. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/texture.h" line="64" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classeve_1_1Texture_1ae0c110938a346e7ffc055730ce581126" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classeve_1_1Graphics" kindref="compound">Graphics</ref> *</type>
+        <definition>virtual Graphics* eve::Texture::graphics</definition>
+        <argsstring>()</argsstring>
+        <name>graphics</name>
+        <reimplements refid="classeve_1_1Renderable_1af1dc9cbf4c95545431bb5e1429a8232b">graphics</reimplements>
+        <briefdescription>
+<para>Get the graphics context of the <ref refid="classeve_1_1Texture" kindref="compound">Texture</ref>. </para>        </briefdescription>
+        <detaileddescription>
+<para>Returns a graphics context which can be used to render to texture. <simplesect kind="note"><para>This object may be lazily created.</para></simplesect>
+<simplesect kind="return"><para><ref refid="classeve_1_1Graphics" kindref="compound">Graphics</ref> context else NULL if not supported. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/texture.h" line="74" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classeve_1_1Texture_1ac0e584bf3d3eb9173851cc2c88484f6d" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void eve::Texture::readPixels</definition>
+        <argsstring>(Color *pixels)</argsstring>
+        <name>readPixels</name>
+        <reimplements refid="classeve_1_1Renderable_1a543a0ba04d185e20b9e252c37daba3d8">readPixels</reimplements>
+        <param>
+          <type><ref refid="classeve_1_1Color" kindref="compound">Color</ref> *</type>
+          <declname>pixels</declname>
+        </param>
+        <briefdescription>
+<para>Reads pixels from the <ref refid="classeve_1_1Texture" kindref="compound">Texture</ref>. </para>        </briefdescription>
+        <detaileddescription>
+<para>Reads pixels from the texture into a buffer. The allocated buffer must be of sufficient size to receive the data i.e. <ref refid="classeve_1_1Texture_1a6416e8c21d0d47c6ff0bb8929c62d8fb" kindref="member">width()</ref> * <ref refid="classeve_1_1Texture_1a72d87eca8f7e858826cd083796470795" kindref="member">height()</ref>.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out">pixels</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Buffer to store pixel data. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/texture.h" line="84" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classeve_1_1Texture_1a28dfdbd555b9066a8dc16072c5c1009e" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>eve::Texture::EVE_DECLARE_PIMPL</definition>
+        <argsstring>(Texture)</argsstring>
+        <name>EVE_DECLARE_PIMPL</name>
+        <param>
+          <type><ref refid="classeve_1_1Texture" kindref="compound">Texture</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/texture.h" line="88" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="86">
+        <label>eve::Texture</label>
+        <link refid="classeve_1_1Texture"/>
+        <childnode refid="87" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="87">
+        <label>eve::Renderable</label>
+        <link refid="classeve_1_1Renderable"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="88">
+        <label>eve::Texture</label>
+        <link refid="classeve_1_1Texture"/>
+        <childnode refid="89" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="89">
+        <label>eve::Renderable</label>
+        <link refid="classeve_1_1Renderable"/>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/texture.h" line="22" column="1" bodyfile="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/texture.h" bodystart="22" bodyend="90"/>
+    <listofallmembers>
+      <member refid="classeve_1_1Texture_1aac50db8ef7aa14b4e7429a2f483771d0" prot="public" virt="virtual"><scope>eve::Texture</scope><name>aspectRatio</name></member>
+      <member refid="classeve_1_1Texture_1a28dfdbd555b9066a8dc16072c5c1009e" prot="private" virt="non-virtual"><scope>eve::Texture</scope><name>EVE_DECLARE_PIMPL</name></member>
+      <member refid="classeve_1_1Texture_1ae0c110938a346e7ffc055730ce581126" prot="public" virt="virtual"><scope>eve::Texture</scope><name>graphics</name></member>
+      <member refid="classeve_1_1Texture_1a72d87eca8f7e858826cd083796470795" prot="public" virt="virtual"><scope>eve::Texture</scope><name>height</name></member>
+      <member refid="classeve_1_1Texture_1a3e51ae29370f6235f7e22b49cb1a543a" prot="public" virt="non-virtual"><scope>eve::Texture</scope><name>initWithFilename</name></member>
+      <member refid="classeve_1_1Texture_1a216be7e6d9335dd99f222e7322ffe2fc" prot="public" virt="non-virtual"><scope>eve::Texture</scope><name>initWithInfo</name></member>
+      <member refid="classeve_1_1Texture_1a0793cf9febd0ec1313605b0705827536" prot="public" virt="non-virtual"><scope>eve::Texture</scope><name>initWithStream</name></member>
+      <member refid="classeve_1_1Texture_1ac0e584bf3d3eb9173851cc2c88484f6d" prot="public" virt="virtual"><scope>eve::Texture</scope><name>readPixels</name></member>
+      <member refid="classeve_1_1Texture_1ae300c63e938aaae7958c37bd18e6b3d2" prot="public" virt="virtual"><scope>eve::Texture</scope><name>setRenderableFormat</name></member>
+      <member refid="classeve_1_1Texture_1ab4434a003db55b8e2062e2b93379a5a7" prot="public" virt="non-virtual"><scope>eve::Texture</scope><name>Texture</name></member>
+      <member refid="classeve_1_1Texture_1a6416e8c21d0d47c6ff0bb8929c62d8fb" prot="public" virt="virtual"><scope>eve::Texture</scope><name>width</name></member>
+      <member refid="classeve_1_1Texture_1ae9fc79251ada8d6216a456ba5094d029" prot="public" virt="non-virtual"><scope>eve::Texture</scope><name>~Texture</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

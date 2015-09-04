@@ -1,0 +1,111 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.9.1">
+  <compounddef id="vertexpositioncolor_8h" kind="file" language="C++">
+    <compoundname>vertexpositioncolor.h</compoundname>
+    <includes refid="vector3_8h" local="yes">math/vector3.h</includes>
+    <includes refid="array_8h" local="yes">containers/array.h</includes>
+    <includes refid="vertextype_8h" local="yes">graphics/vertextype.h</includes>
+    <includes refid="vertexmetadata_8h" local="yes">graphics/vertexmetadata.h</includes>
+    <includes refid="color_8h" local="yes">graphics/color.h</includes>
+    <includedby refid="eve_8h" local="yes">/Users/mike/svn/eve/development/trunk/sdk/inc/eve.h</includedby>
+    <includedby refid="basiceffect_8h" local="yes">/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/basiceffect.h</includedby>
+    <incdepgraph>
+      <node id="381">
+        <label>graphics/color.h</label>
+        <link refid="color_8h"/>
+        <childnode refid="382" relation="include">
+        </childnode>
+      </node>
+      <node id="377">
+        <label>core/string.h</label>
+        <link refid="string_8h"/>
+        <childnode refid="378" relation="include">
+        </childnode>
+        <childnode refid="380" relation="include">
+        </childnode>
+      </node>
+      <node id="371">
+        <label>/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/vertexpositioncolor.h</label>
+        <link refid="vertexpositioncolor.h"/>
+        <childnode refid="372" relation="include">
+        </childnode>
+        <childnode refid="373" relation="include">
+        </childnode>
+        <childnode refid="375" relation="include">
+        </childnode>
+        <childnode refid="376" relation="include">
+        </childnode>
+        <childnode refid="381" relation="include">
+        </childnode>
+      </node>
+      <node id="379">
+        <label>stdint.h</label>
+      </node>
+      <node id="375">
+        <label>graphics/vertextype.h</label>
+        <link refid="vertextype_8h"/>
+      </node>
+      <node id="382">
+        <label>core/global.h</label>
+        <link refid="global_8h"/>
+        <childnode refid="378" relation="include">
+        </childnode>
+      </node>
+      <node id="380">
+        <label>string</label>
+      </node>
+      <node id="376">
+        <label>graphics/vertexmetadata.h</label>
+        <link refid="vertexmetadata_8h"/>
+        <childnode refid="377" relation="include">
+        </childnode>
+      </node>
+      <node id="373">
+        <label>containers/array.h</label>
+        <link refid="array_8h"/>
+        <childnode refid="374" relation="include">
+        </childnode>
+      </node>
+      <node id="374">
+        <label>vector</label>
+      </node>
+      <node id="372">
+        <label>math/vector3.h</label>
+        <link refid="vector3_8h"/>
+      </node>
+      <node id="378">
+        <label>core/types.h</label>
+        <link refid="types_8h"/>
+        <childnode refid="379" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="383">
+        <label>/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/vertexpositioncolor.h</label>
+        <link refid="vertexpositioncolor.h"/>
+        <childnode refid="384" relation="include">
+        </childnode>
+        <childnode refid="385" relation="include">
+        </childnode>
+      </node>
+      <node id="384">
+        <label>/Users/mike/svn/eve/development/trunk/sdk/inc/eve.h</label>
+        <link refid="eve_8h"/>
+      </node>
+      <node id="385">
+        <label>/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/basiceffect.h</label>
+        <link refid="basiceffect_8h"/>
+        <childnode refid="384" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classeve_1_1VertexPositionColor" prot="public">eve::VertexPositionColor</innerclass>
+    <innernamespace refid="namespaceeve">eve</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/vertexpositioncolor.h"/>
+  </compounddef>
+</doxygen>

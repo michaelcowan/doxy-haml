@@ -1,0 +1,380 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.9.1">
+  <compounddef id="classeve_1_1Array" kind="class" language="C++" prot="public">
+    <compoundname>eve::Array</compoundname>
+    <includes refid="array_8h" local="no">array.h</includes>
+    <templateparamlist>
+      <param>
+        <type>class</type>
+        <declname>T</declname>
+        <defname>T</defname>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classeve_1_1Array_1a42dd00e6a84c86ffe93abc8424289c91" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; T &gt;</type>
+        <definition>std::vector&lt;T&gt; eve::Array&lt; T &gt;::m_vector</definition>
+        <argsstring></argsstring>
+        <name>m_vector</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/containers/array.h" line="107" column="1" bodyfile="/Users/mike/svn/eve/development/trunk/sdk/inc/containers/array.h" bodystart="107" bodyend="-1"/>
+        <referencedby refid="classeve_1_1Array_1ad65a2b39b3630044aee06160a54f851a" compoundref="array_8h" startline="26" endline="28">eve::Array&lt; eve::UniformMetaData &gt;::Array</referencedby>
+        <referencedby refid="classeve_1_1Array_1a741f7a53567ac04aef5fa0dac5287b7d" compoundref="array_8h" startline="71" endline="73">eve::Array&lt; eve::UniformMetaData &gt;::at</referencedby>
+        <referencedby refid="classeve_1_1Array_1a32d10f5b2ac7f6a054aaf445847647bc" compoundref="array_8h" startline="47" endline="49">eve::Array&lt; eve::UniformMetaData &gt;::capacity</referencedby>
+        <referencedby refid="classeve_1_1Array_1a623f68ceedb13de25208740ee4cad373" compoundref="array_8h" startline="43" endline="45">eve::Array&lt; eve::UniformMetaData &gt;::clear</referencedby>
+        <referencedby refid="classeve_1_1Array_1a088d0cfd04126cddfa79559060314d15" compoundref="array_8h" startline="67" endline="69">eve::Array&lt; eve::UniformMetaData &gt;::empty</referencedby>
+        <referencedby refid="classeve_1_1Array_1af85de6d1c28af117382f48f9ba9729ec" compoundref="array_8h" startline="79" endline="81">eve::Array&lt; eve::UniformMetaData &gt;::first</referencedby>
+        <referencedby refid="classeve_1_1Array_1ae9c86d11387e6f79ca321bac38f5e81b" compoundref="array_8h" startline="87" endline="89">eve::Array&lt; eve::UniformMetaData &gt;::last</referencedby>
+        <referencedby refid="classeve_1_1Array_1a5c7c91a8dd22fff6c3db5c712689d26f" compoundref="array_8h" startline="99" endline="103">eve::Array&lt; eve::UniformMetaData &gt;::pop</referencedby>
+        <referencedby refid="classeve_1_1Array_1a8bd60ae5e4807b337ba382a2e8e4953c" compoundref="array_8h" startline="95" endline="97">eve::Array&lt; eve::UniformMetaData &gt;::push</referencedby>
+        <referencedby refid="classeve_1_1Array_1ac3b0537712735164cfa9b7845ab06dd9" compoundref="array_8h" startline="55" endline="57">eve::Array&lt; eve::UniformMetaData &gt;::size</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classeve_1_1Array_1af6d4e7b108521a5a302a0e3fc7dce188" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>eve::Array&lt; T &gt;::Array</definition>
+        <argsstring>()</argsstring>
+        <name>Array</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/containers/array.h" line="1" column="1" bodyfile="/Users/mike/svn/eve/development/trunk/sdk/inc/containers/array.h" bodystart="22" bodyend="22"/>
+      </memberdef>
+      <memberdef kind="function" id="classeve_1_1Array_1a3deb5ca469cae513931b203ac50fab4b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>eve::Array&lt; T &gt;::~Array</definition>
+        <argsstring>()</argsstring>
+        <name>~Array</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/containers/array.h" line="1" column="1" bodyfile="/Users/mike/svn/eve/development/trunk/sdk/inc/containers/array.h" bodystart="24" bodyend="24"/>
+      </memberdef>
+      <memberdef kind="function" id="classeve_1_1Array_1ad65a2b39b3630044aee06160a54f851a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>eve::Array&lt; T &gt;::Array</definition>
+        <argsstring>(const T &amp;that)</argsstring>
+        <name>Array</name>
+        <param>
+          <type>const T &amp;</type>
+          <declname>that</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/containers/array.h" line="1" column="1" bodyfile="/Users/mike/svn/eve/development/trunk/sdk/inc/containers/array.h" bodystart="26" bodyend="28"/>
+      </memberdef>
+      <memberdef kind="function" id="classeve_1_1Array_1a1cfd502ccb96603b00cbc123ef552215" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classeve_1_1Array" kindref="compound">Array</ref>&lt; T &gt; &amp;</type>
+        <definition>Array&lt;T&gt;&amp; eve::Array&lt; T &gt;::operator&lt;&lt;</definition>
+        <argsstring>(const T &amp;t)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <param>
+          <type>const T &amp;</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/containers/array.h" line="1" column="1" bodyfile="/Users/mike/svn/eve/development/trunk/sdk/inc/containers/array.h" bodystart="30" bodyend="33"/>
+      </memberdef>
+      <memberdef kind="function" id="classeve_1_1Array_1a92c492e7bd6e5cf3ee8f2488d7a44176" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>T &amp;</type>
+        <definition>T&amp; eve::Array&lt; T &gt;::operator[]</definition>
+        <argsstring>(int index)</argsstring>
+        <name>operator[]</name>
+        <param>
+          <type>int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/containers/array.h" line="35" column="1" bodyfile="/Users/mike/svn/eve/development/trunk/sdk/inc/containers/array.h" bodystart="35" bodyend="37"/>
+      </memberdef>
+      <memberdef kind="function" id="classeve_1_1Array_1ae3d2e3388203591f58f6436b90105a68" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const T &amp;</type>
+        <definition>const T&amp; eve::Array&lt; T &gt;::operator[]</definition>
+        <argsstring>(int index) const </argsstring>
+        <name>operator[]</name>
+        <param>
+          <type>int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/containers/array.h" line="39" column="1" bodyfile="/Users/mike/svn/eve/development/trunk/sdk/inc/containers/array.h" bodystart="39" bodyend="41"/>
+      </memberdef>
+      <memberdef kind="function" id="classeve_1_1Array_1a623f68ceedb13de25208740ee4cad373" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void eve::Array&lt; T &gt;::clear</definition>
+        <argsstring>()</argsstring>
+        <name>clear</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/containers/array.h" line="43" column="1" bodyfile="/Users/mike/svn/eve/development/trunk/sdk/inc/containers/array.h" bodystart="43" bodyend="45"/>
+      </memberdef>
+      <memberdef kind="function" id="classeve_1_1Array_1a32d10f5b2ac7f6a054aaf445847647bc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void eve::Array&lt; T &gt;::capacity</definition>
+        <argsstring>(int size)</argsstring>
+        <name>capacity</name>
+        <param>
+          <type>int</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/containers/array.h" line="47" column="1" bodyfile="/Users/mike/svn/eve/development/trunk/sdk/inc/containers/array.h" bodystart="47" bodyend="49"/>
+      </memberdef>
+      <memberdef kind="function" id="classeve_1_1Array_1a399f80a030d88c7fa0fcfe8d49f80fab" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int eve::Array&lt; T &gt;::capacity</definition>
+        <argsstring>() const </argsstring>
+        <name>capacity</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/containers/array.h" line="51" column="1" bodyfile="/Users/mike/svn/eve/development/trunk/sdk/inc/containers/array.h" bodystart="51" bodyend="53"/>
+      </memberdef>
+      <memberdef kind="function" id="classeve_1_1Array_1ac3b0537712735164cfa9b7845ab06dd9" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int eve::Array&lt; T &gt;::size</definition>
+        <argsstring>() const </argsstring>
+        <name>size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/containers/array.h" line="55" column="1" bodyfile="/Users/mike/svn/eve/development/trunk/sdk/inc/containers/array.h" bodystart="55" bodyend="57"/>
+        <referencedby refid="classeve_1_1Array_1a163026c356b1ca128b65818c273f78e1" compoundref="array_8h" startline="63" endline="65">eve::Array&lt; eve::UniformMetaData &gt;::count</referencedby>
+        <referencedby refid="classeve_1_1Array_1a420450c6c16fbbd74439612ad68e3dda" compoundref="array_8h" startline="59" endline="61">eve::Array&lt; eve::UniformMetaData &gt;::length</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classeve_1_1Array_1a420450c6c16fbbd74439612ad68e3dda" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int eve::Array&lt; T &gt;::length</definition>
+        <argsstring>() const </argsstring>
+        <name>length</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/containers/array.h" line="59" column="1" bodyfile="/Users/mike/svn/eve/development/trunk/sdk/inc/containers/array.h" bodystart="59" bodyend="61"/>
+      </memberdef>
+      <memberdef kind="function" id="classeve_1_1Array_1a163026c356b1ca128b65818c273f78e1" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int eve::Array&lt; T &gt;::count</definition>
+        <argsstring>() const </argsstring>
+        <name>count</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/containers/array.h" line="63" column="1" bodyfile="/Users/mike/svn/eve/development/trunk/sdk/inc/containers/array.h" bodystart="63" bodyend="65"/>
+      </memberdef>
+      <memberdef kind="function" id="classeve_1_1Array_1a088d0cfd04126cddfa79559060314d15" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool eve::Array&lt; T &gt;::empty</definition>
+        <argsstring>() const </argsstring>
+        <name>empty</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/containers/array.h" line="67" column="1" bodyfile="/Users/mike/svn/eve/development/trunk/sdk/inc/containers/array.h" bodystart="67" bodyend="69"/>
+      </memberdef>
+      <memberdef kind="function" id="classeve_1_1Array_1a741f7a53567ac04aef5fa0dac5287b7d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>T &amp;</type>
+        <definition>T&amp; eve::Array&lt; T &gt;::at</definition>
+        <argsstring>(int index)</argsstring>
+        <name>at</name>
+        <param>
+          <type>int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/containers/array.h" line="71" column="1" bodyfile="/Users/mike/svn/eve/development/trunk/sdk/inc/containers/array.h" bodystart="71" bodyend="73"/>
+        <referencedby refid="classeve_1_1Array_1a92c492e7bd6e5cf3ee8f2488d7a44176" compoundref="array_8h" startline="35" endline="37">eve::Array&lt; eve::UniformMetaData &gt;::operator[]</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classeve_1_1Array_1a5fa9ca8794d924ec6836bfa05e209e65" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const T &amp;</type>
+        <definition>const T&amp; eve::Array&lt; T &gt;::at</definition>
+        <argsstring>(int index) const </argsstring>
+        <name>at</name>
+        <param>
+          <type>int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/containers/array.h" line="75" column="1" bodyfile="/Users/mike/svn/eve/development/trunk/sdk/inc/containers/array.h" bodystart="75" bodyend="77"/>
+      </memberdef>
+      <memberdef kind="function" id="classeve_1_1Array_1af85de6d1c28af117382f48f9ba9729ec" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>T &amp;</type>
+        <definition>T&amp; eve::Array&lt; T &gt;::first</definition>
+        <argsstring>()</argsstring>
+        <name>first</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/containers/array.h" line="79" column="1" bodyfile="/Users/mike/svn/eve/development/trunk/sdk/inc/containers/array.h" bodystart="79" bodyend="81"/>
+      </memberdef>
+      <memberdef kind="function" id="classeve_1_1Array_1a8ec38f8b3abbb0cc06c2e857ce0df6a3" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const T &amp;</type>
+        <definition>const T&amp; eve::Array&lt; T &gt;::first</definition>
+        <argsstring>() const </argsstring>
+        <name>first</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/containers/array.h" line="83" column="1" bodyfile="/Users/mike/svn/eve/development/trunk/sdk/inc/containers/array.h" bodystart="83" bodyend="85"/>
+      </memberdef>
+      <memberdef kind="function" id="classeve_1_1Array_1ae9c86d11387e6f79ca321bac38f5e81b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>T &amp;</type>
+        <definition>T&amp; eve::Array&lt; T &gt;::last</definition>
+        <argsstring>()</argsstring>
+        <name>last</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/containers/array.h" line="87" column="1" bodyfile="/Users/mike/svn/eve/development/trunk/sdk/inc/containers/array.h" bodystart="87" bodyend="89"/>
+        <referencedby refid="classeve_1_1Array_1a5c7c91a8dd22fff6c3db5c712689d26f" compoundref="array_8h" startline="99" endline="103">eve::Array&lt; eve::UniformMetaData &gt;::pop</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classeve_1_1Array_1a042b0bb653ad04488eee5a4c298ab87d" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const T &amp;</type>
+        <definition>const T&amp; eve::Array&lt; T &gt;::last</definition>
+        <argsstring>() const </argsstring>
+        <name>last</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/containers/array.h" line="91" column="1" bodyfile="/Users/mike/svn/eve/development/trunk/sdk/inc/containers/array.h" bodystart="91" bodyend="93"/>
+      </memberdef>
+      <memberdef kind="function" id="classeve_1_1Array_1a8bd60ae5e4807b337ba382a2e8e4953c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void eve::Array&lt; T &gt;::push</definition>
+        <argsstring>(T object)</argsstring>
+        <name>push</name>
+        <param>
+          <type>T</type>
+          <declname>object</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/containers/array.h" line="95" column="1" bodyfile="/Users/mike/svn/eve/development/trunk/sdk/inc/containers/array.h" bodystart="95" bodyend="97"/>
+        <referencedby refid="classeve_1_1Array_1a1cfd502ccb96603b00cbc123ef552215" compoundref="array_8h" startline="30" endline="33">eve::Array&lt; eve::UniformMetaData &gt;::operator&lt;&lt;</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classeve_1_1Array_1a5c7c91a8dd22fff6c3db5c712689d26f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>T</type>
+        <definition>T eve::Array&lt; T &gt;::pop</definition>
+        <argsstring>()</argsstring>
+        <name>pop</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/containers/array.h" line="99" column="1" bodyfile="/Users/mike/svn/eve/development/trunk/sdk/inc/containers/array.h" bodystart="99" bodyend="103"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/containers/array.h" line="18" column="1" bodyfile="/Users/mike/svn/eve/development/trunk/sdk/inc/containers/array.h" bodystart="18" bodyend="109"/>
+    <listofallmembers>
+      <member refid="classeve_1_1Array_1af6d4e7b108521a5a302a0e3fc7dce188" prot="public" virt="non-virtual"><scope>eve::Array</scope><name>Array</name></member>
+      <member refid="classeve_1_1Array_1ad65a2b39b3630044aee06160a54f851a" prot="public" virt="non-virtual"><scope>eve::Array</scope><name>Array</name></member>
+      <member refid="classeve_1_1Array_1a741f7a53567ac04aef5fa0dac5287b7d" prot="public" virt="non-virtual"><scope>eve::Array</scope><name>at</name></member>
+      <member refid="classeve_1_1Array_1a5fa9ca8794d924ec6836bfa05e209e65" prot="public" virt="non-virtual"><scope>eve::Array</scope><name>at</name></member>
+      <member refid="classeve_1_1Array_1a32d10f5b2ac7f6a054aaf445847647bc" prot="public" virt="non-virtual"><scope>eve::Array</scope><name>capacity</name></member>
+      <member refid="classeve_1_1Array_1a399f80a030d88c7fa0fcfe8d49f80fab" prot="public" virt="non-virtual"><scope>eve::Array</scope><name>capacity</name></member>
+      <member refid="classeve_1_1Array_1a623f68ceedb13de25208740ee4cad373" prot="public" virt="non-virtual"><scope>eve::Array</scope><name>clear</name></member>
+      <member refid="classeve_1_1Array_1a163026c356b1ca128b65818c273f78e1" prot="public" virt="non-virtual"><scope>eve::Array</scope><name>count</name></member>
+      <member refid="classeve_1_1Array_1a088d0cfd04126cddfa79559060314d15" prot="public" virt="non-virtual"><scope>eve::Array</scope><name>empty</name></member>
+      <member refid="classeve_1_1Array_1af85de6d1c28af117382f48f9ba9729ec" prot="public" virt="non-virtual"><scope>eve::Array</scope><name>first</name></member>
+      <member refid="classeve_1_1Array_1a8ec38f8b3abbb0cc06c2e857ce0df6a3" prot="public" virt="non-virtual"><scope>eve::Array</scope><name>first</name></member>
+      <member refid="classeve_1_1Array_1ae9c86d11387e6f79ca321bac38f5e81b" prot="public" virt="non-virtual"><scope>eve::Array</scope><name>last</name></member>
+      <member refid="classeve_1_1Array_1a042b0bb653ad04488eee5a4c298ab87d" prot="public" virt="non-virtual"><scope>eve::Array</scope><name>last</name></member>
+      <member refid="classeve_1_1Array_1a420450c6c16fbbd74439612ad68e3dda" prot="public" virt="non-virtual"><scope>eve::Array</scope><name>length</name></member>
+      <member refid="classeve_1_1Array_1a42dd00e6a84c86ffe93abc8424289c91" prot="private" virt="non-virtual"><scope>eve::Array</scope><name>m_vector</name></member>
+      <member refid="classeve_1_1Array_1a1cfd502ccb96603b00cbc123ef552215" prot="public" virt="non-virtual"><scope>eve::Array</scope><name>operator&lt;&lt;</name></member>
+      <member refid="classeve_1_1Array_1a92c492e7bd6e5cf3ee8f2488d7a44176" prot="public" virt="non-virtual"><scope>eve::Array</scope><name>operator[]</name></member>
+      <member refid="classeve_1_1Array_1ae3d2e3388203591f58f6436b90105a68" prot="public" virt="non-virtual"><scope>eve::Array</scope><name>operator[]</name></member>
+      <member refid="classeve_1_1Array_1a5c7c91a8dd22fff6c3db5c712689d26f" prot="public" virt="non-virtual"><scope>eve::Array</scope><name>pop</name></member>
+      <member refid="classeve_1_1Array_1a8bd60ae5e4807b337ba382a2e8e4953c" prot="public" virt="non-virtual"><scope>eve::Array</scope><name>push</name></member>
+      <member refid="classeve_1_1Array_1ac3b0537712735164cfa9b7845ab06dd9" prot="public" virt="non-virtual"><scope>eve::Array</scope><name>size</name></member>
+      <member refid="classeve_1_1Array_1a3deb5ca469cae513931b203ac50fab4b" prot="public" virt="non-virtual"><scope>eve::Array</scope><name>~Array</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

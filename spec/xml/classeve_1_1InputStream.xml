@@ -1,0 +1,285 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.9.1">
+  <compounddef id="classeve_1_1InputStream" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>eve::InputStream</compoundname>
+    <derivedcompoundref refid="classeve_1_1ByteArrayInputStream" prot="public" virt="non-virtual">eve::ByteArrayInputStream</derivedcompoundref>
+    <derivedcompoundref refid="classeve_1_1FileInputStream" prot="public" virt="non-virtual">eve::FileInputStream</derivedcompoundref>
+    <includes refid="inputstream_8h" local="no">inputstream.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="classeve_1_1InputStream_1ac720fcf8cf637881c1fd1000b8cd8803" prot="public" static="no">
+        <name>SeekOrigin</name>
+        <enumvalue id="classeve_1_1InputStream_1ac720fcf8cf637881c1fd1000b8cd8803a8184009d76b060e73c18512c6ffb0270" prot="public">
+          <name>Beginning</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classeve_1_1InputStream_1ac720fcf8cf637881c1fd1000b8cd8803ab1a52b8af5c4132aff865e4a9ee3e252" prot="public">
+          <name>Current</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classeve_1_1InputStream_1ac720fcf8cf637881c1fd1000b8cd8803ad51f961821cabcbc3e5bd95d3538e48c" prot="public">
+          <name>End</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/io/inputstream.h" line="22" column="1" bodyfile="/Users/mike/svn/eve/development/trunk/sdk/inc/io/inputstream.h" bodystart="22" bodyend="26"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classeve_1_1InputStream_1ae8501531f64a3b0143d0d04df33c2408" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual eve::InputStream::~InputStream</definition>
+        <argsstring>()</argsstring>
+        <name>~InputStream</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/io/inputstream.h" line="28" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classeve_1_1InputStream_1ad8c1a93a247c73a176cc6d128e7d1078" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>int</type>
+        <definition>virtual int eve::InputStream::available</definition>
+        <argsstring>()=0</argsstring>
+        <name>available</name>
+        <reimplementedby refid="classeve_1_1ByteArrayInputStream_1a306e06ffb1a06019b9aa08e9c7ed7a35">available</reimplementedby>
+        <reimplementedby refid="classeve_1_1FileInputStream_1ad28ff5cb5a9c2e0b752f9c3bb3da08fc">available</reimplementedby>
+        <briefdescription>
+<para>Returns the number of bytes that can be read. </para>        </briefdescription>
+        <detaileddescription>
+<para>Returns the number of bytes that can be read (or skipped over) from this input stream. When the end of the stream is reached this will return 0. On error -1 is returned.</para><para><simplesect kind="note"><para>A subclass must provide an implementation of this method.</para></simplesect>
+<simplesect kind="return"><para>the number of bytes that can be read, 0 if the end is reached or -1 on error. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/io/inputstream.h" line="41" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classeve_1_1InputStream_1a02609676623ce8778230ac947888adb9" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>int</type>
+        <definition>virtual int eve::InputStream::read</definition>
+        <argsstring>()=0</argsstring>
+        <name>read</name>
+        <reimplementedby refid="classeve_1_1ByteArrayInputStream_1a50ff9821d31236ed86630255177edc13">read</reimplementedby>
+        <reimplementedby refid="classeve_1_1FileInputStream_1a690193c46ec2ea81dbfa554e0d9bf4d8">read</reimplementedby>
+        <briefdescription>
+<para>Reads the next byte from the input stream. </para>        </briefdescription>
+        <detaileddescription>
+<para>Reads the next byte of data from the input stream. If the end of the stream is reached or there is an error, -1 is returned.</para><para><simplesect kind="note"><para>A subclass must provide an implementation of this method.</para></simplesect>
+<simplesect kind="return"><para>the next byte of data, or -1 if the end of the stream is reached. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/io/inputstream.h" line="53" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classeve_1_1InputStream_1a7f00adad2a213e9e13a75da9b9b8aa2e" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>int</type>
+        <definition>virtual int eve::InputStream::read</definition>
+        <argsstring>(u8 *buffer, int length)</argsstring>
+        <name>read</name>
+        <reimplementedby refid="classeve_1_1ByteArrayInputStream_1aba428d2306dc0293dc29e4b33d9fce55">read</reimplementedby>
+        <reimplementedby refid="classeve_1_1FileInputStream_1af9252067f439e89072394f9ea8e406d9">read</reimplementedby>
+        <param>
+          <type><ref refid="types_8h_1a92c50087ca0e64fa93fc59402c55f8ca" kindref="member">u8</ref> *</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>length</declname>
+        </param>
+        <briefdescription>
+<para>Reads a number of bytes from the input stream into a buffer array. </para>        </briefdescription>
+        <detaileddescription>
+<para>Reads up to a number of bytes of data from the input stream into a buffer array. The number of bytes actually read depends on the available bytes. The actual number of bytes read is returned, or 0 if no bytes are available to read. On error -1 is returned.</para><para>This method simply calls read a number of times, storing the result in the buffer. <simplesect kind="note"><para>Subclasses should provide a more efficient implementation of this method.</para></simplesect>
+<simplesect kind="see"><para><ref refid="classeve_1_1InputStream_1ad8c1a93a247c73a176cc6d128e7d1078" kindref="member">InputStream::available</ref></para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>buffer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Buffer to read bytes into. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>length</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The maximum number of bytes to read. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the number of bytes read into the buffer, 0 if the end is reached or -1 on error. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/io/inputstream.h" line="72" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classeve_1_1InputStream_1acd52925d20819a42259b4dd293daba7f" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>int</type>
+        <definition>virtual int eve::InputStream::skip</definition>
+        <argsstring>(int skip)</argsstring>
+        <name>skip</name>
+        <reimplementedby refid="classeve_1_1ByteArrayInputStream_1a682734841487f0eb19beab3017b85b87">skip</reimplementedby>
+        <reimplementedby refid="classeve_1_1FileInputStream_1a42b3c55d85970a79d4a1304c5607d928">skip</reimplementedby>
+        <param>
+          <type>int</type>
+          <declname>skip</declname>
+        </param>
+        <briefdescription>
+<para>Skips over data from this input stream. </para>        </briefdescription>
+        <detaileddescription>
+<para>Skips over a number of bytes from this input stream. The number of bytes actually skipped depends on the available bytes. The actual number of bytes skipped is returned, or 0 if the end is reached. On error -1 is returned.</para><para>This method simply calls read a number of times, discarding the result. <simplesect kind="note"><para>Subclasses should provide a more efficient implementation of this method.</para></simplesect>
+<simplesect kind="see"><para><ref refid="classeve_1_1InputStream_1ad8c1a93a247c73a176cc6d128e7d1078" kindref="member">InputStream::available</ref></para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>skip</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The number of bytes to be skipped. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the actual number of bytes skipped, 0 if the end is reached or -1 on error. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/io/inputstream.h" line="90" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classeve_1_1InputStream_1aa75b4f608c311664a0686a3e60cf3301" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool eve::InputStream::canSeek</definition>
+        <argsstring>()</argsstring>
+        <name>canSeek</name>
+        <reimplementedby refid="classeve_1_1ByteArrayInputStream_1a0ba424dfde8afc9828c2efe4324c2d52">canSeek</reimplementedby>
+        <reimplementedby refid="classeve_1_1FileInputStream_1a4429e0a14e9e5089ac8c898d072c2c74">canSeek</reimplementedby>
+        <briefdescription>
+<para>Returns true if this stream supports seeking. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>True if this stream supports seeking. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/io/inputstream.h" line="97" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classeve_1_1InputStream_1a9872ec573098076a0c170c49495d251b" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>int</type>
+        <definition>virtual int eve::InputStream::seek</definition>
+        <argsstring>(int offset, SeekOrigin origin)</argsstring>
+        <name>seek</name>
+        <reimplementedby refid="classeve_1_1ByteArrayInputStream_1af61f193603be023834ec9b990a4e85c1">seek</reimplementedby>
+        <reimplementedby refid="classeve_1_1FileInputStream_1af9526d3af9b3dd9d69c1e15ebb09bcec">seek</reimplementedby>
+        <param>
+          <type>int</type>
+          <declname>offset</declname>
+        </param>
+        <param>
+          <type><ref refid="classeve_1_1InputStream_1ac720fcf8cf637881c1fd1000b8cd8803" kindref="member">SeekOrigin</ref></type>
+          <declname>origin</declname>
+        </param>
+        <briefdescription>
+<para>Seeks to a point in the stream. </para>        </briefdescription>
+        <detaileddescription>
+<para>Seeks to a position in the stream to read from, if supported. <simplesect kind="see"><para><ref refid="classeve_1_1InputStream_1aa75b4f608c311664a0686a3e60cf3301" kindref="member">InputStream::canSeek()</ref></para></simplesect>
+<simplesect kind="return"><para>The actual position in the stream or -1 if not supported. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/io/inputstream.h" line="107" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classeve_1_1InputStream_1ab96fbc0f6cc22540e0d0c1a73052e929" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>int</type>
+        <definition>virtual int eve::InputStream::seek</definition>
+        <argsstring>() const </argsstring>
+        <name>seek</name>
+        <reimplementedby refid="classeve_1_1ByteArrayInputStream_1aef80a5432ff4f25b2910aeed29153829">seek</reimplementedby>
+        <reimplementedby refid="classeve_1_1FileInputStream_1aa469163bb6d5d13ca3ccbe703c89beda">seek</reimplementedby>
+        <briefdescription>
+<para>Returns the seek position. </para>        </briefdescription>
+        <detaileddescription>
+<para>Returns the current seek position, if supported. The seek position is incremented with each byte read from the stream. <simplesect kind="see"><para><ref refid="classeve_1_1InputStream_1aa75b4f608c311664a0686a3e60cf3301" kindref="member">InputStream::canSeek()</ref></para></simplesect>
+<simplesect kind="return"><para>Current seek position or -1 if not supported. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/io/inputstream.h" line="118" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classeve_1_1InputStream_1aa97438c567ad13d7f0f7b99daa9f4357" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int eve::InputStream::toByteArray</definition>
+        <argsstring>(u8 *buffer)</argsstring>
+        <name>toByteArray</name>
+        <param>
+          <type><ref refid="types_8h_1a92c50087ca0e64fa93fc59402c55f8ca" kindref="member">u8</ref> *</type>
+          <declname>buffer</declname>
+        </param>
+        <briefdescription>
+<para>Read input stream to a byte buffer. </para>        </briefdescription>
+        <detaileddescription>
+<para>Reads the input stream into a byte buffer. Bytes are read until the end of the stream is reached. <simplesect kind="note"><para>This method will allocated the buffer which the caller is responsible for deleting.</para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out">buffer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Buffer to read stream into. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Size of the buffer in bytes. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/io/inputstream.h" line="130" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="31">
+        <label>eve::InputStream</label>
+        <link refid="classeve_1_1InputStream"/>
+      </node>
+      <node id="32">
+        <label>eve::ByteArrayInputStream</label>
+        <link refid="classeve_1_1ByteArrayInputStream"/>
+        <childnode refid="31" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="33">
+        <label>eve::FileInputStream</label>
+        <link refid="classeve_1_1FileInputStream"/>
+        <childnode refid="31" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/io/inputstream.h" line="18" column="1" bodyfile="/Users/mike/svn/eve/development/trunk/sdk/inc/io/inputstream.h" bodystart="18" bodyend="132"/>
+    <listofallmembers>
+      <member refid="classeve_1_1InputStream_1ad8c1a93a247c73a176cc6d128e7d1078" prot="public" virt="pure-virtual"><scope>eve::InputStream</scope><name>available</name></member>
+      <member refid="classeve_1_1InputStream_1ac720fcf8cf637881c1fd1000b8cd8803a8184009d76b060e73c18512c6ffb0270" prot="public" virt="non-virtual"><scope>eve::InputStream</scope><name>Beginning</name></member>
+      <member refid="classeve_1_1InputStream_1aa75b4f608c311664a0686a3e60cf3301" prot="public" virt="virtual"><scope>eve::InputStream</scope><name>canSeek</name></member>
+      <member refid="classeve_1_1InputStream_1ac720fcf8cf637881c1fd1000b8cd8803ab1a52b8af5c4132aff865e4a9ee3e252" prot="public" virt="non-virtual"><scope>eve::InputStream</scope><name>Current</name></member>
+      <member refid="classeve_1_1InputStream_1ac720fcf8cf637881c1fd1000b8cd8803ad51f961821cabcbc3e5bd95d3538e48c" prot="public" virt="non-virtual"><scope>eve::InputStream</scope><name>End</name></member>
+      <member refid="classeve_1_1InputStream_1a02609676623ce8778230ac947888adb9" prot="public" virt="pure-virtual"><scope>eve::InputStream</scope><name>read</name></member>
+      <member refid="classeve_1_1InputStream_1a7f00adad2a213e9e13a75da9b9b8aa2e" prot="public" virt="virtual"><scope>eve::InputStream</scope><name>read</name></member>
+      <member refid="classeve_1_1InputStream_1a9872ec573098076a0c170c49495d251b" prot="public" virt="virtual"><scope>eve::InputStream</scope><name>seek</name></member>
+      <member refid="classeve_1_1InputStream_1ab96fbc0f6cc22540e0d0c1a73052e929" prot="public" virt="virtual"><scope>eve::InputStream</scope><name>seek</name></member>
+      <member refid="classeve_1_1InputStream_1ac720fcf8cf637881c1fd1000b8cd8803" prot="public" virt="non-virtual"><scope>eve::InputStream</scope><name>SeekOrigin</name></member>
+      <member refid="classeve_1_1InputStream_1acd52925d20819a42259b4dd293daba7f" prot="public" virt="virtual"><scope>eve::InputStream</scope><name>skip</name></member>
+      <member refid="classeve_1_1InputStream_1aa97438c567ad13d7f0f7b99daa9f4357" prot="public" virt="non-virtual"><scope>eve::InputStream</scope><name>toByteArray</name></member>
+      <member refid="classeve_1_1InputStream_1ae8501531f64a3b0143d0d04df33c2408" prot="public" virt="virtual"><scope>eve::InputStream</scope><name>~InputStream</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

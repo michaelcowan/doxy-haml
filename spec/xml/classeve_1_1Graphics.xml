@@ -1,0 +1,929 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.9.1">
+  <compounddef id="classeve_1_1Graphics" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>eve::Graphics</compoundname>
+    <includes refid="graphics_8h" local="no">graphics.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="classeve_1_1Graphics_1a9f147b3b38aa1bfa019600d169e42937" prot="public" static="no">
+        <name>ClearOptions</name>
+        <enumvalue id="classeve_1_1Graphics_1a9f147b3b38aa1bfa019600d169e42937a7bfddce20292f1ee59ac748d46fce53d" prot="public">
+          <name>ColorBuffer</name>
+          <initializer>= 0x1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classeve_1_1Graphics_1a9f147b3b38aa1bfa019600d169e42937af6a4a80faf6709654c3ddb94b02a8d92" prot="public">
+          <name>DepthBuffer</name>
+          <initializer>= 0x2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classeve_1_1Graphics_1a9f147b3b38aa1bfa019600d169e42937a93f15502b317020adcf2d1f601ad16de" prot="public">
+          <name>StencilBuffer</name>
+          <initializer>= 0x4</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classeve_1_1Graphics_1a9f147b3b38aa1bfa019600d169e42937af7600fa602182ba3ffc870d3e348abe9" prot="public">
+          <name>AllBuffers</name>
+          <initializer>= ColorBuffer | DepthBuffer | StencilBuffer</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/graphics.h" line="36" column="1" bodyfile="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/graphics.h" bodystart="36" bodyend="41"/>
+      </memberdef>
+      <memberdef kind="enum" id="classeve_1_1Graphics_1a95d5707606766be583cea9e2a8d2a989" prot="public" static="no">
+        <name>PrimitiveType</name>
+        <enumvalue id="classeve_1_1Graphics_1a95d5707606766be583cea9e2a8d2a989a071713186d9396f3e590a016250272bf" prot="public">
+          <name>TriangleList</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classeve_1_1Graphics_1a95d5707606766be583cea9e2a8d2a989a73947dbe99882500cc079f718713de07" prot="public">
+          <name>TriangleStrip</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/graphics.h" line="43" column="1" bodyfile="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/graphics.h" bodystart="43" bodyend="46"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classeve_1_1Graphics_1a74155f282fe997ed1e325966d2374428" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="classeve_1_1Renderable" kindref="compound">Renderable</ref> *</type>
+        <definition>virtual Renderable* eve::Graphics::renderable</definition>
+        <argsstring>() const =0</argsstring>
+        <name>renderable</name>
+        <briefdescription>
+<para>Get render context renderable. </para>        </briefdescription>
+        <detaileddescription>
+<para>Returns the renderable associated with this render context.</para><para><simplesect kind="return"><para><ref refid="classeve_1_1Renderable" kindref="compound">Renderable</ref> associated with this render context. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/graphics.h" line="55" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classeve_1_1Graphics_1a12bcd4460c45f045322ead5dce59c7a2" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void eve::Graphics::blend</definition>
+        <argsstring>(const Blend &amp;blend)=0</argsstring>
+        <name>blend</name>
+        <param>
+          <type>const <ref refid="classeve_1_1Blend" kindref="compound">Blend</ref> &amp;</type>
+          <declname>blend</declname>
+        </param>
+        <briefdescription>
+<para>Set <ref refid="classeve_1_1Blend" kindref="compound">Blend</ref> mode. </para>        </briefdescription>
+        <detaileddescription>
+<para>Sets the <ref refid="classeve_1_1Blend" kindref="compound">Blend</ref> mode to use with this render context.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">blend</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classeve_1_1Blend" kindref="compound">Blend</ref> mode to set. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/graphics.h" line="64" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classeve_1_1Graphics_1a8edb7f715efbfe5a943f6824a04e5c31" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="classeve_1_1Blend" kindref="compound">Blend</ref></type>
+        <definition>virtual Blend eve::Graphics::blend</definition>
+        <argsstring>() const =0</argsstring>
+        <name>blend</name>
+        <briefdescription>
+<para>Get blend mode. </para>        </briefdescription>
+        <detaileddescription>
+<para>Gets the blend mode used with this render context.</para><para><simplesect kind="return"><para>the blend mode. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/graphics.h" line="73" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classeve_1_1Graphics_1a02887f2b65199cd5d19839670b22bfae" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void eve::Graphics::colorMask</definition>
+        <argsstring>(const ColorMask &amp;colorMask)=0</argsstring>
+        <name>colorMask</name>
+        <param>
+          <type>const <ref refid="classeve_1_1ColorMask" kindref="compound">ColorMask</ref> &amp;</type>
+          <declname>colorMask</declname>
+        </param>
+        <briefdescription>
+<para>Set color mask. </para>        </briefdescription>
+        <detaileddescription>
+<para>Sets which color channels are enabled for use with this render context. <simplesect kind="note"><para>This will not affect the clear color.</para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">colorMask</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classeve_1_1ColorMask" kindref="compound">ColorMask</ref> mode to set. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/graphics.h" line="83" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classeve_1_1Graphics_1ae4c84cc20532526dd0a343cbca95b87d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="classeve_1_1ColorMask" kindref="compound">ColorMask</ref></type>
+        <definition>virtual ColorMask eve::Graphics::colorMask</definition>
+        <argsstring>() const =0</argsstring>
+        <name>colorMask</name>
+        <briefdescription>
+<para>Get color mask. </para>        </briefdescription>
+        <detaileddescription>
+<para>Gets the color mask used with this render context.</para><para><simplesect kind="return"><para>the color mask mode. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/graphics.h" line="92" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classeve_1_1Graphics_1aeaf882b33222c16aa4434d616cb8698d" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void eve::Graphics::depthStencil</definition>
+        <argsstring>(const DepthStencil &amp;depthStencil)=0</argsstring>
+        <name>depthStencil</name>
+        <param>
+          <type>const <ref refid="classeve_1_1DepthStencil" kindref="compound">DepthStencil</ref> &amp;</type>
+          <declname>depthStencil</declname>
+        </param>
+        <briefdescription>
+<para>Set depth-stencil mode. </para>        </briefdescription>
+        <detaileddescription>
+<para>Sets the depth-stencil mode to use with this render context.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">depthStencil</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classeve_1_1DepthStencil" kindref="compound">DepthStencil</ref> mode to set. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/graphics.h" line="101" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classeve_1_1Graphics_1a7614d8f5ecc712e3eec9d58931087557" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="classeve_1_1DepthStencil" kindref="compound">DepthStencil</ref></type>
+        <definition>virtual DepthStencil eve::Graphics::depthStencil</definition>
+        <argsstring>() const =0</argsstring>
+        <name>depthStencil</name>
+        <briefdescription>
+<para>Get depth-stencil mode. </para>        </briefdescription>
+        <detaileddescription>
+<para>Gets the depth-stencil mode used with this render context.</para><para><simplesect kind="return"><para>the depth-stencil mode. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/graphics.h" line="110" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classeve_1_1Graphics_1a21ee3964cebc90fd68e0af073fcdd349" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void eve::Graphics::rasterizer</definition>
+        <argsstring>(const Rasterizer &amp;rasterizer)=0</argsstring>
+        <name>rasterizer</name>
+        <param>
+          <type>const <ref refid="classeve_1_1Rasterizer" kindref="compound">Rasterizer</ref> &amp;</type>
+          <declname>rasterizer</declname>
+        </param>
+        <briefdescription>
+<para>Set rasterizer mode. </para>        </briefdescription>
+        <detaileddescription>
+<para>Sets the rasterizer mode to use with this render context.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">rasterizer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classeve_1_1Rasterizer" kindref="compound">Rasterizer</ref> mode to set. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/graphics.h" line="119" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classeve_1_1Graphics_1aa4b948cdfd247d65e7c0ad81a14194fe" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="classeve_1_1Rasterizer" kindref="compound">Rasterizer</ref></type>
+        <definition>virtual Rasterizer eve::Graphics::rasterizer</definition>
+        <argsstring>() const =0</argsstring>
+        <name>rasterizer</name>
+        <briefdescription>
+<para>Get rasterizer mode. </para>        </briefdescription>
+        <detaileddescription>
+<para>Gets the rasterizer mode used with this render context.</para><para><simplesect kind="return"><para>the rasterizer mode. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/graphics.h" line="128" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classeve_1_1Graphics_1a17c3049ee48fc90e1acb52b3a9b49dfc" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void eve::Graphics::viewport</definition>
+        <argsstring>(const Viewport &amp;viewport)=0</argsstring>
+        <name>viewport</name>
+        <param>
+          <type>const <ref refid="classeve_1_1Viewport" kindref="compound">Viewport</ref> &amp;</type>
+          <declname>viewport</declname>
+        </param>
+        <briefdescription>
+<para>Set the viewport. </para>        </briefdescription>
+        <detaileddescription>
+<para>Sets the viewport to use with this render context.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">viewport</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classeve_1_1Viewport" kindref="compound">Viewport</ref> to set. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/graphics.h" line="137" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classeve_1_1Graphics_1a5186279f5ae0e9b0be80745469ce7bcd" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="classeve_1_1Viewport" kindref="compound">Viewport</ref></type>
+        <definition>virtual Viewport eve::Graphics::viewport</definition>
+        <argsstring>() const =0</argsstring>
+        <name>viewport</name>
+        <briefdescription>
+<para>Get viewport. </para>        </briefdescription>
+        <detaileddescription>
+<para>Gets the viewport used with this render context.</para><para><simplesect kind="return"><para>the viewport. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/graphics.h" line="146" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classeve_1_1Graphics_1a276eba9d59947e7695a8dcd79c3bdb67" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void eve::Graphics::scissor</definition>
+        <argsstring>(const Rect &amp;scissor)=0</argsstring>
+        <name>scissor</name>
+        <param>
+          <type>const <ref refid="classeve_1_1Rect" kindref="compound">Rect</ref> &amp;</type>
+          <declname>scissor</declname>
+        </param>
+        <briefdescription>
+<para>Set the scissor rect. </para>        </briefdescription>
+        <detaileddescription>
+<para>Sets the scissor rect to use with this render context.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">scissor</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Scissor rect to set. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/graphics.h" line="157" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classeve_1_1Graphics_1add6a74a0dbeb76fe89daa40636cdc7c0" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="classeve_1_1Rect" kindref="compound">Rect</ref></type>
+        <definition>virtual Rect eve::Graphics::scissor</definition>
+        <argsstring>() const =0</argsstring>
+        <name>scissor</name>
+        <briefdescription>
+<para>Get scissor rect. </para>        </briefdescription>
+        <detaileddescription>
+<para>Gets the scissor rect used with this render context.</para><para><simplesect kind="return"><para>the scissor rect. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/graphics.h" line="166" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classeve_1_1Graphics_1ae37c6fa8e49979b9fdb43c37959615cf" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void eve::Graphics::clear</definition>
+        <argsstring>()=0</argsstring>
+        <name>clear</name>
+        <briefdescription>
+<para>Clears all buffers using defaults. </para>        </briefdescription>
+        <detaileddescription>
+<para>Clears all buffers with their default values: ColorBuffer: <ref refid="classeve_1_1Color_1a86a4c2dbdfdffda103a556273e40bfe9" kindref="member">Color::Magenta</ref> DepthBuffer: 1.0f StencilBuffer: 0 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/graphics.h" line="176" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classeve_1_1Graphics_1a2435cd31476c1ffd08bb8c0d208d4abe" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void eve::Graphics::clear</definition>
+        <argsstring>(const Color color)=0</argsstring>
+        <name>clear</name>
+        <param>
+          <type>const <ref refid="classeve_1_1Color" kindref="compound">Color</ref></type>
+          <declname>color</declname>
+        </param>
+        <briefdescription>
+<para>Clears all buffers. </para>        </briefdescription>
+        <detaileddescription>
+<para>Clears the color buffer with color and all other buffers with their default values: DepthBuffer: 1.0f StencilBuffer: 0</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">color</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classeve_1_1Color" kindref="compound">Color</ref> to clear the color buffer with. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/graphics.h" line="187" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classeve_1_1Graphics_1aadb74e1dc01459463be66b444c09b49b" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void eve::Graphics::clear</definition>
+        <argsstring>(const ClearOptions options, const Color color, float depth, int stencil)=0</argsstring>
+        <name>clear</name>
+        <param>
+          <type>const <ref refid="classeve_1_1Graphics_1a9f147b3b38aa1bfa019600d169e42937" kindref="member">ClearOptions</ref></type>
+          <declname>options</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classeve_1_1Color" kindref="compound">Color</ref></type>
+          <declname>color</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>depth</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>stencil</declname>
+        </param>
+        <briefdescription>
+<para>Clears buffer(s). </para>        </briefdescription>
+        <detaileddescription>
+<para>Clears the buffers specified with passed values.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">options</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Buffers to clear. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">color</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classeve_1_1Color" kindref="compound">Color</ref> to clear the color buffer with. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">depth</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Value to set the depth buffer to in the range 0.0f to 1.0f. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">stencil</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Specifies the clear value for the stencil buffer in the range 0 to 2n-1, where n is the bit depth of the stencil buffer. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/graphics.h" line="200" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classeve_1_1Graphics_1a917b3acfc77aeb2f7e0d9a9b195d882e" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void eve::Graphics::render</definition>
+        <argsstring>(const PrimitiveType &amp;type, const Shader &amp;shader, const UniformType &amp;uniform, const VertexType *verts, const int offset, const int count)=0</argsstring>
+        <name>render</name>
+        <param>
+          <type>const <ref refid="classeve_1_1Graphics_1a95d5707606766be583cea9e2a8d2a989" kindref="member">PrimitiveType</ref> &amp;</type>
+          <declname>type</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classeve_1_1Shader" kindref="compound">Shader</ref> &amp;</type>
+          <declname>shader</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classeve_1_1UniformType" kindref="compound">UniformType</ref> &amp;</type>
+          <declname>uniform</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classeve_1_1VertexType" kindref="compound">VertexType</ref> *</type>
+          <declname>verts</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>offset</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>count</declname>
+        </param>
+        <briefdescription>
+<para>Renders geometric primitives. </para>        </briefdescription>
+        <detaileddescription>
+<para>Renders a list of geometric primitives.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Primitive type to render. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">shader</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classeve_1_1Shader" kindref="compound">Shader</ref> to use for rendering. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">uniform</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Uniform shader data. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">verts</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Vertex data. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">offset</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Offset to the first vertex to draw. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of vertices to draw. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/graphics.h" line="214" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classeve_1_1Graphics_1acd4b9ce09adf90981278eaee291e960a" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void eve::Graphics::render</definition>
+        <argsstring>(const PrimitiveType &amp;type, const Shader &amp;shader, const UniformType &amp;uniform, const VertexType *verts, const u32 *indices, const int count)=0</argsstring>
+        <name>render</name>
+        <param>
+          <type>const <ref refid="classeve_1_1Graphics_1a95d5707606766be583cea9e2a8d2a989" kindref="member">PrimitiveType</ref> &amp;</type>
+          <declname>type</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classeve_1_1Shader" kindref="compound">Shader</ref> &amp;</type>
+          <declname>shader</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classeve_1_1UniformType" kindref="compound">UniformType</ref> &amp;</type>
+          <declname>uniform</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classeve_1_1VertexType" kindref="compound">VertexType</ref> *</type>
+          <declname>verts</declname>
+        </param>
+        <param>
+          <type>const <ref refid="types_8h_1afaa62991928fb9fb18ff0db62a040aba" kindref="member">u32</ref> *</type>
+          <declname>indices</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>count</declname>
+        </param>
+        <briefdescription>
+<para>Renders geometric primitives using indices. </para>        </briefdescription>
+        <detaileddescription>
+<para>Renders an indexed list of geometric primitives.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Primitive type to render. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">shader</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classeve_1_1Shader" kindref="compound">Shader</ref> to use for rendering. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">uniform</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Uniform shader data. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">verts</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Vertex data. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">indices</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Index data. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of indices to draw. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/graphics.h" line="229" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classeve_1_1Graphics_1a6a79e566566afe4cfe67fabc6abb4382" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void eve::Graphics::render</definition>
+        <argsstring>(const PrimitiveType &amp;type, const Shader &amp;shader, const UniformType &amp;uniform, const VertexType *verts, const u16 *indices, const int count)=0</argsstring>
+        <name>render</name>
+        <param>
+          <type>const <ref refid="classeve_1_1Graphics_1a95d5707606766be583cea9e2a8d2a989" kindref="member">PrimitiveType</ref> &amp;</type>
+          <declname>type</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classeve_1_1Shader" kindref="compound">Shader</ref> &amp;</type>
+          <declname>shader</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classeve_1_1UniformType" kindref="compound">UniformType</ref> &amp;</type>
+          <declname>uniform</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classeve_1_1VertexType" kindref="compound">VertexType</ref> *</type>
+          <declname>verts</declname>
+        </param>
+        <param>
+          <type>const <ref refid="types_8h_1ace9d960e74685e2cd84b36132dbbf8aa" kindref="member">u16</ref> *</type>
+          <declname>indices</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>count</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/graphics.h" line="232" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classeve_1_1Graphics_1ada792667c0310b9067f6bbcc51ea5bb3" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void eve::Graphics::render</definition>
+        <argsstring>(const PrimitiveType &amp;type, const Shader &amp;shader, const UniformType &amp;uniform, const VertexType *verts, const u8 *indices, const int count)=0</argsstring>
+        <name>render</name>
+        <param>
+          <type>const <ref refid="classeve_1_1Graphics_1a95d5707606766be583cea9e2a8d2a989" kindref="member">PrimitiveType</ref> &amp;</type>
+          <declname>type</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classeve_1_1Shader" kindref="compound">Shader</ref> &amp;</type>
+          <declname>shader</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classeve_1_1UniformType" kindref="compound">UniformType</ref> &amp;</type>
+          <declname>uniform</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classeve_1_1VertexType" kindref="compound">VertexType</ref> *</type>
+          <declname>verts</declname>
+        </param>
+        <param>
+          <type>const <ref refid="types_8h_1a92c50087ca0e64fa93fc59402c55f8ca" kindref="member">u8</ref> *</type>
+          <declname>indices</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>count</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/graphics.h" line="235" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classeve_1_1Graphics_1a2b2b982b4d5100c3f0e4cf935f69f612" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void eve::Graphics::render</definition>
+        <argsstring>(const PrimitiveType &amp;type, const Shader &amp;shader, const UniformType &amp;uniform, const VertexBuffer &amp;vb, const int offset, const int count)=0</argsstring>
+        <name>render</name>
+        <param>
+          <type>const <ref refid="classeve_1_1Graphics_1a95d5707606766be583cea9e2a8d2a989" kindref="member">PrimitiveType</ref> &amp;</type>
+          <declname>type</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classeve_1_1Shader" kindref="compound">Shader</ref> &amp;</type>
+          <declname>shader</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classeve_1_1UniformType" kindref="compound">UniformType</ref> &amp;</type>
+          <declname>uniform</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classeve_1_1VertexBuffer" kindref="compound">VertexBuffer</ref> &amp;</type>
+          <declname>vb</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>offset</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>count</declname>
+        </param>
+        <briefdescription>
+<para>Renders geometric primitive buffer. </para>        </briefdescription>
+        <detaileddescription>
+<para>Renders a buffered list of geometric primitives.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Primitive type to render. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">shader</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classeve_1_1Shader" kindref="compound">Shader</ref> to use for rendering. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">uniform</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Uniform shader data. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">vb</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classeve_1_1VertexBuffer" kindref="compound">VertexBuffer</ref> object. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">offset</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Offset to the first vertex to draw. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of vertices to draw. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/graphics.h" line="250" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classeve_1_1Graphics_1a6e0e5e8195e7fbe4a0c4cee67e9a86c4" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void eve::Graphics::render</definition>
+        <argsstring>(const PrimitiveType &amp;type, const Shader &amp;shader, const UniformType &amp;uniform, const Array&lt; VertexBuffer * &gt; &amp;vbs, const int offset, const int count)=0</argsstring>
+        <name>render</name>
+        <param>
+          <type>const <ref refid="classeve_1_1Graphics_1a95d5707606766be583cea9e2a8d2a989" kindref="member">PrimitiveType</ref> &amp;</type>
+          <declname>type</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classeve_1_1Shader" kindref="compound">Shader</ref> &amp;</type>
+          <declname>shader</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classeve_1_1UniformType" kindref="compound">UniformType</ref> &amp;</type>
+          <declname>uniform</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classeve_1_1Array" kindref="compound">Array</ref>&lt; <ref refid="classeve_1_1VertexBuffer" kindref="compound">VertexBuffer</ref> * &gt; &amp;</type>
+          <declname>vbs</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>offset</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>count</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/graphics.h" line="253" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classeve_1_1Graphics_1a5ff8ced50d9428bf86b15bf66fd16a04" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void eve::Graphics::render</definition>
+        <argsstring>(const PrimitiveType &amp;type, const Shader &amp;shader, const UniformType &amp;uniform, const VertexBuffer &amp;vb, const IndexBuffer &amp;ib, const int count)=0</argsstring>
+        <name>render</name>
+        <param>
+          <type>const <ref refid="classeve_1_1Graphics_1a95d5707606766be583cea9e2a8d2a989" kindref="member">PrimitiveType</ref> &amp;</type>
+          <declname>type</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classeve_1_1Shader" kindref="compound">Shader</ref> &amp;</type>
+          <declname>shader</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classeve_1_1UniformType" kindref="compound">UniformType</ref> &amp;</type>
+          <declname>uniform</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classeve_1_1VertexBuffer" kindref="compound">VertexBuffer</ref> &amp;</type>
+          <declname>vb</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classeve_1_1IndexBuffer" kindref="compound">IndexBuffer</ref> &amp;</type>
+          <declname>ib</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>count</declname>
+        </param>
+        <briefdescription>
+<para>Renders geometric primitive buffer using buffer indices. </para>        </briefdescription>
+        <detaileddescription>
+<para>Renders a buffered indexed list of buffered geometric primitives.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Primitive type to render. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">shader</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classeve_1_1Shader" kindref="compound">Shader</ref> to use for rendering. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">uniform</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Uniform shader data. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">vb</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classeve_1_1VertexBuffer" kindref="compound">VertexBuffer</ref> object. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">ib</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classeve_1_1IndexBuffer" kindref="compound">IndexBuffer</ref> object. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of indices to draw. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/graphics.h" line="268" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classeve_1_1Graphics_1a7206bab53ae7cd8ac3a4224f6e36a99a" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void eve::Graphics::render</definition>
+        <argsstring>(const PrimitiveType &amp;type, const Shader &amp;shader, const UniformType &amp;uniform, const Array&lt; VertexBuffer * &gt; &amp;vbs, const IndexBuffer &amp;ib, const int count)=0</argsstring>
+        <name>render</name>
+        <param>
+          <type>const <ref refid="classeve_1_1Graphics_1a95d5707606766be583cea9e2a8d2a989" kindref="member">PrimitiveType</ref> &amp;</type>
+          <declname>type</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classeve_1_1Shader" kindref="compound">Shader</ref> &amp;</type>
+          <declname>shader</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classeve_1_1UniformType" kindref="compound">UniformType</ref> &amp;</type>
+          <declname>uniform</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classeve_1_1Array" kindref="compound">Array</ref>&lt; <ref refid="classeve_1_1VertexBuffer" kindref="compound">VertexBuffer</ref> * &gt; &amp;</type>
+          <declname>vbs</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classeve_1_1IndexBuffer" kindref="compound">IndexBuffer</ref> &amp;</type>
+          <declname>ib</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>count</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/graphics.h" line="271" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/graphics.h" line="30" column="1" bodyfile="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/graphics.h" bodystart="30" bodyend="274"/>
+    <listofallmembers>
+      <member refid="classeve_1_1Graphics_1a9f147b3b38aa1bfa019600d169e42937af7600fa602182ba3ffc870d3e348abe9" prot="public" virt="non-virtual"><scope>eve::Graphics</scope><name>AllBuffers</name></member>
+      <member refid="classeve_1_1Graphics_1a12bcd4460c45f045322ead5dce59c7a2" prot="public" virt="pure-virtual"><scope>eve::Graphics</scope><name>blend</name></member>
+      <member refid="classeve_1_1Graphics_1a8edb7f715efbfe5a943f6824a04e5c31" prot="public" virt="pure-virtual"><scope>eve::Graphics</scope><name>blend</name></member>
+      <member refid="classeve_1_1Graphics_1ae37c6fa8e49979b9fdb43c37959615cf" prot="public" virt="pure-virtual"><scope>eve::Graphics</scope><name>clear</name></member>
+      <member refid="classeve_1_1Graphics_1a2435cd31476c1ffd08bb8c0d208d4abe" prot="public" virt="pure-virtual"><scope>eve::Graphics</scope><name>clear</name></member>
+      <member refid="classeve_1_1Graphics_1aadb74e1dc01459463be66b444c09b49b" prot="public" virt="pure-virtual"><scope>eve::Graphics</scope><name>clear</name></member>
+      <member refid="classeve_1_1Graphics_1a9f147b3b38aa1bfa019600d169e42937" prot="public" virt="non-virtual"><scope>eve::Graphics</scope><name>ClearOptions</name></member>
+      <member refid="classeve_1_1Graphics_1a9f147b3b38aa1bfa019600d169e42937a7bfddce20292f1ee59ac748d46fce53d" prot="public" virt="non-virtual"><scope>eve::Graphics</scope><name>ColorBuffer</name></member>
+      <member refid="classeve_1_1Graphics_1a02887f2b65199cd5d19839670b22bfae" prot="public" virt="pure-virtual"><scope>eve::Graphics</scope><name>colorMask</name></member>
+      <member refid="classeve_1_1Graphics_1ae4c84cc20532526dd0a343cbca95b87d" prot="public" virt="pure-virtual"><scope>eve::Graphics</scope><name>colorMask</name></member>
+      <member refid="classeve_1_1Graphics_1a9f147b3b38aa1bfa019600d169e42937af6a4a80faf6709654c3ddb94b02a8d92" prot="public" virt="non-virtual"><scope>eve::Graphics</scope><name>DepthBuffer</name></member>
+      <member refid="classeve_1_1Graphics_1aeaf882b33222c16aa4434d616cb8698d" prot="public" virt="pure-virtual"><scope>eve::Graphics</scope><name>depthStencil</name></member>
+      <member refid="classeve_1_1Graphics_1a7614d8f5ecc712e3eec9d58931087557" prot="public" virt="pure-virtual"><scope>eve::Graphics</scope><name>depthStencil</name></member>
+      <member refid="classeve_1_1Graphics_1a95d5707606766be583cea9e2a8d2a989" prot="public" virt="non-virtual"><scope>eve::Graphics</scope><name>PrimitiveType</name></member>
+      <member refid="classeve_1_1Graphics_1a21ee3964cebc90fd68e0af073fcdd349" prot="public" virt="pure-virtual"><scope>eve::Graphics</scope><name>rasterizer</name></member>
+      <member refid="classeve_1_1Graphics_1aa4b948cdfd247d65e7c0ad81a14194fe" prot="public" virt="pure-virtual"><scope>eve::Graphics</scope><name>rasterizer</name></member>
+      <member refid="classeve_1_1Graphics_1a917b3acfc77aeb2f7e0d9a9b195d882e" prot="public" virt="pure-virtual"><scope>eve::Graphics</scope><name>render</name></member>
+      <member refid="classeve_1_1Graphics_1acd4b9ce09adf90981278eaee291e960a" prot="public" virt="pure-virtual"><scope>eve::Graphics</scope><name>render</name></member>
+      <member refid="classeve_1_1Graphics_1a6a79e566566afe4cfe67fabc6abb4382" prot="public" virt="pure-virtual"><scope>eve::Graphics</scope><name>render</name></member>
+      <member refid="classeve_1_1Graphics_1ada792667c0310b9067f6bbcc51ea5bb3" prot="public" virt="pure-virtual"><scope>eve::Graphics</scope><name>render</name></member>
+      <member refid="classeve_1_1Graphics_1a2b2b982b4d5100c3f0e4cf935f69f612" prot="public" virt="pure-virtual"><scope>eve::Graphics</scope><name>render</name></member>
+      <member refid="classeve_1_1Graphics_1a6e0e5e8195e7fbe4a0c4cee67e9a86c4" prot="public" virt="pure-virtual"><scope>eve::Graphics</scope><name>render</name></member>
+      <member refid="classeve_1_1Graphics_1a5ff8ced50d9428bf86b15bf66fd16a04" prot="public" virt="pure-virtual"><scope>eve::Graphics</scope><name>render</name></member>
+      <member refid="classeve_1_1Graphics_1a7206bab53ae7cd8ac3a4224f6e36a99a" prot="public" virt="pure-virtual"><scope>eve::Graphics</scope><name>render</name></member>
+      <member refid="classeve_1_1Graphics_1a74155f282fe997ed1e325966d2374428" prot="public" virt="pure-virtual"><scope>eve::Graphics</scope><name>renderable</name></member>
+      <member refid="classeve_1_1Graphics_1a276eba9d59947e7695a8dcd79c3bdb67" prot="public" virt="pure-virtual"><scope>eve::Graphics</scope><name>scissor</name></member>
+      <member refid="classeve_1_1Graphics_1add6a74a0dbeb76fe89daa40636cdc7c0" prot="public" virt="pure-virtual"><scope>eve::Graphics</scope><name>scissor</name></member>
+      <member refid="classeve_1_1Graphics_1a9f147b3b38aa1bfa019600d169e42937a93f15502b317020adcf2d1f601ad16de" prot="public" virt="non-virtual"><scope>eve::Graphics</scope><name>StencilBuffer</name></member>
+      <member refid="classeve_1_1Graphics_1a95d5707606766be583cea9e2a8d2a989a071713186d9396f3e590a016250272bf" prot="public" virt="non-virtual"><scope>eve::Graphics</scope><name>TriangleList</name></member>
+      <member refid="classeve_1_1Graphics_1a95d5707606766be583cea9e2a8d2a989a73947dbe99882500cc079f718713de07" prot="public" virt="non-virtual"><scope>eve::Graphics</scope><name>TriangleStrip</name></member>
+      <member refid="classeve_1_1Graphics_1a17c3049ee48fc90e1acb52b3a9b49dfc" prot="public" virt="pure-virtual"><scope>eve::Graphics</scope><name>viewport</name></member>
+      <member refid="classeve_1_1Graphics_1a5186279f5ae0e9b0be80745469ce7bcd" prot="public" virt="pure-virtual"><scope>eve::Graphics</scope><name>viewport</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

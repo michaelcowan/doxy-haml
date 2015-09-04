@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.9.1">
+  <compounddef id="group__ExternC" kind="group">
+    <compoundname>ExternC</compoundname>
+    <title>ExternC</title>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group__ExternC_1gaab3b456094de221820e9e1c32e914c8f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Application *</type>
+        <definition>Application* eve::createApplication</definition>
+        <argsstring>()</argsstring>
+        <name>createApplication</name>
+        <briefdescription>
+<para>Creates an instance of the application. </para>        </briefdescription>
+        <detaileddescription>
+<para>This is called by the platform and is implemented application side.</para><para><simplesect kind="return"><para><ref refid="classeve_1_1Application" kindref="compound">Application</ref> instance. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/platform/application.h" line="123" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

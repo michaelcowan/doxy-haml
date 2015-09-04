@@ -1,0 +1,155 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.9.1">
+  <compounddef id="classeve_1_1Screen" kind="class" language="C++" prot="public">
+    <compoundname>eve::Screen</compoundname>
+    <basecompoundref refid="classeve_1_1Renderable" prot="public" virt="non-virtual">eve::Renderable</basecompoundref>
+    <includes refid="screen_8h" local="no">screen.h</includes>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classeve_1_1Screen_1a108de5aa440dc20d9eb45fd10b7c6302" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int eve::Screen::create</definition>
+        <argsstring>(int width, int height, bool fullscreen)</argsstring>
+        <name>create</name>
+        <param>
+          <type>int</type>
+          <declname>width</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>height</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>fullscreen</declname>
+        </param>
+        <briefdescription>
+<para>Creates a <ref refid="classeve_1_1Screen" kindref="compound">Screen</ref> instance. </para>        </briefdescription>
+        <detaileddescription>
+<para>Creates a new renderable screen if possible. What this method actually does is platform specific e.g. on Windows this creates a new window. <simplesect kind="note"><para>This method must only be called in <ref refid="classeve_1_1Application_1a43a8d3c0347de9e29073c995f5570461" kindref="member">eve::Application::config</ref>.</para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">width</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Requested width of the new screen (if supported). </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">height</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Requested height of the new screen (if supported). </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">fullscreen</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>TRUE to request full screen (if supported). </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="classeve_1_1Screen" kindref="compound">Screen</ref> index if successful else -1. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/platform/screen.h" line="36" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classeve_1_1Screen_1a20d964e021a26c3eb8f9a652cddf2e82" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int eve::Screen::create</definition>
+        <argsstring>()</argsstring>
+        <name>create</name>
+        <briefdescription>
+<para>Creates a <ref refid="classeve_1_1Screen" kindref="compound">Screen</ref> instance with default values. </para>        </briefdescription>
+        <detaileddescription>
+<para>Create a new renderable screen if possible. Default values are used for width, height etc. On desktop devices this will create a window 320x480. <simplesect kind="note"><para>This method must only be called in <ref refid="classeve_1_1Application_1a43a8d3c0347de9e29073c995f5570461" kindref="member">eve::Application::config</ref>.</para></simplesect>
+<simplesect kind="return"><para><ref refid="classeve_1_1Screen" kindref="compound">Screen</ref> index if successful else -1. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/platform/screen.h" line="48" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classeve_1_1Screen_1a631ca124f1538b4eff56b66c477fe697" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classeve_1_1Screen" kindref="compound">Screen</ref> *</type>
+        <definition>static Screen* eve::Screen::get</definition>
+        <argsstring>(int index)</argsstring>
+        <name>get</name>
+        <param>
+          <type>int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+<para>Returns a <ref refid="classeve_1_1Screen" kindref="compound">Screen</ref>. </para>        </briefdescription>
+        <detaileddescription>
+<para>Returns a Platform&apos;s <ref refid="classeve_1_1Screen" kindref="compound">Screen</ref>.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Index of the <ref refid="classeve_1_1Screen" kindref="compound">Screen</ref> to get. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="classeve_1_1Screen" kindref="compound">Screen</ref> instance if it exists else NULL. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/platform/screen.h" line="58" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classeve_1_1Screen_1a43eab5597e41264255c38f8d329e6545" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classeve_1_1Screen" kindref="compound">Screen</ref> *</type>
+        <definition>static Screen* eve::Screen::main</definition>
+        <argsstring>()</argsstring>
+        <name>main</name>
+        <briefdescription>
+<para>Returns the main <ref refid="classeve_1_1Screen" kindref="compound">Screen</ref>. </para>        </briefdescription>
+        <detaileddescription>
+<para>Returns a Platform&apos;s main <ref refid="classeve_1_1Screen" kindref="compound">Screen</ref>. This is equivalent to calling Screen::get(0)</para><para><simplesect kind="return"><para>Main <ref refid="classeve_1_1Screen" kindref="compound">Screen</ref> instance. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/platform/screen.h" line="68" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="53">
+        <label>eve::Screen</label>
+        <link refid="classeve_1_1Screen"/>
+        <childnode refid="54" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="54">
+        <label>eve::Renderable</label>
+        <link refid="classeve_1_1Renderable"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="55">
+        <label>eve::Screen</label>
+        <link refid="classeve_1_1Screen"/>
+        <childnode refid="56" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="56">
+        <label>eve::Renderable</label>
+        <link refid="classeve_1_1Renderable"/>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/platform/screen.h" line="20" column="1" bodyfile="/Users/mike/svn/eve/development/trunk/sdk/inc/platform/screen.h" bodystart="20" bodyend="78"/>
+    <listofallmembers>
+      <member refid="classeve_1_1Renderable_1adf23b93e0294606bcef46ea35a83bf52" prot="public" virt="pure-virtual"><scope>eve::Screen</scope><name>aspectRatio</name></member>
+      <member refid="classeve_1_1Screen_1a108de5aa440dc20d9eb45fd10b7c6302" prot="public" virt="non-virtual"><scope>eve::Screen</scope><name>create</name></member>
+      <member refid="classeve_1_1Screen_1a20d964e021a26c3eb8f9a652cddf2e82" prot="public" virt="non-virtual"><scope>eve::Screen</scope><name>create</name></member>
+      <member refid="classeve_1_1Screen_1a631ca124f1538b4eff56b66c477fe697" prot="public" virt="non-virtual"><scope>eve::Screen</scope><name>get</name></member>
+      <member refid="classeve_1_1Renderable_1af1dc9cbf4c95545431bb5e1429a8232b" prot="public" virt="pure-virtual"><scope>eve::Screen</scope><name>graphics</name></member>
+      <member refid="classeve_1_1Renderable_1a222465fd5467fb81480554a3f8ad81ca" prot="public" virt="pure-virtual"><scope>eve::Screen</scope><name>height</name></member>
+      <member refid="classeve_1_1Screen_1a43eab5597e41264255c38f8d329e6545" prot="public" virt="non-virtual"><scope>eve::Screen</scope><name>main</name></member>
+      <member refid="classeve_1_1Renderable_1a543a0ba04d185e20b9e252c37daba3d8" prot="public" virt="pure-virtual"><scope>eve::Screen</scope><name>readPixels</name></member>
+      <member refid="classeve_1_1Renderable_1afab7bc0f1f6ccdaeccf41b8e6307b549" prot="public" virt="pure-virtual"><scope>eve::Screen</scope><name>setRenderableFormat</name></member>
+      <member refid="classeve_1_1Renderable_1a7c34ee93b7731cefc1e0ba0755b85f6c" prot="public" virt="pure-virtual"><scope>eve::Screen</scope><name>width</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

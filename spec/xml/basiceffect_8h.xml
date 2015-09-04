@@ -1,0 +1,264 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.9.1">
+  <compounddef id="basiceffect_8h" kind="file" language="C++">
+    <compoundname>basiceffect.h</compoundname>
+    <includes refid="global_8h" local="yes">core/global.h</includes>
+    <includes refid="types_8h" local="yes">core/types.h</includes>
+    <includes refid="matrix_8h" local="yes">math/matrix.h</includes>
+    <includes refid="graphics_8h" local="yes">graphics/graphics.h</includes>
+    <includes refid="texture_8h" local="yes">graphics/texture.h</includes>
+    <includes refid="vertexbuffersafe_8h" local="yes">graphics/vertexbuffersafe.h</includes>
+    <includes refid="indexbuffer_8h" local="yes">graphics/indexbuffer.h</includes>
+    <includes refid="vertexpositiontexture_8h" local="yes">graphics/vertexpositiontexture.h</includes>
+    <includes refid="vertexpositioncolor_8h" local="yes">graphics/vertexpositioncolor.h</includes>
+    <includes refid="shader_8h" local="yes">graphics/shader.h</includes>
+    <includes refid="uniformtype_8h" local="yes">graphics/uniformtype.h</includes>
+    <includedby refid="eve_8h" local="yes">/Users/mike/svn/eve/development/trunk/sdk/inc/eve.h</includedby>
+    <incdepgraph>
+      <node id="175">
+        <label>graphics/indexbuffer.h</label>
+        <link refid="indexbuffer_8h"/>
+        <childnode refid="158" relation="include">
+        </childnode>
+        <childnode refid="174" relation="include">
+        </childnode>
+      </node>
+      <node id="181">
+        <label>graphics/color.h</label>
+        <link refid="color_8h"/>
+        <childnode refid="158" relation="include">
+        </childnode>
+      </node>
+      <node id="184">
+        <label>graphics/shadersource.h</label>
+        <link refid="shadersource_8h"/>
+        <childnode refid="158" relation="include">
+        </childnode>
+        <childnode refid="163" relation="include">
+        </childnode>
+        <childnode refid="179" relation="include">
+        </childnode>
+        <childnode refid="185" relation="include">
+        </childnode>
+      </node>
+      <node id="166">
+        <label>core/string.h</label>
+        <link refid="string_8h"/>
+        <childnode refid="159" relation="include">
+        </childnode>
+        <childnode refid="167" relation="include">
+        </childnode>
+      </node>
+      <node id="180">
+        <label>graphics/vertexpositioncolor.h</label>
+        <link refid="vertexpositioncolor_8h"/>
+        <childnode refid="177" relation="include">
+        </childnode>
+        <childnode refid="163" relation="include">
+        </childnode>
+        <childnode refid="174" relation="include">
+        </childnode>
+        <childnode refid="179" relation="include">
+        </childnode>
+        <childnode refid="181" relation="include">
+        </childnode>
+      </node>
+      <node id="162">
+        <label>graphics/graphics.h</label>
+        <link refid="graphics_8h"/>
+        <childnode refid="158" relation="include">
+        </childnode>
+        <childnode refid="163" relation="include">
+        </childnode>
+      </node>
+      <node id="171">
+        <label>graphics/texturehint.h</label>
+        <link refid="texturehint_8h"/>
+      </node>
+      <node id="165">
+        <label>graphics/texture.h</label>
+        <link refid="texture_8h"/>
+        <childnode refid="158" relation="include">
+        </childnode>
+        <childnode refid="166" relation="include">
+        </childnode>
+        <childnode refid="168" relation="include">
+        </childnode>
+        <childnode refid="170" relation="include">
+        </childnode>
+      </node>
+      <node id="169">
+        <label>graphics/renderableformat.h</label>
+        <link refid="renderableformat_8h"/>
+      </node>
+      <node id="160">
+        <label>stdint.h</label>
+      </node>
+      <node id="174">
+        <label>graphics/vertextype.h</label>
+        <link refid="vertextype_8h"/>
+      </node>
+      <node id="183">
+        <label>graphics/shaderinfo.h</label>
+        <link refid="shaderinfo_8h"/>
+        <childnode refid="158" relation="include">
+        </childnode>
+        <childnode refid="163" relation="include">
+        </childnode>
+        <childnode refid="184" relation="include">
+        </childnode>
+        <childnode refid="179" relation="include">
+        </childnode>
+        <childnode refid="185" relation="include">
+        </childnode>
+      </node>
+      <node id="158">
+        <label>core/global.h</label>
+        <link refid="global_8h"/>
+        <childnode refid="159" relation="include">
+        </childnode>
+      </node>
+      <node id="182">
+        <label>graphics/shader.h</label>
+        <link refid="shader_8h"/>
+        <childnode refid="158" relation="include">
+        </childnode>
+        <childnode refid="183" relation="include">
+        </childnode>
+      </node>
+      <node id="167">
+        <label>string</label>
+      </node>
+      <node id="185">
+        <label>graphics/uniformmetadata.h</label>
+        <link refid="uniformmetadata_8h"/>
+      </node>
+      <node id="176">
+        <label>graphics/vertexpositiontexture.h</label>
+        <link refid="vertexpositiontexture_8h"/>
+        <childnode refid="177" relation="include">
+        </childnode>
+        <childnode refid="178" relation="include">
+        </childnode>
+        <childnode refid="163" relation="include">
+        </childnode>
+        <childnode refid="174" relation="include">
+        </childnode>
+        <childnode refid="179" relation="include">
+        </childnode>
+      </node>
+      <node id="179">
+        <label>graphics/vertexmetadata.h</label>
+        <link refid="vertexmetadata_8h"/>
+        <childnode refid="166" relation="include">
+        </childnode>
+      </node>
+      <node id="178">
+        <label>math/vector2.h</label>
+        <link refid="vector2_8h"/>
+      </node>
+      <node id="163">
+        <label>containers/array.h</label>
+        <link refid="array_8h"/>
+        <childnode refid="164" relation="include">
+        </childnode>
+      </node>
+      <node id="164">
+        <label>vector</label>
+      </node>
+      <node id="161">
+        <label>math/matrix.h</label>
+        <link refid="matrix_8h"/>
+      </node>
+      <node id="186">
+        <label>graphics/uniformtype.h</label>
+        <link refid="uniformtype_8h"/>
+      </node>
+      <node id="168">
+        <label>graphics/renderable.h</label>
+        <link refid="renderable_8h"/>
+        <childnode refid="169" relation="include">
+        </childnode>
+      </node>
+      <node id="173">
+        <label>graphics/vertexbuffer.h</label>
+        <link refid="vertexbuffer_8h"/>
+        <childnode refid="158" relation="include">
+        </childnode>
+        <childnode refid="174" relation="include">
+        </childnode>
+      </node>
+      <node id="172">
+        <label>graphics/vertexbuffersafe.h</label>
+        <link refid="vertexbuffersafe_8h"/>
+        <childnode refid="173" relation="include">
+        </childnode>
+      </node>
+      <node id="177">
+        <label>math/vector3.h</label>
+        <link refid="vector3_8h"/>
+      </node>
+      <node id="159">
+        <label>core/types.h</label>
+        <link refid="types_8h"/>
+        <childnode refid="160" relation="include">
+        </childnode>
+      </node>
+      <node id="157">
+        <label>/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/basiceffect.h</label>
+        <link refid="basiceffect.h"/>
+        <childnode refid="158" relation="include">
+        </childnode>
+        <childnode refid="159" relation="include">
+        </childnode>
+        <childnode refid="161" relation="include">
+        </childnode>
+        <childnode refid="162" relation="include">
+        </childnode>
+        <childnode refid="165" relation="include">
+        </childnode>
+        <childnode refid="172" relation="include">
+        </childnode>
+        <childnode refid="175" relation="include">
+        </childnode>
+        <childnode refid="176" relation="include">
+        </childnode>
+        <childnode refid="180" relation="include">
+        </childnode>
+        <childnode refid="182" relation="include">
+        </childnode>
+        <childnode refid="186" relation="include">
+        </childnode>
+      </node>
+      <node id="170">
+        <label>graphics/textureinfo.h</label>
+        <link refid="textureinfo_8h"/>
+        <childnode refid="159" relation="include">
+        </childnode>
+        <childnode refid="158" relation="include">
+        </childnode>
+        <childnode refid="171" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="188">
+        <label>/Users/mike/svn/eve/development/trunk/sdk/inc/eve.h</label>
+        <link refid="eve_8h"/>
+      </node>
+      <node id="187">
+        <label>/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/basiceffect.h</label>
+        <link refid="basiceffect.h"/>
+        <childnode refid="188" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classeve_1_1BasicEffect" prot="public">eve::BasicEffect</innerclass>
+    <innernamespace refid="namespaceeve">eve</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/basiceffect.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.9.1">
+  <compounddef id="dir_ad81f8bf10a425422688b1df01ec6a45" kind="dir">
+    <compoundname>/Users/mike/svn/eve/development/trunk/sdk/inc/graphics</compoundname>
+    <innerfile refid="basiceffect_8h">basiceffect.h</innerfile>
+    <innerfile refid="blend_8h">blend.h</innerfile>
+    <innerfile refid="color_8h">color.h</innerfile>
+    <innerfile refid="colormask_8h">colormask.h</innerfile>
+    <innerfile refid="depthstencil_8h">depthstencil.h</innerfile>
+    <innerfile refid="graphics_8h">graphics.h</innerfile>
+    <innerfile refid="indexbuffer_8h">indexbuffer.h</innerfile>
+    <innerfile refid="indexbuffersafe_8h">indexbuffersafe.h</innerfile>
+    <innerfile refid="rasterizer_8h">rasterizer.h</innerfile>
+    <innerfile refid="renderable_8h">renderable.h</innerfile>
+    <innerfile refid="renderableformat_8h">renderableformat.h</innerfile>
+    <innerfile refid="shader_8h">shader.h</innerfile>
+    <innerfile refid="shaderinfo_8h">shaderinfo.h</innerfile>
+    <innerfile refid="shadersource_8h">shadersource.h</innerfile>
+    <innerfile refid="texture_8h">texture.h</innerfile>
+    <innerfile refid="texturehint_8h">texturehint.h</innerfile>
+    <innerfile refid="textureinfo_8h">textureinfo.h</innerfile>
+    <innerfile refid="uniformmetadata_8h">uniformmetadata.h</innerfile>
+    <innerfile refid="uniformtype_8h">uniformtype.h</innerfile>
+    <innerfile refid="vertexbuffer_8h">vertexbuffer.h</innerfile>
+    <innerfile refid="vertexbuffersafe_8h">vertexbuffersafe.h</innerfile>
+    <innerfile refid="vertexmetadata_8h">vertexmetadata.h</innerfile>
+    <innerfile refid="vertexpositioncolor_8h">vertexpositioncolor.h</innerfile>
+    <innerfile refid="vertexpositiontexture_8h">vertexpositiontexture.h</innerfile>
+    <innerfile refid="vertextype_8h">vertextype.h</innerfile>
+    <innerfile refid="viewport_8h">viewport.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/"/>
+  </compounddef>
+</doxygen>

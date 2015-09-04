@@ -1,0 +1,307 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.9.1">
+  <compounddef id="classeve_1_1FileInputStream" kind="class" language="C++" prot="public">
+    <compoundname>eve::FileInputStream</compoundname>
+    <basecompoundref refid="classeve_1_1InputStream" prot="public" virt="non-virtual">eve::InputStream</basecompoundref>
+    <includes refid="fileinputstream_8h" local="no">fileinputstream.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classeve_1_1FileInputStream_1ae122418acf8cec2ad4f6d44bd748b7d0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>eve::FileInputStream::FileInputStream</definition>
+        <argsstring>()</argsstring>
+        <name>FileInputStream</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/io/fileinputstream.h" line="26" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classeve_1_1FileInputStream_1ad0cf75ff5a257ae1cdd90da8dc87c35d" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual eve::FileInputStream::~FileInputStream</definition>
+        <argsstring>()</argsstring>
+        <name>~FileInputStream</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/io/fileinputstream.h" line="28" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classeve_1_1FileInputStream_1ad1aa594d58ed95c40d7866b6439d02de" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int eve::FileInputStream::open</definition>
+        <argsstring>(const String &amp;filename)</argsstring>
+        <name>open</name>
+        <param>
+          <type>const <ref refid="classeve_1_1String" kindref="compound">String</ref> &amp;</type>
+          <declname>filename</declname>
+        </param>
+        <briefdescription>
+<para>Opens a file. </para>        </briefdescription>
+        <detaileddescription>
+<para>Opens a file to read bytes from.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>filename</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Name of the file to open. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>File length or -1 on error. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/io/fileinputstream.h" line="38" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classeve_1_1FileInputStream_1aef1566c49ad1040f0cee4069b071db70" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void eve::FileInputStream::close</definition>
+        <argsstring>()</argsstring>
+        <name>close</name>
+        <briefdescription>
+<para>Closes a file. </para>        </briefdescription>
+        <detaileddescription>
+<para>Closes an opened file and releases any system resources. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/io/fileinputstream.h" line="45" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classeve_1_1FileInputStream_1ad1774aebaba28f880305c8e86c760f3f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int eve::FileInputStream::length</definition>
+        <argsstring>()</argsstring>
+        <name>length</name>
+        <briefdescription>
+<para>Returns the length of the file. </para>        </briefdescription>
+        <detaileddescription>
+<para>Returns the length of the open file in bytes.</para><para><simplesect kind="return"><para>Open file length in bytes or -1 on error. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/io/fileinputstream.h" line="54" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classeve_1_1FileInputStream_1ad28ff5cb5a9c2e0b752f9c3bb3da08fc" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>int</type>
+        <definition>virtual int eve::FileInputStream::available</definition>
+        <argsstring>()</argsstring>
+        <name>available</name>
+        <reimplements refid="classeve_1_1InputStream_1ad8c1a93a247c73a176cc6d128e7d1078">available</reimplements>
+        <briefdescription>
+<para>Returns the number of bytes that can be read. </para>        </briefdescription>
+        <detaileddescription>
+<para>Returns the number of bytes that can be read (or skipped over) from this file input stream. This is the length of the file minus the current seek position.</para><para><simplesect kind="return"><para>the number of bytes that can be read from this file input stream or -1 on error. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/io/fileinputstream.h" line="64" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classeve_1_1FileInputStream_1a690193c46ec2ea81dbfa554e0d9bf4d8" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>int</type>
+        <definition>virtual int eve::FileInputStream::read</definition>
+        <argsstring>()</argsstring>
+        <name>read</name>
+        <reimplements refid="classeve_1_1InputStream_1a02609676623ce8778230ac947888adb9">read</reimplements>
+        <briefdescription>
+<para>Reads the next byte from the file. </para>        </briefdescription>
+        <detaileddescription>
+<para>Reads the next byte of data from an open file. If the end of the file is reached, -1 is returned.</para><para><simplesect kind="return"><para>the next byte of data, or -1 if the end of the file is reached. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/io/fileinputstream.h" line="74" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classeve_1_1FileInputStream_1af9252067f439e89072394f9ea8e406d9" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>int</type>
+        <definition>virtual int eve::FileInputStream::read</definition>
+        <argsstring>(u8 *buffer, int length)</argsstring>
+        <name>read</name>
+        <reimplements refid="classeve_1_1InputStream_1a7f00adad2a213e9e13a75da9b9b8aa2e">read</reimplements>
+        <param>
+          <type><ref refid="types_8h_1a92c50087ca0e64fa93fc59402c55f8ca" kindref="member">u8</ref> *</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>length</declname>
+        </param>
+        <briefdescription>
+<para>Reads a number of bytes from the file into a buffer array. </para>        </briefdescription>
+        <detaileddescription>
+<para>Reads up to a number of bytes of data from an open file into a buffer array. The number of bytes actually read depends on the available bytes. The actual number of bytes read is returned, or -1 on error. If the end of the file is reached -1 will be returned.</para><para><simplesect kind="see"><para><ref refid="classeve_1_1InputStream_1ad8c1a93a247c73a176cc6d128e7d1078" kindref="member">InputStream::available</ref></para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>buffer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Buffer to read bytes into. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>length</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The maximum number of bytes to read. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the total number of bytes read into the buffer, or -1 on error. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/io/fileinputstream.h" line="90" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classeve_1_1FileInputStream_1a42b3c55d85970a79d4a1304c5607d928" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>int</type>
+        <definition>virtual int eve::FileInputStream::skip</definition>
+        <argsstring>(int skip)</argsstring>
+        <name>skip</name>
+        <reimplements refid="classeve_1_1InputStream_1acd52925d20819a42259b4dd293daba7f">skip</reimplements>
+        <param>
+          <type>int</type>
+          <declname>skip</declname>
+        </param>
+        <briefdescription>
+<para>Skips over data from this file input stream. </para>        </briefdescription>
+        <detaileddescription>
+<para>Skips over a number of bytes from this file input stream. The number of bytes actually skipped depends on the available bytes. The actual number of bytes skipped is returned, or -1 on error. If the stream has reached the end of the file then -1 is returned.</para><para><simplesect kind="see"><para><ref refid="classeve_1_1InputStream_1ad8c1a93a247c73a176cc6d128e7d1078" kindref="member">InputStream::available</ref></para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>skip</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The number of bytes to be skipped. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the actual number of bytes skipped or -1 on error. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/io/fileinputstream.h" line="105" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classeve_1_1FileInputStream_1a4429e0a14e9e5089ac8c898d072c2c74" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool eve::FileInputStream::canSeek</definition>
+        <argsstring>()</argsstring>
+        <name>canSeek</name>
+        <reimplements refid="classeve_1_1InputStream_1aa75b4f608c311664a0686a3e60cf3301">canSeek</reimplements>
+        <briefdescription>
+<para>Returns true for <ref refid="classeve_1_1FileInputStream" kindref="compound">FileInputStream</ref>. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>True. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/io/fileinputstream.h" line="112" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classeve_1_1FileInputStream_1af9526d3af9b3dd9d69c1e15ebb09bcec" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>int</type>
+        <definition>virtual int eve::FileInputStream::seek</definition>
+        <argsstring>(int offset, SeekOrigin origin)</argsstring>
+        <name>seek</name>
+        <reimplements refid="classeve_1_1InputStream_1a9872ec573098076a0c170c49495d251b">seek</reimplements>
+        <param>
+          <type>int</type>
+          <declname>offset</declname>
+        </param>
+        <param>
+          <type><ref refid="classeve_1_1InputStream_1ac720fcf8cf637881c1fd1000b8cd8803" kindref="member">SeekOrigin</ref></type>
+          <declname>origin</declname>
+        </param>
+        <briefdescription>
+<para>Seeks to a point in the file. </para>        </briefdescription>
+        <detaileddescription>
+<para>Seeks to a position in the file to read from. The seek position is capped to being between the begining and end of the file.</para><para><simplesect kind="return"><para>The actual position in the stream. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/io/fileinputstream.h" line="122" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classeve_1_1FileInputStream_1aa469163bb6d5d13ca3ccbe703c89beda" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>int</type>
+        <definition>virtual int eve::FileInputStream::seek</definition>
+        <argsstring>() const </argsstring>
+        <name>seek</name>
+        <reimplements refid="classeve_1_1InputStream_1ab96fbc0f6cc22540e0d0c1a73052e929">seek</reimplements>
+        <briefdescription>
+<para>Returns the seek position. </para>        </briefdescription>
+        <detaileddescription>
+<para>Returns the current seek position which ranges from zero to the file length. The seek position is incremented with each byte read from the stream.</para><para><simplesect kind="return"><para>Current seek position or -1 on error. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/io/fileinputstream.h" line="132" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classeve_1_1FileInputStream_1a7bd85ded6ed8d823472cf7bb2cae9ba4" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>eve::FileInputStream::EVE_DECLARE_PIMPL</definition>
+        <argsstring>(FileInputStream)</argsstring>
+        <name>EVE_DECLARE_PIMPL</name>
+        <param>
+          <type><ref refid="classeve_1_1FileInputStream" kindref="compound">FileInputStream</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/io/fileinputstream.h" line="136" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="19">
+        <label>eve::InputStream</label>
+        <link refid="classeve_1_1InputStream"/>
+      </node>
+      <node id="18">
+        <label>eve::FileInputStream</label>
+        <link refid="classeve_1_1FileInputStream"/>
+        <childnode refid="19" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="21">
+        <label>eve::InputStream</label>
+        <link refid="classeve_1_1InputStream"/>
+      </node>
+      <node id="20">
+        <label>eve::FileInputStream</label>
+        <link refid="classeve_1_1FileInputStream"/>
+        <childnode refid="21" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/io/fileinputstream.h" line="22" column="1" bodyfile="/Users/mike/svn/eve/development/trunk/sdk/inc/io/fileinputstream.h" bodystart="22" bodyend="138"/>
+    <listofallmembers>
+      <member refid="classeve_1_1FileInputStream_1ad28ff5cb5a9c2e0b752f9c3bb3da08fc" prot="public" virt="virtual"><scope>eve::FileInputStream</scope><name>available</name></member>
+      <member refid="classeve_1_1InputStream_1ac720fcf8cf637881c1fd1000b8cd8803a8184009d76b060e73c18512c6ffb0270" prot="public" virt="non-virtual"><scope>eve::FileInputStream</scope><name>Beginning</name></member>
+      <member refid="classeve_1_1FileInputStream_1a4429e0a14e9e5089ac8c898d072c2c74" prot="public" virt="virtual"><scope>eve::FileInputStream</scope><name>canSeek</name></member>
+      <member refid="classeve_1_1FileInputStream_1aef1566c49ad1040f0cee4069b071db70" prot="public" virt="non-virtual"><scope>eve::FileInputStream</scope><name>close</name></member>
+      <member refid="classeve_1_1InputStream_1ac720fcf8cf637881c1fd1000b8cd8803ab1a52b8af5c4132aff865e4a9ee3e252" prot="public" virt="non-virtual"><scope>eve::FileInputStream</scope><name>Current</name></member>
+      <member refid="classeve_1_1InputStream_1ac720fcf8cf637881c1fd1000b8cd8803ad51f961821cabcbc3e5bd95d3538e48c" prot="public" virt="non-virtual"><scope>eve::FileInputStream</scope><name>End</name></member>
+      <member refid="classeve_1_1FileInputStream_1a7bd85ded6ed8d823472cf7bb2cae9ba4" prot="private" virt="non-virtual"><scope>eve::FileInputStream</scope><name>EVE_DECLARE_PIMPL</name></member>
+      <member refid="classeve_1_1FileInputStream_1ae122418acf8cec2ad4f6d44bd748b7d0" prot="public" virt="non-virtual"><scope>eve::FileInputStream</scope><name>FileInputStream</name></member>
+      <member refid="classeve_1_1FileInputStream_1ad1774aebaba28f880305c8e86c760f3f" prot="public" virt="non-virtual"><scope>eve::FileInputStream</scope><name>length</name></member>
+      <member refid="classeve_1_1FileInputStream_1ad1aa594d58ed95c40d7866b6439d02de" prot="public" virt="non-virtual"><scope>eve::FileInputStream</scope><name>open</name></member>
+      <member refid="classeve_1_1FileInputStream_1a690193c46ec2ea81dbfa554e0d9bf4d8" prot="public" virt="virtual"><scope>eve::FileInputStream</scope><name>read</name></member>
+      <member refid="classeve_1_1FileInputStream_1af9252067f439e89072394f9ea8e406d9" prot="public" virt="virtual"><scope>eve::FileInputStream</scope><name>read</name></member>
+      <member refid="classeve_1_1FileInputStream_1af9526d3af9b3dd9d69c1e15ebb09bcec" prot="public" virt="virtual"><scope>eve::FileInputStream</scope><name>seek</name></member>
+      <member refid="classeve_1_1FileInputStream_1aa469163bb6d5d13ca3ccbe703c89beda" prot="public" virt="virtual"><scope>eve::FileInputStream</scope><name>seek</name></member>
+      <member refid="classeve_1_1InputStream_1ac720fcf8cf637881c1fd1000b8cd8803" prot="public" virt="non-virtual"><scope>eve::FileInputStream</scope><name>SeekOrigin</name></member>
+      <member refid="classeve_1_1FileInputStream_1a42b3c55d85970a79d4a1304c5607d928" prot="public" virt="virtual"><scope>eve::FileInputStream</scope><name>skip</name></member>
+      <member refid="classeve_1_1InputStream_1aa97438c567ad13d7f0f7b99daa9f4357" prot="public" virt="non-virtual"><scope>eve::FileInputStream</scope><name>toByteArray</name></member>
+      <member refid="classeve_1_1FileInputStream_1ad0cf75ff5a257ae1cdd90da8dc87c35d" prot="public" virt="virtual"><scope>eve::FileInputStream</scope><name>~FileInputStream</name></member>
+      <member refid="classeve_1_1InputStream_1ae8501531f64a3b0143d0d04df33c2408" prot="public" virt="virtual"><scope>eve::FileInputStream</scope><name>~InputStream</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,2358 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.9.1">
+  <compounddef id="classeve_1_1Color" kind="class" language="C++" prot="public">
+    <compoundname>eve::Color</compoundname>
+    <includes refid="color_8h" local="no">color.h</includes>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classeve_1_1Color_1a0855e61902c98d6f8abde3d6cec7bd77" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="classeve_1_1Color" kindref="compound">Color</ref></type>
+        <definition>const Color eve::Color::AliceBlue</definition>
+        <argsstring></argsstring>
+        <name>AliceBlue</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" line="21" column="1" bodyfile="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeve_1_1Color_1ab7bf893ede64575709cc752d0d1e9ad0" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="classeve_1_1Color" kindref="compound">Color</ref></type>
+        <definition>const Color eve::Color::AntiqueWhite</definition>
+        <argsstring></argsstring>
+        <name>AntiqueWhite</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" line="22" column="1" bodyfile="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeve_1_1Color_1ab8eb8848a27145f8ef18e355063f2166" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="classeve_1_1Color" kindref="compound">Color</ref></type>
+        <definition>const Color eve::Color::Aqua</definition>
+        <argsstring></argsstring>
+        <name>Aqua</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" line="23" column="1" bodyfile="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeve_1_1Color_1a687028c11003f0db0f19aa2694628c7c" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="classeve_1_1Color" kindref="compound">Color</ref></type>
+        <definition>const Color eve::Color::Aquamarine</definition>
+        <argsstring></argsstring>
+        <name>Aquamarine</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" line="24" column="1" bodyfile="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeve_1_1Color_1abac6fab98a8b8550bb77306842fd06ac" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="classeve_1_1Color" kindref="compound">Color</ref></type>
+        <definition>const Color eve::Color::Azure</definition>
+        <argsstring></argsstring>
+        <name>Azure</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" line="25" column="1" bodyfile="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeve_1_1Color_1aca73082324a79969a2fcf3bbc3303141" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="classeve_1_1Color" kindref="compound">Color</ref></type>
+        <definition>const Color eve::Color::Beige</definition>
+        <argsstring></argsstring>
+        <name>Beige</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" line="26" column="1" bodyfile="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeve_1_1Color_1af046974fdef996f8460d9f697a43e620" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="classeve_1_1Color" kindref="compound">Color</ref></type>
+        <definition>const Color eve::Color::Bisque</definition>
+        <argsstring></argsstring>
+        <name>Bisque</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" line="27" column="1" bodyfile="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeve_1_1Color_1a8ed40155fa1113718de003fff2c0a53f" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="classeve_1_1Color" kindref="compound">Color</ref></type>
+        <definition>const Color eve::Color::Black</definition>
+        <argsstring></argsstring>
+        <name>Black</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" line="28" column="1" bodyfile="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeve_1_1Color_1a3bb14bf64ab9942c6e18490d3b91bca2" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="classeve_1_1Color" kindref="compound">Color</ref></type>
+        <definition>const Color eve::Color::BlanchedAlmond</definition>
+        <argsstring></argsstring>
+        <name>BlanchedAlmond</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" line="29" column="1" bodyfile="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeve_1_1Color_1a0eb9ceb80094ae70c57f87bec881c768" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="classeve_1_1Color" kindref="compound">Color</ref></type>
+        <definition>const Color eve::Color::Blue</definition>
+        <argsstring></argsstring>
+        <name>Blue</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" line="30" column="1" bodyfile="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeve_1_1Color_1a96804420b1216b89b8637fe742f819b1" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="classeve_1_1Color" kindref="compound">Color</ref></type>
+        <definition>const Color eve::Color::BlueViolet</definition>
+        <argsstring></argsstring>
+        <name>BlueViolet</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" line="31" column="1" bodyfile="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeve_1_1Color_1aad5354120ed7dde6e2a2150ea029a37f" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="classeve_1_1Color" kindref="compound">Color</ref></type>
+        <definition>const Color eve::Color::Brown</definition>
+        <argsstring></argsstring>
+        <name>Brown</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" line="32" column="1" bodyfile="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeve_1_1Color_1a0706f763931cbfc1998fc1cd044a26cd" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="classeve_1_1Color" kindref="compound">Color</ref></type>
+        <definition>const Color eve::Color::Burlywood</definition>
+        <argsstring></argsstring>
+        <name>Burlywood</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" line="33" column="1" bodyfile="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeve_1_1Color_1a722fdb8b9c8226613c7b18d5151925f3" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="classeve_1_1Color" kindref="compound">Color</ref></type>
+        <definition>const Color eve::Color::CadetBlue</definition>
+        <argsstring></argsstring>
+        <name>CadetBlue</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" line="34" column="1" bodyfile="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeve_1_1Color_1a33249379635f238b1263e496957f6553" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="classeve_1_1Color" kindref="compound">Color</ref></type>
+        <definition>const Color eve::Color::Chartreuse</definition>
+        <argsstring></argsstring>
+        <name>Chartreuse</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" line="35" column="1" bodyfile="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeve_1_1Color_1a4c357e851887b6bcb4ce7636726a19ba" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="classeve_1_1Color" kindref="compound">Color</ref></type>
+        <definition>const Color eve::Color::Chocolate</definition>
+        <argsstring></argsstring>
+        <name>Chocolate</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" line="36" column="1" bodyfile="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeve_1_1Color_1a86f5362f7661c44db4631fe9853d5b30" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="classeve_1_1Color" kindref="compound">Color</ref></type>
+        <definition>const Color eve::Color::Coral</definition>
+        <argsstring></argsstring>
+        <name>Coral</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" line="37" column="1" bodyfile="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeve_1_1Color_1a3b21602f2cfb20193cfb7143f332cf03" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="classeve_1_1Color" kindref="compound">Color</ref></type>
+        <definition>const Color eve::Color::Cornflower</definition>
+        <argsstring></argsstring>
+        <name>Cornflower</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" line="38" column="1" bodyfile="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeve_1_1Color_1a55062225b20ef5d574c49efabe0f24c1" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="classeve_1_1Color" kindref="compound">Color</ref></type>
+        <definition>const Color eve::Color::Cornsilk</definition>
+        <argsstring></argsstring>
+        <name>Cornsilk</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" line="39" column="1" bodyfile="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeve_1_1Color_1ae310b6c8cb6c9d7d5a28dec997fe4763" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="classeve_1_1Color" kindref="compound">Color</ref></type>
+        <definition>const Color eve::Color::Crimson</definition>
+        <argsstring></argsstring>
+        <name>Crimson</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" line="40" column="1" bodyfile="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeve_1_1Color_1a65f3d5f118a679f89eeaec27811848ba" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="classeve_1_1Color" kindref="compound">Color</ref></type>
+        <definition>const Color eve::Color::Cyan</definition>
+        <argsstring></argsstring>
+        <name>Cyan</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" line="41" column="1" bodyfile="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeve_1_1Color_1ae490b8303b571f27df242849ff86d972" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="classeve_1_1Color" kindref="compound">Color</ref></type>
+        <definition>const Color eve::Color::DarkBlue</definition>
+        <argsstring></argsstring>
+        <name>DarkBlue</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" line="42" column="1" bodyfile="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeve_1_1Color_1a69fdbd1f43af3c47b158bdf0e39209ee" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="classeve_1_1Color" kindref="compound">Color</ref></type>
+        <definition>const Color eve::Color::DarkCyan</definition>
+        <argsstring></argsstring>
+        <name>DarkCyan</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" line="43" column="1" bodyfile="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeve_1_1Color_1a2198fb0d1e73104a102112c360a1fcb8" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="classeve_1_1Color" kindref="compound">Color</ref></type>
+        <definition>const Color eve::Color::DarkGoldenrod</definition>
+        <argsstring></argsstring>
+        <name>DarkGoldenrod</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" line="44" column="1" bodyfile="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeve_1_1Color_1a253ee779615b437c6868ca11228d421b" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="classeve_1_1Color" kindref="compound">Color</ref></type>
+        <definition>const Color eve::Color::DarkGray</definition>
+        <argsstring></argsstring>
+        <name>DarkGray</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" line="45" column="1" bodyfile="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeve_1_1Color_1af880bb10f6e68c690cc65f17beec1593" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="classeve_1_1Color" kindref="compound">Color</ref></type>
+        <definition>const Color eve::Color::DarkGreen</definition>
+        <argsstring></argsstring>
+        <name>DarkGreen</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" line="46" column="1" bodyfile="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeve_1_1Color_1a1f3243868b833f7ae21b233c28a3bcb5" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="classeve_1_1Color" kindref="compound">Color</ref></type>
+        <definition>const Color eve::Color::DarkKhaki</definition>
+        <argsstring></argsstring>
+        <name>DarkKhaki</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" line="47" column="1" bodyfile="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeve_1_1Color_1a35e14b2458afd07f27706c2767249818" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="classeve_1_1Color" kindref="compound">Color</ref></type>
+        <definition>const Color eve::Color::DarkMagenta</definition>
+        <argsstring></argsstring>
+        <name>DarkMagenta</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" line="48" column="1" bodyfile="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeve_1_1Color_1a79a000e673c76d1bc04977158548bb56" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="classeve_1_1Color" kindref="compound">Color</ref></type>
+        <definition>const Color eve::Color::DarkOliveGreen</definition>
+        <argsstring></argsstring>
+        <name>DarkOliveGreen</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" line="49" column="1" bodyfile="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeve_1_1Color_1a1ce8d33eb249311f51ec37503844f3fc" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="classeve_1_1Color" kindref="compound">Color</ref></type>
+        <definition>const Color eve::Color::DarkOrange</definition>
+        <argsstring></argsstring>
+        <name>DarkOrange</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" line="50" column="1" bodyfile="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeve_1_1Color_1ac4108fc13b6c4daeffe0cbba6a300e89" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="classeve_1_1Color" kindref="compound">Color</ref></type>
+        <definition>const Color eve::Color::DarkOrchid</definition>
+        <argsstring></argsstring>
+        <name>DarkOrchid</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" line="51" column="1" bodyfile="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeve_1_1Color_1a6d6356614c4d077e36536d0d642f01b1" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="classeve_1_1Color" kindref="compound">Color</ref></type>
+        <definition>const Color eve::Color::DarkRed</definition>
+        <argsstring></argsstring>
+        <name>DarkRed</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" line="52" column="1" bodyfile="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeve_1_1Color_1ad99e75635e1b4064abf47222f870c54d" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="classeve_1_1Color" kindref="compound">Color</ref></type>
+        <definition>const Color eve::Color::DarkSalmon</definition>
+        <argsstring></argsstring>
+        <name>DarkSalmon</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" line="53" column="1" bodyfile="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeve_1_1Color_1a7a5f9944337a7d19af2d0cc89249448f" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="classeve_1_1Color" kindref="compound">Color</ref></type>
+        <definition>const Color eve::Color::DarkSeaGreen</definition>
+        <argsstring></argsstring>
+        <name>DarkSeaGreen</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" line="54" column="1" bodyfile="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeve_1_1Color_1ab010b317b4cfa49d0f7a0db2897af512" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="classeve_1_1Color" kindref="compound">Color</ref></type>
+        <definition>const Color eve::Color::DarkSlateBlue</definition>
+        <argsstring></argsstring>
+        <name>DarkSlateBlue</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" line="55" column="1" bodyfile="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeve_1_1Color_1ae5de4d25343aa0a72453fbe4167504d8" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="classeve_1_1Color" kindref="compound">Color</ref></type>
+        <definition>const Color eve::Color::DarkSlateGray</definition>
+        <argsstring></argsstring>
+        <name>DarkSlateGray</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" line="56" column="1" bodyfile="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeve_1_1Color_1ae063578f2fbb1d56bbfe2aab99e363ab" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="classeve_1_1Color" kindref="compound">Color</ref></type>
+        <definition>const Color eve::Color::DarkTurquoise</definition>
+        <argsstring></argsstring>
+        <name>DarkTurquoise</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" line="57" column="1" bodyfile="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeve_1_1Color_1ad378931d16fab382c5adf4925f540c36" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="classeve_1_1Color" kindref="compound">Color</ref></type>
+        <definition>const Color eve::Color::DarkViolet</definition>
+        <argsstring></argsstring>
+        <name>DarkViolet</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" line="58" column="1" bodyfile="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeve_1_1Color_1add264ae71d279710542ae2ac17615f45" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="classeve_1_1Color" kindref="compound">Color</ref></type>
+        <definition>const Color eve::Color::DeepPink</definition>
+        <argsstring></argsstring>
+        <name>DeepPink</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" line="59" column="1" bodyfile="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeve_1_1Color_1ad2e058e881e0e5b810a297ce7990b984" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="classeve_1_1Color" kindref="compound">Color</ref></type>
+        <definition>const Color eve::Color::DeepSkyBlue</definition>
+        <argsstring></argsstring>
+        <name>DeepSkyBlue</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" line="60" column="1" bodyfile="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeve_1_1Color_1aad3a9d8b09d172df57fa16d94bcae0cd" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="classeve_1_1Color" kindref="compound">Color</ref></type>
+        <definition>const Color eve::Color::DimGray</definition>
+        <argsstring></argsstring>
+        <name>DimGray</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" line="61" column="1" bodyfile="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeve_1_1Color_1ae817beb2a3a2ae77c909fa1cb90009e4" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="classeve_1_1Color" kindref="compound">Color</ref></type>
+        <definition>const Color eve::Color::DodgerBlue</definition>
+        <argsstring></argsstring>
+        <name>DodgerBlue</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" line="62" column="1" bodyfile="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeve_1_1Color_1a932b74efa8c9921c82a0408da94148ff" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="classeve_1_1Color" kindref="compound">Color</ref></type>
+        <definition>const Color eve::Color::Firebrick</definition>
+        <argsstring></argsstring>
+        <name>Firebrick</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" line="63" column="1" bodyfile="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeve_1_1Color_1a77cafe72cd3d8b14c27f0faa6a63036f" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="classeve_1_1Color" kindref="compound">Color</ref></type>
+        <definition>const Color eve::Color::FloralWhite</definition>
+        <argsstring></argsstring>
+        <name>FloralWhite</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" line="64" column="1" bodyfile="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeve_1_1Color_1a62affacb8de33ebbab984a4bde813c30" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="classeve_1_1Color" kindref="compound">Color</ref></type>
+        <definition>const Color eve::Color::ForestGreen</definition>
+        <argsstring></argsstring>
+        <name>ForestGreen</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" line="65" column="1" bodyfile="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeve_1_1Color_1ac01b23f813cbec86aaf03aed82842525" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="classeve_1_1Color" kindref="compound">Color</ref></type>
+        <definition>const Color eve::Color::Fuchsia</definition>
+        <argsstring></argsstring>
+        <name>Fuchsia</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" line="66" column="1" bodyfile="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeve_1_1Color_1a57d5f6ca2fa591a70db73650a096734c" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="classeve_1_1Color" kindref="compound">Color</ref></type>
+        <definition>const Color eve::Color::Gainsboro</definition>
+        <argsstring></argsstring>
+        <name>Gainsboro</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" line="67" column="1" bodyfile="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeve_1_1Color_1ac7ab94837c909bc43215309882cf3fa1" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="classeve_1_1Color" kindref="compound">Color</ref></type>
+        <definition>const Color eve::Color::GhostWhite</definition>
+        <argsstring></argsstring>
+        <name>GhostWhite</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" line="68" column="1" bodyfile="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeve_1_1Color_1a7f91d5139c6a0c75656c1ee907cc5aaa" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="classeve_1_1Color" kindref="compound">Color</ref></type>
+        <definition>const Color eve::Color::Gold</definition>
+        <argsstring></argsstring>
+        <name>Gold</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" line="69" column="1" bodyfile="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeve_1_1Color_1ae72d22a903e3d563655b0182f90a1c6b" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="classeve_1_1Color" kindref="compound">Color</ref></type>
+        <definition>const Color eve::Color::Goldenrod</definition>
+        <argsstring></argsstring>
+        <name>Goldenrod</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" line="70" column="1" bodyfile="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeve_1_1Color_1a5a2706fabeb257a718f78ba0c3d90d2c" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="classeve_1_1Color" kindref="compound">Color</ref></type>
+        <definition>const Color eve::Color::Gray_X11</definition>
+        <argsstring></argsstring>
+        <name>Gray_X11</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" line="71" column="1" bodyfile="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeve_1_1Color_1a48d33bbc8d5d0ccc446611ceadf35833" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="classeve_1_1Color" kindref="compound">Color</ref></type>
+        <definition>const Color eve::Color::Gray_W3C</definition>
+        <argsstring></argsstring>
+        <name>Gray_W3C</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" line="72" column="1" bodyfile="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeve_1_1Color_1a8a27577e804580f0b1da4a46d91bb3ca" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="classeve_1_1Color" kindref="compound">Color</ref></type>
+        <definition>const Color eve::Color::Green_X11</definition>
+        <argsstring></argsstring>
+        <name>Green_X11</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" line="73" column="1" bodyfile="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeve_1_1Color_1a2f9a35a0e9b80950c907f3c18aca423b" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="classeve_1_1Color" kindref="compound">Color</ref></type>
+        <definition>const Color eve::Color::Green_W3C</definition>
+        <argsstring></argsstring>
+        <name>Green_W3C</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" line="74" column="1" bodyfile="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeve_1_1Color_1a401829a6c2841d4dd12f0f49901e2807" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="classeve_1_1Color" kindref="compound">Color</ref></type>
+        <definition>const Color eve::Color::GreenYellow</definition>
+        <argsstring></argsstring>
+        <name>GreenYellow</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" line="75" column="1" bodyfile="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeve_1_1Color_1a99d1914f20cb1d5e5a4cba353dcc0477" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="classeve_1_1Color" kindref="compound">Color</ref></type>
+        <definition>const Color eve::Color::Honeydew</definition>
+        <argsstring></argsstring>
+        <name>Honeydew</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" line="76" column="1" bodyfile="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeve_1_1Color_1a62f5f6eca3025c367db3bceed715930c" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="classeve_1_1Color" kindref="compound">Color</ref></type>
+        <definition>const Color eve::Color::HotPink</definition>
+        <argsstring></argsstring>
+        <name>HotPink</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" line="77" column="1" bodyfile="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeve_1_1Color_1a507d7fd6b8f6edddf31765aa71f1f4f0" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="classeve_1_1Color" kindref="compound">Color</ref></type>
+        <definition>const Color eve::Color::IndianRed</definition>
+        <argsstring></argsstring>
+        <name>IndianRed</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" line="78" column="1" bodyfile="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" bodystart="78" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeve_1_1Color_1a1a739995ab8add94ba9f6411a1d9a0d4" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="classeve_1_1Color" kindref="compound">Color</ref></type>
+        <definition>const Color eve::Color::Indigo</definition>
+        <argsstring></argsstring>
+        <name>Indigo</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" line="79" column="1" bodyfile="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" bodystart="79" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeve_1_1Color_1a0b916b0dc39ff052589f07a6039b988f" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="classeve_1_1Color" kindref="compound">Color</ref></type>
+        <definition>const Color eve::Color::Ivory</definition>
+        <argsstring></argsstring>
+        <name>Ivory</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" line="80" column="1" bodyfile="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" bodystart="80" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeve_1_1Color_1a607af9b600cabed1d18fa54c27f9375e" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="classeve_1_1Color" kindref="compound">Color</ref></type>
+        <definition>const Color eve::Color::Khaki</definition>
+        <argsstring></argsstring>
+        <name>Khaki</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" line="81" column="1" bodyfile="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeve_1_1Color_1a1ed9701cc565a361d6cd6b3dcfd71824" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="classeve_1_1Color" kindref="compound">Color</ref></type>
+        <definition>const Color eve::Color::Lavender</definition>
+        <argsstring></argsstring>
+        <name>Lavender</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" line="82" column="1" bodyfile="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" bodystart="82" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeve_1_1Color_1af24004f9470b3e2158fb2e1201f66ad6" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="classeve_1_1Color" kindref="compound">Color</ref></type>
+        <definition>const Color eve::Color::LavenderBlush</definition>
+        <argsstring></argsstring>
+        <name>LavenderBlush</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" line="83" column="1" bodyfile="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" bodystart="83" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeve_1_1Color_1a0262e15e4e35f2cf1dfe7695896ee1a6" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="classeve_1_1Color" kindref="compound">Color</ref></type>
+        <definition>const Color eve::Color::LawnGreen</definition>
+        <argsstring></argsstring>
+        <name>LawnGreen</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" line="84" column="1" bodyfile="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" bodystart="84" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeve_1_1Color_1a1d2ff911bbf33d1fb268b550135504b0" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="classeve_1_1Color" kindref="compound">Color</ref></type>
+        <definition>const Color eve::Color::LemonChiffon</definition>
+        <argsstring></argsstring>
+        <name>LemonChiffon</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" line="85" column="1" bodyfile="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" bodystart="85" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeve_1_1Color_1a994f3f73f9e278db2dc844b4d05059e8" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="classeve_1_1Color" kindref="compound">Color</ref></type>
+        <definition>const Color eve::Color::LightBlue</definition>
+        <argsstring></argsstring>
+        <name>LightBlue</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" line="86" column="1" bodyfile="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeve_1_1Color_1a85f3254253e418353afef209430a7c1b" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="classeve_1_1Color" kindref="compound">Color</ref></type>
+        <definition>const Color eve::Color::LightCoral</definition>
+        <argsstring></argsstring>
+        <name>LightCoral</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" line="87" column="1" bodyfile="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" bodystart="87" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeve_1_1Color_1aea0a4059b905340795a388efbb9803e2" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="classeve_1_1Color" kindref="compound">Color</ref></type>
+        <definition>const Color eve::Color::LightCyan</definition>
+        <argsstring></argsstring>
+        <name>LightCyan</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" line="88" column="1" bodyfile="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" bodystart="88" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeve_1_1Color_1a512abc9b335074e4b8d63c99f3438b3b" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="classeve_1_1Color" kindref="compound">Color</ref></type>
+        <definition>const Color eve::Color::LightGoldenrod</definition>
+        <argsstring></argsstring>
+        <name>LightGoldenrod</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" line="89" column="1" bodyfile="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" bodystart="89" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeve_1_1Color_1a43d69d7d9b4987770b39c64af52a388e" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="classeve_1_1Color" kindref="compound">Color</ref></type>
+        <definition>const Color eve::Color::LightGray</definition>
+        <argsstring></argsstring>
+        <name>LightGray</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" line="90" column="1" bodyfile="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" bodystart="90" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeve_1_1Color_1a3461cf14767ffc74ccb099f8ce3ab711" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="classeve_1_1Color" kindref="compound">Color</ref></type>
+        <definition>const Color eve::Color::LightGreen</definition>
+        <argsstring></argsstring>
+        <name>LightGreen</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" line="91" column="1" bodyfile="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" bodystart="91" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeve_1_1Color_1ac60f98d1341098f552cc3274ed361e61" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="classeve_1_1Color" kindref="compound">Color</ref></type>
+        <definition>const Color eve::Color::LightPink</definition>
+        <argsstring></argsstring>
+        <name>LightPink</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" line="92" column="1" bodyfile="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" bodystart="92" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeve_1_1Color_1a5dfe1bf2ee9740cc08ee5d9ff5ae96b7" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="classeve_1_1Color" kindref="compound">Color</ref></type>
+        <definition>const Color eve::Color::LightSalmon</definition>
+        <argsstring></argsstring>
+        <name>LightSalmon</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" line="93" column="1" bodyfile="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" bodystart="93" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeve_1_1Color_1a329c5ce6e6aef56bc98c681c1c5e4913" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="classeve_1_1Color" kindref="compound">Color</ref></type>
+        <definition>const Color eve::Color::LightSeaGreen</definition>
+        <argsstring></argsstring>
+        <name>LightSeaGreen</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" line="94" column="1" bodyfile="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" bodystart="94" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeve_1_1Color_1a613e642310d3bbaf5acd2fe2e48fc3a6" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="classeve_1_1Color" kindref="compound">Color</ref></type>
+        <definition>const Color eve::Color::LightSkyBlue</definition>
+        <argsstring></argsstring>
+        <name>LightSkyBlue</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" line="95" column="1" bodyfile="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" bodystart="95" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeve_1_1Color_1a1ec993620fb6acaa7d765c2365df9442" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="classeve_1_1Color" kindref="compound">Color</ref></type>
+        <definition>const Color eve::Color::LightSlateGray</definition>
+        <argsstring></argsstring>
+        <name>LightSlateGray</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" line="96" column="1" bodyfile="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" bodystart="96" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeve_1_1Color_1a05183d916dea8c0b59e30905f277d728" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="classeve_1_1Color" kindref="compound">Color</ref></type>
+        <definition>const Color eve::Color::LightSteelBlue</definition>
+        <argsstring></argsstring>
+        <name>LightSteelBlue</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" line="97" column="1" bodyfile="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" bodystart="97" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeve_1_1Color_1a1dcfba8ec264e768102a2ed979dfa52d" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="classeve_1_1Color" kindref="compound">Color</ref></type>
+        <definition>const Color eve::Color::LightYellow</definition>
+        <argsstring></argsstring>
+        <name>LightYellow</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" line="98" column="1" bodyfile="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" bodystart="98" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeve_1_1Color_1aa233788227af83616b43d232117c7a72" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="classeve_1_1Color" kindref="compound">Color</ref></type>
+        <definition>const Color eve::Color::Lime</definition>
+        <argsstring></argsstring>
+        <name>Lime</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" line="99" column="1" bodyfile="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" bodystart="99" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeve_1_1Color_1a8d24d5f9be6119cf87304a7edef75245" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="classeve_1_1Color" kindref="compound">Color</ref></type>
+        <definition>const Color eve::Color::LimeGreen</definition>
+        <argsstring></argsstring>
+        <name>LimeGreen</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" line="100" column="1" bodyfile="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" bodystart="100" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeve_1_1Color_1a4f5fe586ed3645a35d15150ff257e14c" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="classeve_1_1Color" kindref="compound">Color</ref></type>
+        <definition>const Color eve::Color::Linen</definition>
+        <argsstring></argsstring>
+        <name>Linen</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" line="101" column="1" bodyfile="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" bodystart="101" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeve_1_1Color_1a86a4c2dbdfdffda103a556273e40bfe9" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="classeve_1_1Color" kindref="compound">Color</ref></type>
+        <definition>const Color eve::Color::Magenta</definition>
+        <argsstring></argsstring>
+        <name>Magenta</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" line="102" column="1" bodyfile="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" bodystart="102" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeve_1_1Color_1a1adc3a62029c6a29ce8efe90b7c05ecb" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="classeve_1_1Color" kindref="compound">Color</ref></type>
+        <definition>const Color eve::Color::Maroon_X11</definition>
+        <argsstring></argsstring>
+        <name>Maroon_X11</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" line="103" column="1" bodyfile="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" bodystart="103" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeve_1_1Color_1aeb99f3deced0afdeab4e7bf6d8bf561e" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="classeve_1_1Color" kindref="compound">Color</ref></type>
+        <definition>const Color eve::Color::Maroon_W3C</definition>
+        <argsstring></argsstring>
+        <name>Maroon_W3C</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" line="104" column="1" bodyfile="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" bodystart="104" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeve_1_1Color_1a8f723efce20536137679d3e2944867c6" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="classeve_1_1Color" kindref="compound">Color</ref></type>
+        <definition>const Color eve::Color::MediumAquamarine</definition>
+        <argsstring></argsstring>
+        <name>MediumAquamarine</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" line="105" column="1" bodyfile="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" bodystart="105" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeve_1_1Color_1aba4cb9734e19bd007915265f03d8f13e" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="classeve_1_1Color" kindref="compound">Color</ref></type>
+        <definition>const Color eve::Color::MediumBlue</definition>
+        <argsstring></argsstring>
+        <name>MediumBlue</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" line="106" column="1" bodyfile="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" bodystart="106" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeve_1_1Color_1ab2a706729cf9a068334bfd0b3edc9bf6" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="classeve_1_1Color" kindref="compound">Color</ref></type>
+        <definition>const Color eve::Color::MediumOrchid</definition>
+        <argsstring></argsstring>
+        <name>MediumOrchid</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" line="107" column="1" bodyfile="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" bodystart="107" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeve_1_1Color_1a06f49cabddc317c77244d487ab73489f" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="classeve_1_1Color" kindref="compound">Color</ref></type>
+        <definition>const Color eve::Color::MediumPurple</definition>
+        <argsstring></argsstring>
+        <name>MediumPurple</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" line="108" column="1" bodyfile="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" bodystart="108" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeve_1_1Color_1a2ea637052337bba5f10117d6671f0a55" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="classeve_1_1Color" kindref="compound">Color</ref></type>
+        <definition>const Color eve::Color::MediumSeaGreen</definition>
+        <argsstring></argsstring>
+        <name>MediumSeaGreen</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" line="109" column="1" bodyfile="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" bodystart="109" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeve_1_1Color_1a4c36dd2d8fa5004235faf2fe7e91d215" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="classeve_1_1Color" kindref="compound">Color</ref></type>
+        <definition>const Color eve::Color::MediumSlateBlue</definition>
+        <argsstring></argsstring>
+        <name>MediumSlateBlue</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" line="110" column="1" bodyfile="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" bodystart="110" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeve_1_1Color_1ae9a41028354af6e22eda528b67d486db" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="classeve_1_1Color" kindref="compound">Color</ref></type>
+        <definition>const Color eve::Color::MediumSpringGreen</definition>
+        <argsstring></argsstring>
+        <name>MediumSpringGreen</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" line="111" column="1" bodyfile="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" bodystart="111" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeve_1_1Color_1a228ed7f60f060b42a6d357ae5c5bfb2b" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="classeve_1_1Color" kindref="compound">Color</ref></type>
+        <definition>const Color eve::Color::MediumTurquoise</definition>
+        <argsstring></argsstring>
+        <name>MediumTurquoise</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" line="112" column="1" bodyfile="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" bodystart="112" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeve_1_1Color_1a82cec9a8aaf51e0a986344a67ce4308a" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="classeve_1_1Color" kindref="compound">Color</ref></type>
+        <definition>const Color eve::Color::MediumVioletRed</definition>
+        <argsstring></argsstring>
+        <name>MediumVioletRed</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" line="113" column="1" bodyfile="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" bodystart="113" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeve_1_1Color_1a5084931805d78927bcc0ca101702797c" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="classeve_1_1Color" kindref="compound">Color</ref></type>
+        <definition>const Color eve::Color::MidnightBlue</definition>
+        <argsstring></argsstring>
+        <name>MidnightBlue</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" line="114" column="1" bodyfile="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" bodystart="114" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeve_1_1Color_1ae57dd87fcac9424a11b649f30a049509" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="classeve_1_1Color" kindref="compound">Color</ref></type>
+        <definition>const Color eve::Color::MintCream</definition>
+        <argsstring></argsstring>
+        <name>MintCream</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" line="115" column="1" bodyfile="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" bodystart="115" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeve_1_1Color_1a7ae7afc570b403d77c7346e8ff195cb6" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="classeve_1_1Color" kindref="compound">Color</ref></type>
+        <definition>const Color eve::Color::MistyRose</definition>
+        <argsstring></argsstring>
+        <name>MistyRose</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" line="116" column="1" bodyfile="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" bodystart="116" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeve_1_1Color_1a9d91bc8c0338596695701ca5457f0b6c" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="classeve_1_1Color" kindref="compound">Color</ref></type>
+        <definition>const Color eve::Color::Moccasin</definition>
+        <argsstring></argsstring>
+        <name>Moccasin</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" line="117" column="1" bodyfile="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" bodystart="117" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeve_1_1Color_1aff651298828ed69f1e2b16d75389245a" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="classeve_1_1Color" kindref="compound">Color</ref></type>
+        <definition>const Color eve::Color::NavajoWhite</definition>
+        <argsstring></argsstring>
+        <name>NavajoWhite</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" line="118" column="1" bodyfile="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" bodystart="118" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeve_1_1Color_1a28076fffeacd43851baac6098beb2368" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="classeve_1_1Color" kindref="compound">Color</ref></type>
+        <definition>const Color eve::Color::Navy</definition>
+        <argsstring></argsstring>
+        <name>Navy</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" line="119" column="1" bodyfile="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" bodystart="119" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeve_1_1Color_1a278fd5e2b6703541165ee9535d5b9111" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="classeve_1_1Color" kindref="compound">Color</ref></type>
+        <definition>const Color eve::Color::OldLace</definition>
+        <argsstring></argsstring>
+        <name>OldLace</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" line="120" column="1" bodyfile="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" bodystart="120" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeve_1_1Color_1a3204a4cf24da18525ed0fcd7bb4ad178" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="classeve_1_1Color" kindref="compound">Color</ref></type>
+        <definition>const Color eve::Color::Olive</definition>
+        <argsstring></argsstring>
+        <name>Olive</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" line="121" column="1" bodyfile="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" bodystart="121" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeve_1_1Color_1a50b264e88dcc424c320e14d72051f074" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="classeve_1_1Color" kindref="compound">Color</ref></type>
+        <definition>const Color eve::Color::OliveDrab</definition>
+        <argsstring></argsstring>
+        <name>OliveDrab</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" line="122" column="1" bodyfile="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" bodystart="122" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeve_1_1Color_1a8db91ac5f9db059f393782455970db6b" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="classeve_1_1Color" kindref="compound">Color</ref></type>
+        <definition>const Color eve::Color::Orange</definition>
+        <argsstring></argsstring>
+        <name>Orange</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" line="123" column="1" bodyfile="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" bodystart="123" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeve_1_1Color_1a785b5b1e14b00b89070614d8d3f88f7d" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="classeve_1_1Color" kindref="compound">Color</ref></type>
+        <definition>const Color eve::Color::OrangeRed</definition>
+        <argsstring></argsstring>
+        <name>OrangeRed</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" line="124" column="1" bodyfile="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" bodystart="124" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeve_1_1Color_1a778deb010eb7bd4d4527e44b5e6217be" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="classeve_1_1Color" kindref="compound">Color</ref></type>
+        <definition>const Color eve::Color::Orchid</definition>
+        <argsstring></argsstring>
+        <name>Orchid</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" line="125" column="1" bodyfile="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" bodystart="125" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeve_1_1Color_1a2fc341724b033309a16be2f21e488610" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="classeve_1_1Color" kindref="compound">Color</ref></type>
+        <definition>const Color eve::Color::PaleGoldenrod</definition>
+        <argsstring></argsstring>
+        <name>PaleGoldenrod</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" line="126" column="1" bodyfile="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" bodystart="126" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeve_1_1Color_1ad9347a1a55af7f77252ae7b2aa0daced" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="classeve_1_1Color" kindref="compound">Color</ref></type>
+        <definition>const Color eve::Color::PaleGreen</definition>
+        <argsstring></argsstring>
+        <name>PaleGreen</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" line="127" column="1" bodyfile="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" bodystart="127" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeve_1_1Color_1a691180293ac54e283904629e2232870b" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="classeve_1_1Color" kindref="compound">Color</ref></type>
+        <definition>const Color eve::Color::PaleTurquoise</definition>
+        <argsstring></argsstring>
+        <name>PaleTurquoise</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" line="128" column="1" bodyfile="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" bodystart="128" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeve_1_1Color_1a76f45d3347e0be821360f17d6cbfacb4" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="classeve_1_1Color" kindref="compound">Color</ref></type>
+        <definition>const Color eve::Color::PaleVioletRed</definition>
+        <argsstring></argsstring>
+        <name>PaleVioletRed</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" line="129" column="1" bodyfile="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" bodystart="129" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeve_1_1Color_1a457c1a64ee91b5ee6ff69e2a4c4ee313" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="classeve_1_1Color" kindref="compound">Color</ref></type>
+        <definition>const Color eve::Color::PapayaWhip</definition>
+        <argsstring></argsstring>
+        <name>PapayaWhip</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" line="130" column="1" bodyfile="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" bodystart="130" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeve_1_1Color_1ae79b7c01d0294c1293fc7bcad95a01eb" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="classeve_1_1Color" kindref="compound">Color</ref></type>
+        <definition>const Color eve::Color::PeachPuff</definition>
+        <argsstring></argsstring>
+        <name>PeachPuff</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" line="131" column="1" bodyfile="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" bodystart="131" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeve_1_1Color_1a5d8a8e83a9ff22b8a009ce36c70a0083" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="classeve_1_1Color" kindref="compound">Color</ref></type>
+        <definition>const Color eve::Color::Peru</definition>
+        <argsstring></argsstring>
+        <name>Peru</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" line="132" column="1" bodyfile="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" bodystart="132" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeve_1_1Color_1afc9a0257e92b1207771a0ffee2efe7fc" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="classeve_1_1Color" kindref="compound">Color</ref></type>
+        <definition>const Color eve::Color::Pink</definition>
+        <argsstring></argsstring>
+        <name>Pink</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" line="133" column="1" bodyfile="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" bodystart="133" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeve_1_1Color_1a44e737996f07d3113ae94271b77013ea" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="classeve_1_1Color" kindref="compound">Color</ref></type>
+        <definition>const Color eve::Color::Plum</definition>
+        <argsstring></argsstring>
+        <name>Plum</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" line="134" column="1" bodyfile="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" bodystart="134" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeve_1_1Color_1a47cc4c75e1adc4ccf723b4708d80cde6" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="classeve_1_1Color" kindref="compound">Color</ref></type>
+        <definition>const Color eve::Color::PowderBlue</definition>
+        <argsstring></argsstring>
+        <name>PowderBlue</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" line="135" column="1" bodyfile="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" bodystart="135" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeve_1_1Color_1a00d21335d6b8484d288ead101f079880" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="classeve_1_1Color" kindref="compound">Color</ref></type>
+        <definition>const Color eve::Color::Purple_X11</definition>
+        <argsstring></argsstring>
+        <name>Purple_X11</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" line="136" column="1" bodyfile="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" bodystart="136" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeve_1_1Color_1a9a9d42b0bf845198ac8ef95dd6b5c9f6" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="classeve_1_1Color" kindref="compound">Color</ref></type>
+        <definition>const Color eve::Color::Purple_W3C</definition>
+        <argsstring></argsstring>
+        <name>Purple_W3C</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" line="137" column="1" bodyfile="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" bodystart="137" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeve_1_1Color_1a3528b677a1835f7e3d378b7d98accc82" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="classeve_1_1Color" kindref="compound">Color</ref></type>
+        <definition>const Color eve::Color::Red</definition>
+        <argsstring></argsstring>
+        <name>Red</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" line="138" column="1" bodyfile="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" bodystart="138" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeve_1_1Color_1a525e123d94e9781452934e2b2bbc12b7" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="classeve_1_1Color" kindref="compound">Color</ref></type>
+        <definition>const Color eve::Color::RosyBrown</definition>
+        <argsstring></argsstring>
+        <name>RosyBrown</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" line="139" column="1" bodyfile="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" bodystart="139" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeve_1_1Color_1a3e96cee18a40a92cfc198063888cc133" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="classeve_1_1Color" kindref="compound">Color</ref></type>
+        <definition>const Color eve::Color::RoyalBlue</definition>
+        <argsstring></argsstring>
+        <name>RoyalBlue</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" line="140" column="1" bodyfile="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" bodystart="140" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeve_1_1Color_1a7e3399907a4ae886e448ac08961298d5" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="classeve_1_1Color" kindref="compound">Color</ref></type>
+        <definition>const Color eve::Color::SaddleBrown</definition>
+        <argsstring></argsstring>
+        <name>SaddleBrown</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" line="141" column="1" bodyfile="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" bodystart="141" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeve_1_1Color_1a2a93bff51be69eae2a99ac89a8a9781d" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="classeve_1_1Color" kindref="compound">Color</ref></type>
+        <definition>const Color eve::Color::Salmon</definition>
+        <argsstring></argsstring>
+        <name>Salmon</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" line="142" column="1" bodyfile="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" bodystart="142" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeve_1_1Color_1af46b89a2d14e0ca98050e9c99688b1fa" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="classeve_1_1Color" kindref="compound">Color</ref></type>
+        <definition>const Color eve::Color::SandyBrown</definition>
+        <argsstring></argsstring>
+        <name>SandyBrown</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" line="143" column="1" bodyfile="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" bodystart="143" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeve_1_1Color_1a4a636dacc524e56560b942a3cc3f8399" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="classeve_1_1Color" kindref="compound">Color</ref></type>
+        <definition>const Color eve::Color::SeaGreen</definition>
+        <argsstring></argsstring>
+        <name>SeaGreen</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" line="144" column="1" bodyfile="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" bodystart="144" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeve_1_1Color_1a2e6efd903f74f5838ff490030138c167" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="classeve_1_1Color" kindref="compound">Color</ref></type>
+        <definition>const Color eve::Color::Seashell</definition>
+        <argsstring></argsstring>
+        <name>Seashell</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" line="145" column="1" bodyfile="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" bodystart="145" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeve_1_1Color_1a2fb9ea86264679403afc0ec4fccf12c6" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="classeve_1_1Color" kindref="compound">Color</ref></type>
+        <definition>const Color eve::Color::Sienna</definition>
+        <argsstring></argsstring>
+        <name>Sienna</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" line="146" column="1" bodyfile="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" bodystart="146" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeve_1_1Color_1a003efcf72d1622f3be5243be04aa544c" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="classeve_1_1Color" kindref="compound">Color</ref></type>
+        <definition>const Color eve::Color::Silver</definition>
+        <argsstring></argsstring>
+        <name>Silver</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" line="147" column="1" bodyfile="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" bodystart="147" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeve_1_1Color_1ac177aabeea247091a533670aaf373024" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="classeve_1_1Color" kindref="compound">Color</ref></type>
+        <definition>const Color eve::Color::SkyBlue</definition>
+        <argsstring></argsstring>
+        <name>SkyBlue</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" line="148" column="1" bodyfile="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" bodystart="148" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeve_1_1Color_1afb55ce31f4fe25204653fb51348d8507" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="classeve_1_1Color" kindref="compound">Color</ref></type>
+        <definition>const Color eve::Color::SlateBlue</definition>
+        <argsstring></argsstring>
+        <name>SlateBlue</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" line="149" column="1" bodyfile="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" bodystart="149" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeve_1_1Color_1adb608ddadf63b51bcc69452825ed122d" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="classeve_1_1Color" kindref="compound">Color</ref></type>
+        <definition>const Color eve::Color::SlateGray</definition>
+        <argsstring></argsstring>
+        <name>SlateGray</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" line="150" column="1" bodyfile="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" bodystart="150" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeve_1_1Color_1a398027c83cbcd400e74a14644211e223" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="classeve_1_1Color" kindref="compound">Color</ref></type>
+        <definition>const Color eve::Color::Snow</definition>
+        <argsstring></argsstring>
+        <name>Snow</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" line="151" column="1" bodyfile="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" bodystart="151" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeve_1_1Color_1a47dd210a1758e0d1c888aa023f118e31" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="classeve_1_1Color" kindref="compound">Color</ref></type>
+        <definition>const Color eve::Color::SpringGreen</definition>
+        <argsstring></argsstring>
+        <name>SpringGreen</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" line="152" column="1" bodyfile="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" bodystart="152" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeve_1_1Color_1aefc10dae66ed21be8bd47b6917a6cfae" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="classeve_1_1Color" kindref="compound">Color</ref></type>
+        <definition>const Color eve::Color::SteelBlue</definition>
+        <argsstring></argsstring>
+        <name>SteelBlue</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" line="153" column="1" bodyfile="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" bodystart="153" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeve_1_1Color_1a426bcd9867ef7bf3aa5744e62285b922" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="classeve_1_1Color" kindref="compound">Color</ref></type>
+        <definition>const Color eve::Color::Tan</definition>
+        <argsstring></argsstring>
+        <name>Tan</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" line="154" column="1" bodyfile="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" bodystart="154" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeve_1_1Color_1ae201db04f7b372cbe85d903bd57080c2" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="classeve_1_1Color" kindref="compound">Color</ref></type>
+        <definition>const Color eve::Color::Teal</definition>
+        <argsstring></argsstring>
+        <name>Teal</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" line="155" column="1" bodyfile="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" bodystart="155" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeve_1_1Color_1aa657c3687025120e9316fe942704071c" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="classeve_1_1Color" kindref="compound">Color</ref></type>
+        <definition>const Color eve::Color::Thistle</definition>
+        <argsstring></argsstring>
+        <name>Thistle</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" line="156" column="1" bodyfile="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" bodystart="156" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeve_1_1Color_1a0f088f09c07f078abd1401bd6664dcd5" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="classeve_1_1Color" kindref="compound">Color</ref></type>
+        <definition>const Color eve::Color::Tomato</definition>
+        <argsstring></argsstring>
+        <name>Tomato</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" line="157" column="1" bodyfile="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" bodystart="157" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeve_1_1Color_1aea4513d0ce0cba9be25c2f90a2fe42b3" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="classeve_1_1Color" kindref="compound">Color</ref></type>
+        <definition>const Color eve::Color::Turquoise</definition>
+        <argsstring></argsstring>
+        <name>Turquoise</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" line="158" column="1" bodyfile="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" bodystart="158" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeve_1_1Color_1aaeb76d7471d6f1479baa76ca1a2a2b28" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="classeve_1_1Color" kindref="compound">Color</ref></type>
+        <definition>const Color eve::Color::Violet</definition>
+        <argsstring></argsstring>
+        <name>Violet</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" line="159" column="1" bodyfile="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" bodystart="159" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeve_1_1Color_1a70bff923fe1e35bd54a5ea83e24774a7" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="classeve_1_1Color" kindref="compound">Color</ref></type>
+        <definition>const Color eve::Color::Wheat</definition>
+        <argsstring></argsstring>
+        <name>Wheat</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" line="160" column="1" bodyfile="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" bodystart="160" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeve_1_1Color_1a37ea618541dde6e6ae8eb4170a3434b2" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="classeve_1_1Color" kindref="compound">Color</ref></type>
+        <definition>const Color eve::Color::White</definition>
+        <argsstring></argsstring>
+        <name>White</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" line="161" column="1" bodyfile="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" bodystart="161" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeve_1_1Color_1a450cc0de4d502b2459e8359bb306bf64" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="classeve_1_1Color" kindref="compound">Color</ref></type>
+        <definition>const Color eve::Color::WhiteSmoke</definition>
+        <argsstring></argsstring>
+        <name>WhiteSmoke</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" line="162" column="1" bodyfile="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" bodystart="162" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeve_1_1Color_1a8ca99fe42a69bc780add3d8ae9adaa07" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="classeve_1_1Color" kindref="compound">Color</ref></type>
+        <definition>const Color eve::Color::Yellow</definition>
+        <argsstring></argsstring>
+        <name>Yellow</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" line="163" column="1" bodyfile="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" bodystart="163" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeve_1_1Color_1a166290194e55d8d25d95e8bce7643181" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="classeve_1_1Color" kindref="compound">Color</ref></type>
+        <definition>const Color eve::Color::YellowGreen</definition>
+        <argsstring></argsstring>
+        <name>YellowGreen</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" line="164" column="1" bodyfile="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" bodystart="164" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classeve_1_1Color_1ac39163a68096848242b7d21852deecbb" prot="public" static="no" mutable="no">
+        <type><ref refid="types_8h_1a92c50087ca0e64fa93fc59402c55f8ca" kindref="member">u8</ref></type>
+        <definition>u8 eve::Color::r</definition>
+        <argsstring></argsstring>
+        <name>r</name>
+        <briefdescription>
+<para>Red <ref refid="classeve_1_1Color" kindref="compound">Color</ref> component, between 0 and 255. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" line="239" column="1" bodyfile="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" bodystart="239" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeve_1_1Color_1a7d2a81ea29770f2278ff5ab1f55732f0" prot="public" static="no" mutable="no">
+        <type><ref refid="types_8h_1a92c50087ca0e64fa93fc59402c55f8ca" kindref="member">u8</ref></type>
+        <definition>u8 eve::Color::g</definition>
+        <argsstring></argsstring>
+        <name>g</name>
+        <briefdescription>
+<para>Green <ref refid="classeve_1_1Color" kindref="compound">Color</ref> component, between 0 and 255. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" line="240" column="1" bodyfile="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" bodystart="240" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeve_1_1Color_1a59233f14e99be12baaceba385db002ae" prot="public" static="no" mutable="no">
+        <type><ref refid="types_8h_1a92c50087ca0e64fa93fc59402c55f8ca" kindref="member">u8</ref></type>
+        <definition>u8 eve::Color::b</definition>
+        <argsstring></argsstring>
+        <name>b</name>
+        <briefdescription>
+<para>Blue <ref refid="classeve_1_1Color" kindref="compound">Color</ref> component, between 0 and 255. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" line="241" column="1" bodyfile="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" bodystart="241" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeve_1_1Color_1a4899a15f250aecea366eb86edf065485" prot="public" static="no" mutable="no">
+        <type><ref refid="types_8h_1a92c50087ca0e64fa93fc59402c55f8ca" kindref="member">u8</ref></type>
+        <definition>u8 eve::Color::a</definition>
+        <argsstring></argsstring>
+        <name>a</name>
+        <briefdescription>
+<para>Alpha <ref refid="classeve_1_1Color" kindref="compound">Color</ref> component, between 0 and 255. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" line="242" column="1" bodyfile="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" bodystart="242" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classeve_1_1Color_1af89981bb17f072ee032aacbfb5b515f2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>eve::Color::Color</definition>
+        <argsstring>()</argsstring>
+        <name>Color</name>
+        <briefdescription>
+<para>Default constructor. </para>        </briefdescription>
+        <detaileddescription>
+<para>Initialises <ref refid="classeve_1_1Color" kindref="compound">Color</ref> to magenta. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" line="179" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classeve_1_1Color_1a17b8e24a9f134d1d22382240616314cd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>eve::Color::Color</definition>
+        <argsstring>(int red, int green, int blue, int alpha)</argsstring>
+        <name>Color</name>
+        <param>
+          <type>int</type>
+          <declname>red</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>green</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>blue</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>alpha</declname>
+        </param>
+        <briefdescription>
+<para>Byte components constructor. </para>        </briefdescription>
+        <detaileddescription>
+<para>Initialises <ref refid="classeve_1_1Color" kindref="compound">Color</ref> using byte parameters.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">r</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The red component of a <ref refid="classeve_1_1Color" kindref="compound">Color</ref>, between 0 and 255. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">g</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The green component of a <ref refid="classeve_1_1Color" kindref="compound">Color</ref>, between 0 and 255. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">b</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The blue component of a <ref refid="classeve_1_1Color" kindref="compound">Color</ref>, between 0 and 255. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">a</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The alpha component of a <ref refid="classeve_1_1Color" kindref="compound">Color</ref>, between 0 and 255. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" line="191" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classeve_1_1Color_1a92608196f850d2663cff0eae1749aec1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>eve::Color::Color</definition>
+        <argsstring>(float red, float green, float blue, float alpha)</argsstring>
+        <name>Color</name>
+        <param>
+          <type>float</type>
+          <declname>red</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>green</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>blue</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>alpha</declname>
+        </param>
+        <briefdescription>
+<para>Float components constructor. </para>        </briefdescription>
+        <detaileddescription>
+<para>Initialises <ref refid="classeve_1_1Color" kindref="compound">Color</ref> using float parameters.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">r</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The red component of a <ref refid="classeve_1_1Color" kindref="compound">Color</ref>, between 0.0 and 1.0. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">g</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The green component of a <ref refid="classeve_1_1Color" kindref="compound">Color</ref>, between 0.0 and 1.0. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">b</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The blue component of a <ref refid="classeve_1_1Color" kindref="compound">Color</ref>, between 0.0 and 1.0. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">a</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The alpha component of a <ref refid="classeve_1_1Color" kindref="compound">Color</ref>, between 0.0 and 1.0. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" line="203" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classeve_1_1Color_1a832505c709e05dc1a175fe5a34d5bbdb" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool eve::Color::equal</definition>
+        <argsstring>(const Color &amp;that) const </argsstring>
+        <name>equal</name>
+        <param>
+          <type>const <ref refid="classeve_1_1Color" kindref="compound">Color</ref> &amp;</type>
+          <declname>that</declname>
+        </param>
+        <briefdescription>
+<para><ref refid="classeve_1_1Color" kindref="compound">Color</ref> comparison. </para>        </briefdescription>
+        <detaileddescription>
+<para>Compares two <ref refid="classeve_1_1Color" kindref="compound">Color</ref> objects.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">that</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classeve_1_1Color" kindref="compound">Color</ref> object to compare this object to. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if Colors are the same. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" line="213" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classeve_1_1Color_1ad9fa1b390f850346dff6c015f32a9129" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classeve_1_1Color" kindref="compound">Color</ref></type>
+        <definition>Color eve::Color::alphaBlend</definition>
+        <argsstring>(const Color &amp;background) const </argsstring>
+        <name>alphaBlend</name>
+        <param>
+          <type>const <ref refid="classeve_1_1Color" kindref="compound">Color</ref> &amp;</type>
+          <declname>background</declname>
+        </param>
+        <briefdescription>
+<para>Performs an alpha blend. </para>        </briefdescription>
+        <detaileddescription>
+<para>Alpha blends this color over a background color.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">background</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Background color to blend with. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Alpha blended color. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" line="223" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classeve_1_1Color_1a45aba94f6feeac9e447ac980523e0213" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classeve_1_1Color" kindref="compound">Color</ref></type>
+        <definition>static Color eve::Color::fromHSV</definition>
+        <argsstring>(int hue, int saturation, int value, int alpha)</argsstring>
+        <name>fromHSV</name>
+        <param>
+          <type>int</type>
+          <declname>hue</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>saturation</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>value</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>alpha</declname>
+        </param>
+        <briefdescription>
+<para>Creates a <ref refid="classeve_1_1Color" kindref="compound">Color</ref> from HSV. </para>        </briefdescription>
+        <detaileddescription>
+<para>Returns a <ref refid="classeve_1_1Color" kindref="compound">Color</ref> using HSV values.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">hue</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Hue component of a <ref refid="classeve_1_1Color" kindref="compound">Color</ref>, between 0 and 360. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">saturation</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Saturation component of a <ref refid="classeve_1_1Color" kindref="compound">Color</ref>, between 0 and 100. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Value component of a <ref refid="classeve_1_1Color" kindref="compound">Color</ref>, between 0 and 100. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">alpha</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Alpha component of a <ref refid="classeve_1_1Color" kindref="compound">Color</ref>, between 0 and 255. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" line="235" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="13">
+        <label>eve::Color</label>
+        <link refid="classeve_1_1Color"/>
+        <childnode refid="13" relation="usage">
+          <edgelabel>OrangeRed</edgelabel>
+          <edgelabel>NavajoWhite</edgelabel>
+          <edgelabel>MediumSpringGreen</edgelabel>
+          <edgelabel>LavenderBlush</edgelabel>
+          <edgelabel>Honeydew</edgelabel>
+          <edgelabel>Gray_X11</edgelabel>
+          <edgelabel>Gainsboro</edgelabel>
+          <edgelabel>DarkSlateGray</edgelabel>
+          <edgelabel>DarkSalmon</edgelabel>
+          <edgelabel>DarkCyan</edgelabel>
+          <edgelabel>...</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" line="17" column="1" bodyfile="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/color.h" bodystart="17" bodyend="244"/>
+    <listofallmembers>
+      <member refid="classeve_1_1Color_1a4899a15f250aecea366eb86edf065485" prot="public" virt="non-virtual"><scope>eve::Color</scope><name>a</name></member>
+      <member refid="classeve_1_1Color_1a0855e61902c98d6f8abde3d6cec7bd77" prot="public" virt="non-virtual"><scope>eve::Color</scope><name>AliceBlue</name></member>
+      <member refid="classeve_1_1Color_1ad9fa1b390f850346dff6c015f32a9129" prot="public" virt="non-virtual"><scope>eve::Color</scope><name>alphaBlend</name></member>
+      <member refid="classeve_1_1Color_1ab7bf893ede64575709cc752d0d1e9ad0" prot="public" virt="non-virtual"><scope>eve::Color</scope><name>AntiqueWhite</name></member>
+      <member refid="classeve_1_1Color_1ab8eb8848a27145f8ef18e355063f2166" prot="public" virt="non-virtual"><scope>eve::Color</scope><name>Aqua</name></member>
+      <member refid="classeve_1_1Color_1a687028c11003f0db0f19aa2694628c7c" prot="public" virt="non-virtual"><scope>eve::Color</scope><name>Aquamarine</name></member>
+      <member refid="classeve_1_1Color_1abac6fab98a8b8550bb77306842fd06ac" prot="public" virt="non-virtual"><scope>eve::Color</scope><name>Azure</name></member>
+      <member refid="classeve_1_1Color_1a59233f14e99be12baaceba385db002ae" prot="public" virt="non-virtual"><scope>eve::Color</scope><name>b</name></member>
+      <member refid="classeve_1_1Color_1aca73082324a79969a2fcf3bbc3303141" prot="public" virt="non-virtual"><scope>eve::Color</scope><name>Beige</name></member>
+      <member refid="classeve_1_1Color_1af046974fdef996f8460d9f697a43e620" prot="public" virt="non-virtual"><scope>eve::Color</scope><name>Bisque</name></member>
+      <member refid="classeve_1_1Color_1a8ed40155fa1113718de003fff2c0a53f" prot="public" virt="non-virtual"><scope>eve::Color</scope><name>Black</name></member>
+      <member refid="classeve_1_1Color_1a3bb14bf64ab9942c6e18490d3b91bca2" prot="public" virt="non-virtual"><scope>eve::Color</scope><name>BlanchedAlmond</name></member>
+      <member refid="classeve_1_1Color_1a0eb9ceb80094ae70c57f87bec881c768" prot="public" virt="non-virtual"><scope>eve::Color</scope><name>Blue</name></member>
+      <member refid="classeve_1_1Color_1a96804420b1216b89b8637fe742f819b1" prot="public" virt="non-virtual"><scope>eve::Color</scope><name>BlueViolet</name></member>
+      <member refid="classeve_1_1Color_1aad5354120ed7dde6e2a2150ea029a37f" prot="public" virt="non-virtual"><scope>eve::Color</scope><name>Brown</name></member>
+      <member refid="classeve_1_1Color_1a0706f763931cbfc1998fc1cd044a26cd" prot="public" virt="non-virtual"><scope>eve::Color</scope><name>Burlywood</name></member>
+      <member refid="classeve_1_1Color_1a722fdb8b9c8226613c7b18d5151925f3" prot="public" virt="non-virtual"><scope>eve::Color</scope><name>CadetBlue</name></member>
+      <member refid="classeve_1_1Color_1a33249379635f238b1263e496957f6553" prot="public" virt="non-virtual"><scope>eve::Color</scope><name>Chartreuse</name></member>
+      <member refid="classeve_1_1Color_1a4c357e851887b6bcb4ce7636726a19ba" prot="public" virt="non-virtual"><scope>eve::Color</scope><name>Chocolate</name></member>
+      <member refid="classeve_1_1Color_1af89981bb17f072ee032aacbfb5b515f2" prot="public" virt="non-virtual"><scope>eve::Color</scope><name>Color</name></member>
+      <member refid="classeve_1_1Color_1a17b8e24a9f134d1d22382240616314cd" prot="public" virt="non-virtual"><scope>eve::Color</scope><name>Color</name></member>
+      <member refid="classeve_1_1Color_1a92608196f850d2663cff0eae1749aec1" prot="public" virt="non-virtual"><scope>eve::Color</scope><name>Color</name></member>
+      <member refid="classeve_1_1Color_1a86f5362f7661c44db4631fe9853d5b30" prot="public" virt="non-virtual"><scope>eve::Color</scope><name>Coral</name></member>
+      <member refid="classeve_1_1Color_1a3b21602f2cfb20193cfb7143f332cf03" prot="public" virt="non-virtual"><scope>eve::Color</scope><name>Cornflower</name></member>
+      <member refid="classeve_1_1Color_1a55062225b20ef5d574c49efabe0f24c1" prot="public" virt="non-virtual"><scope>eve::Color</scope><name>Cornsilk</name></member>
+      <member refid="classeve_1_1Color_1ae310b6c8cb6c9d7d5a28dec997fe4763" prot="public" virt="non-virtual"><scope>eve::Color</scope><name>Crimson</name></member>
+      <member refid="classeve_1_1Color_1a65f3d5f118a679f89eeaec27811848ba" prot="public" virt="non-virtual"><scope>eve::Color</scope><name>Cyan</name></member>
+      <member refid="classeve_1_1Color_1ae490b8303b571f27df242849ff86d972" prot="public" virt="non-virtual"><scope>eve::Color</scope><name>DarkBlue</name></member>
+      <member refid="classeve_1_1Color_1a69fdbd1f43af3c47b158bdf0e39209ee" prot="public" virt="non-virtual"><scope>eve::Color</scope><name>DarkCyan</name></member>
+      <member refid="classeve_1_1Color_1a2198fb0d1e73104a102112c360a1fcb8" prot="public" virt="non-virtual"><scope>eve::Color</scope><name>DarkGoldenrod</name></member>
+      <member refid="classeve_1_1Color_1a253ee779615b437c6868ca11228d421b" prot="public" virt="non-virtual"><scope>eve::Color</scope><name>DarkGray</name></member>
+      <member refid="classeve_1_1Color_1af880bb10f6e68c690cc65f17beec1593" prot="public" virt="non-virtual"><scope>eve::Color</scope><name>DarkGreen</name></member>
+      <member refid="classeve_1_1Color_1a1f3243868b833f7ae21b233c28a3bcb5" prot="public" virt="non-virtual"><scope>eve::Color</scope><name>DarkKhaki</name></member>
+      <member refid="classeve_1_1Color_1a35e14b2458afd07f27706c2767249818" prot="public" virt="non-virtual"><scope>eve::Color</scope><name>DarkMagenta</name></member>
+      <member refid="classeve_1_1Color_1a79a000e673c76d1bc04977158548bb56" prot="public" virt="non-virtual"><scope>eve::Color</scope><name>DarkOliveGreen</name></member>
+      <member refid="classeve_1_1Color_1a1ce8d33eb249311f51ec37503844f3fc" prot="public" virt="non-virtual"><scope>eve::Color</scope><name>DarkOrange</name></member>
+      <member refid="classeve_1_1Color_1ac4108fc13b6c4daeffe0cbba6a300e89" prot="public" virt="non-virtual"><scope>eve::Color</scope><name>DarkOrchid</name></member>
+      <member refid="classeve_1_1Color_1a6d6356614c4d077e36536d0d642f01b1" prot="public" virt="non-virtual"><scope>eve::Color</scope><name>DarkRed</name></member>
+      <member refid="classeve_1_1Color_1ad99e75635e1b4064abf47222f870c54d" prot="public" virt="non-virtual"><scope>eve::Color</scope><name>DarkSalmon</name></member>
+      <member refid="classeve_1_1Color_1a7a5f9944337a7d19af2d0cc89249448f" prot="public" virt="non-virtual"><scope>eve::Color</scope><name>DarkSeaGreen</name></member>
+      <member refid="classeve_1_1Color_1ab010b317b4cfa49d0f7a0db2897af512" prot="public" virt="non-virtual"><scope>eve::Color</scope><name>DarkSlateBlue</name></member>
+      <member refid="classeve_1_1Color_1ae5de4d25343aa0a72453fbe4167504d8" prot="public" virt="non-virtual"><scope>eve::Color</scope><name>DarkSlateGray</name></member>
+      <member refid="classeve_1_1Color_1ae063578f2fbb1d56bbfe2aab99e363ab" prot="public" virt="non-virtual"><scope>eve::Color</scope><name>DarkTurquoise</name></member>
+      <member refid="classeve_1_1Color_1ad378931d16fab382c5adf4925f540c36" prot="public" virt="non-virtual"><scope>eve::Color</scope><name>DarkViolet</name></member>
+      <member refid="classeve_1_1Color_1add264ae71d279710542ae2ac17615f45" prot="public" virt="non-virtual"><scope>eve::Color</scope><name>DeepPink</name></member>
+      <member refid="classeve_1_1Color_1ad2e058e881e0e5b810a297ce7990b984" prot="public" virt="non-virtual"><scope>eve::Color</scope><name>DeepSkyBlue</name></member>
+      <member refid="classeve_1_1Color_1aad3a9d8b09d172df57fa16d94bcae0cd" prot="public" virt="non-virtual"><scope>eve::Color</scope><name>DimGray</name></member>
+      <member refid="classeve_1_1Color_1ae817beb2a3a2ae77c909fa1cb90009e4" prot="public" virt="non-virtual"><scope>eve::Color</scope><name>DodgerBlue</name></member>
+      <member refid="classeve_1_1Color_1a832505c709e05dc1a175fe5a34d5bbdb" prot="public" virt="non-virtual"><scope>eve::Color</scope><name>equal</name></member>
+      <member refid="classeve_1_1Color_1a932b74efa8c9921c82a0408da94148ff" prot="public" virt="non-virtual"><scope>eve::Color</scope><name>Firebrick</name></member>
+      <member refid="classeve_1_1Color_1a77cafe72cd3d8b14c27f0faa6a63036f" prot="public" virt="non-virtual"><scope>eve::Color</scope><name>FloralWhite</name></member>
+      <member refid="classeve_1_1Color_1a62affacb8de33ebbab984a4bde813c30" prot="public" virt="non-virtual"><scope>eve::Color</scope><name>ForestGreen</name></member>
+      <member refid="classeve_1_1Color_1a45aba94f6feeac9e447ac980523e0213" prot="public" virt="non-virtual"><scope>eve::Color</scope><name>fromHSV</name></member>
+      <member refid="classeve_1_1Color_1ac01b23f813cbec86aaf03aed82842525" prot="public" virt="non-virtual"><scope>eve::Color</scope><name>Fuchsia</name></member>
+      <member refid="classeve_1_1Color_1a7d2a81ea29770f2278ff5ab1f55732f0" prot="public" virt="non-virtual"><scope>eve::Color</scope><name>g</name></member>
+      <member refid="classeve_1_1Color_1a57d5f6ca2fa591a70db73650a096734c" prot="public" virt="non-virtual"><scope>eve::Color</scope><name>Gainsboro</name></member>
+      <member refid="classeve_1_1Color_1ac7ab94837c909bc43215309882cf3fa1" prot="public" virt="non-virtual"><scope>eve::Color</scope><name>GhostWhite</name></member>
+      <member refid="classeve_1_1Color_1a7f91d5139c6a0c75656c1ee907cc5aaa" prot="public" virt="non-virtual"><scope>eve::Color</scope><name>Gold</name></member>
+      <member refid="classeve_1_1Color_1ae72d22a903e3d563655b0182f90a1c6b" prot="public" virt="non-virtual"><scope>eve::Color</scope><name>Goldenrod</name></member>
+      <member refid="classeve_1_1Color_1a48d33bbc8d5d0ccc446611ceadf35833" prot="public" virt="non-virtual"><scope>eve::Color</scope><name>Gray_W3C</name></member>
+      <member refid="classeve_1_1Color_1a5a2706fabeb257a718f78ba0c3d90d2c" prot="public" virt="non-virtual"><scope>eve::Color</scope><name>Gray_X11</name></member>
+      <member refid="classeve_1_1Color_1a2f9a35a0e9b80950c907f3c18aca423b" prot="public" virt="non-virtual"><scope>eve::Color</scope><name>Green_W3C</name></member>
+      <member refid="classeve_1_1Color_1a8a27577e804580f0b1da4a46d91bb3ca" prot="public" virt="non-virtual"><scope>eve::Color</scope><name>Green_X11</name></member>
+      <member refid="classeve_1_1Color_1a401829a6c2841d4dd12f0f49901e2807" prot="public" virt="non-virtual"><scope>eve::Color</scope><name>GreenYellow</name></member>
+      <member refid="classeve_1_1Color_1a99d1914f20cb1d5e5a4cba353dcc0477" prot="public" virt="non-virtual"><scope>eve::Color</scope><name>Honeydew</name></member>
+      <member refid="classeve_1_1Color_1a62f5f6eca3025c367db3bceed715930c" prot="public" virt="non-virtual"><scope>eve::Color</scope><name>HotPink</name></member>
+      <member refid="classeve_1_1Color_1a507d7fd6b8f6edddf31765aa71f1f4f0" prot="public" virt="non-virtual"><scope>eve::Color</scope><name>IndianRed</name></member>
+      <member refid="classeve_1_1Color_1a1a739995ab8add94ba9f6411a1d9a0d4" prot="public" virt="non-virtual"><scope>eve::Color</scope><name>Indigo</name></member>
+      <member refid="classeve_1_1Color_1a0b916b0dc39ff052589f07a6039b988f" prot="public" virt="non-virtual"><scope>eve::Color</scope><name>Ivory</name></member>
+      <member refid="classeve_1_1Color_1a607af9b600cabed1d18fa54c27f9375e" prot="public" virt="non-virtual"><scope>eve::Color</scope><name>Khaki</name></member>
+      <member refid="classeve_1_1Color_1a1ed9701cc565a361d6cd6b3dcfd71824" prot="public" virt="non-virtual"><scope>eve::Color</scope><name>Lavender</name></member>
+      <member refid="classeve_1_1Color_1af24004f9470b3e2158fb2e1201f66ad6" prot="public" virt="non-virtual"><scope>eve::Color</scope><name>LavenderBlush</name></member>
+      <member refid="classeve_1_1Color_1a0262e15e4e35f2cf1dfe7695896ee1a6" prot="public" virt="non-virtual"><scope>eve::Color</scope><name>LawnGreen</name></member>
+      <member refid="classeve_1_1Color_1a1d2ff911bbf33d1fb268b550135504b0" prot="public" virt="non-virtual"><scope>eve::Color</scope><name>LemonChiffon</name></member>
+      <member refid="classeve_1_1Color_1a994f3f73f9e278db2dc844b4d05059e8" prot="public" virt="non-virtual"><scope>eve::Color</scope><name>LightBlue</name></member>
+      <member refid="classeve_1_1Color_1a85f3254253e418353afef209430a7c1b" prot="public" virt="non-virtual"><scope>eve::Color</scope><name>LightCoral</name></member>
+      <member refid="classeve_1_1Color_1aea0a4059b905340795a388efbb9803e2" prot="public" virt="non-virtual"><scope>eve::Color</scope><name>LightCyan</name></member>
+      <member refid="classeve_1_1Color_1a512abc9b335074e4b8d63c99f3438b3b" prot="public" virt="non-virtual"><scope>eve::Color</scope><name>LightGoldenrod</name></member>
+      <member refid="classeve_1_1Color_1a43d69d7d9b4987770b39c64af52a388e" prot="public" virt="non-virtual"><scope>eve::Color</scope><name>LightGray</name></member>
+      <member refid="classeve_1_1Color_1a3461cf14767ffc74ccb099f8ce3ab711" prot="public" virt="non-virtual"><scope>eve::Color</scope><name>LightGreen</name></member>
+      <member refid="classeve_1_1Color_1ac60f98d1341098f552cc3274ed361e61" prot="public" virt="non-virtual"><scope>eve::Color</scope><name>LightPink</name></member>
+      <member refid="classeve_1_1Color_1a5dfe1bf2ee9740cc08ee5d9ff5ae96b7" prot="public" virt="non-virtual"><scope>eve::Color</scope><name>LightSalmon</name></member>
+      <member refid="classeve_1_1Color_1a329c5ce6e6aef56bc98c681c1c5e4913" prot="public" virt="non-virtual"><scope>eve::Color</scope><name>LightSeaGreen</name></member>
+      <member refid="classeve_1_1Color_1a613e642310d3bbaf5acd2fe2e48fc3a6" prot="public" virt="non-virtual"><scope>eve::Color</scope><name>LightSkyBlue</name></member>
+      <member refid="classeve_1_1Color_1a1ec993620fb6acaa7d765c2365df9442" prot="public" virt="non-virtual"><scope>eve::Color</scope><name>LightSlateGray</name></member>
+      <member refid="classeve_1_1Color_1a05183d916dea8c0b59e30905f277d728" prot="public" virt="non-virtual"><scope>eve::Color</scope><name>LightSteelBlue</name></member>
+      <member refid="classeve_1_1Color_1a1dcfba8ec264e768102a2ed979dfa52d" prot="public" virt="non-virtual"><scope>eve::Color</scope><name>LightYellow</name></member>
+      <member refid="classeve_1_1Color_1aa233788227af83616b43d232117c7a72" prot="public" virt="non-virtual"><scope>eve::Color</scope><name>Lime</name></member>
+      <member refid="classeve_1_1Color_1a8d24d5f9be6119cf87304a7edef75245" prot="public" virt="non-virtual"><scope>eve::Color</scope><name>LimeGreen</name></member>
+      <member refid="classeve_1_1Color_1a4f5fe586ed3645a35d15150ff257e14c" prot="public" virt="non-virtual"><scope>eve::Color</scope><name>Linen</name></member>
+      <member refid="classeve_1_1Color_1a86a4c2dbdfdffda103a556273e40bfe9" prot="public" virt="non-virtual"><scope>eve::Color</scope><name>Magenta</name></member>
+      <member refid="classeve_1_1Color_1aeb99f3deced0afdeab4e7bf6d8bf561e" prot="public" virt="non-virtual"><scope>eve::Color</scope><name>Maroon_W3C</name></member>
+      <member refid="classeve_1_1Color_1a1adc3a62029c6a29ce8efe90b7c05ecb" prot="public" virt="non-virtual"><scope>eve::Color</scope><name>Maroon_X11</name></member>
+      <member refid="classeve_1_1Color_1a8f723efce20536137679d3e2944867c6" prot="public" virt="non-virtual"><scope>eve::Color</scope><name>MediumAquamarine</name></member>
+      <member refid="classeve_1_1Color_1aba4cb9734e19bd007915265f03d8f13e" prot="public" virt="non-virtual"><scope>eve::Color</scope><name>MediumBlue</name></member>
+      <member refid="classeve_1_1Color_1ab2a706729cf9a068334bfd0b3edc9bf6" prot="public" virt="non-virtual"><scope>eve::Color</scope><name>MediumOrchid</name></member>
+      <member refid="classeve_1_1Color_1a06f49cabddc317c77244d487ab73489f" prot="public" virt="non-virtual"><scope>eve::Color</scope><name>MediumPurple</name></member>
+      <member refid="classeve_1_1Color_1a2ea637052337bba5f10117d6671f0a55" prot="public" virt="non-virtual"><scope>eve::Color</scope><name>MediumSeaGreen</name></member>
+      <member refid="classeve_1_1Color_1a4c36dd2d8fa5004235faf2fe7e91d215" prot="public" virt="non-virtual"><scope>eve::Color</scope><name>MediumSlateBlue</name></member>
+      <member refid="classeve_1_1Color_1ae9a41028354af6e22eda528b67d486db" prot="public" virt="non-virtual"><scope>eve::Color</scope><name>MediumSpringGreen</name></member>
+      <member refid="classeve_1_1Color_1a228ed7f60f060b42a6d357ae5c5bfb2b" prot="public" virt="non-virtual"><scope>eve::Color</scope><name>MediumTurquoise</name></member>
+      <member refid="classeve_1_1Color_1a82cec9a8aaf51e0a986344a67ce4308a" prot="public" virt="non-virtual"><scope>eve::Color</scope><name>MediumVioletRed</name></member>
+      <member refid="classeve_1_1Color_1a5084931805d78927bcc0ca101702797c" prot="public" virt="non-virtual"><scope>eve::Color</scope><name>MidnightBlue</name></member>
+      <member refid="classeve_1_1Color_1ae57dd87fcac9424a11b649f30a049509" prot="public" virt="non-virtual"><scope>eve::Color</scope><name>MintCream</name></member>
+      <member refid="classeve_1_1Color_1a7ae7afc570b403d77c7346e8ff195cb6" prot="public" virt="non-virtual"><scope>eve::Color</scope><name>MistyRose</name></member>
+      <member refid="classeve_1_1Color_1a9d91bc8c0338596695701ca5457f0b6c" prot="public" virt="non-virtual"><scope>eve::Color</scope><name>Moccasin</name></member>
+      <member refid="classeve_1_1Color_1aff651298828ed69f1e2b16d75389245a" prot="public" virt="non-virtual"><scope>eve::Color</scope><name>NavajoWhite</name></member>
+      <member refid="classeve_1_1Color_1a28076fffeacd43851baac6098beb2368" prot="public" virt="non-virtual"><scope>eve::Color</scope><name>Navy</name></member>
+      <member refid="classeve_1_1Color_1a278fd5e2b6703541165ee9535d5b9111" prot="public" virt="non-virtual"><scope>eve::Color</scope><name>OldLace</name></member>
+      <member refid="classeve_1_1Color_1a3204a4cf24da18525ed0fcd7bb4ad178" prot="public" virt="non-virtual"><scope>eve::Color</scope><name>Olive</name></member>
+      <member refid="classeve_1_1Color_1a50b264e88dcc424c320e14d72051f074" prot="public" virt="non-virtual"><scope>eve::Color</scope><name>OliveDrab</name></member>
+      <member refid="classeve_1_1Color_1a8db91ac5f9db059f393782455970db6b" prot="public" virt="non-virtual"><scope>eve::Color</scope><name>Orange</name></member>
+      <member refid="classeve_1_1Color_1a785b5b1e14b00b89070614d8d3f88f7d" prot="public" virt="non-virtual"><scope>eve::Color</scope><name>OrangeRed</name></member>
+      <member refid="classeve_1_1Color_1a778deb010eb7bd4d4527e44b5e6217be" prot="public" virt="non-virtual"><scope>eve::Color</scope><name>Orchid</name></member>
+      <member refid="classeve_1_1Color_1a2fc341724b033309a16be2f21e488610" prot="public" virt="non-virtual"><scope>eve::Color</scope><name>PaleGoldenrod</name></member>
+      <member refid="classeve_1_1Color_1ad9347a1a55af7f77252ae7b2aa0daced" prot="public" virt="non-virtual"><scope>eve::Color</scope><name>PaleGreen</name></member>
+      <member refid="classeve_1_1Color_1a691180293ac54e283904629e2232870b" prot="public" virt="non-virtual"><scope>eve::Color</scope><name>PaleTurquoise</name></member>
+      <member refid="classeve_1_1Color_1a76f45d3347e0be821360f17d6cbfacb4" prot="public" virt="non-virtual"><scope>eve::Color</scope><name>PaleVioletRed</name></member>
+      <member refid="classeve_1_1Color_1a457c1a64ee91b5ee6ff69e2a4c4ee313" prot="public" virt="non-virtual"><scope>eve::Color</scope><name>PapayaWhip</name></member>
+      <member refid="classeve_1_1Color_1ae79b7c01d0294c1293fc7bcad95a01eb" prot="public" virt="non-virtual"><scope>eve::Color</scope><name>PeachPuff</name></member>
+      <member refid="classeve_1_1Color_1a5d8a8e83a9ff22b8a009ce36c70a0083" prot="public" virt="non-virtual"><scope>eve::Color</scope><name>Peru</name></member>
+      <member refid="classeve_1_1Color_1afc9a0257e92b1207771a0ffee2efe7fc" prot="public" virt="non-virtual"><scope>eve::Color</scope><name>Pink</name></member>
+      <member refid="classeve_1_1Color_1a44e737996f07d3113ae94271b77013ea" prot="public" virt="non-virtual"><scope>eve::Color</scope><name>Plum</name></member>
+      <member refid="classeve_1_1Color_1a47cc4c75e1adc4ccf723b4708d80cde6" prot="public" virt="non-virtual"><scope>eve::Color</scope><name>PowderBlue</name></member>
+      <member refid="classeve_1_1Color_1a9a9d42b0bf845198ac8ef95dd6b5c9f6" prot="public" virt="non-virtual"><scope>eve::Color</scope><name>Purple_W3C</name></member>
+      <member refid="classeve_1_1Color_1a00d21335d6b8484d288ead101f079880" prot="public" virt="non-virtual"><scope>eve::Color</scope><name>Purple_X11</name></member>
+      <member refid="classeve_1_1Color_1ac39163a68096848242b7d21852deecbb" prot="public" virt="non-virtual"><scope>eve::Color</scope><name>r</name></member>
+      <member refid="classeve_1_1Color_1a3528b677a1835f7e3d378b7d98accc82" prot="public" virt="non-virtual"><scope>eve::Color</scope><name>Red</name></member>
+      <member refid="classeve_1_1Color_1a525e123d94e9781452934e2b2bbc12b7" prot="public" virt="non-virtual"><scope>eve::Color</scope><name>RosyBrown</name></member>
+      <member refid="classeve_1_1Color_1a3e96cee18a40a92cfc198063888cc133" prot="public" virt="non-virtual"><scope>eve::Color</scope><name>RoyalBlue</name></member>
+      <member refid="classeve_1_1Color_1a7e3399907a4ae886e448ac08961298d5" prot="public" virt="non-virtual"><scope>eve::Color</scope><name>SaddleBrown</name></member>
+      <member refid="classeve_1_1Color_1a2a93bff51be69eae2a99ac89a8a9781d" prot="public" virt="non-virtual"><scope>eve::Color</scope><name>Salmon</name></member>
+      <member refid="classeve_1_1Color_1af46b89a2d14e0ca98050e9c99688b1fa" prot="public" virt="non-virtual"><scope>eve::Color</scope><name>SandyBrown</name></member>
+      <member refid="classeve_1_1Color_1a4a636dacc524e56560b942a3cc3f8399" prot="public" virt="non-virtual"><scope>eve::Color</scope><name>SeaGreen</name></member>
+      <member refid="classeve_1_1Color_1a2e6efd903f74f5838ff490030138c167" prot="public" virt="non-virtual"><scope>eve::Color</scope><name>Seashell</name></member>
+      <member refid="classeve_1_1Color_1a2fb9ea86264679403afc0ec4fccf12c6" prot="public" virt="non-virtual"><scope>eve::Color</scope><name>Sienna</name></member>
+      <member refid="classeve_1_1Color_1a003efcf72d1622f3be5243be04aa544c" prot="public" virt="non-virtual"><scope>eve::Color</scope><name>Silver</name></member>
+      <member refid="classeve_1_1Color_1ac177aabeea247091a533670aaf373024" prot="public" virt="non-virtual"><scope>eve::Color</scope><name>SkyBlue</name></member>
+      <member refid="classeve_1_1Color_1afb55ce31f4fe25204653fb51348d8507" prot="public" virt="non-virtual"><scope>eve::Color</scope><name>SlateBlue</name></member>
+      <member refid="classeve_1_1Color_1adb608ddadf63b51bcc69452825ed122d" prot="public" virt="non-virtual"><scope>eve::Color</scope><name>SlateGray</name></member>
+      <member refid="classeve_1_1Color_1a398027c83cbcd400e74a14644211e223" prot="public" virt="non-virtual"><scope>eve::Color</scope><name>Snow</name></member>
+      <member refid="classeve_1_1Color_1a47dd210a1758e0d1c888aa023f118e31" prot="public" virt="non-virtual"><scope>eve::Color</scope><name>SpringGreen</name></member>
+      <member refid="classeve_1_1Color_1aefc10dae66ed21be8bd47b6917a6cfae" prot="public" virt="non-virtual"><scope>eve::Color</scope><name>SteelBlue</name></member>
+      <member refid="classeve_1_1Color_1a426bcd9867ef7bf3aa5744e62285b922" prot="public" virt="non-virtual"><scope>eve::Color</scope><name>Tan</name></member>
+      <member refid="classeve_1_1Color_1ae201db04f7b372cbe85d903bd57080c2" prot="public" virt="non-virtual"><scope>eve::Color</scope><name>Teal</name></member>
+      <member refid="classeve_1_1Color_1aa657c3687025120e9316fe942704071c" prot="public" virt="non-virtual"><scope>eve::Color</scope><name>Thistle</name></member>
+      <member refid="classeve_1_1Color_1a0f088f09c07f078abd1401bd6664dcd5" prot="public" virt="non-virtual"><scope>eve::Color</scope><name>Tomato</name></member>
+      <member refid="classeve_1_1Color_1aea4513d0ce0cba9be25c2f90a2fe42b3" prot="public" virt="non-virtual"><scope>eve::Color</scope><name>Turquoise</name></member>
+      <member refid="classeve_1_1Color_1aaeb76d7471d6f1479baa76ca1a2a2b28" prot="public" virt="non-virtual"><scope>eve::Color</scope><name>Violet</name></member>
+      <member refid="classeve_1_1Color_1a70bff923fe1e35bd54a5ea83e24774a7" prot="public" virt="non-virtual"><scope>eve::Color</scope><name>Wheat</name></member>
+      <member refid="classeve_1_1Color_1a37ea618541dde6e6ae8eb4170a3434b2" prot="public" virt="non-virtual"><scope>eve::Color</scope><name>White</name></member>
+      <member refid="classeve_1_1Color_1a450cc0de4d502b2459e8359bb306bf64" prot="public" virt="non-virtual"><scope>eve::Color</scope><name>WhiteSmoke</name></member>
+      <member refid="classeve_1_1Color_1a8ca99fe42a69bc780add3d8ae9adaa07" prot="public" virt="non-virtual"><scope>eve::Color</scope><name>Yellow</name></member>
+      <member refid="classeve_1_1Color_1a166290194e55d8d25d95e8bce7643181" prot="public" virt="non-virtual"><scope>eve::Color</scope><name>YellowGreen</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

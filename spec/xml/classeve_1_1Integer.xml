@@ -1,0 +1,288 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.9.1">
+  <compounddef id="classeve_1_1Integer" kind="class" language="C++" prot="public">
+    <compoundname>eve::Integer</compoundname>
+    <includes refid="integer_8h" local="no">integer.h</includes>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classeve_1_1Integer_1adbeee14c84d889669e65bf129845ed73" prot="public" static="yes" mutable="no">
+        <type>int64_t</type>
+        <definition>int64_t eve::Integer::i64Max</definition>
+        <argsstring></argsstring>
+        <name>i64Max</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/core/integer.h" line="23" column="1" bodyfile="/Users/mike/svn/eve/development/trunk/sdk/inc/core/integer.h" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeve_1_1Integer_1adefd56956888ed9dad6542f1953c9eae" prot="public" static="yes" mutable="no">
+        <type>int64_t</type>
+        <definition>int64_t eve::Integer::i64Min</definition>
+        <argsstring></argsstring>
+        <name>i64Min</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/core/integer.h" line="24" column="1" bodyfile="/Users/mike/svn/eve/development/trunk/sdk/inc/core/integer.h" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeve_1_1Integer_1aa1e1f9ecc97372fc6acdbc0cd9e8f4a9" prot="public" static="yes" mutable="no">
+        <type>uint64_t</type>
+        <definition>uint64_t eve::Integer::ui64Max</definition>
+        <argsstring></argsstring>
+        <name>ui64Max</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/core/integer.h" line="25" column="1" bodyfile="/Users/mike/svn/eve/development/trunk/sdk/inc/core/integer.h" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeve_1_1Integer_1a8257027237a3c89ebe91fe114513c7f2" prot="public" static="yes" mutable="no">
+        <type>uint64_t</type>
+        <definition>uint64_t eve::Integer::ui64Min</definition>
+        <argsstring></argsstring>
+        <name>ui64Min</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/core/integer.h" line="26" column="1" bodyfile="/Users/mike/svn/eve/development/trunk/sdk/inc/core/integer.h" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeve_1_1Integer_1a4aa9366367f0fcbadadc0bb7a5e227c8" prot="public" static="yes" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t eve::Integer::i32Max</definition>
+        <argsstring></argsstring>
+        <name>i32Max</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/core/integer.h" line="28" column="1" bodyfile="/Users/mike/svn/eve/development/trunk/sdk/inc/core/integer.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeve_1_1Integer_1a2167814fd075482449d623b5093ff542" prot="public" static="yes" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t eve::Integer::i32Min</definition>
+        <argsstring></argsstring>
+        <name>i32Min</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/core/integer.h" line="29" column="1" bodyfile="/Users/mike/svn/eve/development/trunk/sdk/inc/core/integer.h" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeve_1_1Integer_1af60efe43811e8ddee57e2cb211517852" prot="public" static="yes" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t eve::Integer::ui32Max</definition>
+        <argsstring></argsstring>
+        <name>ui32Max</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/core/integer.h" line="30" column="1" bodyfile="/Users/mike/svn/eve/development/trunk/sdk/inc/core/integer.h" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeve_1_1Integer_1a93419da60fe5cb9115b5791d15883f7d" prot="public" static="yes" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t eve::Integer::ui32Min</definition>
+        <argsstring></argsstring>
+        <name>ui32Min</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/core/integer.h" line="31" column="1" bodyfile="/Users/mike/svn/eve/development/trunk/sdk/inc/core/integer.h" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeve_1_1Integer_1a3af3876c1b0b00db7f910197602ae7fb" prot="public" static="yes" mutable="no">
+        <type>int16_t</type>
+        <definition>int16_t eve::Integer::i16Max</definition>
+        <argsstring></argsstring>
+        <name>i16Max</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/core/integer.h" line="33" column="1" bodyfile="/Users/mike/svn/eve/development/trunk/sdk/inc/core/integer.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeve_1_1Integer_1a8cdaf2cdf5a16a2097bbee8fcc651170" prot="public" static="yes" mutable="no">
+        <type>int16_t</type>
+        <definition>int16_t eve::Integer::i16Min</definition>
+        <argsstring></argsstring>
+        <name>i16Min</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/core/integer.h" line="34" column="1" bodyfile="/Users/mike/svn/eve/development/trunk/sdk/inc/core/integer.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeve_1_1Integer_1a18dec5a91afc6aeca7f5fcdb95660205" prot="public" static="yes" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t eve::Integer::ui16Max</definition>
+        <argsstring></argsstring>
+        <name>ui16Max</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/core/integer.h" line="35" column="1" bodyfile="/Users/mike/svn/eve/development/trunk/sdk/inc/core/integer.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeve_1_1Integer_1af71ed49673fe126cc67a434773d3296f" prot="public" static="yes" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t eve::Integer::ui16Min</definition>
+        <argsstring></argsstring>
+        <name>ui16Min</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/core/integer.h" line="36" column="1" bodyfile="/Users/mike/svn/eve/development/trunk/sdk/inc/core/integer.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeve_1_1Integer_1a09b58565c5c3d60e5b0ba6ab4eca5211" prot="public" static="yes" mutable="no">
+        <type>int8_t</type>
+        <definition>int8_t eve::Integer::i8Max</definition>
+        <argsstring></argsstring>
+        <name>i8Max</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/core/integer.h" line="38" column="1" bodyfile="/Users/mike/svn/eve/development/trunk/sdk/inc/core/integer.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeve_1_1Integer_1a6d04c5239b4b002cf012f53159354b34" prot="public" static="yes" mutable="no">
+        <type>int8_t</type>
+        <definition>int8_t eve::Integer::i8Min</definition>
+        <argsstring></argsstring>
+        <name>i8Min</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/core/integer.h" line="39" column="1" bodyfile="/Users/mike/svn/eve/development/trunk/sdk/inc/core/integer.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeve_1_1Integer_1abe35e4ae52f2def660f8018c48227a49" prot="public" static="yes" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t eve::Integer::ui8Max</definition>
+        <argsstring></argsstring>
+        <name>ui8Max</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/core/integer.h" line="40" column="1" bodyfile="/Users/mike/svn/eve/development/trunk/sdk/inc/core/integer.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeve_1_1Integer_1a7b25338f5c7dd1cd5dc612a0fdac0b40" prot="public" static="yes" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t eve::Integer::ui8Min</definition>
+        <argsstring></argsstring>
+        <name>ui8Min</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/core/integer.h" line="41" column="1" bodyfile="/Users/mike/svn/eve/development/trunk/sdk/inc/core/integer.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeve_1_1Integer_1aeaca93bad3fde6bfe661ea93c85bc045" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int eve::Integer::Max</definition>
+        <argsstring></argsstring>
+        <name>Max</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/core/integer.h" line="43" column="1" bodyfile="/Users/mike/svn/eve/development/trunk/sdk/inc/core/integer.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeve_1_1Integer_1a78f6ad496cd0bc932d679172d6ffa91f" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int eve::Integer::Min</definition>
+        <argsstring></argsstring>
+        <name>Min</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/core/integer.h" line="44" column="1" bodyfile="/Users/mike/svn/eve/development/trunk/sdk/inc/core/integer.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classeve_1_1Integer_1a521c92ba66ac57ec067d7d878522e6d2" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classeve_1_1String" kindref="compound">String</ref></type>
+        <definition>static String eve::Integer::toString</definition>
+        <argsstring>(int i)</argsstring>
+        <name>toString</name>
+        <param>
+          <type>int</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/core/integer.h" line="46" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/core/integer.h" line="19" column="1" bodyfile="/Users/mike/svn/eve/development/trunk/sdk/inc/core/integer.h" bodystart="19" bodyend="52"/>
+    <listofallmembers>
+      <member refid="classeve_1_1Integer_1a3af3876c1b0b00db7f910197602ae7fb" prot="public" virt="non-virtual"><scope>eve::Integer</scope><name>i16Max</name></member>
+      <member refid="classeve_1_1Integer_1a8cdaf2cdf5a16a2097bbee8fcc651170" prot="public" virt="non-virtual"><scope>eve::Integer</scope><name>i16Min</name></member>
+      <member refid="classeve_1_1Integer_1a4aa9366367f0fcbadadc0bb7a5e227c8" prot="public" virt="non-virtual"><scope>eve::Integer</scope><name>i32Max</name></member>
+      <member refid="classeve_1_1Integer_1a2167814fd075482449d623b5093ff542" prot="public" virt="non-virtual"><scope>eve::Integer</scope><name>i32Min</name></member>
+      <member refid="classeve_1_1Integer_1adbeee14c84d889669e65bf129845ed73" prot="public" virt="non-virtual"><scope>eve::Integer</scope><name>i64Max</name></member>
+      <member refid="classeve_1_1Integer_1adefd56956888ed9dad6542f1953c9eae" prot="public" virt="non-virtual"><scope>eve::Integer</scope><name>i64Min</name></member>
+      <member refid="classeve_1_1Integer_1a09b58565c5c3d60e5b0ba6ab4eca5211" prot="public" virt="non-virtual"><scope>eve::Integer</scope><name>i8Max</name></member>
+      <member refid="classeve_1_1Integer_1a6d04c5239b4b002cf012f53159354b34" prot="public" virt="non-virtual"><scope>eve::Integer</scope><name>i8Min</name></member>
+      <member refid="classeve_1_1Integer_1aeaca93bad3fde6bfe661ea93c85bc045" prot="public" virt="non-virtual"><scope>eve::Integer</scope><name>Max</name></member>
+      <member refid="classeve_1_1Integer_1a78f6ad496cd0bc932d679172d6ffa91f" prot="public" virt="non-virtual"><scope>eve::Integer</scope><name>Min</name></member>
+      <member refid="classeve_1_1Integer_1a521c92ba66ac57ec067d7d878522e6d2" prot="public" virt="non-virtual"><scope>eve::Integer</scope><name>toString</name></member>
+      <member refid="classeve_1_1Integer_1a18dec5a91afc6aeca7f5fcdb95660205" prot="public" virt="non-virtual"><scope>eve::Integer</scope><name>ui16Max</name></member>
+      <member refid="classeve_1_1Integer_1af71ed49673fe126cc67a434773d3296f" prot="public" virt="non-virtual"><scope>eve::Integer</scope><name>ui16Min</name></member>
+      <member refid="classeve_1_1Integer_1af60efe43811e8ddee57e2cb211517852" prot="public" virt="non-virtual"><scope>eve::Integer</scope><name>ui32Max</name></member>
+      <member refid="classeve_1_1Integer_1a93419da60fe5cb9115b5791d15883f7d" prot="public" virt="non-virtual"><scope>eve::Integer</scope><name>ui32Min</name></member>
+      <member refid="classeve_1_1Integer_1aa1e1f9ecc97372fc6acdbc0cd9e8f4a9" prot="public" virt="non-virtual"><scope>eve::Integer</scope><name>ui64Max</name></member>
+      <member refid="classeve_1_1Integer_1a8257027237a3c89ebe91fe114513c7f2" prot="public" virt="non-virtual"><scope>eve::Integer</scope><name>ui64Min</name></member>
+      <member refid="classeve_1_1Integer_1abe35e4ae52f2def660f8018c48227a49" prot="public" virt="non-virtual"><scope>eve::Integer</scope><name>ui8Max</name></member>
+      <member refid="classeve_1_1Integer_1a7b25338f5c7dd1cd5dc612a0fdac0b40" prot="public" virt="non-virtual"><scope>eve::Integer</scope><name>ui8Min</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,214 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.9.1">
+  <compounddef id="classeve_1_1Application" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>eve::Application</compoundname>
+    <includes refid="application_8h" local="no">application.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="classeve_1_1Application_1a2c63a5a95b92fa77816db0d910b05c1b" prot="public" static="no">
+        <name>GameLoopType</name>
+        <enumvalue id="classeve_1_1Application_1a2c63a5a95b92fa77816db0d910b05c1ba398fea748c8e3e883d8adcc70823f34c" prot="public">
+          <name>BoundUpdateAndRender</name>
+          <briefdescription>
+<para>Render is called after every update. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classeve_1_1Application_1a2c63a5a95b92fa77816db0d910b05c1bab7aa59e56789d424b3d494cc45f2b5f2" prot="public">
+          <name>FixedUpdateTimeStep</name>
+          <briefdescription>
+<para>Update delta is fixed and render is called with any remaining processor time. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/platform/application.h" line="29" column="1" bodyfile="/Users/mike/svn/eve/development/trunk/sdk/inc/platform/application.h" bodystart="29" bodyend="32"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classeve_1_1Application_1aba5bbc2b0beb77859c521e2c2aa3c880" prot="public" static="no" mutable="no">
+        <type><ref refid="classeve_1_1Application_1a2c63a5a95b92fa77816db0d910b05c1b" kindref="member">GameLoopType</ref></type>
+        <definition>GameLoopType eve::Application::GameLoopType</definition>
+        <argsstring></argsstring>
+        <name>GameLoopType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TODOC </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/platform/application.h" line="37" column="1" bodyfile="/Users/mike/svn/eve/development/trunk/sdk/inc/platform/application.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeve_1_1Application_1aa356740913a1d41f0c9ee477497a2be0" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int eve::Application::TargetUpdateDelta</definition>
+        <argsstring></argsstring>
+        <name>TargetUpdateDelta</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TODOC </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/platform/application.h" line="42" column="1" bodyfile="/Users/mike/svn/eve/development/trunk/sdk/inc/platform/application.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classeve_1_1Application_1a43a8d3c0347de9e29073c995f5570461" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void eve::Application::config</definition>
+        <argsstring>()=0</argsstring>
+        <name>config</name>
+        <briefdescription>
+<para>Configure the application. </para>        </briefdescription>
+        <detaileddescription>
+<para>Called by the platform to configure the application. This method should be used to configure the platform e.g. create Screen(s). This method should not be used to perform platform operations e.g. loading resources. <simplesect kind="note"><para><ref refid="classeve_1_1Application" kindref="compound">Application</ref> class constructor should not be used to configure the application. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/platform/application.h" line="52" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classeve_1_1Application_1af18d8466cd2846fa289e2a3858f79682" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void eve::Application::init</definition>
+        <argsstring>()=0</argsstring>
+        <name>init</name>
+        <briefdescription>
+<para>Initialise the application. </para>        </briefdescription>
+        <detaileddescription>
+<para>Called by the platform to initialise the application. This method should be used to allocate application wide objects. This method can be used to perform platform operations e.g. loading resources. <simplesect kind="note"><para><ref refid="classeve_1_1Application" kindref="compound">Application</ref> class constructor should not be used to initialise the applicaiton. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/platform/application.h" line="62" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classeve_1_1Application_1ac54e5e00dcdc20a3af6e7c31c100b63a" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void eve::Application::destroy</definition>
+        <argsstring>()=0</argsstring>
+        <name>destroy</name>
+        <briefdescription>
+<para>Destroy the application. </para>        </briefdescription>
+        <detaileddescription>
+<para>Called by the platform to destroy the application. This method should be used to release application wide objects. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/platform/application.h" line="70" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classeve_1_1Application_1aff6f90404756afc7ad72dad2f341630d" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void eve::Application::pause</definition>
+        <argsstring>()=0</argsstring>
+        <name>pause</name>
+        <briefdescription>
+<para>Pause the application. </para>        </briefdescription>
+        <detaileddescription>
+<para>Called by the platform to pause the application. This method is called during a device interrupt e.g. answering a call. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/platform/application.h" line="78" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classeve_1_1Application_1a30e6a02e4ece0897694d91551a16911b" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void eve::Application::resume</definition>
+        <argsstring>()=0</argsstring>
+        <name>resume</name>
+        <briefdescription>
+<para>Resume the application. </para>        </briefdescription>
+        <detaileddescription>
+<para>Called by the platform to resume the application. This method is called when returning from a device interrupt. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/platform/application.h" line="86" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classeve_1_1Application_1ad0acf963d974e291eb3453be89625138" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void eve::Application::update</definition>
+        <argsstring>(const int delta)=0</argsstring>
+        <name>update</name>
+        <param>
+          <type>const int</type>
+          <declname>delta</declname>
+        </param>
+        <briefdescription>
+<para>Update the application. </para>        </briefdescription>
+        <detaileddescription>
+<para>Provides processing time to the application. <simplesect kind="see"><para>Platform::setTargetUpdateDelta. </para></simplesect>
+<simplesect kind="see"><para>Platform::setGameLoopType.</para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">delta</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Time passed in ms since last update. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/platform/application.h" line="97" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classeve_1_1Application_1a72b880b87ffadc7a30e68f05cd307884" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void eve::Application::render</definition>
+        <argsstring>(Renderable *renderable, const float interpolation)=0</argsstring>
+        <name>render</name>
+        <param>
+          <type><ref refid="classeve_1_1Renderable" kindref="compound">Renderable</ref> *</type>
+          <declname>renderable</declname>
+        </param>
+        <param>
+          <type>const float</type>
+          <declname>interpolation</declname>
+        </param>
+        <briefdescription>
+<para>Render the application. </para>        </briefdescription>
+        <detaileddescription>
+<para>Provides rendering time to the application. <simplesect kind="see"><para>Platform::setTargetUpdateDelta. </para></simplesect>
+<simplesect kind="see"><para>Platform::setGameLoopType. </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">renderable</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Default renderable i.e. <ref refid="classeve_1_1Screen" kindref="compound">Screen</ref> zero. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">interpolation</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Linear interpolation value from 0.0 (this frame) to 1.0 (next frame). </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/platform/application.h" line="108" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/platform/application.h" line="22" column="1" bodyfile="/Users/mike/svn/eve/development/trunk/sdk/inc/platform/application.h" bodystart="22" bodyend="109"/>
+    <listofallmembers>
+      <member refid="classeve_1_1Application_1a2c63a5a95b92fa77816db0d910b05c1ba398fea748c8e3e883d8adcc70823f34c" prot="public" virt="non-virtual"><scope>eve::Application</scope><name>BoundUpdateAndRender</name></member>
+      <member refid="classeve_1_1Application_1a43a8d3c0347de9e29073c995f5570461" prot="public" virt="pure-virtual"><scope>eve::Application</scope><name>config</name></member>
+      <member refid="classeve_1_1Application_1ac54e5e00dcdc20a3af6e7c31c100b63a" prot="public" virt="pure-virtual"><scope>eve::Application</scope><name>destroy</name></member>
+      <member refid="classeve_1_1Application_1a2c63a5a95b92fa77816db0d910b05c1bab7aa59e56789d424b3d494cc45f2b5f2" prot="public" virt="non-virtual"><scope>eve::Application</scope><name>FixedUpdateTimeStep</name></member>
+      <member refid="classeve_1_1Application_1a2c63a5a95b92fa77816db0d910b05c1b" prot="public" virt="non-virtual"><scope>eve::Application</scope><name>GameLoopType</name></member>
+      <member refid="classeve_1_1Application_1aba5bbc2b0beb77859c521e2c2aa3c880" prot="public" virt="non-virtual"><scope>eve::Application</scope><name>GameLoopType</name></member>
+      <member refid="classeve_1_1Application_1af18d8466cd2846fa289e2a3858f79682" prot="public" virt="pure-virtual"><scope>eve::Application</scope><name>init</name></member>
+      <member refid="classeve_1_1Application_1aff6f90404756afc7ad72dad2f341630d" prot="public" virt="pure-virtual"><scope>eve::Application</scope><name>pause</name></member>
+      <member refid="classeve_1_1Application_1a72b880b87ffadc7a30e68f05cd307884" prot="public" virt="pure-virtual"><scope>eve::Application</scope><name>render</name></member>
+      <member refid="classeve_1_1Application_1a30e6a02e4ece0897694d91551a16911b" prot="public" virt="pure-virtual"><scope>eve::Application</scope><name>resume</name></member>
+      <member refid="classeve_1_1Application_1aa356740913a1d41f0c9ee477497a2be0" prot="public" virt="non-virtual"><scope>eve::Application</scope><name>TargetUpdateDelta</name></member>
+      <member refid="classeve_1_1Application_1ad0acf963d974e291eb3453be89625138" prot="public" virt="pure-virtual"><scope>eve::Application</scope><name>update</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

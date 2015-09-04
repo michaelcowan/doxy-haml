@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.9.1">
+  <compounddef id="depthstencil_8h" kind="file" language="C++">
+    <compoundname>depthstencil.h</compoundname>
+    <includedby refid="eve_8h" local="yes">/Users/mike/svn/eve/development/trunk/sdk/inc/eve.h</includedby>
+    <invincdepgraph>
+      <node id="210">
+        <label>/Users/mike/svn/eve/development/trunk/sdk/inc/eve.h</label>
+        <link refid="eve_8h"/>
+      </node>
+      <node id="209">
+        <label>/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/depthstencil.h</label>
+        <link refid="depthstencil.h"/>
+        <childnode refid="210" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classeve_1_1DepthStencil" prot="public">eve::DepthStencil</innerclass>
+    <innernamespace refid="namespaceeve">eve</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/depthstencil.h"/>
+  </compounddef>
+</doxygen>

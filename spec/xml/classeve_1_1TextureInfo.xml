@@ -1,0 +1,233 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.9.1">
+  <compounddef id="classeve_1_1TextureInfo" kind="class" language="C++" prot="public">
+    <compoundname>eve::TextureInfo</compoundname>
+    <includes refid="textureinfo_8h" local="no">textureinfo.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="classeve_1_1TextureInfo_1a0bdf1424693eaaa72f515d388980b8fb" prot="public" static="no">
+        <name>PixelFormat</name>
+        <enumvalue id="classeve_1_1TextureInfo_1a0bdf1424693eaaa72f515d388980b8fbad04dd714e068bf4b32da81bab531be0f" prot="public">
+          <name>RGBA_8888_PRE_MULT</name>
+          <briefdescription>
+<para>RGBA 8888 format with pre-multiplied alpha. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classeve_1_1TextureInfo_1a0bdf1424693eaaa72f515d388980b8fba77bf840b5666f29733d980b9b1d6713c" prot="public">
+          <name>RGBA_4444_PRE_MULT</name>
+          <briefdescription>
+<para>RGBA 4444 format with pre-multiplied alpha. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classeve_1_1TextureInfo_1a0bdf1424693eaaa72f515d388980b8fba6ddffdd1dc7e7050f7ab66376407431a" prot="public">
+          <name>RGBA_8888</name>
+          <briefdescription>
+<para>RGBA 8888 format. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classeve_1_1TextureInfo_1a0bdf1424693eaaa72f515d388980b8fbad93bff61c3c63173b3b7aaf47b81d65a" prot="public">
+          <name>RGBA_4444</name>
+          <briefdescription>
+<para>RGBA 4444 format. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classeve_1_1TextureInfo_1a0bdf1424693eaaa72f515d388980b8fba6d9b1fb32bea64ae0578cfcf0c798dbb" prot="public">
+          <name>RGBA_5551</name>
+          <briefdescription>
+<para>RGBA 5551 format. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classeve_1_1TextureInfo_1a0bdf1424693eaaa72f515d388980b8fbaf8bc1fdb5c4881a508c296f7f3ee1913" prot="public">
+          <name>RGB_888</name>
+          <briefdescription>
+<para>RGB 888 format. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classeve_1_1TextureInfo_1a0bdf1424693eaaa72f515d388980b8fbac23979f85561b3c3df8dfd18d909b1b0" prot="public">
+          <name>RGB_565</name>
+          <briefdescription>
+<para>RGB 565 format. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classeve_1_1TextureInfo_1a0bdf1424693eaaa72f515d388980b8fba1a6a87e82df3b2af47d66b9671aaf575" prot="public">
+          <name>ALPHA_8</name>
+          <briefdescription>
+<para>Alpha 8 format. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para><ref refid="classeve_1_1Texture" kindref="compound">Texture</ref> pixel format type. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/textureinfo.h" line="26" column="1" bodyfile="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/textureinfo.h" bodystart="26" bodyend="35"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classeve_1_1TextureInfo_1a9409364ceb2a81c44d1f46aa98df4bba" prot="public" static="no" mutable="no">
+        <type><ref refid="types_8h_1a92c50087ca0e64fa93fc59402c55f8ca" kindref="member">u8</ref> *</type>
+        <definition>u8* eve::TextureInfo::data</definition>
+        <argsstring></argsstring>
+        <name>data</name>
+        <briefdescription>
+<para>Validate this object. </para>        </briefdescription>
+        <detaileddescription>
+<para>Performs tests to ensure the object is valid. Once a test fails the function returns. Tests are performed with priority given to the lowest integer value TextureInfo::State i.e. if DataIsNull is set then nothing else is tested.</para><para><simplesect kind="return"><para>Highest priority TextureInfo::State of the object. Flip texture data vertically.</para></simplesect>
+Vertically flips the texture data.Texture data. Default: NULL. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/textureinfo.h" line="79" column="1" bodyfile="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/textureinfo.h" bodystart="79" bodyend="-1"/>
+        <referencedby refid="classeve_1_1TextureInfo_1aed2bdcfd2588f2c498fe641d62b21def" compoundref="textureinfo_8h" startline="48" endline="54">TextureInfo</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classeve_1_1TextureInfo_1a8db113ac98cf3eef8006166600cae95b" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int eve::TextureInfo::levels</definition>
+        <argsstring></argsstring>
+        <name>levels</name>
+        <briefdescription>
+<para>Number of levels of detail supplied by data. Default: 1. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/textureinfo.h" line="80" column="1" bodyfile="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/textureinfo.h" bodystart="80" bodyend="-1"/>
+        <referencedby refid="classeve_1_1TextureInfo_1aed2bdcfd2588f2c498fe641d62b21def" compoundref="textureinfo_8h" startline="48" endline="54">TextureInfo</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classeve_1_1TextureInfo_1a42b8626ae95763a4a02a0a1579126877" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int eve::TextureInfo::width</definition>
+        <argsstring></argsstring>
+        <name>width</name>
+        <briefdescription>
+<para>Width of the texture data. Default: 0. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/textureinfo.h" line="81" column="1" bodyfile="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/textureinfo.h" bodystart="81" bodyend="-1"/>
+        <referencedby refid="classeve_1_1TextureInfo_1aed2bdcfd2588f2c498fe641d62b21def" compoundref="textureinfo_8h" startline="48" endline="54">TextureInfo</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classeve_1_1TextureInfo_1ae6dfea74bde0ba78b46e96951a896641" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int eve::TextureInfo::height</definition>
+        <argsstring></argsstring>
+        <name>height</name>
+        <briefdescription>
+<para>Height of the texture data. Default: 0. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/textureinfo.h" line="82" column="1" bodyfile="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/textureinfo.h" bodystart="82" bodyend="-1"/>
+        <referencedby refid="classeve_1_1TextureInfo_1aed2bdcfd2588f2c498fe641d62b21def" compoundref="textureinfo_8h" startline="48" endline="54">TextureInfo</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classeve_1_1TextureInfo_1a8d9af1761bbb0f3319c7dab3248364e1" prot="public" static="no" mutable="no">
+        <type><ref refid="classeve_1_1TextureInfo_1a0bdf1424693eaaa72f515d388980b8fb" kindref="member">PixelFormat</ref></type>
+        <definition>PixelFormat eve::TextureInfo::format</definition>
+        <argsstring></argsstring>
+        <name>format</name>
+        <briefdescription>
+<para>Format of the pixel data. Default: RGBA_8888. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/textureinfo.h" line="83" column="1" bodyfile="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/textureinfo.h" bodystart="83" bodyend="-1"/>
+        <referencedby refid="classeve_1_1TextureInfo_1aed2bdcfd2588f2c498fe641d62b21def" compoundref="textureinfo_8h" startline="48" endline="54">TextureInfo</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classeve_1_1TextureInfo_1aa9ab257c25764b705333bd7e91ce69d5" prot="public" static="no" mutable="no">
+        <type><ref refid="classeve_1_1TextureHint" kindref="compound">TextureHint</ref></type>
+        <definition>TextureHint eve::TextureInfo::hints</definition>
+        <argsstring></argsstring>
+        <name>hints</name>
+        <briefdescription>
+<para><ref refid="classeve_1_1Texture" kindref="compound">Texture</ref> hints (will be applied if supported). </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/textureinfo.h" line="84" column="1" bodyfile="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/textureinfo.h" bodystart="84" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classeve_1_1TextureInfo_1aed2bdcfd2588f2c498fe641d62b21def" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>eve::TextureInfo::TextureInfo</definition>
+        <argsstring>()</argsstring>
+        <name>TextureInfo</name>
+        <briefdescription>
+<para><ref refid="classeve_1_1TextureInfo" kindref="compound">TextureInfo</ref> validation states. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/textureinfo.h" line="48" column="1" bodyfile="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/textureinfo.h" bodystart="48" bodyend="54"/>
+        <references refid="classeve_1_1TextureInfo_1a9409364ceb2a81c44d1f46aa98df4bba" compoundref="textureinfo_8h" startline="79">data</references>
+        <references refid="classeve_1_1TextureInfo_1a8d9af1761bbb0f3319c7dab3248364e1" compoundref="textureinfo_8h" startline="83">format</references>
+        <references refid="classeve_1_1TextureInfo_1ae6dfea74bde0ba78b46e96951a896641" compoundref="textureinfo_8h" startline="82">height</references>
+        <references refid="classeve_1_1TextureInfo_1a8db113ac98cf3eef8006166600cae95b" compoundref="textureinfo_8h" startline="80">levels</references>
+        <references refid="global_8h_1a070d2ce7b6bb7e5c05602aa8c308d0c4" compoundref="global_8h" startline="16">NULL</references>
+        <references refid="classeve_1_1TextureInfo_1a0bdf1424693eaaa72f515d388980b8fba6ddffdd1dc7e7050f7ab66376407431a" compoundref="textureinfo_8h" startline="29">RGBA_8888</references>
+        <references refid="classeve_1_1TextureInfo_1a42b8626ae95763a4a02a0a1579126877" compoundref="textureinfo_8h" startline="81">width</references>
+      </memberdef>
+      <memberdef kind="function" id="classeve_1_1TextureInfo_1ae6efb191cfce2f68314be8c61fee9de5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int eve::TextureInfo::bpp</definition>
+        <argsstring>()</argsstring>
+        <name>bpp</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/textureinfo.h" line="56" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="94">
+        <label>eve::TextureHint</label>
+        <link refid="classeve_1_1TextureHint"/>
+      </node>
+      <node id="93">
+        <label>eve::TextureInfo</label>
+        <link refid="classeve_1_1TextureInfo"/>
+        <childnode refid="94" relation="usage">
+          <edgelabel>hints</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/textureinfo.h" line="19" column="1" bodyfile="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/textureinfo.h" bodystart="19" bodyend="86"/>
+    <listofallmembers>
+      <member refid="classeve_1_1TextureInfo_1a0bdf1424693eaaa72f515d388980b8fba1a6a87e82df3b2af47d66b9671aaf575" prot="public" virt="non-virtual"><scope>eve::TextureInfo</scope><name>ALPHA_8</name></member>
+      <member refid="classeve_1_1TextureInfo_1ae6efb191cfce2f68314be8c61fee9de5" prot="public" virt="non-virtual"><scope>eve::TextureInfo</scope><name>bpp</name></member>
+      <member refid="classeve_1_1TextureInfo_1a9409364ceb2a81c44d1f46aa98df4bba" prot="public" virt="non-virtual"><scope>eve::TextureInfo</scope><name>data</name></member>
+      <member refid="classeve_1_1TextureInfo_1a8d9af1761bbb0f3319c7dab3248364e1" prot="public" virt="non-virtual"><scope>eve::TextureInfo</scope><name>format</name></member>
+      <member refid="classeve_1_1TextureInfo_1ae6dfea74bde0ba78b46e96951a896641" prot="public" virt="non-virtual"><scope>eve::TextureInfo</scope><name>height</name></member>
+      <member refid="classeve_1_1TextureInfo_1aa9ab257c25764b705333bd7e91ce69d5" prot="public" virt="non-virtual"><scope>eve::TextureInfo</scope><name>hints</name></member>
+      <member refid="classeve_1_1TextureInfo_1a8db113ac98cf3eef8006166600cae95b" prot="public" virt="non-virtual"><scope>eve::TextureInfo</scope><name>levels</name></member>
+      <member refid="classeve_1_1TextureInfo_1a0bdf1424693eaaa72f515d388980b8fb" prot="public" virt="non-virtual"><scope>eve::TextureInfo</scope><name>PixelFormat</name></member>
+      <member refid="classeve_1_1TextureInfo_1a0bdf1424693eaaa72f515d388980b8fbac23979f85561b3c3df8dfd18d909b1b0" prot="public" virt="non-virtual"><scope>eve::TextureInfo</scope><name>RGB_565</name></member>
+      <member refid="classeve_1_1TextureInfo_1a0bdf1424693eaaa72f515d388980b8fbaf8bc1fdb5c4881a508c296f7f3ee1913" prot="public" virt="non-virtual"><scope>eve::TextureInfo</scope><name>RGB_888</name></member>
+      <member refid="classeve_1_1TextureInfo_1a0bdf1424693eaaa72f515d388980b8fbad93bff61c3c63173b3b7aaf47b81d65a" prot="public" virt="non-virtual"><scope>eve::TextureInfo</scope><name>RGBA_4444</name></member>
+      <member refid="classeve_1_1TextureInfo_1a0bdf1424693eaaa72f515d388980b8fba77bf840b5666f29733d980b9b1d6713c" prot="public" virt="non-virtual"><scope>eve::TextureInfo</scope><name>RGBA_4444_PRE_MULT</name></member>
+      <member refid="classeve_1_1TextureInfo_1a0bdf1424693eaaa72f515d388980b8fba6d9b1fb32bea64ae0578cfcf0c798dbb" prot="public" virt="non-virtual"><scope>eve::TextureInfo</scope><name>RGBA_5551</name></member>
+      <member refid="classeve_1_1TextureInfo_1a0bdf1424693eaaa72f515d388980b8fba6ddffdd1dc7e7050f7ab66376407431a" prot="public" virt="non-virtual"><scope>eve::TextureInfo</scope><name>RGBA_8888</name></member>
+      <member refid="classeve_1_1TextureInfo_1a0bdf1424693eaaa72f515d388980b8fbad04dd714e068bf4b32da81bab531be0f" prot="public" virt="non-virtual"><scope>eve::TextureInfo</scope><name>RGBA_8888_PRE_MULT</name></member>
+      <member refid="classeve_1_1TextureInfo_1aed2bdcfd2588f2c498fe641d62b21def" prot="public" virt="non-virtual"><scope>eve::TextureInfo</scope><name>TextureInfo</name></member>
+      <member refid="classeve_1_1TextureInfo_1a42b8626ae95763a4a02a0a1579126877" prot="public" virt="non-virtual"><scope>eve::TextureInfo</scope><name>width</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

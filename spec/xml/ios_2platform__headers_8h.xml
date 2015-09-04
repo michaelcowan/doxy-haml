@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.9.1">
+  <compounddef id="ios_2platform__headers_8h" kind="file" language="C++">
+    <compoundname>platform_headers.h</compoundname>
+    <includes local="no">opengles/es2/gl.h</includes>
+    <includes local="no">opengles/es2/glext.h</includes>
+    <incdepgraph>
+      <node id="466">
+        <label>opengles/es2/gl.h</label>
+      </node>
+      <node id="465">
+        <label>/Users/mike/svn/eve/development/trunk/sdk/inc/platform/ios/platform_headers.h</label>
+        <link refid="ios/platform_headers.h"/>
+        <childnode refid="466" relation="include">
+        </childnode>
+        <childnode refid="467" relation="include">
+        </childnode>
+      </node>
+      <node id="467">
+        <label>opengles/es2/glext.h</label>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/platform/ios/platform_headers.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,138 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.9.1">
+  <compounddef id="classeve_1_1RenderableFormat" kind="class" language="C++" prot="public">
+    <compoundname>eve::RenderableFormat</compoundname>
+    <includes refid="renderableformat_8h" local="no">renderableformat.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="classeve_1_1RenderableFormat_1a01a886f3bc066b5354e0d386a109b682" prot="public" static="no">
+        <name>ColorFormat</name>
+        <enumvalue id="classeve_1_1RenderableFormat_1a01a886f3bc066b5354e0d386a109b682a8b119d0c804bbd49bf774dd40f8a5e65" prot="public">
+          <name>RGBA_8888</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classeve_1_1RenderableFormat_1a01a886f3bc066b5354e0d386a109b682ae6b40f156a2407e9ea257c619587e476" prot="public">
+          <name>RGB_565</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/renderableformat.h" line="21" column="1" bodyfile="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/renderableformat.h" bodystart="21" bodyend="24"/>
+      </memberdef>
+      <memberdef kind="enum" id="classeve_1_1RenderableFormat_1ae009d554aff9ee215a400247cdc24522" prot="public" static="no">
+        <name>DepthStencilFormat</name>
+        <enumvalue id="classeve_1_1RenderableFormat_1ae009d554aff9ee215a400247cdc24522a62625486328691f61b6e4b3820128bde" prot="public">
+          <name>None</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classeve_1_1RenderableFormat_1ae009d554aff9ee215a400247cdc24522aad6c5a8af9ce0cc0e8301a8cfdc62bde" prot="public">
+          <name>Depth16</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classeve_1_1RenderableFormat_1ae009d554aff9ee215a400247cdc24522a0a621194585d619c53a4b4ba8eab0c8b" prot="public">
+          <name>Depth24</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classeve_1_1RenderableFormat_1ae009d554aff9ee215a400247cdc24522ab176d3066fc3eaadecd591d25aa0f07c" prot="public">
+          <name>Depth24Stencil8</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/renderableformat.h" line="26" column="1" bodyfile="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/renderableformat.h" bodystart="26" bodyend="31"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classeve_1_1RenderableFormat_1a1e5ce8a2766b3c6044bd444d94385281" prot="public" static="no" mutable="no">
+        <type><ref refid="classeve_1_1RenderableFormat_1a01a886f3bc066b5354e0d386a109b682" kindref="member">ColorFormat</ref></type>
+        <definition>ColorFormat eve::RenderableFormat::color</definition>
+        <argsstring></argsstring>
+        <name>color</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/renderableformat.h" line="38" column="1" bodyfile="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/renderableformat.h" bodystart="38" bodyend="-1"/>
+        <referencedby refid="classeve_1_1RenderableFormat_1a60def4fbc3778045863af850a081d3fc" compoundref="renderableformat_8h" startline="33" endline="36">RenderableFormat</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classeve_1_1RenderableFormat_1a32737ea7fd7685743b37316a22c667f7" prot="public" static="no" mutable="no">
+        <type><ref refid="classeve_1_1RenderableFormat_1ae009d554aff9ee215a400247cdc24522" kindref="member">DepthStencilFormat</ref></type>
+        <definition>DepthStencilFormat eve::RenderableFormat::depthStencil</definition>
+        <argsstring></argsstring>
+        <name>depthStencil</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/renderableformat.h" line="39" column="1" bodyfile="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/renderableformat.h" bodystart="39" bodyend="-1"/>
+        <referencedby refid="classeve_1_1RenderableFormat_1a60def4fbc3778045863af850a081d3fc" compoundref="renderableformat_8h" startline="33" endline="36">RenderableFormat</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classeve_1_1RenderableFormat_1a60def4fbc3778045863af850a081d3fc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>eve::RenderableFormat::RenderableFormat</definition>
+        <argsstring>()</argsstring>
+        <name>RenderableFormat</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/renderableformat.h" line="33" column="1" bodyfile="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/renderableformat.h" bodystart="33" bodyend="36"/>
+        <references refid="classeve_1_1RenderableFormat_1a1e5ce8a2766b3c6044bd444d94385281" compoundref="renderableformat_8h" startline="38">color</references>
+        <references refid="classeve_1_1RenderableFormat_1a32737ea7fd7685743b37316a22c667f7" compoundref="renderableformat_8h" startline="39">depthStencil</references>
+        <references refid="classeve_1_1RenderableFormat_1ae009d554aff9ee215a400247cdc24522a62625486328691f61b6e4b3820128bde" compoundref="renderableformat_8h" startline="27">None</references>
+        <references refid="classeve_1_1RenderableFormat_1a01a886f3bc066b5354e0d386a109b682a8b119d0c804bbd49bf774dd40f8a5e65" compoundref="renderableformat_8h" startline="22">RGBA_8888</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/renderableformat.h" line="17" column="1" bodyfile="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/renderableformat.h" bodystart="17" bodyend="41"/>
+    <listofallmembers>
+      <member refid="classeve_1_1RenderableFormat_1a1e5ce8a2766b3c6044bd444d94385281" prot="public" virt="non-virtual"><scope>eve::RenderableFormat</scope><name>color</name></member>
+      <member refid="classeve_1_1RenderableFormat_1a01a886f3bc066b5354e0d386a109b682" prot="public" virt="non-virtual"><scope>eve::RenderableFormat</scope><name>ColorFormat</name></member>
+      <member refid="classeve_1_1RenderableFormat_1ae009d554aff9ee215a400247cdc24522aad6c5a8af9ce0cc0e8301a8cfdc62bde" prot="public" virt="non-virtual"><scope>eve::RenderableFormat</scope><name>Depth16</name></member>
+      <member refid="classeve_1_1RenderableFormat_1ae009d554aff9ee215a400247cdc24522a0a621194585d619c53a4b4ba8eab0c8b" prot="public" virt="non-virtual"><scope>eve::RenderableFormat</scope><name>Depth24</name></member>
+      <member refid="classeve_1_1RenderableFormat_1ae009d554aff9ee215a400247cdc24522ab176d3066fc3eaadecd591d25aa0f07c" prot="public" virt="non-virtual"><scope>eve::RenderableFormat</scope><name>Depth24Stencil8</name></member>
+      <member refid="classeve_1_1RenderableFormat_1a32737ea7fd7685743b37316a22c667f7" prot="public" virt="non-virtual"><scope>eve::RenderableFormat</scope><name>depthStencil</name></member>
+      <member refid="classeve_1_1RenderableFormat_1ae009d554aff9ee215a400247cdc24522" prot="public" virt="non-virtual"><scope>eve::RenderableFormat</scope><name>DepthStencilFormat</name></member>
+      <member refid="classeve_1_1RenderableFormat_1ae009d554aff9ee215a400247cdc24522a62625486328691f61b6e4b3820128bde" prot="public" virt="non-virtual"><scope>eve::RenderableFormat</scope><name>None</name></member>
+      <member refid="classeve_1_1RenderableFormat_1a60def4fbc3778045863af850a081d3fc" prot="public" virt="non-virtual"><scope>eve::RenderableFormat</scope><name>RenderableFormat</name></member>
+      <member refid="classeve_1_1RenderableFormat_1a01a886f3bc066b5354e0d386a109b682ae6b40f156a2407e9ea257c619587e476" prot="public" virt="non-virtual"><scope>eve::RenderableFormat</scope><name>RGB_565</name></member>
+      <member refid="classeve_1_1RenderableFormat_1a01a886f3bc066b5354e0d386a109b682a8b119d0c804bbd49bf774dd40f8a5e65" prot="public" virt="non-virtual"><scope>eve::RenderableFormat</scope><name>RGBA_8888</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,119 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.9.1">
+  <compounddef id="classeve_1_1VertexPositionTexture" kind="class" language="C++" prot="public">
+    <compoundname>eve::VertexPositionTexture</compoundname>
+    <basecompoundref refid="classeve_1_1VertexType" prot="public" virt="non-virtual">eve::VertexType</basecompoundref>
+    <includes refid="vertexpositiontexture_8h" local="no">vertexpositiontexture.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classeve_1_1VertexPositionTexture_1ab901cba1ac5fe6a4d53edf404f4f63c4" prot="public" static="no" mutable="no">
+        <type><ref refid="classeve_1_1Vector3" kindref="compound">Vector3</ref></type>
+        <definition>Vector3 eve::VertexPositionTexture::position</definition>
+        <argsstring></argsstring>
+        <name>position</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/vertexpositiontexture.h" line="23" column="1" bodyfile="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/vertexpositiontexture.h" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeve_1_1VertexPositionTexture_1aed5e09705703c2d738a8b9ff3e560213" prot="public" static="no" mutable="no">
+        <type><ref refid="classeve_1_1Vector2" kindref="compound">Vector2</ref></type>
+        <definition>Vector2 eve::VertexPositionTexture::uv</definition>
+        <argsstring></argsstring>
+        <name>uv</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/vertexpositiontexture.h" line="24" column="1" bodyfile="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/vertexpositiontexture.h" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classeve_1_1VertexPositionTexture_1a48f7733dd958e5dbcb68d8bcdd3c61ea" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classeve_1_1Array" kindref="compound">Array</ref>&lt; <ref refid="classeve_1_1VertexMetaData" kindref="compound">VertexMetaData</ref> &gt;</type>
+        <definition>static Array&lt;VertexMetaData&gt; eve::VertexPositionTexture::metadata</definition>
+        <argsstring>()</argsstring>
+        <name>metadata</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/vertexpositiontexture.h" line="26" column="1" bodyfile="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/vertexpositiontexture.h" bodystart="26" bodyend="31"/>
+        <references refid="classeve_1_1VertexMetaData_1a2ee807482938d81f8b6b7e1bf4d472b0ac251da2282c22f797b219f14de385b2d" compoundref="vertexmetadata_8h" startline="26">eve::VertexMetaData::Float</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="127">
+        <label>eve::VertexType</label>
+        <link refid="classeve_1_1VertexType"/>
+      </node>
+      <node id="126">
+        <label>eve::VertexPositionTexture</label>
+        <link refid="classeve_1_1VertexPositionTexture"/>
+        <childnode refid="127" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="130">
+        <label>eve::Vector2</label>
+        <link refid="classeve_1_1Vector2"/>
+        <childnode refid="130" relation="usage">
+          <edgelabel>UnitX</edgelabel>
+          <edgelabel>UnitY</edgelabel>
+          <edgelabel>One</edgelabel>
+          <edgelabel>Zero</edgelabel>
+        </childnode>
+      </node>
+      <node id="131">
+        <label>eve::Vector3</label>
+        <link refid="classeve_1_1Vector3"/>
+        <childnode refid="131" relation="usage">
+          <edgelabel>Down</edgelabel>
+          <edgelabel>UnitX</edgelabel>
+          <edgelabel>Backward</edgelabel>
+          <edgelabel>UnitY</edgelabel>
+          <edgelabel>One</edgelabel>
+          <edgelabel>Forward</edgelabel>
+          <edgelabel>UnitZ</edgelabel>
+          <edgelabel>Left</edgelabel>
+          <edgelabel>Right</edgelabel>
+          <edgelabel>Zero</edgelabel>
+          <edgelabel>...</edgelabel>
+        </childnode>
+      </node>
+      <node id="129">
+        <label>eve::VertexType</label>
+        <link refid="classeve_1_1VertexType"/>
+      </node>
+      <node id="128">
+        <label>eve::VertexPositionTexture</label>
+        <link refid="classeve_1_1VertexPositionTexture"/>
+        <childnode refid="129" relation="public-inheritance">
+        </childnode>
+        <childnode refid="130" relation="usage">
+          <edgelabel>uv</edgelabel>
+        </childnode>
+        <childnode refid="131" relation="usage">
+          <edgelabel>position</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/vertexpositiontexture.h" line="19" column="1" bodyfile="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/vertexpositiontexture.h" bodystart="19" bodyend="32"/>
+    <listofallmembers>
+      <member refid="classeve_1_1VertexPositionTexture_1a48f7733dd958e5dbcb68d8bcdd3c61ea" prot="public" virt="non-virtual"><scope>eve::VertexPositionTexture</scope><name>metadata</name></member>
+      <member refid="classeve_1_1VertexPositionTexture_1ab901cba1ac5fe6a4d53edf404f4f63c4" prot="public" virt="non-virtual"><scope>eve::VertexPositionTexture</scope><name>position</name></member>
+      <member refid="classeve_1_1VertexPositionTexture_1aed5e09705703c2d738a8b9ff3e560213" prot="public" virt="non-virtual"><scope>eve::VertexPositionTexture</scope><name>uv</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

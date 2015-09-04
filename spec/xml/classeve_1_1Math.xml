@@ -1,0 +1,432 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.9.1">
+  <compounddef id="classeve_1_1Math" kind="class" language="C++" prot="public">
+    <compoundname>eve::Math</compoundname>
+    <includes refid="math_8h" local="no">math.h</includes>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classeve_1_1Math_1a961a28f0116f0e88a7ce3550dfbfa68f" prot="public" static="yes" mutable="no">
+        <type>const float</type>
+        <definition>const float eve::Math::E</definition>
+        <argsstring></argsstring>
+        <name>E</name>
+        <briefdescription>
+<para>Floating point value of the natural logarithmic base. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/math/math.h" line="19" column="1" bodyfile="/Users/mike/svn/eve/development/trunk/sdk/inc/math/math.h" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeve_1_1Math_1a54ef8c39128f19778404a6e29ebee1e0" prot="public" static="yes" mutable="no">
+        <type>const float</type>
+        <definition>const float eve::Math::Log10E</definition>
+        <argsstring></argsstring>
+        <name>Log10E</name>
+        <briefdescription>
+<para>Floating point value of the log base ten of e. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/math/math.h" line="20" column="1" bodyfile="/Users/mike/svn/eve/development/trunk/sdk/inc/math/math.h" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeve_1_1Math_1afbb5af1fc7b6127b705c9a1835c6f843" prot="public" static="yes" mutable="no">
+        <type>const float</type>
+        <definition>const float eve::Math::Log2E</definition>
+        <argsstring></argsstring>
+        <name>Log2E</name>
+        <briefdescription>
+<para>Floating point value of the log base two of e. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/math/math.h" line="21" column="1" bodyfile="/Users/mike/svn/eve/development/trunk/sdk/inc/math/math.h" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeve_1_1Math_1a2c8a5ee64ab780afafc6bf9eaa820fee" prot="public" static="yes" mutable="no">
+        <type>const float</type>
+        <definition>const float eve::Math::Pi</definition>
+        <argsstring></argsstring>
+        <name>Pi</name>
+        <briefdescription>
+<para>Floating point value of pi. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/math/math.h" line="22" column="1" bodyfile="/Users/mike/svn/eve/development/trunk/sdk/inc/math/math.h" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeve_1_1Math_1adb4572ef30ef8834ff2d55ceebd6b18c" prot="public" static="yes" mutable="no">
+        <type>const float</type>
+        <definition>const float eve::Math::PiOverTwo</definition>
+        <argsstring></argsstring>
+        <name>PiOverTwo</name>
+        <briefdescription>
+<para>Floating point value of pi divided by two. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/math/math.h" line="23" column="1" bodyfile="/Users/mike/svn/eve/development/trunk/sdk/inc/math/math.h" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeve_1_1Math_1a6a94c95c2f311aa7174e214286c84281" prot="public" static="yes" mutable="no">
+        <type>const float</type>
+        <definition>const float eve::Math::PiOverFour</definition>
+        <argsstring></argsstring>
+        <name>PiOverFour</name>
+        <briefdescription>
+<para>Floating point value of pi divided by four. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/math/math.h" line="24" column="1" bodyfile="/Users/mike/svn/eve/development/trunk/sdk/inc/math/math.h" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeve_1_1Math_1a3e065d78c768eaf8ddd50ba72b0510f1" prot="public" static="yes" mutable="no">
+        <type>const float</type>
+        <definition>const float eve::Math::TwoPi</definition>
+        <argsstring></argsstring>
+        <name>TwoPi</name>
+        <briefdescription>
+<para>Floating point value of pi times two. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/math/math.h" line="25" column="1" bodyfile="/Users/mike/svn/eve/development/trunk/sdk/inc/math/math.h" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeve_1_1Math_1a626e93c28ca326037e7c09b54a4df6ae" prot="public" static="yes" mutable="no">
+        <type>const float</type>
+        <definition>const float eve::Math::DegInRad</definition>
+        <argsstring></argsstring>
+        <name>DegInRad</name>
+        <briefdescription>
+<para>Floating point radian value of 1 degree. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/math/math.h" line="27" column="1" bodyfile="/Users/mike/svn/eve/development/trunk/sdk/inc/math/math.h" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeve_1_1Math_1aee13da17b6806becab093f4478698234" prot="public" static="yes" mutable="no">
+        <type>const float</type>
+        <definition>const float eve::Math::RadInDeg</definition>
+        <argsstring></argsstring>
+        <name>RadInDeg</name>
+        <briefdescription>
+<para>Floating point degree value of 1 radian. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/math/math.h" line="28" column="1" bodyfile="/Users/mike/svn/eve/development/trunk/sdk/inc/math/math.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classeve_1_1Math_1a56aa361f6a218a575a5b1136d299e5ac" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>static float eve::Math::abs</definition>
+        <argsstring>(const float v)</argsstring>
+        <name>abs</name>
+        <param>
+          <type>const float</type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/math/math.h" line="30" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classeve_1_1Math_1abdb52a451875b3d193d4ebf396190239" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>static float eve::Math::ceiling</definition>
+        <argsstring>(const float v)</argsstring>
+        <name>ceiling</name>
+        <param>
+          <type>const float</type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/math/math.h" line="32" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classeve_1_1Math_1a356ada514f645c5ad7f239462bb17233" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>static float eve::Math::floor</definition>
+        <argsstring>(const float v)</argsstring>
+        <name>floor</name>
+        <param>
+          <type>const float</type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/math/math.h" line="34" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classeve_1_1Math_1a8c5dcbd1f9ef934a212daa6457d799bd" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>static float eve::Math::pow</definition>
+        <argsstring>(const float base, const float exponent)</argsstring>
+        <name>pow</name>
+        <param>
+          <type>const float</type>
+          <declname>base</declname>
+        </param>
+        <param>
+          <type>const float</type>
+          <declname>exponent</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/math/math.h" line="36" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classeve_1_1Math_1adb77fd18369c969c7457f535c94707ca" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>static float eve::Math::sqrt</definition>
+        <argsstring>(const float v)</argsstring>
+        <name>sqrt</name>
+        <param>
+          <type>const float</type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/math/math.h" line="38" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classeve_1_1Math_1a320e83a8b98bc22b44ee83c9fe111525" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>static float eve::Math::sin</definition>
+        <argsstring>(const float a)</argsstring>
+        <name>sin</name>
+        <param>
+          <type>const float</type>
+          <declname>a</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/math/math.h" line="40" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classeve_1_1Math_1a38261c9d2dbdf92ad6ac6c2d7bd17469" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>static float eve::Math::cos</definition>
+        <argsstring>(const float a)</argsstring>
+        <name>cos</name>
+        <param>
+          <type>const float</type>
+          <declname>a</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/math/math.h" line="42" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classeve_1_1Math_1aa879c96f221047169b4de9d4184f6cb1" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>static float eve::Math::tan</definition>
+        <argsstring>(const float a)</argsstring>
+        <name>tan</name>
+        <param>
+          <type>const float</type>
+          <declname>a</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/math/math.h" line="44" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classeve_1_1Math_1a3347fbc1388b001b4c8f3e51a8ea1204" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int eve::Math::max</definition>
+        <argsstring>(const int a, const int b)</argsstring>
+        <name>max</name>
+        <param>
+          <type>const int</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/math/math.h" line="46" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classeve_1_1Math_1a31cb47e771c9f20eea16219071e5f268" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int eve::Math::max</definition>
+        <argsstring>(const float a, const float b)</argsstring>
+        <name>max</name>
+        <param>
+          <type>const float</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>const float</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/math/math.h" line="47" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classeve_1_1Math_1a07cf12355730cb708bbc80db917c0185" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int eve::Math::min</definition>
+        <argsstring>(const int a, const int b)</argsstring>
+        <name>min</name>
+        <param>
+          <type>const int</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/math/math.h" line="49" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classeve_1_1Math_1afe7c89428379df75c768d5c2a35cd56c" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int eve::Math::min</definition>
+        <argsstring>(const float a, const float b)</argsstring>
+        <name>min</name>
+        <param>
+          <type>const float</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>const float</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/math/math.h" line="50" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classeve_1_1Math_1a47c5629ca554d99644abf1ef04d537c0" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int eve::Math::clamp</definition>
+        <argsstring>(const int v, const int min, const int max)</argsstring>
+        <name>clamp</name>
+        <param>
+          <type>const int</type>
+          <declname>v</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>min</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>max</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/math/math.h" line="52" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classeve_1_1Math_1a163789acdad6eee6c56900940b361667" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>static float eve::Math::clamp</definition>
+        <argsstring>(const float v, const float min, const float max)</argsstring>
+        <name>clamp</name>
+        <param>
+          <type>const float</type>
+          <declname>v</declname>
+        </param>
+        <param>
+          <type>const float</type>
+          <declname>min</declname>
+        </param>
+        <param>
+          <type>const float</type>
+          <declname>max</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/math/math.h" line="53" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/math/math.h" line="15" column="1" bodyfile="/Users/mike/svn/eve/development/trunk/sdk/inc/math/math.h" bodystart="15" bodyend="60"/>
+    <listofallmembers>
+      <member refid="classeve_1_1Math_1a56aa361f6a218a575a5b1136d299e5ac" prot="public" virt="non-virtual"><scope>eve::Math</scope><name>abs</name></member>
+      <member refid="classeve_1_1Math_1abdb52a451875b3d193d4ebf396190239" prot="public" virt="non-virtual"><scope>eve::Math</scope><name>ceiling</name></member>
+      <member refid="classeve_1_1Math_1a47c5629ca554d99644abf1ef04d537c0" prot="public" virt="non-virtual"><scope>eve::Math</scope><name>clamp</name></member>
+      <member refid="classeve_1_1Math_1a163789acdad6eee6c56900940b361667" prot="public" virt="non-virtual"><scope>eve::Math</scope><name>clamp</name></member>
+      <member refid="classeve_1_1Math_1a38261c9d2dbdf92ad6ac6c2d7bd17469" prot="public" virt="non-virtual"><scope>eve::Math</scope><name>cos</name></member>
+      <member refid="classeve_1_1Math_1a626e93c28ca326037e7c09b54a4df6ae" prot="public" virt="non-virtual"><scope>eve::Math</scope><name>DegInRad</name></member>
+      <member refid="classeve_1_1Math_1a961a28f0116f0e88a7ce3550dfbfa68f" prot="public" virt="non-virtual"><scope>eve::Math</scope><name>E</name></member>
+      <member refid="classeve_1_1Math_1a356ada514f645c5ad7f239462bb17233" prot="public" virt="non-virtual"><scope>eve::Math</scope><name>floor</name></member>
+      <member refid="classeve_1_1Math_1a54ef8c39128f19778404a6e29ebee1e0" prot="public" virt="non-virtual"><scope>eve::Math</scope><name>Log10E</name></member>
+      <member refid="classeve_1_1Math_1afbb5af1fc7b6127b705c9a1835c6f843" prot="public" virt="non-virtual"><scope>eve::Math</scope><name>Log2E</name></member>
+      <member refid="classeve_1_1Math_1a3347fbc1388b001b4c8f3e51a8ea1204" prot="public" virt="non-virtual"><scope>eve::Math</scope><name>max</name></member>
+      <member refid="classeve_1_1Math_1a31cb47e771c9f20eea16219071e5f268" prot="public" virt="non-virtual"><scope>eve::Math</scope><name>max</name></member>
+      <member refid="classeve_1_1Math_1a07cf12355730cb708bbc80db917c0185" prot="public" virt="non-virtual"><scope>eve::Math</scope><name>min</name></member>
+      <member refid="classeve_1_1Math_1afe7c89428379df75c768d5c2a35cd56c" prot="public" virt="non-virtual"><scope>eve::Math</scope><name>min</name></member>
+      <member refid="classeve_1_1Math_1a2c8a5ee64ab780afafc6bf9eaa820fee" prot="public" virt="non-virtual"><scope>eve::Math</scope><name>Pi</name></member>
+      <member refid="classeve_1_1Math_1a6a94c95c2f311aa7174e214286c84281" prot="public" virt="non-virtual"><scope>eve::Math</scope><name>PiOverFour</name></member>
+      <member refid="classeve_1_1Math_1adb4572ef30ef8834ff2d55ceebd6b18c" prot="public" virt="non-virtual"><scope>eve::Math</scope><name>PiOverTwo</name></member>
+      <member refid="classeve_1_1Math_1a8c5dcbd1f9ef934a212daa6457d799bd" prot="public" virt="non-virtual"><scope>eve::Math</scope><name>pow</name></member>
+      <member refid="classeve_1_1Math_1aee13da17b6806becab093f4478698234" prot="public" virt="non-virtual"><scope>eve::Math</scope><name>RadInDeg</name></member>
+      <member refid="classeve_1_1Math_1a320e83a8b98bc22b44ee83c9fe111525" prot="public" virt="non-virtual"><scope>eve::Math</scope><name>sin</name></member>
+      <member refid="classeve_1_1Math_1adb77fd18369c969c7457f535c94707ca" prot="public" virt="non-virtual"><scope>eve::Math</scope><name>sqrt</name></member>
+      <member refid="classeve_1_1Math_1aa879c96f221047169b4de9d4184f6cb1" prot="public" virt="non-virtual"><scope>eve::Math</scope><name>tan</name></member>
+      <member refid="classeve_1_1Math_1a3e065d78c768eaf8ddd50ba72b0510f1" prot="public" virt="non-virtual"><scope>eve::Math</scope><name>TwoPi</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,158 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.9.1">
+  <compounddef id="classeve_1_1VertexBuffer" kind="class" language="C++" prot="public">
+    <compoundname>eve::VertexBuffer</compoundname>
+    <derivedcompoundref refid="classeve_1_1VertexBufferSafe" prot="public" virt="non-virtual">eve::VertexBufferSafe&lt; T &gt;</derivedcompoundref>
+    <includes refid="vertexbuffer_8h" local="no">vertexbuffer.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classeve_1_1VertexBuffer_1a366343e24be2330853fee2f99f050ee7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>eve::VertexBuffer::VertexBuffer</definition>
+        <argsstring>(const int stride, const int count, bool dynamic)</argsstring>
+        <name>VertexBuffer</name>
+        <param>
+          <type>const int</type>
+          <declname>stride</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>count</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>dynamic</declname>
+        </param>
+        <briefdescription>
+<para>Creates a vertex buffer object. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">stride</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Size of the <ref refid="classeve_1_1VertexType" kindref="compound">VertexType</ref> this buffer will hold. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of vertices to allocate for. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">dynamic</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>True if the buffer is intended to be modified. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/vertexbuffer.h" line="29" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classeve_1_1VertexBuffer_1a1438770d9bb99008f00b28f96dba9b5e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>eve::VertexBuffer::~VertexBuffer</definition>
+        <argsstring>()</argsstring>
+        <name>~VertexBuffer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/vertexbuffer.h" line="31" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classeve_1_1VertexBuffer_1a2cd1f5215a8653021675ffab0d6d255f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void eve::VertexBuffer::setData</definition>
+        <argsstring>(const VertexType *verts, const int offset, const int count)</argsstring>
+        <name>setData</name>
+        <param>
+          <type>const <ref refid="classeve_1_1VertexType" kindref="compound">VertexType</ref> *</type>
+          <declname>verts</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>offset</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>count</declname>
+        </param>
+        <briefdescription>
+<para>Set the vertex buffer data. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">verts</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Vertices to copy to the vertex buffer object. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">offset</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Destination vertex to start copying to. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of vertices to copy. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/vertexbuffer.h" line="40" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classeve_1_1VertexBuffer_1a609871ac876502b155d4834117a1b005" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>eve::VertexBuffer::EVE_DECLARE_PIMPL</definition>
+        <argsstring>(VertexBuffer)</argsstring>
+        <name>EVE_DECLARE_PIMPL</name>
+        <param>
+          <type><ref refid="classeve_1_1VertexBuffer" kindref="compound">VertexBuffer</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/vertexbuffer.h" line="44" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="108">
+        <label>eve::VertexBuffer</label>
+        <link refid="classeve_1_1VertexBuffer"/>
+      </node>
+      <node id="109">
+        <label>eve::VertexBufferSafe&lt; T &gt;</label>
+        <link refid="classeve_1_1VertexBufferSafe"/>
+        <childnode refid="108" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/vertexbuffer.h" line="18" column="1" bodyfile="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/vertexbuffer.h" bodystart="18" bodyend="46"/>
+    <listofallmembers>
+      <member refid="classeve_1_1VertexBuffer_1a609871ac876502b155d4834117a1b005" prot="private" virt="non-virtual"><scope>eve::VertexBuffer</scope><name>EVE_DECLARE_PIMPL</name></member>
+      <member refid="classeve_1_1VertexBuffer_1a2cd1f5215a8653021675ffab0d6d255f" prot="public" virt="non-virtual"><scope>eve::VertexBuffer</scope><name>setData</name></member>
+      <member refid="classeve_1_1VertexBuffer_1a366343e24be2330853fee2f99f050ee7" prot="public" virt="non-virtual"><scope>eve::VertexBuffer</scope><name>VertexBuffer</name></member>
+      <member refid="classeve_1_1VertexBuffer_1a1438770d9bb99008f00b28f96dba9b5e" prot="public" virt="non-virtual"><scope>eve::VertexBuffer</scope><name>~VertexBuffer</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

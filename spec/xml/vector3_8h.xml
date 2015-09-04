@@ -1,0 +1,54 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.9.1">
+  <compounddef id="vector3_8h" kind="file" language="C++">
+    <compoundname>vector3.h</compoundname>
+    <includedby refid="eve_8h" local="yes">/Users/mike/svn/eve/development/trunk/sdk/inc/eve.h</includedby>
+    <includedby refid="vertexpositioncolor_8h" local="yes">/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/vertexpositioncolor.h</includedby>
+    <includedby refid="vertexpositiontexture_8h" local="yes">/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/vertexpositiontexture.h</includedby>
+    <invincdepgraph>
+      <node id="459">
+        <label>/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/vertexpositioncolor.h</label>
+        <link refid="vertexpositioncolor_8h"/>
+        <childnode refid="458" relation="include">
+        </childnode>
+        <childnode refid="460" relation="include">
+        </childnode>
+      </node>
+      <node id="458">
+        <label>/Users/mike/svn/eve/development/trunk/sdk/inc/eve.h</label>
+        <link refid="eve_8h"/>
+      </node>
+      <node id="461">
+        <label>/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/vertexpositiontexture.h</label>
+        <link refid="vertexpositiontexture_8h"/>
+        <childnode refid="458" relation="include">
+        </childnode>
+        <childnode refid="460" relation="include">
+        </childnode>
+      </node>
+      <node id="457">
+        <label>/Users/mike/svn/eve/development/trunk/sdk/inc/math/vector3.h</label>
+        <link refid="vector3.h"/>
+        <childnode refid="458" relation="include">
+        </childnode>
+        <childnode refid="459" relation="include">
+        </childnode>
+        <childnode refid="461" relation="include">
+        </childnode>
+      </node>
+      <node id="460">
+        <label>/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/basiceffect.h</label>
+        <link refid="basiceffect_8h"/>
+        <childnode refid="458" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classeve_1_1Vector3" prot="public">eve::Vector3</innerclass>
+    <innernamespace refid="namespaceeve">eve</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/math/vector3.h"/>
+  </compounddef>
+</doxygen>

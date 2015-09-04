@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.9.1">
+  <compounddef id="graphics_8h" kind="file" language="C++">
+    <compoundname>graphics.h</compoundname>
+    <includes refid="global_8h" local="yes">core/global.h</includes>
+    <includes refid="array_8h" local="yes">containers/array.h</includes>
+    <includedby refid="eve_8h" local="yes">/Users/mike/svn/eve/development/trunk/sdk/inc/eve.h</includedby>
+    <includedby refid="basiceffect_8h" local="yes">/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/basiceffect.h</includedby>
+    <incdepgraph>
+      <node id="211">
+        <label>/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/graphics.h</label>
+        <link refid="graphics.h"/>
+        <childnode refid="212" relation="include">
+        </childnode>
+        <childnode refid="215" relation="include">
+        </childnode>
+      </node>
+      <node id="214">
+        <label>stdint.h</label>
+      </node>
+      <node id="212">
+        <label>core/global.h</label>
+        <link refid="global_8h"/>
+        <childnode refid="213" relation="include">
+        </childnode>
+      </node>
+      <node id="215">
+        <label>containers/array.h</label>
+        <link refid="array_8h"/>
+        <childnode refid="216" relation="include">
+        </childnode>
+      </node>
+      <node id="216">
+        <label>vector</label>
+      </node>
+      <node id="213">
+        <label>core/types.h</label>
+        <link refid="types_8h"/>
+        <childnode refid="214" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="217">
+        <label>/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/graphics.h</label>
+        <link refid="graphics.h"/>
+        <childnode refid="218" relation="include">
+        </childnode>
+        <childnode refid="219" relation="include">
+        </childnode>
+      </node>
+      <node id="218">
+        <label>/Users/mike/svn/eve/development/trunk/sdk/inc/eve.h</label>
+        <link refid="eve_8h"/>
+      </node>
+      <node id="219">
+        <label>/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/basiceffect.h</label>
+        <link refid="basiceffect_8h"/>
+        <childnode refid="218" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classeve_1_1Graphics" prot="public">eve::Graphics</innerclass>
+    <innernamespace refid="namespaceeve">eve</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/graphics.h"/>
+  </compounddef>
+</doxygen>

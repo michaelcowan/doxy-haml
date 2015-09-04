@@ -1,0 +1,310 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.9.1">
+  <compounddef id="classeve_1_1UniformMetaData" kind="class" language="C++" prot="public">
+    <compoundname>eve::UniformMetaData</compoundname>
+    <includes refid="uniformmetadata_8h" local="no">uniformmetadata.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="classeve_1_1UniformMetaData_1a0cf1c04eb4828b080daf195a69b7ee24" prot="public" static="no">
+        <name>DataType</name>
+        <enumvalue id="classeve_1_1UniformMetaData_1a0cf1c04eb4828b080daf195a69b7ee24a484ee44e09626d8f0aa076d6c136e892" prot="public">
+          <name>Float</name>
+          <initializer>= 0x00000001</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classeve_1_1UniformMetaData_1a0cf1c04eb4828b080daf195a69b7ee24af7b56a0fcd55ed0ae71c05fa4ef886f2" prot="public">
+          <name>Vec2</name>
+          <initializer>= 0x00000002</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classeve_1_1UniformMetaData_1a0cf1c04eb4828b080daf195a69b7ee24a01894a7ae8c104c3364951ad0ef00081" prot="public">
+          <name>Vec3</name>
+          <initializer>= 0x00000003</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classeve_1_1UniformMetaData_1a0cf1c04eb4828b080daf195a69b7ee24a1e039b3c1f29b23d742983e47ba17a45" prot="public">
+          <name>Vec4</name>
+          <initializer>= 0x00000004</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classeve_1_1UniformMetaData_1a0cf1c04eb4828b080daf195a69b7ee24ab13a803e35e2eba02881accc68980259" prot="public">
+          <name>Mat2x2</name>
+          <initializer>= 0x00000005</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classeve_1_1UniformMetaData_1a0cf1c04eb4828b080daf195a69b7ee24af975cf5c28e6e06761b991701d55603c" prot="public">
+          <name>Mat3x3</name>
+          <initializer>= 0x00000006</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classeve_1_1UniformMetaData_1a0cf1c04eb4828b080daf195a69b7ee24a60645b991079d016cbb2b000696f7ac0" prot="public">
+          <name>Mat4x4</name>
+          <initializer>= 0x00000007</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classeve_1_1UniformMetaData_1a0cf1c04eb4828b080daf195a69b7ee24aefa69bfa786886d68272086d3ca1f25c" prot="public">
+          <name>Int</name>
+          <initializer>= 0x00000100</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classeve_1_1UniformMetaData_1a0cf1c04eb4828b080daf195a69b7ee24ae0ac24e73fd5d4626640cb85613629d8" prot="public">
+          <name>IntVec2</name>
+          <initializer>= 0x00000200</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classeve_1_1UniformMetaData_1a0cf1c04eb4828b080daf195a69b7ee24aafb1fac0b4822b89a9c41d178988076c" prot="public">
+          <name>IntVec3</name>
+          <initializer>= 0x00000300</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classeve_1_1UniformMetaData_1a0cf1c04eb4828b080daf195a69b7ee24a207d32902322f05930875e56b4286b37" prot="public">
+          <name>IntVec4</name>
+          <initializer>= 0x00000400</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classeve_1_1UniformMetaData_1a0cf1c04eb4828b080daf195a69b7ee24a932db5bb5e18ae81cc3a715fe6b1157c" prot="public">
+          <name>Sampler2D</name>
+          <initializer>= 0x01000000</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classeve_1_1UniformMetaData_1a0cf1c04eb4828b080daf195a69b7ee24a9eb24095f942f6af1ffc7d51584c5622" prot="public">
+          <name>SamplerCube</name>
+          <initializer>= 0x02000000</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/uniformmetadata.h" line="17" column="1" bodyfile="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/uniformmetadata.h" bodystart="17" bodyend="33"/>
+      </memberdef>
+      <memberdef kind="enum" id="classeve_1_1UniformMetaData_1a74f7c892e4b733c9a4cbeb1a8bf0c983" prot="public" static="no">
+        <name>Target</name>
+        <enumvalue id="classeve_1_1UniformMetaData_1a74f7c892e4b733c9a4cbeb1a8bf0c983ac7dd94eda576a5d2f0b826637ffac379" prot="public">
+          <name>PixelShader</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classeve_1_1UniformMetaData_1a74f7c892e4b733c9a4cbeb1a8bf0c983a388ad9b6fef1a913cc070c93f99a70bc" prot="public">
+          <name>VertexShader</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/uniformmetadata.h" line="35" column="1" bodyfile="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/uniformmetadata.h" bodystart="35" bodyend="38"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classeve_1_1UniformMetaData_1afc1b64e1b603d381bd1a13bcb5f0061f" prot="public" static="no" mutable="no">
+        <type><ref refid="classeve_1_1UniformMetaData_1a74f7c892e4b733c9a4cbeb1a8bf0c983" kindref="member">Target</ref></type>
+        <definition>Target eve::UniformMetaData::target</definition>
+        <argsstring></argsstring>
+        <name>target</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/uniformmetadata.h" line="49" column="1" bodyfile="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/uniformmetadata.h" bodystart="49" bodyend="-1"/>
+        <referencedby refid="classeve_1_1UniformMetaData_1a0ec9543f19e1f61b2c591a5e36b724d8" compoundref="uniformmetadata_8h" startline="40" endline="45">UniformMetaData</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classeve_1_1UniformMetaData_1a8ce3e18478e1012929f5d541a47466ce" prot="public" static="no" mutable="no">
+        <type><ref refid="classeve_1_1String" kindref="compound">String</ref></type>
+        <definition>String eve::UniformMetaData::name</definition>
+        <argsstring></argsstring>
+        <name>name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/uniformmetadata.h" line="50" column="1" bodyfile="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/uniformmetadata.h" bodystart="50" bodyend="-1"/>
+        <referencedby refid="classeve_1_1UniformMetaData_1a0ec9543f19e1f61b2c591a5e36b724d8" compoundref="uniformmetadata_8h" startline="40" endline="45">UniformMetaData</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classeve_1_1UniformMetaData_1ad1fad35302718157367a68f5e3cb8a00" prot="public" static="no" mutable="no">
+        <type><ref refid="classeve_1_1UniformMetaData_1a0cf1c04eb4828b080daf195a69b7ee24" kindref="member">DataType</ref></type>
+        <definition>DataType eve::UniformMetaData::type</definition>
+        <argsstring></argsstring>
+        <name>type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/uniformmetadata.h" line="51" column="1" bodyfile="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/uniformmetadata.h" bodystart="51" bodyend="-1"/>
+        <referencedby refid="classeve_1_1UniformMetaData_1a0ec9543f19e1f61b2c591a5e36b724d8" compoundref="uniformmetadata_8h" startline="40" endline="45">UniformMetaData</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classeve_1_1UniformMetaData_1ab48b16039083a213d8142825dc7231d7" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int eve::UniformMetaData::count</definition>
+        <argsstring></argsstring>
+        <name>count</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/uniformmetadata.h" line="52" column="1" bodyfile="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/uniformmetadata.h" bodystart="52" bodyend="-1"/>
+        <referencedby refid="classeve_1_1UniformMetaData_1a0ec9543f19e1f61b2c591a5e36b724d8" compoundref="uniformmetadata_8h" startline="40" endline="45">UniformMetaData</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classeve_1_1UniformMetaData_1a0ec9543f19e1f61b2c591a5e36b724d8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>eve::UniformMetaData::UniformMetaData</definition>
+        <argsstring>(Target target, String name, DataType type, int count=1)</argsstring>
+        <name>UniformMetaData</name>
+        <param>
+          <type><ref refid="classeve_1_1UniformMetaData_1a74f7c892e4b733c9a4cbeb1a8bf0c983" kindref="member">Target</ref></type>
+          <declname>target</declname>
+        </param>
+        <param>
+          <type><ref refid="classeve_1_1String" kindref="compound">String</ref></type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type><ref refid="classeve_1_1UniformMetaData_1a0cf1c04eb4828b080daf195a69b7ee24" kindref="member">DataType</ref></type>
+          <declname>type</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>count</declname>
+          <defval>1</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/uniformmetadata.h" line="40" column="1" bodyfile="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/uniformmetadata.h" bodystart="40" bodyend="45"/>
+        <references refid="classeve_1_1UniformMetaData_1ab48b16039083a213d8142825dc7231d7" compoundref="uniformmetadata_8h" startline="52">count</references>
+        <references refid="classeve_1_1UniformMetaData_1a8ce3e18478e1012929f5d541a47466ce" compoundref="uniformmetadata_8h" startline="50">name</references>
+        <references refid="classeve_1_1UniformMetaData_1afc1b64e1b603d381bd1a13bcb5f0061f" compoundref="uniformmetadata_8h" startline="49">target</references>
+        <references refid="classeve_1_1UniformMetaData_1ad1fad35302718157367a68f5e3cb8a00" compoundref="uniformmetadata_8h" startline="51">type</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classeve_1_1UniformMetaData_1a7ad0ce7d34c5ddb893084ce66ca99cdd" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>eve::UniformMetaData::UniformMetaData</definition>
+        <argsstring>()</argsstring>
+        <name>UniformMetaData</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/uniformmetadata.h" line="56" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="97">
+        <label>eve::String</label>
+        <link refid="classeve_1_1String"/>
+        <childnode refid="98" relation="usage">
+          <edgelabel>m_string</edgelabel>
+        </childnode>
+      </node>
+      <node id="96">
+        <label>eve::UniformMetaData</label>
+        <link refid="classeve_1_1UniformMetaData"/>
+        <childnode refid="97" relation="usage">
+          <edgelabel>name</edgelabel>
+        </childnode>
+      </node>
+      <node id="99">
+        <label>std::basic_string&lt; char &gt;</label>
+      </node>
+      <node id="98">
+        <label>std::string</label>
+        <childnode refid="99" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/uniformmetadata.h" line="13" column="1" bodyfile="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/uniformmetadata.h" bodystart="13" bodyend="58"/>
+    <listofallmembers>
+      <member refid="classeve_1_1UniformMetaData_1ab48b16039083a213d8142825dc7231d7" prot="public" virt="non-virtual"><scope>eve::UniformMetaData</scope><name>count</name></member>
+      <member refid="classeve_1_1UniformMetaData_1a0cf1c04eb4828b080daf195a69b7ee24" prot="public" virt="non-virtual"><scope>eve::UniformMetaData</scope><name>DataType</name></member>
+      <member refid="classeve_1_1UniformMetaData_1a0cf1c04eb4828b080daf195a69b7ee24a484ee44e09626d8f0aa076d6c136e892" prot="public" virt="non-virtual"><scope>eve::UniformMetaData</scope><name>Float</name></member>
+      <member refid="classeve_1_1UniformMetaData_1a0cf1c04eb4828b080daf195a69b7ee24aefa69bfa786886d68272086d3ca1f25c" prot="public" virt="non-virtual"><scope>eve::UniformMetaData</scope><name>Int</name></member>
+      <member refid="classeve_1_1UniformMetaData_1a0cf1c04eb4828b080daf195a69b7ee24ae0ac24e73fd5d4626640cb85613629d8" prot="public" virt="non-virtual"><scope>eve::UniformMetaData</scope><name>IntVec2</name></member>
+      <member refid="classeve_1_1UniformMetaData_1a0cf1c04eb4828b080daf195a69b7ee24aafb1fac0b4822b89a9c41d178988076c" prot="public" virt="non-virtual"><scope>eve::UniformMetaData</scope><name>IntVec3</name></member>
+      <member refid="classeve_1_1UniformMetaData_1a0cf1c04eb4828b080daf195a69b7ee24a207d32902322f05930875e56b4286b37" prot="public" virt="non-virtual"><scope>eve::UniformMetaData</scope><name>IntVec4</name></member>
+      <member refid="classeve_1_1UniformMetaData_1a0cf1c04eb4828b080daf195a69b7ee24ab13a803e35e2eba02881accc68980259" prot="public" virt="non-virtual"><scope>eve::UniformMetaData</scope><name>Mat2x2</name></member>
+      <member refid="classeve_1_1UniformMetaData_1a0cf1c04eb4828b080daf195a69b7ee24af975cf5c28e6e06761b991701d55603c" prot="public" virt="non-virtual"><scope>eve::UniformMetaData</scope><name>Mat3x3</name></member>
+      <member refid="classeve_1_1UniformMetaData_1a0cf1c04eb4828b080daf195a69b7ee24a60645b991079d016cbb2b000696f7ac0" prot="public" virt="non-virtual"><scope>eve::UniformMetaData</scope><name>Mat4x4</name></member>
+      <member refid="classeve_1_1UniformMetaData_1a8ce3e18478e1012929f5d541a47466ce" prot="public" virt="non-virtual"><scope>eve::UniformMetaData</scope><name>name</name></member>
+      <member refid="classeve_1_1UniformMetaData_1a74f7c892e4b733c9a4cbeb1a8bf0c983ac7dd94eda576a5d2f0b826637ffac379" prot="public" virt="non-virtual"><scope>eve::UniformMetaData</scope><name>PixelShader</name></member>
+      <member refid="classeve_1_1UniformMetaData_1a0cf1c04eb4828b080daf195a69b7ee24a932db5bb5e18ae81cc3a715fe6b1157c" prot="public" virt="non-virtual"><scope>eve::UniformMetaData</scope><name>Sampler2D</name></member>
+      <member refid="classeve_1_1UniformMetaData_1a0cf1c04eb4828b080daf195a69b7ee24a9eb24095f942f6af1ffc7d51584c5622" prot="public" virt="non-virtual"><scope>eve::UniformMetaData</scope><name>SamplerCube</name></member>
+      <member refid="classeve_1_1UniformMetaData_1a74f7c892e4b733c9a4cbeb1a8bf0c983" prot="public" virt="non-virtual"><scope>eve::UniformMetaData</scope><name>Target</name></member>
+      <member refid="classeve_1_1UniformMetaData_1afc1b64e1b603d381bd1a13bcb5f0061f" prot="public" virt="non-virtual"><scope>eve::UniformMetaData</scope><name>target</name></member>
+      <member refid="classeve_1_1UniformMetaData_1ad1fad35302718157367a68f5e3cb8a00" prot="public" virt="non-virtual"><scope>eve::UniformMetaData</scope><name>type</name></member>
+      <member refid="classeve_1_1UniformMetaData_1a0ec9543f19e1f61b2c591a5e36b724d8" prot="public" virt="non-virtual"><scope>eve::UniformMetaData</scope><name>UniformMetaData</name></member>
+      <member refid="classeve_1_1UniformMetaData_1a7ad0ce7d34c5ddb893084ce66ca99cdd" prot="private" virt="non-virtual"><scope>eve::UniformMetaData</scope><name>UniformMetaData</name></member>
+      <member refid="classeve_1_1UniformMetaData_1a0cf1c04eb4828b080daf195a69b7ee24af7b56a0fcd55ed0ae71c05fa4ef886f2" prot="public" virt="non-virtual"><scope>eve::UniformMetaData</scope><name>Vec2</name></member>
+      <member refid="classeve_1_1UniformMetaData_1a0cf1c04eb4828b080daf195a69b7ee24a01894a7ae8c104c3364951ad0ef00081" prot="public" virt="non-virtual"><scope>eve::UniformMetaData</scope><name>Vec3</name></member>
+      <member refid="classeve_1_1UniformMetaData_1a0cf1c04eb4828b080daf195a69b7ee24a1e039b3c1f29b23d742983e47ba17a45" prot="public" virt="non-virtual"><scope>eve::UniformMetaData</scope><name>Vec4</name></member>
+      <member refid="classeve_1_1UniformMetaData_1a74f7c892e4b733c9a4cbeb1a8bf0c983a388ad9b6fef1a913cc070c93f99a70bc" prot="public" virt="non-virtual"><scope>eve::UniformMetaData</scope><name>VertexShader</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

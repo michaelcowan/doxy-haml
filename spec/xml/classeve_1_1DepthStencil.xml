@@ -1,0 +1,485 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.9.1">
+  <compounddef id="classeve_1_1DepthStencil" kind="class" language="C++" prot="public">
+    <compoundname>eve::DepthStencil</compoundname>
+    <includes refid="depthstencil_8h" local="no">depthstencil.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="classeve_1_1DepthStencil_1a686d9426af2429ea3538a6ef8157f76c" prot="public" static="no">
+        <name>ComparisonFunction</name>
+        <enumvalue id="classeve_1_1DepthStencil_1a686d9426af2429ea3538a6ef8157f76caa0140fa5b815e2920c32795b019d342f" prot="public">
+          <name>Always</name>
+          <briefdescription>
+<para>Always pass. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classeve_1_1DepthStencil_1a686d9426af2429ea3538a6ef8157f76caf7a7f33ec6051d02d772dd41ee2d1b93" prot="public">
+          <name>Equal</name>
+          <briefdescription>
+<para>Pass if the new pixel value is equal to the current pixel. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classeve_1_1DepthStencil_1a686d9426af2429ea3538a6ef8157f76caeafcd428285bd9cb57a1566885a0c94a" prot="public">
+          <name>Greater</name>
+          <briefdescription>
+<para>Pass if the new pixel value is greater than the current pixel. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classeve_1_1DepthStencil_1a686d9426af2429ea3538a6ef8157f76ca984fe9c0429afe35a7b6a9498ce03987" prot="public">
+          <name>GreaterEqual</name>
+          <briefdescription>
+<para>Pass if the new pixel value is greater than or equal to the current pixel. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classeve_1_1DepthStencil_1a686d9426af2429ea3538a6ef8157f76ca70f120e98dc2c8588b3327ef6f9cadae" prot="public">
+          <name>Less</name>
+          <briefdescription>
+<para>Pass if the new pixel value is less than the current pixel. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classeve_1_1DepthStencil_1a686d9426af2429ea3538a6ef8157f76caa1ccca7156423221d95a437da107cdbe" prot="public">
+          <name>LessEqual</name>
+          <briefdescription>
+<para>Pass if the new pixel value is less than or equal to the current pixel. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classeve_1_1DepthStencil_1a686d9426af2429ea3538a6ef8157f76ca31a7b26824cc9617047c4ee47ec9696a" prot="public">
+          <name>Never</name>
+          <briefdescription>
+<para>Always fail. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classeve_1_1DepthStencil_1a686d9426af2429ea3538a6ef8157f76ca6774c72f86c607df8d14a0e56639389c" prot="public">
+          <name>NotEqual</name>
+          <briefdescription>
+<para>Pass if the new pixel value does not equal the current pixel. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/depthstencil.h" line="32" column="1" bodyfile="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/depthstencil.h" bodystart="32" bodyend="41"/>
+      </memberdef>
+      <memberdef kind="enum" id="classeve_1_1DepthStencil_1a1d372e2f45c42b21c85ad194226158a7" prot="public" static="no">
+        <name>StencilOperation</name>
+        <enumvalue id="classeve_1_1DepthStencil_1a1d372e2f45c42b21c85ad194226158a7a573ef42be3e16e2422d33fa7c221c5b2" prot="public">
+          <name>Keep</name>
+          <briefdescription>
+<para>Keep the current value. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classeve_1_1DepthStencil_1a1d372e2f45c42b21c85ad194226158a7ab8c6731f0fdf9a2125564bb5d27188ef" prot="public">
+          <name>Zero</name>
+          <briefdescription>
+<para>Set the value to zero. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classeve_1_1DepthStencil_1a1d372e2f45c42b21c85ad194226158a7a14537501ec5fe2e4cb72f3981dbbee99" prot="public">
+          <name>Replace</name>
+          <briefdescription>
+<para>Set the value to the reference value. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classeve_1_1DepthStencil_1a1d372e2f45c42b21c85ad194226158a7a56fe7a20a5f6dea2ae1df0bd5bb4de19" prot="public">
+          <name>Increment</name>
+          <briefdescription>
+<para>Increment the value, wrapping to zero if maximum value is exceeded. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classeve_1_1DepthStencil_1a1d372e2f45c42b21c85ad194226158a7ac38a4d5bd5b4b67d7e9c486adc51949d" prot="public">
+          <name>Decrement</name>
+          <briefdescription>
+<para>Decrement the value, wrapping to maximum value if zero is exceeded. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classeve_1_1DepthStencil_1a1d372e2f45c42b21c85ad194226158a7aaebbfa2d3cfe2c015051c57cb0c42c58" prot="public">
+          <name>IncrementSaturation</name>
+          <briefdescription>
+<para>Increment the value, clamping to maximum value. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classeve_1_1DepthStencil_1a1d372e2f45c42b21c85ad194226158a7a7f7bac40feae541a664fdf370d73f67f" prot="public">
+          <name>DecrementSaturation</name>
+          <briefdescription>
+<para>Decrement the value, clamping to zero. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classeve_1_1DepthStencil_1a1d372e2f45c42b21c85ad194226158a7aae4aecb9185dbe3e4ffac2819bb97efe" prot="public">
+          <name>Invert</name>
+          <briefdescription>
+<para>Bitwise invert the current value. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/depthstencil.h" line="48" column="1" bodyfile="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/depthstencil.h" bodystart="48" bodyend="57"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classeve_1_1DepthStencil_1a6a1e19c025197d557c7e5fdbee438e6c" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="classeve_1_1DepthStencil" kindref="compound">DepthStencil</ref></type>
+        <definition>const DepthStencil eve::DepthStencil::Default</definition>
+        <argsstring></argsstring>
+        <name>Default</name>
+        <briefdescription>
+<para>A built-in state object for using a depth buffer. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/depthstencil.h" line="21" column="1" bodyfile="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/depthstencil.h" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeve_1_1DepthStencil_1ae7371f70e450ee7917b3c5db1d273182" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="classeve_1_1DepthStencil" kindref="compound">DepthStencil</ref></type>
+        <definition>const DepthStencil eve::DepthStencil::DepthReadOnly</definition>
+        <argsstring></argsstring>
+        <name>DepthReadOnly</name>
+        <briefdescription>
+<para>A build-in state object for a read only depth buffer. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/depthstencil.h" line="22" column="1" bodyfile="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/depthstencil.h" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeve_1_1DepthStencil_1a4e427cdaca0ccd3cf0d3e04c16461f72" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="classeve_1_1DepthStencil" kindref="compound">DepthStencil</ref></type>
+        <definition>const DepthStencil eve::DepthStencil::None</definition>
+        <argsstring></argsstring>
+        <name>None</name>
+        <briefdescription>
+<para>A built-in state object for not using a depth buffer. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/depthstencil.h" line="23" column="1" bodyfile="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/depthstencil.h" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classeve_1_1DepthStencil_1a0431ce762dd719f63dbd6485afcb316e" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool eve::DepthStencil::depthBufferEnable</definition>
+        <argsstring></argsstring>
+        <name>depthBufferEnable</name>
+        <briefdescription>
+<para>Enable depth buffer. Default: true. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/depthstencil.h" line="65" column="1" bodyfile="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/depthstencil.h" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeve_1_1DepthStencil_1aca9e764e1da5130bdeba19f0e192d48e" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool eve::DepthStencil::depthBufferWriteEnable</definition>
+        <argsstring></argsstring>
+        <name>depthBufferWriteEnable</name>
+        <briefdescription>
+<para>Enable writing to depth buffer. Default: true. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/depthstencil.h" line="66" column="1" bodyfile="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/depthstencil.h" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeve_1_1DepthStencil_1a52a0effffccd5003bdccebc31e7a5545" prot="public" static="no" mutable="no">
+        <type><ref refid="classeve_1_1DepthStencil_1a686d9426af2429ea3538a6ef8157f76c" kindref="member">ComparisonFunction</ref></type>
+        <definition>ComparisonFunction eve::DepthStencil::depthBufferFunction</definition>
+        <argsstring></argsstring>
+        <name>depthBufferFunction</name>
+        <briefdescription>
+<para>Depth buffer comparison function. Default: Less. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/depthstencil.h" line="67" column="1" bodyfile="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/depthstencil.h" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeve_1_1DepthStencil_1a9c06b5ef983743d30d97abaf12321c46" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool eve::DepthStencil::stencilBufferEnable</definition>
+        <argsstring></argsstring>
+        <name>stencilBufferEnable</name>
+        <briefdescription>
+<para>Enable stencil buffer. Default: false. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/depthstencil.h" line="69" column="1" bodyfile="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/depthstencil.h" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeve_1_1DepthStencil_1af58a4ad5b3f5d41dfe38bc0cecac0e38" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int eve::DepthStencil::stencilReferenceValue</definition>
+        <argsstring></argsstring>
+        <name>stencilReferenceValue</name>
+        <briefdescription>
+<para>Reference value to use for stencil test. Default: Max. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/depthstencil.h" line="70" column="1" bodyfile="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/depthstencil.h" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeve_1_1DepthStencil_1aa5758de7eb59c5b717259dc378d54eec" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int eve::DepthStencil::stencilMask</definition>
+        <argsstring></argsstring>
+        <name>stencilMask</name>
+        <briefdescription>
+<para>Applied to the reference value and post test stencil value. Default: Max. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/depthstencil.h" line="71" column="1" bodyfile="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/depthstencil.h" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeve_1_1DepthStencil_1adc47109af077446ecc3a20528c7be423" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int eve::DepthStencil::stencilWriteMask</definition>
+        <argsstring></argsstring>
+        <name>stencilWriteMask</name>
+        <briefdescription>
+<para>Applied to values written into the stencil buffer. Default: Max. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/depthstencil.h" line="72" column="1" bodyfile="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/depthstencil.h" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeve_1_1DepthStencil_1ae5dc7f21a28c996046c682689274d717" prot="public" static="no" mutable="no">
+        <type><ref refid="classeve_1_1DepthStencil_1a1d372e2f45c42b21c85ad194226158a7" kindref="member">StencilOperation</ref></type>
+        <definition>StencilOperation eve::DepthStencil::stencilDepthBufferFail</definition>
+        <argsstring></argsstring>
+        <name>stencilDepthBufferFail</name>
+        <briefdescription>
+<para>Operation to perform if the stencil test passes and the depth test fails. Default: Keep. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/depthstencil.h" line="74" column="1" bodyfile="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/depthstencil.h" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeve_1_1DepthStencil_1a4a49bb49a171d5c8a1025d5c70556342" prot="public" static="no" mutable="no">
+        <type><ref refid="classeve_1_1DepthStencil_1a1d372e2f45c42b21c85ad194226158a7" kindref="member">StencilOperation</ref></type>
+        <definition>StencilOperation eve::DepthStencil::stencilFail</definition>
+        <argsstring></argsstring>
+        <name>stencilFail</name>
+        <briefdescription>
+<para>Operation to perform if the stencil test fails. Default: Keep. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/depthstencil.h" line="75" column="1" bodyfile="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/depthstencil.h" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeve_1_1DepthStencil_1a6d0ce7a9ae5d4e199186bbc09fc60557" prot="public" static="no" mutable="no">
+        <type><ref refid="classeve_1_1DepthStencil_1a1d372e2f45c42b21c85ad194226158a7" kindref="member">StencilOperation</ref></type>
+        <definition>StencilOperation eve::DepthStencil::stencilPass</definition>
+        <argsstring></argsstring>
+        <name>stencilPass</name>
+        <briefdescription>
+<para>Operation to perform if the stencil test passes. Default: Keep. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/depthstencil.h" line="76" column="1" bodyfile="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/depthstencil.h" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeve_1_1DepthStencil_1ac3f7c314cdeb15a20613ea5220da3aa0" prot="public" static="no" mutable="no">
+        <type><ref refid="classeve_1_1DepthStencil_1a686d9426af2429ea3538a6ef8157f76c" kindref="member">ComparisonFunction</ref></type>
+        <definition>ComparisonFunction eve::DepthStencil::stencilFunction</definition>
+        <argsstring></argsstring>
+        <name>stencilFunction</name>
+        <briefdescription>
+<para>Stencil buffer comparison function. Default: Always. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/depthstencil.h" line="77" column="1" bodyfile="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/depthstencil.h" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeve_1_1DepthStencil_1ab6279e64b0cb0457974436841317f5ff" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool eve::DepthStencil::twoSidedStencil</definition>
+        <argsstring></argsstring>
+        <name>twoSidedStencil</name>
+        <briefdescription>
+<para>Enable two sided stenciling. Default: false. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/depthstencil.h" line="79" column="1" bodyfile="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/depthstencil.h" bodystart="79" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeve_1_1DepthStencil_1a04b9bb5e6f76813958adb0461619b655" prot="public" static="no" mutable="no">
+        <type><ref refid="classeve_1_1DepthStencil_1a1d372e2f45c42b21c85ad194226158a7" kindref="member">StencilOperation</ref></type>
+        <definition>StencilOperation eve::DepthStencil::backFaceStencilDepthBufferFail</definition>
+        <argsstring></argsstring>
+        <name>backFaceStencilDepthBufferFail</name>
+        <briefdescription>
+<para>Operation to perform if the stencil test passes and the depth test fails for a back face. Default: Keep. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/depthstencil.h" line="81" column="1" bodyfile="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/depthstencil.h" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeve_1_1DepthStencil_1a447d6c830eef034bd0d20c7f72a462d2" prot="public" static="no" mutable="no">
+        <type><ref refid="classeve_1_1DepthStencil_1a1d372e2f45c42b21c85ad194226158a7" kindref="member">StencilOperation</ref></type>
+        <definition>StencilOperation eve::DepthStencil::backFaceStencilFail</definition>
+        <argsstring></argsstring>
+        <name>backFaceStencilFail</name>
+        <briefdescription>
+<para>Operation to perform if the stencil test fails for a back face. Default: Keep. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/depthstencil.h" line="82" column="1" bodyfile="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/depthstencil.h" bodystart="82" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeve_1_1DepthStencil_1a299313ba34aaff9efea81204b2a1cc63" prot="public" static="no" mutable="no">
+        <type><ref refid="classeve_1_1DepthStencil_1a1d372e2f45c42b21c85ad194226158a7" kindref="member">StencilOperation</ref></type>
+        <definition>StencilOperation eve::DepthStencil::backFaceStencilPass</definition>
+        <argsstring></argsstring>
+        <name>backFaceStencilPass</name>
+        <briefdescription>
+<para>Operation to perform if the stencil test passes for a back face. Default: Keep. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/depthstencil.h" line="83" column="1" bodyfile="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/depthstencil.h" bodystart="83" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeve_1_1DepthStencil_1a0beb05a37dff7615e4d31e8acca40383" prot="public" static="no" mutable="no">
+        <type><ref refid="classeve_1_1DepthStencil_1a686d9426af2429ea3538a6ef8157f76c" kindref="member">ComparisonFunction</ref></type>
+        <definition>ComparisonFunction eve::DepthStencil::backFaceStencilFunction</definition>
+        <argsstring></argsstring>
+        <name>backFaceStencilFunction</name>
+        <briefdescription>
+<para>Stencil buffer comparison function for a back face. Default: Always. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/depthstencil.h" line="84" column="1" bodyfile="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/depthstencil.h" bodystart="84" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classeve_1_1DepthStencil_1a36f68d91e8df58137f6a647fb2ef0316" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>eve::DepthStencil::DepthStencil</definition>
+        <argsstring>()</argsstring>
+        <name>DepthStencil</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/depthstencil.h" line="61" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classeve_1_1DepthStencil_1a86459ec14cce24887a3d6197f250c85b" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>eve::DepthStencil::DepthStencil</definition>
+        <argsstring>(bool, bool)</argsstring>
+        <name>DepthStencil</name>
+        <param>
+          <type>bool</type>
+        </param>
+        <param>
+          <type>bool</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/depthstencil.h" line="88" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="17">
+        <label>eve::DepthStencil</label>
+        <link refid="classeve_1_1DepthStencil"/>
+        <childnode refid="17" relation="usage">
+          <edgelabel>None</edgelabel>
+          <edgelabel>DepthReadOnly</edgelabel>
+          <edgelabel>Default</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/depthstencil.h" line="17" column="1" bodyfile="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/depthstencil.h" bodystart="17" bodyend="90"/>
+    <listofallmembers>
+      <member refid="classeve_1_1DepthStencil_1a686d9426af2429ea3538a6ef8157f76caa0140fa5b815e2920c32795b019d342f" prot="public" virt="non-virtual"><scope>eve::DepthStencil</scope><name>Always</name></member>
+      <member refid="classeve_1_1DepthStencil_1a04b9bb5e6f76813958adb0461619b655" prot="public" virt="non-virtual"><scope>eve::DepthStencil</scope><name>backFaceStencilDepthBufferFail</name></member>
+      <member refid="classeve_1_1DepthStencil_1a447d6c830eef034bd0d20c7f72a462d2" prot="public" virt="non-virtual"><scope>eve::DepthStencil</scope><name>backFaceStencilFail</name></member>
+      <member refid="classeve_1_1DepthStencil_1a0beb05a37dff7615e4d31e8acca40383" prot="public" virt="non-virtual"><scope>eve::DepthStencil</scope><name>backFaceStencilFunction</name></member>
+      <member refid="classeve_1_1DepthStencil_1a299313ba34aaff9efea81204b2a1cc63" prot="public" virt="non-virtual"><scope>eve::DepthStencil</scope><name>backFaceStencilPass</name></member>
+      <member refid="classeve_1_1DepthStencil_1a686d9426af2429ea3538a6ef8157f76c" prot="public" virt="non-virtual"><scope>eve::DepthStencil</scope><name>ComparisonFunction</name></member>
+      <member refid="classeve_1_1DepthStencil_1a1d372e2f45c42b21c85ad194226158a7ac38a4d5bd5b4b67d7e9c486adc51949d" prot="public" virt="non-virtual"><scope>eve::DepthStencil</scope><name>Decrement</name></member>
+      <member refid="classeve_1_1DepthStencil_1a1d372e2f45c42b21c85ad194226158a7a7f7bac40feae541a664fdf370d73f67f" prot="public" virt="non-virtual"><scope>eve::DepthStencil</scope><name>DecrementSaturation</name></member>
+      <member refid="classeve_1_1DepthStencil_1a6a1e19c025197d557c7e5fdbee438e6c" prot="public" virt="non-virtual"><scope>eve::DepthStencil</scope><name>Default</name></member>
+      <member refid="classeve_1_1DepthStencil_1a0431ce762dd719f63dbd6485afcb316e" prot="public" virt="non-virtual"><scope>eve::DepthStencil</scope><name>depthBufferEnable</name></member>
+      <member refid="classeve_1_1DepthStencil_1a52a0effffccd5003bdccebc31e7a5545" prot="public" virt="non-virtual"><scope>eve::DepthStencil</scope><name>depthBufferFunction</name></member>
+      <member refid="classeve_1_1DepthStencil_1aca9e764e1da5130bdeba19f0e192d48e" prot="public" virt="non-virtual"><scope>eve::DepthStencil</scope><name>depthBufferWriteEnable</name></member>
+      <member refid="classeve_1_1DepthStencil_1ae7371f70e450ee7917b3c5db1d273182" prot="public" virt="non-virtual"><scope>eve::DepthStencil</scope><name>DepthReadOnly</name></member>
+      <member refid="classeve_1_1DepthStencil_1a36f68d91e8df58137f6a647fb2ef0316" prot="public" virt="non-virtual"><scope>eve::DepthStencil</scope><name>DepthStencil</name></member>
+      <member refid="classeve_1_1DepthStencil_1a86459ec14cce24887a3d6197f250c85b" prot="private" virt="non-virtual"><scope>eve::DepthStencil</scope><name>DepthStencil</name></member>
+      <member refid="classeve_1_1DepthStencil_1a686d9426af2429ea3538a6ef8157f76caf7a7f33ec6051d02d772dd41ee2d1b93" prot="public" virt="non-virtual"><scope>eve::DepthStencil</scope><name>Equal</name></member>
+      <member refid="classeve_1_1DepthStencil_1a686d9426af2429ea3538a6ef8157f76caeafcd428285bd9cb57a1566885a0c94a" prot="public" virt="non-virtual"><scope>eve::DepthStencil</scope><name>Greater</name></member>
+      <member refid="classeve_1_1DepthStencil_1a686d9426af2429ea3538a6ef8157f76ca984fe9c0429afe35a7b6a9498ce03987" prot="public" virt="non-virtual"><scope>eve::DepthStencil</scope><name>GreaterEqual</name></member>
+      <member refid="classeve_1_1DepthStencil_1a1d372e2f45c42b21c85ad194226158a7a56fe7a20a5f6dea2ae1df0bd5bb4de19" prot="public" virt="non-virtual"><scope>eve::DepthStencil</scope><name>Increment</name></member>
+      <member refid="classeve_1_1DepthStencil_1a1d372e2f45c42b21c85ad194226158a7aaebbfa2d3cfe2c015051c57cb0c42c58" prot="public" virt="non-virtual"><scope>eve::DepthStencil</scope><name>IncrementSaturation</name></member>
+      <member refid="classeve_1_1DepthStencil_1a1d372e2f45c42b21c85ad194226158a7aae4aecb9185dbe3e4ffac2819bb97efe" prot="public" virt="non-virtual"><scope>eve::DepthStencil</scope><name>Invert</name></member>
+      <member refid="classeve_1_1DepthStencil_1a1d372e2f45c42b21c85ad194226158a7a573ef42be3e16e2422d33fa7c221c5b2" prot="public" virt="non-virtual"><scope>eve::DepthStencil</scope><name>Keep</name></member>
+      <member refid="classeve_1_1DepthStencil_1a686d9426af2429ea3538a6ef8157f76ca70f120e98dc2c8588b3327ef6f9cadae" prot="public" virt="non-virtual"><scope>eve::DepthStencil</scope><name>Less</name></member>
+      <member refid="classeve_1_1DepthStencil_1a686d9426af2429ea3538a6ef8157f76caa1ccca7156423221d95a437da107cdbe" prot="public" virt="non-virtual"><scope>eve::DepthStencil</scope><name>LessEqual</name></member>
+      <member refid="classeve_1_1DepthStencil_1a686d9426af2429ea3538a6ef8157f76ca31a7b26824cc9617047c4ee47ec9696a" prot="public" virt="non-virtual"><scope>eve::DepthStencil</scope><name>Never</name></member>
+      <member refid="classeve_1_1DepthStencil_1a4e427cdaca0ccd3cf0d3e04c16461f72" prot="public" virt="non-virtual"><scope>eve::DepthStencil</scope><name>None</name></member>
+      <member refid="classeve_1_1DepthStencil_1a686d9426af2429ea3538a6ef8157f76ca6774c72f86c607df8d14a0e56639389c" prot="public" virt="non-virtual"><scope>eve::DepthStencil</scope><name>NotEqual</name></member>
+      <member refid="classeve_1_1DepthStencil_1a1d372e2f45c42b21c85ad194226158a7a14537501ec5fe2e4cb72f3981dbbee99" prot="public" virt="non-virtual"><scope>eve::DepthStencil</scope><name>Replace</name></member>
+      <member refid="classeve_1_1DepthStencil_1a9c06b5ef983743d30d97abaf12321c46" prot="public" virt="non-virtual"><scope>eve::DepthStencil</scope><name>stencilBufferEnable</name></member>
+      <member refid="classeve_1_1DepthStencil_1ae5dc7f21a28c996046c682689274d717" prot="public" virt="non-virtual"><scope>eve::DepthStencil</scope><name>stencilDepthBufferFail</name></member>
+      <member refid="classeve_1_1DepthStencil_1a4a49bb49a171d5c8a1025d5c70556342" prot="public" virt="non-virtual"><scope>eve::DepthStencil</scope><name>stencilFail</name></member>
+      <member refid="classeve_1_1DepthStencil_1ac3f7c314cdeb15a20613ea5220da3aa0" prot="public" virt="non-virtual"><scope>eve::DepthStencil</scope><name>stencilFunction</name></member>
+      <member refid="classeve_1_1DepthStencil_1aa5758de7eb59c5b717259dc378d54eec" prot="public" virt="non-virtual"><scope>eve::DepthStencil</scope><name>stencilMask</name></member>
+      <member refid="classeve_1_1DepthStencil_1a1d372e2f45c42b21c85ad194226158a7" prot="public" virt="non-virtual"><scope>eve::DepthStencil</scope><name>StencilOperation</name></member>
+      <member refid="classeve_1_1DepthStencil_1a6d0ce7a9ae5d4e199186bbc09fc60557" prot="public" virt="non-virtual"><scope>eve::DepthStencil</scope><name>stencilPass</name></member>
+      <member refid="classeve_1_1DepthStencil_1af58a4ad5b3f5d41dfe38bc0cecac0e38" prot="public" virt="non-virtual"><scope>eve::DepthStencil</scope><name>stencilReferenceValue</name></member>
+      <member refid="classeve_1_1DepthStencil_1adc47109af077446ecc3a20528c7be423" prot="public" virt="non-virtual"><scope>eve::DepthStencil</scope><name>stencilWriteMask</name></member>
+      <member refid="classeve_1_1DepthStencil_1ab6279e64b0cb0457974436841317f5ff" prot="public" virt="non-virtual"><scope>eve::DepthStencil</scope><name>twoSidedStencil</name></member>
+      <member refid="classeve_1_1DepthStencil_1a1d372e2f45c42b21c85ad194226158a7ab8c6731f0fdf9a2125564bb5d27188ef" prot="public" virt="non-virtual"><scope>eve::DepthStencil</scope><name>Zero</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

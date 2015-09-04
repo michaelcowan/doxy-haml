@@ -1,0 +1,88 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.9.1">
+  <compounddef id="classeve_1_1VertexBufferSafe" kind="class" language="C++" prot="public">
+    <compoundname>eve::VertexBufferSafe</compoundname>
+    <basecompoundref refid="classeve_1_1VertexBuffer" prot="public" virt="non-virtual">eve::VertexBuffer</basecompoundref>
+    <includes refid="vertexbuffersafe_8h" local="no">vertexbuffersafe.h</includes>
+    <templateparamlist>
+      <param>
+        <type>class</type>
+        <declname>T</declname>
+        <defname>T</defname>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classeve_1_1VertexBufferSafe_1a414084d66940d390755e1f003fa12a97" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>eve::VertexBufferSafe&lt; T &gt;::VertexBufferSafe</definition>
+        <argsstring>(const int count, bool dynamic)</argsstring>
+        <name>VertexBufferSafe</name>
+        <param>
+          <type>const int</type>
+          <declname>count</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>dynamic</declname>
+        </param>
+        <briefdescription>
+<para>Creates a type safe vertex buffer object. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of vertices to allocate for. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">dynamic</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>True if the buffer is intended to be modified. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/vertexbuffersafe.h" line="44" column="1" bodyfile="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/vertexbuffersafe.h" bodystart="26" bodyend="29"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="112">
+        <label>eve::VertexBuffer</label>
+        <link refid="classeve_1_1VertexBuffer"/>
+      </node>
+      <node id="111">
+        <label>eve::VertexBufferSafe&lt; T &gt;</label>
+        <link refid="classeve_1_1VertexBufferSafe"/>
+        <childnode refid="112" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="114">
+        <label>eve::VertexBuffer</label>
+        <link refid="classeve_1_1VertexBuffer"/>
+      </node>
+      <node id="113">
+        <label>eve::VertexBufferSafe&lt; T &gt;</label>
+        <link refid="classeve_1_1VertexBufferSafe"/>
+        <childnode refid="114" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/vertexbuffersafe.h" line="16" column="1" bodyfile="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/vertexbuffersafe.h" bodystart="16" bodyend="31"/>
+    <listofallmembers>
+      <member refid="classeve_1_1VertexBuffer_1a2cd1f5215a8653021675ffab0d6d255f" prot="public" virt="non-virtual"><scope>eve::VertexBufferSafe</scope><name>setData</name></member>
+      <member refid="classeve_1_1VertexBuffer_1a366343e24be2330853fee2f99f050ee7" prot="public" virt="non-virtual"><scope>eve::VertexBufferSafe</scope><name>VertexBuffer</name></member>
+      <member refid="classeve_1_1VertexBufferSafe_1a414084d66940d390755e1f003fa12a97" prot="public" virt="non-virtual"><scope>eve::VertexBufferSafe</scope><name>VertexBufferSafe</name></member>
+      <member refid="classeve_1_1VertexBuffer_1a1438770d9bb99008f00b28f96dba9b5e" prot="public" virt="non-virtual"><scope>eve::VertexBufferSafe</scope><name>~VertexBuffer</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

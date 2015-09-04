@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.9.1">
+  <compounddef id="dir_65121206a9e0b261bf9cac049f0c5d8a" kind="dir">
+    <compoundname>/Users/mike/svn/eve/development/trunk/sdk/inc/math</compoundname>
+    <innerfile refid="math_8h">math.h</innerfile>
+    <innerfile refid="matrix_8h">matrix.h</innerfile>
+    <innerfile refid="vector2_8h">vector2.h</innerfile>
+    <innerfile refid="vector3_8h">vector3.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/math/"/>
+  </compounddef>
+</doxygen>

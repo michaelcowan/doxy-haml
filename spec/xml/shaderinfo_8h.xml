@@ -1,0 +1,118 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.9.1">
+  <compounddef id="shaderinfo_8h" kind="file" language="C++">
+    <compoundname>shaderinfo.h</compoundname>
+    <includes refid="global_8h" local="yes">core/global.h</includes>
+    <includes refid="array_8h" local="yes">containers/array.h</includes>
+    <includes refid="shadersource_8h" local="yes">graphics/shadersource.h</includes>
+    <includes refid="vertexmetadata_8h" local="yes">graphics/vertexmetadata.h</includes>
+    <includes refid="uniformmetadata_8h" local="yes">graphics/uniformmetadata.h</includes>
+    <includedby refid="shader_8h" local="yes">/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/shader.h</includedby>
+    <incdepgraph>
+      <node id="277">
+        <label>graphics/shadersource.h</label>
+        <link refid="shadersource_8h"/>
+        <childnode refid="272" relation="include">
+        </childnode>
+        <childnode refid="275" relation="include">
+        </childnode>
+        <childnode refid="278" relation="include">
+        </childnode>
+        <childnode refid="281" relation="include">
+        </childnode>
+      </node>
+      <node id="279">
+        <label>core/string.h</label>
+        <link refid="string_8h"/>
+        <childnode refid="273" relation="include">
+        </childnode>
+        <childnode refid="280" relation="include">
+        </childnode>
+      </node>
+      <node id="274">
+        <label>stdint.h</label>
+      </node>
+      <node id="271">
+        <label>/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/shaderinfo.h</label>
+        <link refid="shaderinfo.h"/>
+        <childnode refid="272" relation="include">
+        </childnode>
+        <childnode refid="275" relation="include">
+        </childnode>
+        <childnode refid="277" relation="include">
+        </childnode>
+        <childnode refid="278" relation="include">
+        </childnode>
+        <childnode refid="281" relation="include">
+        </childnode>
+      </node>
+      <node id="272">
+        <label>core/global.h</label>
+        <link refid="global_8h"/>
+        <childnode refid="273" relation="include">
+        </childnode>
+      </node>
+      <node id="280">
+        <label>string</label>
+      </node>
+      <node id="281">
+        <label>graphics/uniformmetadata.h</label>
+        <link refid="uniformmetadata_8h"/>
+      </node>
+      <node id="278">
+        <label>graphics/vertexmetadata.h</label>
+        <link refid="vertexmetadata_8h"/>
+        <childnode refid="279" relation="include">
+        </childnode>
+      </node>
+      <node id="275">
+        <label>containers/array.h</label>
+        <link refid="array_8h"/>
+        <childnode refid="276" relation="include">
+        </childnode>
+      </node>
+      <node id="276">
+        <label>vector</label>
+      </node>
+      <node id="273">
+        <label>core/types.h</label>
+        <link refid="types_8h"/>
+        <childnode refid="274" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="284">
+        <label>/Users/mike/svn/eve/development/trunk/sdk/inc/eve.h</label>
+        <link refid="eve_8h"/>
+      </node>
+      <node id="282">
+        <label>/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/shaderinfo.h</label>
+        <link refid="shaderinfo.h"/>
+        <childnode refid="283" relation="include">
+        </childnode>
+      </node>
+      <node id="283">
+        <label>/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/shader.h</label>
+        <link refid="shader_8h"/>
+        <childnode refid="284" relation="include">
+        </childnode>
+        <childnode refid="285" relation="include">
+        </childnode>
+      </node>
+      <node id="285">
+        <label>/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/basiceffect.h</label>
+        <link refid="basiceffect_8h"/>
+        <childnode refid="284" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classeve_1_1ShaderInfo" prot="public">eve::ShaderInfo</innerclass>
+    <innernamespace refid="namespaceeve">eve</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/shaderinfo.h"/>
+  </compounddef>
+</doxygen>

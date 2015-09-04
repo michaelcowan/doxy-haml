@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.9.1">
+  <compounddef id="blend_8h" kind="file" language="C++">
+    <compoundname>blend.h</compoundname>
+    <includes refid="types_8h" local="yes">core/types.h</includes>
+    <includedby refid="eve_8h" local="yes">/Users/mike/svn/eve/development/trunk/sdk/inc/eve.h</includedby>
+    <incdepgraph>
+      <node id="191">
+        <label>stdint.h</label>
+      </node>
+      <node id="189">
+        <label>/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/blend.h</label>
+        <link refid="blend.h"/>
+        <childnode refid="190" relation="include">
+        </childnode>
+      </node>
+      <node id="190">
+        <label>core/types.h</label>
+        <link refid="types_8h"/>
+        <childnode refid="191" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="193">
+        <label>/Users/mike/svn/eve/development/trunk/sdk/inc/eve.h</label>
+        <link refid="eve_8h"/>
+      </node>
+      <node id="192">
+        <label>/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/blend.h</label>
+        <link refid="blend.h"/>
+        <childnode refid="193" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classeve_1_1Blend" prot="public">eve::Blend</innerclass>
+    <innernamespace refid="namespaceeve">eve</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/mike/svn/eve/development/trunk/sdk/inc/graphics/blend.h"/>
+  </compounddef>
+</doxygen>

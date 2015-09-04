@@ -1,0 +1,21 @@
+/ %li
+/   - unless method.brief.nil?
+/     = method.brief
+/     %br
+/   (
+/   = type_link method.type
+/   )
+/   = method.name
+/   - unless method.detailed_description.nil?
+/     %p
+/       = method.detailed_description.to_s
+/     - unless method.detailed_description.parameter_items.nil?
+/       - method.detailed_description.parameter_items.each do |param|
+/         = partial 'templates/_parameter_item.html.haml', { param: param }
+
+/   %ul
+/     - method.params.each do |param|
+/       = partial 'templates/_param.html.haml', { param: param }
+
+%li
+  = method.name
