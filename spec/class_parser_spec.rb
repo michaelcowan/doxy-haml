@@ -11,12 +11,12 @@ describe "DoxyHaml Class Parser" do
 
   it "should have a name" do
     expect(@animal.name).to eq "Animal"
-    expect(@animal.html_name).to match "<a href='classzoo_1_1_?[aA]nimal.html'>Animal</a>"
+    expect(@animal.html_name).to eq "<a href='classzoo_1_1_animal.html'>Animal</a>"
   end
 
   it "should have a qualified name" do
     expect(@animal.qualified_name).to eq "zoo::Animal"
-    expect(@animal.html_qualified_name).to match "<a href='classzoo_1_1_?[aA]nimal.html'>zoo::Animal</a>"
+    expect(@animal.html_qualified_name).to eq "<a href='classzoo_1_1_animal.html'>zoo::Animal</a>"
   end
 
   it "should be abstract" do
