@@ -29,7 +29,7 @@ module DoxyHaml
     end
 
     def public_static_methods
-      @public_static_methods ||= map_xpath memberdef_xpath("public-func", "function", "yes") do |method|
+      @public_static_methods ||= map_xpath memberdef_xpath("public-static-func", "function", "yes") do |method|
         Method.new method['id'], self, method
       end
     end

@@ -1,9 +1,10 @@
 require 'spec_helper'
 
-describe "DoxyHaml Class Parser" do
+describe "DoxyHaml Animal Class Parser" do
 
   before(:all) do
     @expected_public_methods = ["Animal", "canFly", "getNumberOfLegs"]
+    @expected_public_static_methods = ["numberOfMonkeys"]
     parser = DoxyHaml::Parser.new "spec/doxygen/xml"
     @classes = parser.index.namespaces.first.classes
     @animal = class_by_name "Animal"
