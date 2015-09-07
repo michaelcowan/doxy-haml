@@ -3,6 +3,8 @@ module DoxyHaml
   class Node
     include HtmlUtilities
 
+    attr_reader :id
+
     def initialize id, parent, xml = nil
       @parent, @id, @xml = parent, id, xml
     end
