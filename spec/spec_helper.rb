@@ -21,14 +21,6 @@ RSpec.configure do |config|
   }
 end
 
-def map_node node
-  list = []
-  node.each do |node|
-    list << (yield node)
-  end
-  list
-end
-
 def class_by_name classes, class_name
   classes.select { |clazz| clazz.name == class_name }.first
 end
