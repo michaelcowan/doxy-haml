@@ -11,6 +11,10 @@ module DoxyHaml
       link_to_self name
     end
 
+    def filename
+      "#{@id}.html"
+    end
+
     private
 
     def parse_xml
@@ -23,12 +27,8 @@ module DoxyHaml
       File.join Parser.xml_folder, "#{@id}.xml"
     end
 
-    def html_filename
-      "#{@id}.html"
-    end
-
     def link_to_self link_name
-      link_to link_name, html_filename
+      link_to link_name, filename
     end
 
   end
