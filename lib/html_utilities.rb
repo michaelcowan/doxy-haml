@@ -3,6 +3,7 @@ require_relative 'helpers'
 module DoxyHaml
 
   module HtmlUtilities
+    include Helpers
 
     def link_to *args, &block
       if block_given?

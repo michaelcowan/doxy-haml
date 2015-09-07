@@ -11,6 +11,8 @@ require_relative '../lib/helpers'
 require_relative '../lib/generator'
 require_relative '../lib/parser'
 
+include DoxyHaml::Helpers
+
 RSpec.configure do |config|
   config.before(:suite) {
     generator = DoxyHaml::Generator.new
