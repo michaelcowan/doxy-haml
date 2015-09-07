@@ -21,6 +21,10 @@ module DoxyHaml
     def html_brief
       @html_brief ||= link_to_refs xpath_first %Q{/doxygen/compounddef/briefdescription/para}
     end
+
+    def author
+      @author ||= (xpath_first_content %Q{/doxygen/compounddef/detaileddescription/para/simplesect[@kind="author"]}).strip
+    end
     
     def abstract?
       @abstract ||= (xpath_first_param %Q{/doxygen/compounddef}, 'abstract') == 'yes'
