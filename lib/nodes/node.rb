@@ -11,14 +11,6 @@ module DoxyHaml
       raise "All nodes must declare a name method"
     end
 
-    def html_name
-      link_to_self name
-    end
-
-    def html_filename
-      "#{@id}.html"
-    end
-
     private
 
     def map_xpath xpath
@@ -35,10 +27,6 @@ module DoxyHaml
 
     def xpath_first_param xpath, param
       @xml.xpath(xpath).first[param]
-    end
-
-    def link_to_self link_name
-      link_to link_name, html_filename
     end
 
   end
