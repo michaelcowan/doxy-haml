@@ -20,7 +20,7 @@ module DoxyHaml
 
     def link_to_refs node
       list = map_node node.children do |child|
-        child = (child.element? and child.name == "ref") ? link_to(child.content, "#{child['refid']}.html") : child
+        child = (!child.text? and child.name == "ref") ? link_to(child.content, "#{child['refid']}.html") : child
       end
       list.join.strip
     end

@@ -35,6 +35,10 @@ module DoxyHaml
       xpath_first(xpath).content
     end
 
+    def content
+      @xml.content
+    end
+
   end
 
 end
