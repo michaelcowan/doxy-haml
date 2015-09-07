@@ -21,12 +21,16 @@ module DoxyHaml
       list
     end
 
-    def xpath_first_content xpath
-      @xml.xpath(xpath).first.content
+    def xpath_first xpath
+      @xml.xpath(xpath).first
     end
 
     def xpath_first_param xpath, param
-      @xml.xpath(xpath).first[param]
+      xpath_first(xpath)[param]
+    end
+
+    def xpath_first_content xpath
+      xpath_first(xpath).content
     end
 
   end
