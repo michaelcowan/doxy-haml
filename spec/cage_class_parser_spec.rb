@@ -3,7 +3,7 @@ require 'spec_helper'
 describe "DoxyHaml Cage Class Parser" do
 
   before(:all) do
-    @expected_public_methods = ["setAnimal", "getAnimal"]
+    @expected_public_methods = ["setAnimal", "getAnimal", "setDimensions"]
     parser = DoxyHaml::Parser.new "spec/doxygen/xml"
     classes = parser.index.namespaces.first.classes
     @cage = class_by_name classes, "Cage"
