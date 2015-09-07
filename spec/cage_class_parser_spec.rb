@@ -5,8 +5,8 @@ describe "DoxyHaml Cage Class Parser" do
   before(:all) do
     @expected_public_methods = ["setAnimal", "getAnimal"]
     parser = DoxyHaml::Parser.new "spec/doxygen/xml"
-    @classes = parser.index.namespaces.first.classes
-    @cage = class_by_name "Cage"
+    classes = parser.index.namespaces.first.classes
+    @cage = class_by_name classes, "Cage"
   end
 
   it "should have a name" do

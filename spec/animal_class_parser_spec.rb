@@ -6,8 +6,8 @@ describe "DoxyHaml Animal Class Parser" do
     @expected_public_methods = ["Animal", "canFly", "getNumberOfLegs"]
     @expected_public_static_methods = ["numberOfMonkeys"]
     parser = DoxyHaml::Parser.new "spec/doxygen/xml"
-    @classes = parser.index.namespaces.first.classes
-    @animal = class_by_name "Animal"
+    classes = parser.index.namespaces.first.classes
+    @animal = class_by_name classes, "Animal"
   end
 
   it "should have a name" do

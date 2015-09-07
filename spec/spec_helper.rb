@@ -28,6 +28,6 @@ def map_node node
   list
 end
 
-def class_by_name class_name
-  @classes.select { |clazz| clazz.name == class_name }.first
+def class_by_name classes, class_name
+  classes.select { |clazz| clazz.name == class_name }.first
 end
