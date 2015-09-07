@@ -25,6 +25,11 @@ describe "DoxyHaml Monkey Class Parser" do
     expect(@monkey.html_brief).to eq "Represents a <a href='classzoo_1_1_monkey.html'>Monkey</a> in the zoo."
   end
 
+  it "should have a description" do
+    expect(@monkey.description).to eq "The class Monkey extends Animal with specifics about monkeys in the zoo."
+    expect(@monkey.html_description).to eq "The class <a href='classzoo_1_1_monkey.html'>Monkey</a> extends <a href='classzoo_1_1_animal.html'>Animal</a> with specifics about monkeys in the zoo."
+  end
+
   it "should have an author" do
     expect(@monkey.author).to eq "Michael Cowan"
   end

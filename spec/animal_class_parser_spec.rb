@@ -25,6 +25,11 @@ describe "DoxyHaml Animal Class Parser" do
     expect(@animal.html_brief).to eq "Represents an <a href='classzoo_1_1_animal.html'>Animal</a> in the zoo."
   end
 
+  it "should have a description" do
+    expect(@animal.description).to eq "The class Animal contains information and functions related to all animals in the zoo."
+    expect(@animal.html_description).to eq "The class <a href='classzoo_1_1_animal.html'>Animal</a> contains information and functions related to all animals in the zoo."
+  end
+
   it "should have an author" do
     expect(@animal.author).to eq "Michael Cowan"
   end

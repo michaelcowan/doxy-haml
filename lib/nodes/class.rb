@@ -22,6 +22,14 @@ module DoxyHaml
       @html_brief ||= link_to_refs xpath_first %Q{/doxygen/compounddef/briefdescription/para}
     end
 
+    def description
+      @description ||= (xpath_first_content %Q{/doxygen/compounddef/detaileddescription/para}).strip
+    end
+
+    def html_description
+      @html_description ||= link_to_refs xpath_first %Q{/doxygen/compounddef/detaileddescription/para}
+    end
+
     def author
       @author ||= (xpath_first_content %Q{/doxygen/compounddef/detaileddescription/para/simplesect[@kind="author"]}).strip
     end
