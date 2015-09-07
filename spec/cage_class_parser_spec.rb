@@ -19,6 +19,11 @@ describe "DoxyHaml Cage Class Parser" do
     expect(@cage.html_qualified_name).to eq "<a href='classzoo_1_1_cage.html'>zoo::Cage</a>"
   end
 
+  it "should have a brief" do
+    expect(@cage.brief).to eq "Represents a Cage at the zoo."
+    expect(@cage.html_brief).to eq "Represents a <a href='classzoo_1_1_cage.html'>Cage</a> at the zoo."
+  end
+
   it "should not be abstract" do
     expect(@cage.abstract?).to be false
   end

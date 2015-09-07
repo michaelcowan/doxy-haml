@@ -1,17 +1,17 @@
-/**
- *  \brief Represents a Monkey in the zoo.
- *
- *  The class Monkey extends Animal with specifics about monkeys in the zoo.
- *
- *  \author Michael Cowan
- */
+#ifndef ZOO_MONKEY_H
+#define ZOO_MONKEY_H
 
- #ifndef ZOO_MONKEY_H
- #define ZOO_MONKEY_H
-
- #include "animal.h"
+#include "animal.h"
 
 namespace zoo {
+
+  /**
+   *  \brief Represents a Monkey in the zoo.
+   *
+   *  The class Monkey extends Animal with specifics about monkeys in the zoo.
+   *
+   *  \author Michael Cowan
+   */
   class Monkey : public Animal {
 
   public:

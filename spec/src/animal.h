@@ -1,15 +1,15 @@
-/**
- *  \brief Represents an Animal in the zoo.
- *
- *  The class Animal contains information and functions related to all animals in the zoo.
- *
- *  \author Michael Cowan
- */
-
- #ifndef ZOO_ANIMAL_H
- #define ZOO_ANIMAL_H
+#ifndef ZOO_ANIMAL_H
+#define ZOO_ANIMAL_H
 
 namespace zoo {
+
+  /**
+   *  \brief Represents an Animal in the zoo.
+   *
+   *  The class Animal contains information and functions related to all animals in the zoo.
+   *
+   *  \author Michael Cowan
+   */
   class Animal {
 
   public:

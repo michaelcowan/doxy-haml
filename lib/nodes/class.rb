@@ -13,6 +13,14 @@ module DoxyHaml
     def html_qualified_name
       link_to_self qualified_name
     end
+
+    def brief
+      @brief ||= (xpath_first_content %Q{/doxygen/compounddef/briefdescription/para}).strip
+    end
+
+    def html_brief
+      @html_brief ||= link_to_refs xpath_first %Q{/doxygen/compounddef/briefdescription/para}
+    end
     
     def abstract?
       @abstract ||= (xpath_first_param %Q{/doxygen/compounddef}, 'abstract') == 'yes'

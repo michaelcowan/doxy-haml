@@ -20,6 +20,11 @@ describe "DoxyHaml Animal Class Parser" do
     expect(@animal.html_qualified_name).to eq "<a href='classzoo_1_1_animal.html'>zoo::Animal</a>"
   end
 
+  it "should have a brief" do
+    expect(@animal.brief).to eq "Represents an Animal in the zoo."
+    expect(@animal.html_brief).to eq "Represents an <a href='classzoo_1_1_animal.html'>Animal</a> in the zoo."
+  end
+
   it "should be abstract" do
     expect(@animal.abstract?).to be true
   end

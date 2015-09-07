@@ -7,6 +7,7 @@ end
 
 Coveralls.wear!
 
+require_relative '../lib/helpers'
 require_relative '../lib/generator'
 require_relative '../lib/parser'
 
