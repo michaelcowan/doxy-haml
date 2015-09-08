@@ -14,6 +14,10 @@ module DoxyHaml
       end
     end
 
+    def anchor_for id
+      "<a id='#{id}'/>"
+    end
+
     def remove_namespace name
       name.split("::").last
     end
@@ -34,7 +38,7 @@ module DoxyHaml
       "#{a.join('_')}.html##{b}"
     end
 
-    def id_to_href_id id
+    def id_to_a_id id
       id.split('_').last
     end
 

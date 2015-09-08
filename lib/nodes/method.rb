@@ -6,12 +6,16 @@ module DoxyHaml
       xpath_first_content %Q{name}
     end
 
+    def html_name
+      link_to name, id_to_href_anchor(id)
+    end
+
     def anchor
-      id_to_href_id id
+      id_to_a_id id
     end
 
     def html_anchor
-      link_to name, id_to_href_anchor(id)
+      anchor_for id_to_a_id(id)
     end
 
     def definition
