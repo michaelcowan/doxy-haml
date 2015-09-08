@@ -50,6 +50,10 @@ module DoxyHaml
       @returns ||= Type.new nil, self, xpath_first(%Q{type})
     end
 
+    def has_arguments?
+      not @xml.xpath(%Q{param}).empty?
+    end
+
   end
 
 end

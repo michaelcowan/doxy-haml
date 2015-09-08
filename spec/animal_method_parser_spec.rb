@@ -43,4 +43,8 @@ describe "DoxyHaml Animal Method Parser" do
     expect(@getNumberOfLegs.returns.html_name).to eq "int"
   end
 
+  it "should not have any arguments" do
+    expect(@getNumberOfLegs.has_arguments?).to be false
+  end
+
 end
