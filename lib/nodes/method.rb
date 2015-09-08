@@ -7,11 +7,11 @@ module DoxyHaml
     end
 
     def anchor
-      id.to_s
+      id_to_href_id id
     end
 
     def html_anchor
-      link_to name, "##{anchor}"
+      link_to name, id_to_href_anchor(id)
     end
 
     def definition

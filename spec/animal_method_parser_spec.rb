@@ -14,8 +14,8 @@ describe "DoxyHaml Animal Method Parser" do
   end
 
   it "should have an anchor" do
-    expect(@getNumberOfLegs.anchor).to match /classzoo_1_1_animal_\w{34}/
-    expect(@getNumberOfLegs.html_anchor).to match /<a href='#classzoo_1_1_animal_\w{34}'>getNumberOfLegs<\/a>/
+    expect(@getNumberOfLegs.anchor).to match /\w{34}/
+    expect(@getNumberOfLegs.html_anchor).to match /<a href='classzoo_1_1_animal.html#\w{34}'>getNumberOfLegs<\/a>/
   end
 
   it "should have a definition" do
