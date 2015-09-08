@@ -20,7 +20,7 @@ describe "DoxyHaml Animal Method Parser" do
   end
 
   it "should have a definition" do
-    expect(@getNumberOfLegs.definition).to eq "virtual int zoo::Animal::getNumberOfLegs"
+    expect(@getNumberOfLegs.definition).to eq "virtual int zoo::Animal::getNumberOfLegs() const =0"
   end
 
   it "should have a brief" do

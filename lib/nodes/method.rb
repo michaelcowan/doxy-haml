@@ -19,7 +19,7 @@ module DoxyHaml
     end
 
     def definition
-      @definition ||= xpath_first_content %Q{definition}
+      @definition ||= xpath_first_content(%Q{definition}) + xpath_first_content(%Q{argsstring})
     end
 
     def brief
