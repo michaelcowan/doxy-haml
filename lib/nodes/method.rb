@@ -19,11 +19,11 @@ module DoxyHaml
     end
 
     def definition
-      @definition ||= xpath_first_content(%Q{definition}) + xpath_first_content(%Q{argsstring})
+      @definition ||= (xpath_first_content(%Q{definition}) + xpath_first_content(%Q{argsstring})).squish
     end
 
     def brief
-      @brief ||= (xpath_first_content %Q{briefdescription/para}).strip
+      @brief ||= (xpath_first_content %Q{briefdescription/para}).squish
     end
 
     def html_brief
@@ -31,7 +31,7 @@ module DoxyHaml
     end
 
     def description
-      @description ||= (xpath_first_content %Q{detaileddescription/para}).strip
+      @description ||= (xpath_first_content %Q{detaileddescription/para}).squish
     end
 
     def html_description
@@ -39,7 +39,7 @@ module DoxyHaml
     end
 
     def return_brief
-      @return_brief ||= (xpath_first_content %Q{detaileddescription/para/simplesect[@kind='return']/para}).strip
+      @return_brief ||= (xpath_first_content %Q{detaileddescription/para/simplesect[@kind='return']/para}).squish
     end
 
     def html_return_brief

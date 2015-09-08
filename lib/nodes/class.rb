@@ -15,7 +15,7 @@ module DoxyHaml
     end
 
     def brief
-      @brief ||= (xpath_first_content %Q{/doxygen/compounddef/briefdescription/para}).strip
+      @brief ||= (xpath_first_content %Q{/doxygen/compounddef/briefdescription/para}).squish
     end
 
     def html_brief
@@ -23,7 +23,7 @@ module DoxyHaml
     end
 
     def description
-      @description ||= (xpath_first_content %Q{/doxygen/compounddef/detaileddescription/para}).strip
+      @description ||= (xpath_first_content %Q{/doxygen/compounddef/detaileddescription/para}).squish
     end
 
     def html_description
@@ -31,7 +31,7 @@ module DoxyHaml
     end
 
     def author
-      @author ||= (xpath_first_content %Q{/doxygen/compounddef/detaileddescription/para/simplesect[@kind="author"]}).strip
+      @author ||= (xpath_first_content %Q{/doxygen/compounddef/detaileddescription/para/simplesect[@kind="author"]}).squish
     end
     
     def abstract?
