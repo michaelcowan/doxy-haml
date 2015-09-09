@@ -50,6 +50,13 @@ describe "DoxyHaml Cage Method Parser" do
     expect(parameters).to match @expected_parameters
   end
 
+  it "should have parameter directions" do
+    @setDimensions.parameters.each do |parameter|
+      expect(parameter.has_direction?).to be true
+      expect(parameter.direction).to eq "in"
+    end
+  end
+
   it "should have parameter types" do
     types = map_node @setDimensions.parameters do |parameter| parameter.type end
     expect(types.map do |type| type.name end).to match @expected_types

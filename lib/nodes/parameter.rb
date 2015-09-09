@@ -23,6 +23,14 @@ module DoxyHaml
       xpath_first_content @params, %Q{defval}
     end
 
+    def has_direction?
+      not xpath_first_param(%Q{parameternamelist/parametername}, "direction").nil?
+    end
+
+    def direction
+      xpath_first_param %Q{parameternamelist/parametername}, "direction"
+    end
+
   end
 
 end

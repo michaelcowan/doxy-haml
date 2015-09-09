@@ -21,8 +21,8 @@ namespace zoo {
      *
      *  Puts an Animal in this Cage.
      *
-     *  \param [in] animal The Animal to put in this Cage.
-     *  \param [in] mate An optional mate for the Animal.
+     *  \param animal The Animal to put in this Cage.
+     *  \param mate An optional mate for the Animal.
      *  \return true if the Animal can be put in this cage.
      */
     bool setAnimal(Animal * animal, Animal * mate = NULL);

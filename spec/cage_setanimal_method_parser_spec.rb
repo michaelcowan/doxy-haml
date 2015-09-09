@@ -53,6 +53,13 @@ describe "DoxyHaml Cage setAnimal Method Parser" do
     expect(parameters).to match @expected_parameters
   end
 
+  it "should not have parameter directions" do
+    @setAnimal.parameters.each do |parameter|
+      expect(parameter.has_direction?).to be false
+      expect(parameter.direction).to eq nil
+    end
+  end
+
   it "should have parameter types" do
     types = map_node @setAnimal.parameters do |parameter| parameter.type end
     expect(types.map do |type| type.name end).to match @expected_types
