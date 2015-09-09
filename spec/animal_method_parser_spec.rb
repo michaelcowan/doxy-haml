@@ -43,6 +43,10 @@ describe "DoxyHaml Animal Method Parser" do
     expect(@getNumberOfLegs.return_type.html_name).to eq "int"
   end
 
+  it "should be virtual" do
+    expect(@getNumberOfLegs.virtual?).to be true
+  end
+
   it "should not have any arguments" do
     expect(@getNumberOfLegs.has_arguments?).to be false
   end

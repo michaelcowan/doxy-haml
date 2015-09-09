@@ -23,6 +23,10 @@ module DoxyHaml
       list
     end
 
+    def xpath path
+      @xml.xpath(path)
+    end
+
     def xpath_first xpath
       @xml.xpath(xpath).first
     end
