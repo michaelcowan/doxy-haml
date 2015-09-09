@@ -15,32 +15,48 @@ module DoxyHaml
 
     private
 
-    def map_xpath xpath
+    def map_xpath x
+      map_xpath_with_index x do |node, index|
+        yield node
+      end
+    end
+
+    def map_xpath_with_index x
       list = []
-      @xml.xpath(xpath).each do |node|
-        list << (yield node)
+      index = 0;
+      @xml.xpath(x).each do |node|
+        list << (yield node, index)
+        index += 1
       end
       list
     end
 
-    def xpath path
-      @xml.xpath(path)
+    def xpath xml=@xml, path
+      xml.xpath(path)
     end
 
-    def xpath_first xpath
-      @xml.xpath(xpath).first
+    def xpath_first xml=@xml, xpath
+      xpath(xml, xpath).first
     end
 
-    def xpath_first_param xpath, param
-      xpath_first(xpath)[param]
+    def xpath_first_param xml=@xml, xpath, param
+      xpath_first(xml, xpath)[param]
     end
 
-    def xpath_first_content xpath
-      xpath_first(xpath).content
+    def xpath_first_content xml=@xml, xpath
+      xpath_first(xml, xpath).content
+    end
+
+    def xpath_empty? xml=@xml, xpath
+      xpath(xml, xpath).empty?
     end
 
     def content
       @xml.content
+    end
+
+    def xpath_param param
+      @xml[param]
     end
 
   end

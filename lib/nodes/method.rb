@@ -1,6 +1,11 @@
 module DoxyHaml
 
   class Method < Node
+
+    def initialize id, parent, xml
+      super id, parent, xml
+      @params = xpath %Q{param}
+    end
     
     def name
       xpath_first_content %Q{name}
@@ -54,8 +59,14 @@ module DoxyHaml
       @virtual ||= (xpath_param 'virt') == 'pure-virtual'
     end
 
-    def has_arguments?
-      not @xml.xpath(%Q{param}).empty?
+    def has_parameters?
+      not xpath_empty? %Q{param}
+    end
+
+    def parameters
+      @parameters ||= map_xpath_with_index %Q{detaileddescription/para/parameterlist[@kind='param']/parameteritem} do |parameter, index|
+        Parameter.new parameter['id'], self, parameter, @params[index]
+      end
     end
 
   end

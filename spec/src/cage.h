@@ -42,8 +42,9 @@ namespace zoo {
      *
      *  \param [in] width The width of the cage.
      *  \param [in] height The height of the cage.
+     *  \param [in] hasRoof Set to true if the cage has a roof.
      */
-    void setDimensions(int width, int height);
+    void setDimensions(int width, int height, bool hasRoof);
 
   };
 }

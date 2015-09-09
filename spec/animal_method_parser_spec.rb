@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe "DoxyHaml Animal Method Parser" do
+describe "DoxyHaml Animal getNumberOfLegs Method Parser" do
 
   before(:all) do
     parser = DoxyHaml::Parser.new "spec/doxygen/xml"
@@ -47,8 +47,8 @@ describe "DoxyHaml Animal Method Parser" do
     expect(@getNumberOfLegs.virtual?).to be true
   end
 
-  it "should not have any arguments" do
-    expect(@getNumberOfLegs.has_arguments?).to be false
+  it "should not have any parameters" do
+    expect(@getNumberOfLegs.has_parameters?).to be false
   end
 
 end
