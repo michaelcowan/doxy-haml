@@ -43,6 +43,10 @@ module DoxyHaml
       @html_description ||= link_to_refs xpath_first %Q{detaileddescription/para}
     end
 
+    def has_return_brief?
+      not xpath_empty? %Q{detaileddescription/para/simplesect[@kind='return']/para}
+    end
+
     def return_brief
       @return_brief ||= (xpath_first_content %Q{detaileddescription/para/simplesect[@kind='return']/para}).squish
     end

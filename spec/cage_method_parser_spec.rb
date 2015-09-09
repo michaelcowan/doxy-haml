@@ -35,10 +35,9 @@ describe "DoxyHaml Cage Method Parser" do
     expect(@setDimensions.html_description).to eq "Sets the dimensions of the <a href='classzoo_1_1_cage.html'>Cage</a> for the <a href='classzoo_1_1_animal.html'>Animal</a>."
   end
 
-  # it "should have a return brief" do
-  #   expect(@setDimensions.return_brief).to eq nil
-  #   expect(@setDimensions.html_return_brief).to eq nil
-  # end
+  it "should not have a return brief" do
+    expect(@setDimensions.has_return_brief?).to be false
+  end
 
   it "should have a return type" do
     expect(@setDimensions.return_type.name).to eq "void"

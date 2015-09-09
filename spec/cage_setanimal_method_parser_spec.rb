@@ -23,7 +23,7 @@ describe "DoxyHaml Cage setAnimal Method Parser" do
   end
 
   it "should have a definition" do
-    expect(@setAnimal.definition).to eq "void zoo::Cage::setAnimal(Animal *animal, Animal *mate=NULL)"
+    expect(@setAnimal.definition).to eq "bool zoo::Cage::setAnimal(Animal *animal, Animal *mate=NULL)"
   end
 
   it "should have a brief" do
@@ -36,9 +36,15 @@ describe "DoxyHaml Cage setAnimal Method Parser" do
     expect(@setAnimal.html_description).to eq "Puts an <a href='classzoo_1_1_animal.html'>Animal</a> in this <a href='classzoo_1_1_cage.html'>Cage</a>."
   end
 
+  it "should have a return brief" do
+    expect(@setAnimal.has_return_brief?).to be true
+    expect(@setAnimal.return_brief).to eq "true if the Animal can be put in this cage."
+    expect(@setAnimal.html_return_brief).to eq "true if the <a href='classzoo_1_1_animal.html'>Animal</a> can be put in this cage."
+  end
+
   it "should have a return type" do
-    expect(@setAnimal.return_type.name).to eq "void"
-    expect(@setAnimal.return_type.html_name).to eq "void"
+    expect(@setAnimal.return_type.name).to eq "bool"
+    expect(@setAnimal.return_type.html_name).to eq "bool"
   end
 
   it "should have parameters" do

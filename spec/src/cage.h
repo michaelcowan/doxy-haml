@@ -23,8 +23,9 @@ namespace zoo {
      *
      *  \param [in] animal The Animal to put in this Cage.
      *  \param [in] mate An optional mate for the Animal.
+     *  \return true if the Animal can be put in this cage.
      */
-    void setAnimal(Animal * animal, Animal * mate = NULL);
+    bool setAnimal(Animal * animal, Animal * mate = NULL);
 
     /**
      *  \brief Gets the Animal.
