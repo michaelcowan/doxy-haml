@@ -33,14 +33,14 @@ describe "DoxyHaml Animal Method Parser" do
     expect(@getNumberOfLegs.html_description).to eq "Returns how many legs this <a href='classzoo_1_1_animal.html'>Animal</a> has."
   end
 
-  it "should have a return brief" do
+  it "should not have a return brief" do
     expect(@getNumberOfLegs.return_brief).to eq "the number of legs for this Animal."
     expect(@getNumberOfLegs.html_return_brief).to eq "the number of legs for this <a href='classzoo_1_1_animal.html'>Animal</a>."
   end
 
   it "should have a return type" do
-    expect(@getNumberOfLegs.returns.name).to eq "int"
-    expect(@getNumberOfLegs.returns.html_name).to eq "int"
+    expect(@getNumberOfLegs.return_type.name).to eq "int"
+    expect(@getNumberOfLegs.return_type.html_name).to eq "int"
   end
 
   it "should not have any arguments" do
