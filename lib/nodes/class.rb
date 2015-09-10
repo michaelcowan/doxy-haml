@@ -11,7 +11,7 @@ module DoxyHaml
     end
 
     def html_qualified_name
-      link_to_self qualified_name
+      html_qualify self
     end
 
     def brief

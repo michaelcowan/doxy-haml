@@ -15,6 +15,14 @@ module DoxyHaml
       link_to name, id_to_href_anchor(id)
     end
 
+    def qualified_name
+      qualify self
+    end
+
+    def html_qualified_name
+      html_qualify self
+    end
+
     def anchor
       id_to_a_id id
     end

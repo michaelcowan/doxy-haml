@@ -18,10 +18,6 @@ module DoxyHaml
       "<a id='#{id}'/>"
     end
 
-    def remove_namespace name
-      name.split("::").last
-    end
-
     def link_to_refs node
       list = map_node node.children do |child|
         child = (!child.text? and child.name == "ref") ? link_to(child.content, id_to_href(child['refid'])) : child

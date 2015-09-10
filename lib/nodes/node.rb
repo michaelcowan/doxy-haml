@@ -4,6 +4,7 @@ module DoxyHaml
     include HtmlUtilities
 
     attr_reader :id
+    attr_reader :parent
 
     def initialize id, parent, xml = nil
       @parent, @id, @xml = parent, id, xml

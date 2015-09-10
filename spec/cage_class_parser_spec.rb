@@ -16,7 +16,7 @@ describe "DoxyHaml Cage Class Parser" do
 
   it "should have a qualified name" do
     expect(@cage.qualified_name).to eq "zoo::Cage"
-    expect(@cage.html_qualified_name).to eq "<a href='classzoo_1_1_cage.html'>zoo::Cage</a>"
+    expect(@cage.html_qualified_name).to eq "<a href='namespacezoo.html'>zoo</a>::<a href='classzoo_1_1_cage.html'>Cage</a>"
   end
 
   it "should have a brief" do
