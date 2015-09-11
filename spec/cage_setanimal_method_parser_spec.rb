@@ -17,6 +17,11 @@ describe "DoxyHaml Cage setAnimal Method Parser" do
     expect(@setAnimal.html_name).to match /<a href='classzoo_1_1_cage.html#\w{34}'>setAnimal<\/a>/
   end
 
+  it "should have a fully qualified name" do
+    expect(@setAnimal.qualified_name).to eq "zoo::Cage::setAnimal"
+    expect(@setAnimal.html_qualified_name).to eq "<a href='namespacezoo.html'>zoo</a>::<a href='classzoo_1_1_cage.html'>Cage</a>::<a href='classzoo_1_1_cage.html#1ac6017d49490b925fc07a59b9d19d7ec4'>setAnimal</a>"
+  end
+
   it "should have an anchor" do
     expect(@setAnimal.anchor).to match /\w{34}/
     expect(@setAnimal.html_anchor).to match /<a id='\w{34}'\/>/
