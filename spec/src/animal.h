@@ -49,6 +49,15 @@ namespace zoo {
      */
     bool canFly() const;
 
+    /**
+     *  \brief Feed the Animal.
+     *
+     *  Feeds the Animal.
+     *
+     *  \param [in] volume The number of portions to feed the Animal.
+     */
+    virtual void feed(const int volume) = 0;
+
   };
 }
 

@@ -23,6 +23,10 @@ module DoxyHaml
       html_qualify self
     end
 
+    def html_qualified_name_except_self
+      html_qualify_except_self self
+    end
+
     def anchor
       id_to_a_id id
     end
@@ -33,6 +37,13 @@ module DoxyHaml
 
     def definition
       @definition ||= (xpath_first_content(%Q{definition}) + xpath_first_content(%Q{argsstring})).squish
+    end
+
+    def html_definition
+      p = parameters.map { |p| p.html_definition }.join(', ')
+      s = "#{return_type.html_name} #{html_qualified_name_except_self}(#{p})"
+      s.prepend "virtual " if virtual? or pure_virtual?
+      s += (" const " if const?).to_s + ("=0" if pure_virtual?).to_s
     end
 
     def brief

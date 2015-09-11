@@ -21,6 +21,7 @@ describe "DoxyHaml Animal getNumberOfLegs Method Parser" do
 
   it "should have a definition" do
     expect(@getNumberOfLegs.definition).to eq "virtual int zoo::Animal::getNumberOfLegs() const =0"
+    expect(@getNumberOfLegs.html_definition).to eq "virtual int <a href='namespacezoo.html'>zoo</a>::<a href='classzoo_1_1_animal.html'>Animal</a>::getNumberOfLegs() const =0"
   end
 
   it "should have a brief" do

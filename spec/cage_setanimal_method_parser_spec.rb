@@ -24,6 +24,7 @@ describe "DoxyHaml Cage setAnimal Method Parser" do
 
   it "should have a definition" do
     expect(@setAnimal.definition).to eq "bool zoo::Cage::setAnimal(Animal *animal, Animal *mate=NULL)"
+    expect(@setAnimal.html_definition).to eq "bool <a href='namespacezoo.html'>zoo</a>::<a href='classzoo_1_1_cage.html'>Cage</a>::setAnimal(<a href='classzoo_1_1_animal.html'>Animal</a> * animal, <a href='classzoo_1_1_animal.html'>Animal</a> * mate=NULL)"
   end
 
   it "should have a brief" do

@@ -26,6 +26,15 @@ namespace zoo {
     virtual int getNumberOfLegs() const;
 
     /**
+     *  \brief Feed the Monkey.
+     *
+     *  Feeds the Monkey.
+     *
+     *  \param [in] volume The number of portions to feed the Monkey.
+     */
+    virtual void feed(const int volume);
+
+    /**
      *  \brief Get the Monkey count.
      *
      *  Returns the Monkey count for the entire zoo.

@@ -28,6 +28,7 @@ describe "DoxyHaml Cage Method Parser" do
 
   it "should have a definition" do
     expect(@setDimensions.definition).to eq "void zoo::Cage::setDimensions(int width, int height, bool hasRoof)"
+    expect(@setDimensions.html_definition).to eq "void <a href='namespacezoo.html'>zoo</a>::<a href='classzoo_1_1_cage.html'>Cage</a>::setDimensions(int width, int height, bool hasRoof)"
   end
 
   it "should have a brief" do

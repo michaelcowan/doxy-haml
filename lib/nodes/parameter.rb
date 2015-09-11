@@ -31,6 +31,9 @@ module DoxyHaml
       xpath_first_param %Q{parameternamelist/parametername}, "direction"
     end
 
+    def html_definition
+      "#{type.html_name} #{name}" + ("=#{default_value}" if has_default_value?).to_s
+    end
   end
 
 end
