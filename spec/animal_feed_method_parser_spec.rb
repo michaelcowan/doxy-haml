@@ -17,7 +17,7 @@ describe "DoxyHaml Animal feed Method Parser" do
 
   it "should have a fully qualified name" do
     expect(@feed.qualified_name).to eq "zoo::Animal::feed"
-    expect(@feed.html_qualified_name).to eq "<a href='namespacezoo.html'>zoo</a>::<a href='classzoo_1_1_animal.html'>Animal</a>::<a href='classzoo_1_1_animal.html#1a81f8828514d067210dcde20e2697f2ec'>feed</a>"
+    expect(@feed.html_qualified_name).to match /<a href='namespacezoo.html'>zoo<\/a>::<a href='classzoo_1_1_animal.html'>Animal<\/a>::<a href='classzoo_1_1_animal.html#\w{34}'>feed<\/a>/
   end
 
   it "should have an anchor" do

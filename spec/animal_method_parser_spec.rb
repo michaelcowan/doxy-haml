@@ -16,7 +16,7 @@ describe "DoxyHaml Animal getNumberOfLegs Method Parser" do
 
   it "should have a fully qualified name" do
     expect(@getNumberOfLegs.qualified_name).to eq "zoo::Animal::getNumberOfLegs"
-    expect(@getNumberOfLegs.html_qualified_name).to eq "<a href='namespacezoo.html'>zoo</a>::<a href='classzoo_1_1_animal.html'>Animal</a>::<a href='classzoo_1_1_animal.html#1af5aef5dfa17857c0c7a85e14d14609bc'>getNumberOfLegs</a>"
+    expect(@getNumberOfLegs.html_qualified_name).to match /<a href='namespacezoo.html'>zoo<\/a>::<a href='classzoo_1_1_animal.html'>Animal<\/a>::<a href='classzoo_1_1_animal.html#\w{34}'>getNumberOfLegs<\/a>/
   end
 
   it "should have an anchor" do
