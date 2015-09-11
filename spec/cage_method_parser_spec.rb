@@ -49,6 +49,18 @@ describe "DoxyHaml Cage Method Parser" do
     expect(@setDimensions.return_type.html_name).to eq "void"
   end
 
+  it "should not be pure virtual" do
+    expect(@setDimensions.pure_virtual?).to be false
+  end
+
+  it "should not be virtual" do
+    expect(@setDimensions.virtual?).to be false
+  end
+
+  it "should not be const" do
+    expect(@setDimensions.const?).to be false
+  end
+
   it "should have parameters" do
     expect(@setDimensions.has_parameters?).to be true
     parameters = map_node @setDimensions.parameters do |parameter| parameter.name end

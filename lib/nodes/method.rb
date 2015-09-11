@@ -68,7 +68,15 @@ module DoxyHaml
     end
 
     def virtual?
-      @virtual ||= (xpath_param 'virt') == 'pure-virtual'
+      @virtual ||= (xpath_param 'virt') == 'virtual'
+    end
+
+    def pure_virtual?
+      @pure_virtual ||= (xpath_param 'virt') == 'pure-virtual'
+    end
+
+    def const?
+      @const ||= (xpath_param 'const') == 'yes'
     end
 
     def has_parameters?

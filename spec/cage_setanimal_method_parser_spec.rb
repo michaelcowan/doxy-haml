@@ -47,6 +47,18 @@ describe "DoxyHaml Cage setAnimal Method Parser" do
     expect(@setAnimal.return_type.html_name).to eq "bool"
   end
 
+  it "should not be pure virtual" do
+    expect(@setAnimal.pure_virtual?).to be false
+  end
+
+  it "should not be virtual" do
+    expect(@setAnimal.virtual?).to be false
+  end
+
+  it "should not be const" do
+    expect(@setAnimal.const?).to be false
+  end
+
   it "should have parameters" do
     expect(@setAnimal.has_parameters?).to be true
     parameters = map_node @setAnimal.parameters do |parameter| parameter.name end
