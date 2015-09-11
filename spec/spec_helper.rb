@@ -30,3 +30,7 @@ end
 def method_by_name methods, method_name
   methods.select { |method| method.name == method_name }.first
 end
+
+def enum_by_name enums, enum_name
+  enums.select { |enum| enum.name == enum_name }.first
+end
