@@ -58,6 +58,16 @@ module DoxyHaml
       not public_static_methods.empty?
     end
 
+    def public_enums
+      @public_enums ||= map_xpath memberdef_xpath("public-type", "enum", "no") do |enum|
+        Enum.new enum['id'], self, enum
+      end
+    end
+
+    def has_public_enums?
+      not public_enums.empty?
+    end
+
     private
 
     def memberdef_xpath access_level, kind, static

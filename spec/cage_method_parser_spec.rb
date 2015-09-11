@@ -32,11 +32,13 @@ describe "DoxyHaml Cage Method Parser" do
   end
 
   it "should have a brief" do
+    expect(@setDimensions.has_brief?).to be true
     expect(@setDimensions.brief).to eq "Sets the Cage dimensions."
     expect(@setDimensions.html_brief).to eq "Sets the <a href='classzoo_1_1_cage.html'>Cage</a> dimensions."
   end
 
   it "should have a description" do
+    expect(@setDimensions.has_description?).to be true
     expect(@setDimensions.description).to eq "Sets the dimensions of the Cage for the Animal."
     expect(@setDimensions.html_description).to eq "Sets the dimensions of the <a href='classzoo_1_1_cage.html'>Cage</a> for the <a href='classzoo_1_1_animal.html'>Animal</a>."
   end

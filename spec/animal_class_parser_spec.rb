@@ -5,6 +5,7 @@ describe "DoxyHaml Animal Class Parser" do
   before(:all) do
     @expected_public_methods = ["Animal", "canFly", "getNumberOfLegs", "feed"]
     @expected_public_static_methods = ["numberOfMonkeys"]
+    @expected_public_enums = ["Kind"]
     parser = DoxyHaml::Parser.new "spec/doxygen/xml"
     classes = parser.index.namespaces.first.classes
     @animal = class_by_name classes, "Animal"
@@ -46,6 +47,12 @@ describe "DoxyHaml Animal Class Parser" do
 
   it "should not have public static method(s)" do
     expect(@animal.has_public_static_methods?).to be false
+  end
+
+  it "should have public enum(s)" do
+    expect(@animal.has_public_enums?).to be true
+    public_enum_names = map_node @animal.public_enums do |enum| enum.name end
+    expect(public_enum_names).to match_array @expected_public_enums
   end
 
 end

@@ -33,11 +33,13 @@ describe "DoxyHaml Cage setAnimal Method Parser" do
   end
 
   it "should have a brief" do
+    expect(@setAnimal.has_brief?).to be true
     expect(@setAnimal.brief).to eq "Sets the Animal."
     expect(@setAnimal.html_brief).to eq "Sets the <a href='classzoo_1_1_animal.html'>Animal</a>."
   end
 
   it "should have a description" do
+    expect(@setAnimal.has_description?).to be true
     expect(@setAnimal.description).to eq "Puts an Animal in this Cage."
     expect(@setAnimal.html_description).to eq "Puts an <a href='classzoo_1_1_animal.html'>Animal</a> in this <a href='classzoo_1_1_cage.html'>Cage</a>."
   end

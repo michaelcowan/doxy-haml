@@ -1,38 +1,14 @@
 module DoxyHaml
 
-  class Method < Node
+  class Method < Member
 
     def initialize id, parent, xml
       super id, parent, xml
       @params = xpath %Q{param}
     end
-    
-    def name
-      xpath_first_content %Q{name}
-    end
-
-    def html_name
-      link_to name, id_to_href_anchor(id)
-    end
-
-    def qualified_name
-      qualify self
-    end
-
-    def html_qualified_name
-      html_qualify self
-    end
 
     def html_qualified_name_except_self
       html_qualify_except_self self
-    end
-
-    def anchor
-      id_to_a_id id
-    end
-
-    def html_anchor
-      anchor_for id_to_a_id(id)
     end
 
     def definition
@@ -44,22 +20,6 @@ module DoxyHaml
       s = "#{return_type.html_name} #{html_qualified_name_except_self}(#{p})"
       s.prepend "virtual " if virtual? or pure_virtual?
       s += (" const " if const?).to_s + ("=0" if pure_virtual?).to_s
-    end
-
-    def brief
-      @brief ||= (xpath_first_content %Q{briefdescription/para}).squish
-    end
-
-    def html_brief
-      @html_brief ||= link_to_refs xpath_first %Q{briefdescription/para}
-    end
-
-    def description
-      @description ||= (xpath_first_content %Q{detaileddescription/para}).squish
-    end
-
-    def html_description
-      @html_description ||= link_to_refs xpath_first %Q{detaileddescription/para}
     end
 
     def has_return_brief?

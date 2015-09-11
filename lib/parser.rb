@@ -3,6 +3,8 @@ require 'nokogiri'
 require_relative 'html_utilities'
 require_relative 'nodes/node'
 require_relative 'nodes/compound'
+require_relative 'nodes/value'
+require_relative 'nodes/member'
 
 %w(nodes).each do |r|
   Dir[File.join(File.dirname(__FILE__), r, "*.rb")].each {|f| require f}

@@ -30,11 +30,13 @@ describe "DoxyHaml Animal getNumberOfLegs Method Parser" do
   end
 
   it "should have a brief" do
+    expect(@getNumberOfLegs.has_brief?).to be true
     expect(@getNumberOfLegs.brief).to eq "Get the leg count of this Animal."
     expect(@getNumberOfLegs.html_brief).to eq "Get the leg count of this <a href='classzoo_1_1_animal.html'>Animal</a>."
   end
 
   it "should have a description" do
+    expect(@getNumberOfLegs.has_description?).to be true
     expect(@getNumberOfLegs.description).to eq "Returns how many legs this Animal has."
     expect(@getNumberOfLegs.html_description).to eq "Returns how many legs this <a href='classzoo_1_1_animal.html'>Animal</a> has."
   end

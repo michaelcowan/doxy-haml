@@ -31,11 +31,13 @@ describe "DoxyHaml Monkey feed Method Parser" do
   end
 
   it "should have a brief" do
+    expect(@feed.has_brief?).to be true
     expect(@feed.brief).to eq "Feed the Monkey."
     expect(@feed.html_brief).to eq "Feed the <a href='classzoo_1_1_monkey.html'>Monkey</a>."
   end
 
   it "should have a description" do
+    expect(@feed.has_description?).to be true
     expect(@feed.description).to eq "Feeds the Monkey."
     expect(@feed.html_description).to eq "Feeds the <a href='classzoo_1_1_monkey.html'>Monkey</a>."
   end

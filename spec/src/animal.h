@@ -14,8 +14,18 @@ namespace zoo {
 
   public:
     
+    /**
+     *  \brief Kinds of vertebrate Animal.
+     *
+     *  The most common types of vertebrate Animal kept at the zoo.
+     */
     enum Kind {
-      Mammal,
+      /**
+       *  \brief Mammal Animal.
+       *
+       *  Mammal is a Kind of Animal in the zoo.
+       */
+      Mammal, 
       Bird,
       Fish,
       Reptile,
