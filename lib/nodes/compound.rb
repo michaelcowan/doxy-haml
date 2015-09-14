@@ -15,6 +15,26 @@ module DoxyHaml
       "#{@id}.html"
     end
 
+    def has_brief?
+      not xpath_empty? %Q{/doxygen/compounddef/briefdescription/para}
+    end
+
+    def brief
+      @brief ||= (xpath_first_content %Q{/doxygen/compounddef/briefdescription/para}).squish
+    end
+
+    def html_brief
+      @html_brief ||= link_to_refs xpath_first %Q{/doxygen/compounddef/briefdescription/para}
+    end
+
+    def description
+      @description ||= (xpath_first_content %Q{/doxygen/compounddef/detaileddescription/para}).squish
+    end
+
+    def html_description
+      @html_description ||= link_to_refs xpath_first %Q{/doxygen/compounddef/detaileddescription/para}
+    end
+
     private
 
     def parse_xml

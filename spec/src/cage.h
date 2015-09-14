@@ -3,6 +3,12 @@
 
 #include "animal.h"
 
+/**
+ *  \brief Zoo interfaces and implementations.
+ *
+ *  The zoo namespace holds all interfaces and implementations related to the zoo.
+ *  This includes Animal, Cage and Monkey.
+ */
 namespace zoo {
 
   /**

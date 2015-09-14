@@ -14,22 +14,6 @@ module DoxyHaml
       html_qualify self
     end
 
-    def brief
-      @brief ||= (xpath_first_content %Q{/doxygen/compounddef/briefdescription/para}).squish
-    end
-
-    def html_brief
-      @html_brief ||= link_to_refs xpath_first %Q{/doxygen/compounddef/briefdescription/para}
-    end
-
-    def description
-      @description ||= (xpath_first_content %Q{/doxygen/compounddef/detaileddescription/para}).squish
-    end
-
-    def html_description
-      @html_description ||= link_to_refs xpath_first %Q{/doxygen/compounddef/detaileddescription/para}
-    end
-
     def author
       @author ||= (xpath_first_content %Q{/doxygen/compounddef/detaileddescription/para/simplesect[@kind="author"]}).squish
     end
