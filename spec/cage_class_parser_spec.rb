@@ -20,11 +20,13 @@ describe "DoxyHaml Cage Class Parser" do
   end
 
   it "should have a brief" do
+    expect(@cage.has_brief?).to be true
     expect(@cage.brief).to eq "Represents a Cage at the zoo."
     expect(@cage.html_brief).to eq "Represents a <a href='classzoo_1_1_cage.html'>Cage</a> at the zoo."
   end
 
   it "should have a description" do
+    expect(@cage.has_description?).to be true
     expect(@cage.description).to eq "The class Cage contains an Animal at the zoo."
     expect(@cage.html_description).to eq "The class <a href='classzoo_1_1_cage.html'>Cage</a> contains an <a href='classzoo_1_1_animal.html'>Animal</a> at the zoo."
   end

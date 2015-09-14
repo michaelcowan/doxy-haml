@@ -25,11 +25,13 @@ describe "DoxyHaml Animal Enum Parser" do
   end
 
   it "should have a brief" do
+    expect(@kind.has_brief?).to be true
     expect(@kind.brief).to eq "Kinds of vertebrate Animal."
     expect(@kind.html_brief).to eq "Kinds of vertebrate <a href='classzoo_1_1_animal.html'>Animal</a>."
   end
 
   it "should have a description" do
+    expect(@kind.has_description?).to be true
     expect(@kind.description).to eq "The most common types of vertebrate Animal kept at the zoo."
     expect(@kind.html_description).to eq "The most common types of vertebrate <a href='classzoo_1_1_animal.html'>Animal</a> kept at the zoo."
   end
