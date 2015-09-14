@@ -1,6 +1,6 @@
 module DoxyHaml
 
-  class Method < Member
+  class Method < Definition
 
     def initialize id, parent, xml
       super id, parent, xml

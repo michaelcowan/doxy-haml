@@ -1,6 +1,6 @@
 module DoxyHaml
 
-  class Member < Value
+  class Definition < Value
 
     def qualified_name
       qualify self

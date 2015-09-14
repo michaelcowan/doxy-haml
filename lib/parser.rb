@@ -5,7 +5,7 @@ require_relative 'nodes/node'
 require_relative 'nodes/entity'
 require_relative 'nodes/compound'
 require_relative 'nodes/value'
-require_relative 'nodes/member'
+require_relative 'nodes/definition'
 
 %w(nodes).each do |r|
   Dir[File.join(File.dirname(__FILE__), r, "*.rb")].each {|f| require f}

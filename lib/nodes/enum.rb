@@ -1,6 +1,6 @@
 module DoxyHaml
 
-  class Enum < Member
+  class Enum < Definition
 
     def public_values
       @public_values ||= map_xpath %Q{enumvalue[@prot="public"]} do |value|
