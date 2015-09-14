@@ -19,6 +19,10 @@ module DoxyHaml
       end
     end
 
+    def global_classes
+      @global_classes ||= classes.reject { |c| c.qualified_name.include? "::" }
+    end
+
   end
 
 end
