@@ -26,6 +26,14 @@ module DoxyHaml
       @html_description ||= link_to_refs xpath_first %Q{detaileddescription/para}
     end
 
+    def has_author?
+      not xpath_empty? %Q{detaileddescription/para/simplesect[@kind='author']}
+    end
+
+    def author
+      @author ||= (xpath_first_content %Q{detaileddescription/para/simplesect[@kind='author']}).squish
+    end
+
   end
 
 end

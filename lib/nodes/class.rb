@@ -13,10 +13,6 @@ module DoxyHaml
     def html_qualified_name
       html_qualify self
     end
-
-    def author
-      @author ||= (xpath_first_content %Q{detaileddescription/para/simplesect[@kind="author"]}).squish
-    end
     
     def abstract?
       @abstract ||= (xpath_param 'abstract') == 'yes'
