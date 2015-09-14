@@ -7,7 +7,7 @@ module DoxyHaml
     end
 
     def qualified_name
-      @qualified_name ||= xpath_first_content %Q{/doxygen/compounddef/compoundname}
+      @qualified_name ||= xpath_first_content %Q{compoundname}
     end
 
     def html_qualified_name
@@ -15,11 +15,11 @@ module DoxyHaml
     end
 
     def author
-      @author ||= (xpath_first_content %Q{/doxygen/compounddef/detaileddescription/para/simplesect[@kind="author"]}).squish
+      @author ||= (xpath_first_content %Q{detaileddescription/para/simplesect[@kind="author"]}).squish
     end
     
     def abstract?
-      @abstract ||= (xpath_first_param %Q{/doxygen/compounddef}, 'abstract') == 'yes'
+      @abstract ||= (xpath_param 'abstract') == 'yes'
     end
 
     def public_methods
@@ -55,7 +55,7 @@ module DoxyHaml
     private
 
     def memberdef_xpath access_level, kind, static
-      "/doxygen/compounddef/sectiondef[@kind='#{access_level}']/memberdef[@kind='#{kind}' and @static='#{static}']"
+      "sectiondef[@kind='#{access_level}']/memberdef[@kind='#{kind}' and @static='#{static}']"
     end
 
   end

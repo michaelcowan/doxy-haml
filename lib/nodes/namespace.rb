@@ -3,11 +3,11 @@ module DoxyHaml
   class Namespace < Compound
 
     def name
-      @name ||= xpath_first_content %Q{/doxygen/compounddef/compoundname}
+      @name ||= xpath_first_content %Q{compoundname}
     end
 
     def classes
-      @classes ||= map_xpath %Q{/doxygen/compounddef/innerclass} do |clazz|
+      @classes ||= map_xpath %Q{innerclass} do |clazz|
         Class.new clazz['refid'], self
       end
     end

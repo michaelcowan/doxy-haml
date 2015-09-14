@@ -1,9 +1,10 @@
 module DoxyHaml
 
-  class Index < Compound
+  class Index < Node
 
     def initialize
       super 'index', nil
+      parse_xml
     end
 
     def namespaces
