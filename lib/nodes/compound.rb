@@ -16,6 +16,18 @@ module DoxyHaml
       "#{@id}.html"
     end
 
+    def classes
+      @classes ||= map_xpath %Q{innerclass} do |clazz|
+        Class.new clazz['refid'], self
+      end
+    end
+
+    def namespaces
+      @namespaces ||= map_xpath %Q{innernamespace} do |clazz|
+        Class.new clazz['refid'], self
+      end
+    end
+
     private
 
     def link_to_self link_name

@@ -3,8 +3,8 @@ require 'spec_helper'
 describe "DoxyHaml Index Parser" do
 
   before(:all) do
-    @expected_namespaces = [ "zoo" ]
-    @expected_classes = ["Animal", "Cage", "Monkey", "Person"]
+    @expected_namespaces = ["zoo", "zoo::exhibit"]
+    @expected_classes = ["Animal", "Cage", "Monkey", "Person", "Tent"]
     @expected_global_classes = ["Person"]
     
     parser = DoxyHaml::Parser.new "spec/doxygen/xml"
