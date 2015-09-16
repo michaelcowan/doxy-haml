@@ -8,6 +8,8 @@
  *
  *  The zoo namespace holds all interfaces and implementations related to the zoo.
  *  This includes Animal, Cage and Monkey.
+ *
+ *  \author Michael Cowan
  */
 namespace zoo {
 
