@@ -16,10 +16,18 @@ module DoxyHaml
       "#{@id}.html"
     end
 
+    def has_classes?
+      not xpath_empty? %Q{innerclass}
+    end
+
     def classes
       @classes ||= map_xpath %Q{innerclass} do |clazz|
         Class.new clazz['refid'], self
       end
+    end
+
+    def has_namespaces?
+      not xpath_empty? %Q{innernamespace}
     end
 
     def namespaces

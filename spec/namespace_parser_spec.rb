@@ -16,6 +16,7 @@ describe "DoxyHaml Namespace Parser" do
   end
 
   it "should have class(es)" do
+    expect(@namespace.has_classes?).to be true
     class_names = map_node @namespace.classes do |clazz| clazz.name end
     expect(class_names).to match_array @expected_classes
   end
@@ -33,6 +34,7 @@ describe "DoxyHaml Namespace Parser" do
   end
 
   it "should have namespace(s)" do
+    expect(@namespace.has_namespaces?).to be true
     namespace_names = map_node @namespace.namespaces do |namespace| namespace.name end
     expect(namespace_names).to match_array @expected_namespaces
   end
