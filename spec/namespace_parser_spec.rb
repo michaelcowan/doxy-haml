@@ -38,6 +38,11 @@ describe "DoxyHaml Namespace Parser" do
     expect(@namespace.html_description).to eq "The zoo namespace holds all interfaces and implementations related to the zoo. This includes <a href='classzoo_1_1_animal.html'>Animal</a>, <a href='classzoo_1_1_cage.html'>Cage</a> and <a href='classzoo_1_1_monkey.html'>Monkey</a>."
   end
 
+  it "should have an author" do
+    expect(@namespace.has_author?).to be true
+    expect(@namespace.author).to eq "Michael Cowan"
+  end
+
   it "should have namespace(s)" do
     expect(@namespace.has_namespaces?).to be true
     namespace_names = map_node @namespace.namespaces do |namespace| namespace.name end
