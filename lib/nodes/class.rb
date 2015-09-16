@@ -1,18 +1,6 @@
 module DoxyHaml
 
   class Class < Compound
-
-    def name
-      remove_namespace qualified_name
-    end
-
-    def qualified_name
-      @qualified_name ||= xpath_first_content %Q{compoundname}
-    end
-
-    def html_qualified_name
-      html_qualify self
-    end
     
     def abstract?
       @abstract ||= (xpath_param 'abstract') == 'yes'

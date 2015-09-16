@@ -12,7 +12,7 @@ describe "DoxyHaml Index Parser" do
   end
 
   it "should have namespace(s)" do
-    namespace_names = map_node @index.namespaces do |namespace| namespace.name end
+    namespace_names = map_node @index.namespaces do |namespace| namespace.qualified_name end
     expect(namespace_names).to match_array @expected_namespaces
   end
 

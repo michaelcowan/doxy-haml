@@ -8,8 +8,20 @@ module DoxyHaml
       @xml = @xml.xpath(%Q{/doxygen/compounddef}).first unless @xml.xpath(%Q{/doxygen/compounddef}).empty?
     end
 
+    def name
+      remove_namespace qualified_name
+    end
+
     def html_name
       link_to_self name
+    end
+
+    def qualified_name
+      @qualified_name ||= xpath_first_content %Q{compoundname}
+    end
+
+    def html_qualified_name
+      html_qualify self
     end
 
     def filename
@@ -31,8 +43,8 @@ module DoxyHaml
     end
 
     def namespaces
-      @namespaces ||= map_xpath %Q{innernamespace} do |clazz|
-        Class.new clazz['refid'], self
+      @namespaces ||= map_xpath %Q{innernamespace} do |namespace|
+        Namespace.new namespace['refid'], self
       end
     end
 
