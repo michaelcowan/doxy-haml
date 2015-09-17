@@ -2,13 +2,13 @@ module DoxyHaml
 
   class Namespace < Compound
 
-    def has_classes?
-      not xpath_empty? %Q{innerclass}
+    def has_namespaces?
+      not xpath_empty? %Q{innernamespace}
     end
 
-    def classes
-      @classes ||= map_xpath %Q{innerclass} do |clazz|
-        Class.new clazz['refid'], self
+    def namespaces
+      @namespaces ||= map_xpath %Q{innernamespace} do |namespace|
+        Namespace.new namespace['refid'], self
       end
     end
     

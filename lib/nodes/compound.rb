@@ -28,13 +28,13 @@ module DoxyHaml
       "#{@id}.html"
     end
 
-    def has_namespaces?
-      not xpath_empty? %Q{innernamespace}
+    def has_classes?
+      not xpath_empty? %Q{innerclass}
     end
 
-    def namespaces
-      @namespaces ||= map_xpath %Q{innernamespace} do |namespace|
-        Namespace.new namespace['refid'], self
+    def classes
+      @classes ||= map_xpath %Q{innerclass} do |clazz|
+        Class.new clazz['refid'], self
       end
     end
 
