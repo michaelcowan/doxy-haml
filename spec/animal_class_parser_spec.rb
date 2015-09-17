@@ -57,10 +57,6 @@ describe "DoxyHaml Animal Class Parser" do
     expect(public_enum_names).to match_array @expected_public_enums
   end
 
-  it "should not have class(es)" do
-    expect(@animal.has_classes?).to be false
-  end
-
   it "should not have namespace(s)" do
     expect(@animal.has_namespaces?).to be false
   end
