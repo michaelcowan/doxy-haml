@@ -16,7 +16,7 @@ include DoxyHaml::Helpers
 RSpec.configure do |config|
   config.before(:suite) {
     generator = DoxyHaml::Generator.new
-    generator.generate "spec/doxygen", "Animal Farm", "spec/src", true
+    generator.generate "spec/doxygen", "spec/src", true
   }
   config.after(:suite) {
     FileUtils.rm_rf "spec/doxygen"
