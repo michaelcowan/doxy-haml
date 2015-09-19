@@ -16,7 +16,7 @@ module DoxyHaml
 
     def qualify node
       result = node.name
-      unless node.parent.is_a? DoxyHaml::Index
+      unless node.parent.is_a? DoxyHaml::Global
         p = qualify node.parent
         result = "#{p}::#{result}"
       end
@@ -25,7 +25,7 @@ module DoxyHaml
 
     def html_qualify node
       result = node.html_name
-      unless node.parent.is_a? DoxyHaml::Index
+      unless node.parent.is_a? DoxyHaml::Global
         p = html_qualify node.parent
         result = "#{p}::#{result}"
       end
@@ -34,7 +34,7 @@ module DoxyHaml
 
     def html_qualify_except_self node
       result = node.name
-      unless node.parent.is_a? DoxyHaml::Index
+      unless node.parent.is_a? DoxyHaml::Global
         p = html_qualify node.parent
         result = "#{p}::#{result}"
       end
