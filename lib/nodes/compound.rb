@@ -15,7 +15,7 @@ module DoxyHaml
     end
 
     def html_name
-      link_to_self name
+      html_link name
     end
 
     def qualified_name
@@ -40,9 +40,7 @@ module DoxyHaml
       end
     end
 
-    private
-
-    def link_to_self link_name
+    def html_link link_name
       link_to link_name, filename
     end
 
