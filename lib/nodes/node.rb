@@ -60,8 +60,6 @@ module DoxyHaml
       @xml[param]
     end
 
-    private
-
     def parse_xml
       File.open id_xml_filepath do |xml_file|
         @xml = Nokogiri::XML xml_file
