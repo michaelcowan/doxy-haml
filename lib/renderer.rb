@@ -9,31 +9,36 @@ module DoxyHaml
     dynamic_requires.map! { |r| File.basename(r, ".*").split('_').map { |w| w.capitalize }.join }
     dynamic_requires.each { |r| include Object.const_get r }
 
-    def initialize(template_file, locals = nil)
-      @template_file = template_file
-      @locals = locals
+    def initialize(index, layout, props)
+      @index, @layout, @props = index, layout, props
     end
 
-    def writeToFile(file)
+    def renderToFile(template, locals, file)
       FileUtils.mkdir_p File.dirname(file)
       File.open(file, 'w') do |f|
-        f.write render(@template_file, @locals)
+        f.write render(@layout) {
+          render template, locals
+        }
       end
     end
 
-    def partial template_file, locals
-      render template_file, locals
+    def partial haml_file, locals
+      render haml_file, locals
+    end
+
+    def method_missing method, *args
+      if @index.respond_to? method
+        @index.send method, *args
+      else
+        super
+      end
     end
 
     private
 
-    def render(template_file, locals = {})
-      template = IO.read template_file
-      if locals
-        Haml::Engine.new(template).render(binding, locals)
-      else
-        Haml::Engine.new(template).render
-      end
+    def render(haml_file, locals = {}, &block)
+      haml = IO.read haml_file
+      Haml::Engine.new(haml).render(binding, locals.merge(@props), &block)
     end
 
   end
