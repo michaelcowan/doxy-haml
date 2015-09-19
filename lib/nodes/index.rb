@@ -5,22 +5,52 @@ module DoxyHaml
     def initialize
       super 'index', nil
       parse_xml
+      @global = Global.new 'global', self, xpath(%Q{doxygenindex})
+    end
+
+    def has_namespaces?
+      not namespaces.empty?
     end
 
     def namespaces
-      @namespaces ||= map_xpath %Q{/doxygenindex/compound[@kind='namespace' and @refid!='namespacestd']} do |namespace|
-        Namespace.new namespace['refid'], self
-      end
+      @namespaces ||= (get_namespaces @global).unshift @global
+    end
+
+    def has_classes?
+      not classes.empty?
     end
 
     def classes
-      @classes ||= map_xpath %Q{/doxygenindex/compound[@kind='class']} do |clazz|
-        Class.new clazz['refid'], self
-      end
+      @classes ||= get_classes @global
     end
 
-    def global_classes
-      @global_classes ||= classes.reject { |c| c.qualified_name.include? "::" }
+    private
+
+    def get_namespaces node
+      result = []
+      if node.has_namespaces?
+        result += node.namespaces
+        node.namespaces.each do |n|
+          result += get_namespaces n
+        end
+      end
+      return result
+    end
+
+    def get_classes node
+      result = []
+      if node.has_classes?
+        result += node.classes
+        node.classes.each do |n|
+          result += get_classes n
+        end
+      end
+      if node.respond_to?(:has_namespaces?) && node.has_namespaces?
+        node.namespaces.each do |n|
+          result += get_classes n
+        end
+      end
+      return result
     end
 
   end

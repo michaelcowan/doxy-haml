@@ -6,7 +6,8 @@ describe "DoxyHaml Exhibit Namespace Parser" do
     @expected_classes = ["Tent"]
 
     parser = DoxyHaml::Parser.new "spec/doxygen/xml"
-    @namespace = parser.index.namespaces.first.namespaces.first
+    namespace = namespace_by_name parser.index.namespaces, "zoo"
+    @namespace = namespace.namespaces.first
   end
 
   it "should have a name" do

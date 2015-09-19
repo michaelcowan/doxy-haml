@@ -23,6 +23,10 @@ RSpec.configure do |config|
   }
 end
 
+def namespace_by_name namespaces, namespace_name
+  namespaces.select { |namespace| namespace.name == namespace_name }.first
+end
+
 def class_by_name classes, class_name
   classes.select { |clazz| clazz.name == class_name }.first
 end

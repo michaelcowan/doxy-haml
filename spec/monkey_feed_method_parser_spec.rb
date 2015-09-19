@@ -5,8 +5,8 @@ describe "DoxyHaml Monkey feed Method Parser" do
   before(:all) do
     @expected_parameters = ["volume"]
     parser = DoxyHaml::Parser.new "spec/doxygen/xml"
-    classes = parser.index.namespaces.first.classes
-    monkey = class_by_name classes, "Monkey"
+    namespace = namespace_by_name parser.index.namespaces, "zoo"
+    monkey = class_by_name namespace.classes, "Monkey"
     @feed = method_by_name monkey.public_methods, "feed"
   end
 

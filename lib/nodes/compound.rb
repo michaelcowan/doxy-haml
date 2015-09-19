@@ -2,10 +2,12 @@ module DoxyHaml
 
   class Compound < Entity
     
-    def initialize id, parent
-      super id, parent
-      parse_xml
-      @xml = @xml.xpath(%Q{/doxygen/compounddef}).first unless @xml.xpath(%Q{/doxygen/compounddef}).empty?
+    def initialize id, parent, xml=nil
+      super id, parent, xml
+      if xml.nil?
+        parse_xml
+        @xml = @xml.xpath(%Q{/doxygen/compounddef}).first
+      end
     end
 
     def name

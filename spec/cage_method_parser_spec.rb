@@ -6,8 +6,8 @@ describe "DoxyHaml Cage Method Parser" do
     @expected_parameters = ["width", "height", "hasRoof"]
     @expected_types = ["int", "int", "bool"]
     parser = DoxyHaml::Parser.new "spec/doxygen/xml"
-    classes = parser.index.namespaces.first.classes
-    cage = class_by_name classes, "Cage"
+    namespace = namespace_by_name parser.index.namespaces, "zoo"
+    cage = class_by_name namespace.classes, "Cage"
     @setDimensions = method_by_name cage.public_methods, "setDimensions"
   end
 

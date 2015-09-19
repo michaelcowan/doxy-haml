@@ -7,8 +7,8 @@ describe "DoxyHaml Cage setAnimal Method Parser" do
     @expected_types = ["Animal *", "Animal *"]
     @expected_html_types = ["<a href='classzoo_1_1_animal.html'>Animal</a> *", "<a href='classzoo_1_1_animal.html'>Animal</a> *"]
     parser = DoxyHaml::Parser.new "spec/doxygen/xml"
-    classes = parser.index.namespaces.first.classes
-    cage = class_by_name classes, "Cage"
+    namespace = namespace_by_name parser.index.namespaces, "zoo"
+    cage = class_by_name namespace.classes, "Cage"
     @setAnimal = method_by_name cage.public_methods, "setAnimal"
   end
 
