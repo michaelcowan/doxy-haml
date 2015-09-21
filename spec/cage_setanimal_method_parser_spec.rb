@@ -14,44 +14,71 @@ describe "DoxyHaml Cage setAnimal Method Parser" do
 
   it "should have a name" do
     expect(@setAnimal.name).to eq "setAnimal"
+  end
+
+  it "should have an html name" do
     expect(@setAnimal.html_name).to match /<a href='classzoo_1_1_cage.html#\w{34}'>setAnimal<\/a>/
   end
 
   it "should have a fully qualified name" do
     expect(@setAnimal.qualified_name).to eq "zoo::Cage::setAnimal"
+  end
+
+  it "should have an html fully qualified name" do
     expect(@setAnimal.html_qualified_name).to match /<a href='namespacezoo.html'>zoo<\/a>::<a href='classzoo_1_1_cage.html'>Cage<\/a>::<a href='classzoo_1_1_cage.html#\w{34}'>setAnimal<\/a>/
   end
 
   it "should have an anchor" do
     expect(@setAnimal.anchor).to match /\w{34}/
+  end
+
+  it "should have an html anchor" do
     expect(@setAnimal.html_anchor).to match /<a id='\w{34}'\/>/
   end
 
   it "should have a definition" do
     expect(@setAnimal.definition).to eq "bool zoo::Cage::setAnimal(Animal *animal, Animal *mate=NULL)"
+  end
+
+  it "should have an html definition" do
     expect(@setAnimal.html_definition).to eq "bool <a href='namespacezoo.html'>zoo</a>::<a href='classzoo_1_1_cage.html'>Cage</a>::setAnimal(<a href='classzoo_1_1_animal.html'>Animal</a> * animal, <a href='classzoo_1_1_animal.html'>Animal</a> * mate=NULL)"
   end
 
   it "should have a brief" do
     expect(@setAnimal.has_brief?).to be true
     expect(@setAnimal.brief).to eq "Sets the Animal."
+  end
+
+  it "should have an html brief" do
+    expect(@setAnimal.has_brief?).to be true
     expect(@setAnimal.html_brief).to eq "Sets the <a href='classzoo_1_1_animal.html'>Animal</a>."
   end
 
   it "should have a description" do
     expect(@setAnimal.has_description?).to be true
     expect(@setAnimal.description).to eq "Puts an Animal in this Cage."
+  end
+
+  it "should have an html description" do
+    expect(@setAnimal.has_description?).to be true
     expect(@setAnimal.html_description).to eq "Puts an <a href='classzoo_1_1_animal.html'>Animal</a> in this <a href='classzoo_1_1_cage.html'>Cage</a>."
   end
 
   it "should have a return brief" do
     expect(@setAnimal.has_return_brief?).to be true
     expect(@setAnimal.return_brief).to eq "true if the Animal can be put in this cage."
+  end
+
+  it "should have an html return brief" do
+    expect(@setAnimal.has_return_brief?).to be true
     expect(@setAnimal.html_return_brief).to eq "true if the <a href='classzoo_1_1_animal.html'>Animal</a> can be put in this cage."
   end
 
   it "should have a return type" do
     expect(@setAnimal.return_type.name).to eq "bool"
+  end
+
+  it "should have an html return type" do
     expect(@setAnimal.return_type.html_name).to eq "bool"
   end
 

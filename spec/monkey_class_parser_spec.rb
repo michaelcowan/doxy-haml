@@ -12,23 +12,37 @@ describe "DoxyHaml Monkey Class Parser" do
 
   it "should have a name" do
     expect(@monkey.name).to eq "Monkey"
+  end
+
+  it "should have an html name" do
     expect(@monkey.html_name).to eq "<a href='classzoo_1_1_monkey.html'>Monkey</a>"
   end
 
   it "should have a qualified name" do
     expect(@monkey.qualified_name).to eq "zoo::Monkey"
+  end
+
+  it "should have an html qualified name" do
     expect(@monkey.html_qualified_name).to eq "<a href='namespacezoo.html'>zoo</a>::<a href='classzoo_1_1_monkey.html'>Monkey</a>"
   end
 
   it "should have a brief" do
     expect(@monkey.has_brief?).to be true
     expect(@monkey.brief).to eq "Represents a Monkey in the zoo."
+  end
+
+  it "should have an html brief" do
+    expect(@monkey.has_brief?).to be true
     expect(@monkey.html_brief).to eq "Represents a <a href='classzoo_1_1_monkey.html'>Monkey</a> in the zoo."
   end
 
   it "should have a description" do
     expect(@monkey.has_description?).to be true
     expect(@monkey.description).to eq "The class Monkey extends Animal with specifics about monkeys in the zoo."
+  end
+
+  it "should have an html description" do
+    expect(@monkey.has_description?).to be true
     expect(@monkey.html_description).to eq "The class <a href='classzoo_1_1_monkey.html'>Monkey</a> extends <a href='classzoo_1_1_animal.html'>Animal</a> with specifics about monkeys in the zoo."
   end
 

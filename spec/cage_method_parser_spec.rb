@@ -13,33 +13,53 @@ describe "DoxyHaml Cage Method Parser" do
 
   it "should have a name" do
     expect(@setDimensions.name).to eq "setDimensions"
+  end
+
+  it "should have an html name" do
     expect(@setDimensions.html_name).to match /<a href='classzoo_1_1_cage.html#\w{34}'>setDimensions<\/a>/
   end
 
   it "should have a fully qualified name" do
     expect(@setDimensions.qualified_name).to eq "zoo::Cage::setDimensions"
+  end
+
+  it "should have an html fully qualified name" do
     expect(@setDimensions.html_qualified_name).to match /<a href='namespacezoo.html'>zoo<\/a>::<a href='classzoo_1_1_cage.html'>Cage<\/a>::<a href='classzoo_1_1_cage.html#\w{34}'>setDimensions<\/a>/
   end
 
   it "should have an anchor" do
     expect(@setDimensions.anchor).to match /\w{34}/
+  end
+
+  it "should have an html anchor" do
     expect(@setDimensions.html_anchor).to match /<a id='\w{34}'\/>/
   end
 
   it "should have a definition" do
     expect(@setDimensions.definition).to eq "void zoo::Cage::setDimensions(int width, int height, bool hasRoof)"
+  end
+
+  it "should have a definition" do
     expect(@setDimensions.html_definition).to eq "void <a href='namespacezoo.html'>zoo</a>::<a href='classzoo_1_1_cage.html'>Cage</a>::setDimensions(int width, int height, bool hasRoof)"
   end
 
   it "should have a brief" do
     expect(@setDimensions.has_brief?).to be true
     expect(@setDimensions.brief).to eq "Sets the Cage dimensions."
+  end
+
+  it "should have an html brief" do
+    expect(@setDimensions.has_brief?).to be true
     expect(@setDimensions.html_brief).to eq "Sets the <a href='classzoo_1_1_cage.html'>Cage</a> dimensions."
   end
 
   it "should have a description" do
     expect(@setDimensions.has_description?).to be true
     expect(@setDimensions.description).to eq "Sets the dimensions of the Cage for the Animal."
+  end
+
+  it "should have an html description" do
+    expect(@setDimensions.has_description?).to be true
     expect(@setDimensions.html_description).to eq "Sets the dimensions of the <a href='classzoo_1_1_cage.html'>Cage</a> for the <a href='classzoo_1_1_animal.html'>Animal</a>."
   end
 
@@ -49,6 +69,9 @@ describe "DoxyHaml Cage Method Parser" do
 
   it "should have a return type" do
     expect(@setDimensions.return_type.name).to eq "void"
+  end
+
+  it "should have an html return type" do
     expect(@setDimensions.return_type.html_name).to eq "void"
   end
 

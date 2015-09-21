@@ -12,23 +12,37 @@ describe "DoxyHaml Exhibit Namespace Parser" do
 
   it "should have a name" do
     expect(@namespace.name).to eq "exhibit"
+  end
+
+  it "should have an html name" do
     expect(@namespace.html_name).to eq "<a href='namespacezoo_1_1exhibit.html'>exhibit</a>"
   end
 
   it "should have a qualified name" do
     expect(@namespace.qualified_name).to eq "zoo::exhibit"
+  end
+
+  it "should have an html qualified name" do
     expect(@namespace.html_qualified_name).to eq "<a href='namespacezoo.html'>zoo</a>::<a href='namespacezoo_1_1exhibit.html'>exhibit</a>"
   end
 
   it "should have a brief" do
     expect(@namespace.has_brief?).to be true
     expect(@namespace.brief).to eq "Exhibit interfaces and implementations."
+  end
+
+  it "should have an html brief" do
+    expect(@namespace.has_brief?).to be true
     expect(@namespace.html_brief).to eq "Exhibit interfaces and implementations."
   end
 
   it "should have a description" do
     expect(@namespace.has_description?).to be true
     expect(@namespace.description).to eq "The exhibit namespace holds all interfaces and implementations related to exhibits at the zoo."
+  end
+
+  it "should have an html description" do
+    expect(@namespace.has_description?).to be true
     expect(@namespace.html_description).to eq "The exhibit namespace holds all interfaces and implementations related to exhibits at the zoo."
   end
 
