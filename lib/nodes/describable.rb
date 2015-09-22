@@ -1,6 +1,6 @@
 module DoxyHaml
 
-  class Entity < Node
+  module Describable
 
     def has_brief?
       not xpath_empty? %Q{briefdescription/para}

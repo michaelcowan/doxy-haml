@@ -2,7 +2,6 @@ require 'nokogiri'
 
 require_relative 'html_utilities'
 require_relative 'nodes/node'
-require_relative 'nodes/entity'
 require_relative 'nodes/member'
 require_relative 'nodes/compound'
 require_relative 'nodes/value'

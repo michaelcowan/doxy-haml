@@ -1,6 +1,9 @@
+require_relative 'describable'
+
 module DoxyHaml
 
-  class Member < Entity
+  class Member < Node
+    include Describable
 
     def name
       xpath_first_content %Q{name}

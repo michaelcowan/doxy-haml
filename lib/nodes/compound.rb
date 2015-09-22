@@ -1,6 +1,9 @@
+require_relative 'describable'
+
 module DoxyHaml
 
-  class Compound < Entity
+  class Compound < Node
+    include Describable
     
     def initialize id, parent, xml=nil
       super id, parent, xml
