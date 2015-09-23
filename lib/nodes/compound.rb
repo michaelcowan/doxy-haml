@@ -1,4 +1,4 @@
-require_relative 'describable'
+require 'nodes/mixins/describable'
 
 module DoxyHaml
 

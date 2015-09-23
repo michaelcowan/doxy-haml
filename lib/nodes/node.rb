@@ -1,3 +1,6 @@
+require 'nokogiri'
+require 'html_utilities'
+
 module DoxyHaml
 
   class Node
