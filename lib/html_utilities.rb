@@ -35,6 +35,7 @@ module DoxyHaml
     end
 
     def id_to_a_id id
+      raise "String does not contain an id" unless id =~ /[a-zA-Z0-9]{34}$/
       id.split('_').last
     end
 
