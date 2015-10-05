@@ -9,6 +9,10 @@ describe "DoxyHaml Cage Class Parser" do
     @cage = class_by_name namespace.classes, "Cage"
   end
 
+  it "should not be a struct" do
+    expect(@cage.is_struct?).to be false
+  end
+
   it "should have a name" do
     expect(@cage.name).to eq "Cage"
   end

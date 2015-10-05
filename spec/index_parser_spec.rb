@@ -4,7 +4,7 @@ describe "DoxyHaml Index Parser" do
 
   before(:all) do
     @expected_namespaces = ["global", "zoo", "zoo::exhibit"]
-    @expected_classes = ["Animal", "Cage", "Monkey", "Person", "Tent"]
+    @expected_classes = ["Animal", "Cage", "Monkey", "Person", "Tent", "CagePath"]
     
     parser = DoxyHaml::Parser.new "spec/doxygen/xml"
     @index = parser.index
