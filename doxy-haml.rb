@@ -1,6 +1,12 @@
 require 'optparse'
 require 'byebug'
 
+def root_path
+  File.expand_path File.dirname(__FILE__)
+end
+
+$LOAD_PATH.unshift File.join(root_path, "lib")
+
 %w(lib).each do |r|
   Dir["#{r}/*.rb"].each {|f| require_relative f}
 end
