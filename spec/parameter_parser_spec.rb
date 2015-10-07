@@ -24,7 +24,11 @@ describe "DoxyHaml Parameter Parser" do
     expect(@param.has_direction?).to be false
   end
 
-  it "should not have an html definition" do
+  it "should have a definition" do
+    expect(@param.definition).to eq "Animal * mate=NULL"
+  end
+
+  it "should have an html definition" do
     expect(@param.html_definition).to eq "<a href='classzoo_1_1_animal.html'>Animal</a> * mate=NULL"
   end
 
