@@ -39,7 +39,14 @@ namespace zoo {
      *
      *  \param [in] kind The Kind of Animal being constructed.
      */
-    virtual Animal(Kind kind);
+    Animal(Kind kind);
+
+    /**
+     *  \brief Animal Destructor.
+     *
+     *  Destructs an Animal.
+     */
+    virtual ~Animal();
 
     /**
      *  \brief Get the leg count of this Animal.
