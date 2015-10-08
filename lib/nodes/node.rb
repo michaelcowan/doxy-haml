@@ -18,7 +18,7 @@ module DoxyHaml
     end
 
     def has_compound_parent?
-      parent != nil and not parent.is_a? DoxyHaml::Index
+      parent != nil and parent.is_a? DoxyHaml::Compound
     end
 
     def compound_parent
