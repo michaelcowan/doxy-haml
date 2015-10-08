@@ -10,6 +10,10 @@ describe "DoxyHaml Global Namespace Parser" do
     @namespace = namespace_by_name parser.index.namespaces, "global"
   end
 
+  it "should not have a compound parent" do
+    expect(@namespace.has_compound_parent?).to be false
+  end
+
   it "should have a name" do
     expect(@namespace.name).to eq "global"
   end

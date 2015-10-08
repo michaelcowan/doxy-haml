@@ -11,6 +11,11 @@ describe "DoxyHaml Animal Class Parser" do
     @animal = class_by_name namespace.classes, "Animal"
   end
 
+  it "should have a compound parent" do
+    expect(@animal.has_compound_parent?).to be true
+    expect(@animal.compound_parent.name).to eq "zoo"
+  end
+
   it "should have a name" do
     expect(@animal.name).to eq "Animal"
   end

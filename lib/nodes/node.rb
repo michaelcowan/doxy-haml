@@ -17,6 +17,14 @@ module DoxyHaml
       raise "All nodes must declare a name method"
     end
 
+    def has_compound_parent?
+      parent != nil and not parent.is_a? DoxyHaml::Index
+    end
+
+    def compound_parent
+      return parent if has_compound_parent?
+    end
+
     private
 
     def map_xpath x
