@@ -3,12 +3,14 @@ require 'spec_helper'
 describe "DoxyHaml Animal Class Parser" do
 
   before(:all) do
-    @expected_public_methods = ["Animal", "canFly", "getNumberOfLegs", "feed"]
+    @expected_public_methods = ["Animal", "~Animal", "canFly", "getNumberOfLegs", "feed"]
     @expected_public_static_methods = ["numberOfMonkeys"]
     @expected_public_enums = ["Kind"]
     parser = DoxyHaml::Parser.new "spec/doxygen/xml"
     namespace = namespace_by_name parser.index.namespaces, "zoo"
     @animal = class_by_name namespace.classes, "Animal"
+    @constructor = method_by_name @animal.public_methods, "Animal"
+    @destructor = method_by_name @animal.public_methods, "~Animal"
   end
 
   it "should have a compound parent" do
@@ -64,6 +66,14 @@ describe "DoxyHaml Animal Class Parser" do
     expect(@animal.has_public_methods?).to be true
     public_method_names = map_node @animal.public_methods do |method| method.name end
     expect(public_method_names).to match_array @expected_public_methods
+  end
+
+  it "should have a constructor" do
+    expect(@constructor.constructor?).to be true
+  end
+
+  it "should have a destructor" do
+    expect(@destructor.destructor?).to be true
   end
 
   it "should not have public static method(s)" do

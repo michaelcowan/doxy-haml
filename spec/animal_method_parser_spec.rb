@@ -79,6 +79,14 @@ describe "DoxyHaml Animal getNumberOfLegs Method Parser" do
     expect(@getNumberOfLegs.return_type.html_name).to eq "int"
   end
 
+  it "should not be a constructor" do
+    expect(@getNumberOfLegs.constructor?).to be false
+  end
+
+  it "should not be a destructor" do
+    expect(@getNumberOfLegs.destructor?).to be false
+  end
+
   it "should be pure virtual" do
     expect(@getNumberOfLegs.pure_virtual?).to be true
   end

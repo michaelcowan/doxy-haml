@@ -38,6 +38,14 @@ module DoxyHaml
       @returns ||= Type.new nil, self, xpath_first(%Q{type})
     end
 
+    def constructor?
+      name == parent.name
+    end
+
+    def destructor?
+      name == "~#{parent.name}"
+    end
+
     def virtual?
       @virtual ||= (xpath_param 'virt') == 'virtual'
     end
