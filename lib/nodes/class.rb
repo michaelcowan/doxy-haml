@@ -11,9 +11,7 @@ module DoxyHaml
     end
 
     def public_methods
-      @public_methods ||= map_xpath memberdef_xpath("public-func", "function", "no") do |method|
-        Method.new method['id'], self, method
-      end
+      @public_methods ||= sort_methods parse_public_methods
     end
 
     def has_public_static_methods?
@@ -21,9 +19,7 @@ module DoxyHaml
     end
 
     def public_static_methods
-      @public_static_methods ||= map_xpath memberdef_xpath("public-static-func", "function", "yes") do |method|
-        Method.new method['id'], self, method
-      end
+      @public_static_methods ||= sort_methods parse_public_static_methods
     end
 
     def has_public_enums?
@@ -64,6 +60,23 @@ module DoxyHaml
 
     def memberdef_xpath access_level, kind, static
       "sectiondef[@kind='#{access_level}']/memberdef[@kind='#{kind}' and @static='#{static}']"
+    end
+
+    def parse_public_methods
+      map_xpath memberdef_xpath("public-func", "function", "no") do |method|
+        Method.new method['id'], self, method
+      end
+    end
+
+    def parse_public_static_methods
+      map_xpath memberdef_xpath("public-static-func", "function", "yes") do |method|
+        Method.new method['id'], self, method
+      end
+    end
+
+    def sort_methods methods
+      methods.shuffle!
+      methods.sort_by { |m| [m.name, m.parameters.count] }.partition { |m| m.destructor? }.flatten.partition { |m| m.constructor? }.flatten
     end
 
   end

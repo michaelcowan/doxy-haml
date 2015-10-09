@@ -33,6 +33,13 @@ namespace zoo {
     };
 
     /**
+     *  \brief Animal default Constructor.
+     *
+     *  Constructs a default Mammal Animal.
+     */
+    Animal();
+
+    /**
      *  \brief Animal Constructor.
      *
      *  Constructs an Animal.

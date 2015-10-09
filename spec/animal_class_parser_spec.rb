@@ -3,7 +3,7 @@ require 'spec_helper'
 describe "DoxyHaml Animal Class Parser" do
 
   before(:all) do
-    @expected_public_methods = ["Animal", "~Animal", "canFly", "getNumberOfLegs", "feed"]
+    @expected_public_methods = ["Animal", "Animal", "~Animal", "canFly", "feed", "getNumberOfLegs"]
     @expected_public_static_methods = ["numberOfMonkeys"]
     @expected_public_enums = ["Kind"]
     parser = DoxyHaml::Parser.new "spec/doxygen/xml"
@@ -65,7 +65,14 @@ describe "DoxyHaml Animal Class Parser" do
   it "should have public method(s)" do
     expect(@animal.has_public_methods?).to be true
     public_method_names = map_node @animal.public_methods do |method| method.name end
-    expect(public_method_names).to match_array @expected_public_methods
+    expect(public_method_names).to eq @expected_public_methods
+  end
+
+  it "should put default constructor before other constructors" do
+    expect(@animal.public_methods[0].name).to eq @animal.name
+    expect(@animal.public_methods[0].parameters.count).to be 0
+    expect(@animal.public_methods[1].name).to eq @animal.name
+    expect(@animal.public_methods[1].parameters.count).to be > 0
   end
 
   it "should have a constructor" do
