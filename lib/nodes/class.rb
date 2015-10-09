@@ -27,9 +27,7 @@ module DoxyHaml
     end
 
     def public_enums
-      @public_enums ||= map_xpath memberdef_xpath("public-type", "enum", "no") do |enum|
-        Enum.new enum['id'], self, enum
-      end
+      @public_enums ||= sort_by_name parse_public_enums
     end
 
     def has_public_variables?
@@ -37,9 +35,7 @@ module DoxyHaml
     end
 
     def public_variables
-      @public_variables ||= map_xpath memberdef_xpath("public-attrib", "variable", "no") do |variable|
-        Variable.new variable['id'], self, variable
-      end
+      @public_variables ||= sort_by_name parse_public_variables
     end
 
     def has_public_static_variables?
@@ -47,9 +43,7 @@ module DoxyHaml
     end
 
     def public_static_variables
-      @public_static_variables ||= map_xpath memberdef_xpath("public-static-attrib", "variable", "yes") do |variable|
-        Variable.new variable['id'], self, variable
-      end
+      @public_static_variables ||= sort_by_name parse_public_static_variables
     end
 
     def is_struct?
@@ -74,8 +68,30 @@ module DoxyHaml
       end
     end
 
+    def parse_public_enums
+      map_xpath memberdef_xpath("public-type", "enum", "no") do |enum|
+        Enum.new enum['id'], self, enum
+      end
+    end
+
+    def parse_public_variables
+      map_xpath memberdef_xpath("public-attrib", "variable", "no") do |variable|
+        Variable.new variable['id'], self, variable
+      end
+    end
+
+    def parse_public_static_variables
+      map_xpath memberdef_xpath("public-static-attrib", "variable", "yes") do |variable|
+        Variable.new variable['id'], self, variable
+      end
+    end
+
     def sort_methods methods
       methods.sort_by { |m| [m.name, m.parameters.count] }.partition { |m| m.destructor? }.flatten.partition { |m| m.constructor? }.flatten
+    end
+
+    def sort_by_name objects
+      objects.sort_by { |o| o.name }
     end
 
   end

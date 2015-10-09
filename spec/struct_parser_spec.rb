@@ -3,7 +3,7 @@ require 'spec_helper'
 describe "DoxyHaml Struct Parser" do
 
   before(:all) do
-    @expected_public_variables = ["current", "next", "distance"]
+    @expected_public_variables = ["current", "distance", "next"]
     @expected_public_static_variables = ["first"]
     parser = DoxyHaml::Parser.new "spec/doxygen/xml"
     namespace = namespace_by_name parser.index.namespaces, "zoo"
@@ -57,7 +57,7 @@ describe "DoxyHaml Struct Parser" do
   it "should have public variable(s)" do
     expect(@cage_path.has_public_variables?).to be true
     public_variable_names = map_node @cage_path.public_variables do |variable| variable.name end
-    expect(public_variable_names).to match_array @expected_public_variables
+    expect(public_variable_names).to eq @expected_public_variables
   end
 
   it "should have public static variable(s)" do
