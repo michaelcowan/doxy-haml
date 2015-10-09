@@ -4,7 +4,7 @@ describe "DoxyHaml Global Namespace Parser" do
 
   before(:all) do
     @expected_classes = ["Person"]
-    @expected_namespaces = ["zoo"]
+    @expected_namespaces = ["bob", "zoo"]
 
     parser = DoxyHaml::Parser.new "spec/doxygen/xml"
     @namespace = namespace_by_name parser.index.namespaces, "global"

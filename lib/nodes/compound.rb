@@ -38,13 +38,23 @@ module DoxyHaml
     end
 
     def classes
-      @classes ||= map_xpath %Q{innerclass} do |clazz|
-        Class.new clazz['refid'], self
-      end
+      @classes ||= sort_by_name parse_classes
     end
 
     def html_link link_name
       link_to link_name, filename
+    end
+
+    private
+
+    def parse_classes
+      map_xpath %Q{innerclass} do |clazz|
+        Class.new clazz['refid'], self
+      end
+    end
+
+    def sort_by_name objects
+      objects.sort_by { |o| o.name }
     end
 
   end

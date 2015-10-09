@@ -90,10 +90,6 @@ module DoxyHaml
       methods.sort_by { |m| [m.name, m.parameters.count] }.partition { |m| m.destructor? }.flatten.partition { |m| m.constructor? }.flatten
     end
 
-    def sort_by_name objects
-      objects.sort_by { |o| o.name }
-    end
-
   end
 
 end

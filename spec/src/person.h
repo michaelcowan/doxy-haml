@@ -1,6 +1,14 @@
 #ifndef PERSON_H
 #define PERSON_H
 
+namespace bob {
+  namespace robert {
+    namespace william {
+
+    }
+  }
+}
+
 /**
  *  \brief Represents a Person.
  *

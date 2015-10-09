@@ -21,17 +21,21 @@ module DoxyHaml
     end
 
     def classes
-      @classes ||= get_classes @global
+      @classes ||= sort_by_name(get_classes @global)
     end
 
     private
 
+    def sort_by_name objects
+      objects.sort_by { |o| o.name }
+    end
+
     def get_namespaces node
       result = []
       if node.has_namespaces?
-        result += node.namespaces
-        node.namespaces.each do |n|
-          result += get_namespaces n
+        (sort_by_name node.namespaces).each do |namespace|
+          result << namespace
+          result += get_namespaces namespace
         end
       end
       return result
