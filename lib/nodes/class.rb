@@ -75,7 +75,6 @@ module DoxyHaml
     end
 
     def sort_methods methods
-      methods.shuffle!
       methods.sort_by { |m| [m.name, m.parameters.count] }.partition { |m| m.destructor? }.flatten.partition { |m| m.constructor? }.flatten
     end
 
