@@ -24,10 +24,18 @@ module DoxyHaml
       @classes ||= sort_by_name(get_classes @global)
     end
 
+    def grouped_classes
+      @grouped_classes ||= group_by_name classes
+    end
+
     private
 
     def sort_by_name objects
       objects.sort_by { |o| o.name }
+    end
+
+    def group_by_name objects
+      objects.group_by { |o| o.name[0].downcase }
     end
 
     def get_namespaces node
