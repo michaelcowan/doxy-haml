@@ -12,11 +12,13 @@ describe "DoxyHaml Index Parser" do
   end
 
   it "should have namespace(s)" do
+    expect(@index.has_namespaces?).to be true
     namespace_names = map_node @index.namespaces do |namespace| namespace.qualified_name end
     expect(namespace_names).to eq @expected_namespaces
   end
 
   it "should have class(es)" do
+    expect(@index.has_classes?).to be true
     class_names = map_node @index.classes do |clazz| clazz.name end
     expect(class_names).to eq @expected_classes
   end
