@@ -68,6 +68,7 @@ describe "DoxyHaml Cage Method Parser" do
   end
 
   it "should have a return type" do
+    expect(@setDimensions.has_return_type?).to be true
     expect(@setDimensions.return_type.name).to eq "void"
   end
 

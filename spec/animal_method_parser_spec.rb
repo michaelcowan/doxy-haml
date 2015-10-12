@@ -72,6 +72,7 @@ describe "DoxyHaml Animal getNumberOfLegs Method Parser" do
   end
 
   it "should have a return type" do
+    expect(@getNumberOfLegs.has_return_type?).to be true
     expect(@getNumberOfLegs.return_type.name).to eq "int"
   end
 

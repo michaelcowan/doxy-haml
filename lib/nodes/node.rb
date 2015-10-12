@@ -60,7 +60,7 @@ module DoxyHaml
     end
 
     def xpath_empty? xml=@xml, xpath
-      xpath(xml, xpath).empty?
+      xpath(xml, xpath).empty? or xpath_first_content(xml, xpath).empty?
     end
 
     def content

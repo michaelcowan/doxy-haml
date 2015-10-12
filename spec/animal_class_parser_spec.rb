@@ -77,10 +77,12 @@ describe "DoxyHaml Animal Class Parser" do
 
   it "should have a constructor" do
     expect(@constructor.constructor?).to be true
+    expect(@constructor.has_return_type?).to be false
   end
 
   it "should have a destructor" do
     expect(@destructor.destructor?).to be true
+    expect(@destructor.has_return_type?).to be false
   end
 
   it "should not have public static method(s)" do

@@ -75,6 +75,7 @@ describe "DoxyHaml Cage setAnimal Method Parser" do
   end
 
   it "should have a return type" do
+    expect(@setAnimal.has_return_type?).to be true
     expect(@setAnimal.return_type.name).to eq "bool"
   end
 

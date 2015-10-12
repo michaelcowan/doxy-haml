@@ -34,6 +34,10 @@ module DoxyHaml
       @html_return_brief ||= link_to_refs xpath_first %Q{detaileddescription/para/simplesect[@kind='return']/para}
     end
 
+    def has_return_type?
+      not xpath_empty? %Q{type}
+    end
+
     def return_type
       @returns ||= Type.new nil, self, xpath_first(%Q{type})
     end

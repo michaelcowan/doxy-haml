@@ -67,6 +67,7 @@ describe "DoxyHaml Animal feed Method Parser" do
   end
 
   it "should have a return type" do
+    expect(@feed.has_return_type?).to be true
     expect(@feed.return_type.name).to eq "void"
   end
 
