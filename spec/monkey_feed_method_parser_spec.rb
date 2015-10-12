@@ -66,8 +66,8 @@ describe "DoxyHaml Monkey feed Method Parser" do
     expect(@feed.has_return_brief?).to be false
   end
 
-  it "should have a return type" do
-    expect(@feed.has_return_type?).to be true
+  it "should not have a return type" do
+    expect(@feed.has_return_type?).to be false
     expect(@feed.return_type.name).to eq "void"
   end
 

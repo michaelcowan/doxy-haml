@@ -35,7 +35,7 @@ module DoxyHaml
     end
 
     def has_return_type?
-      not xpath_empty? %Q{type}
+      not xpath_empty? %Q{type} and not return_type.name.eql?("void")
     end
 
     def return_type
