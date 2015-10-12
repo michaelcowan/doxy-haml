@@ -25,6 +25,10 @@ describe "DoxyHaml Animal Enum Parser" do
     expect(@kind.html_qualified_name).to match /<a href='namespacezoo.html'>zoo<\/a>::<a href='classzoo_1_1_animal.html'>Animal<\/a>::<a href='classzoo_1_1_animal.html#\w{34}'>Kind<\/a>/
   end
 
+  it "should have an html fully qualified name without self" do
+    expect(@kind.html_qualified_name_except_self).to match /<a href='namespacezoo.html'>zoo<\/a>::<a href='classzoo_1_1_animal.html'>Animal<\/a>::Kind/
+  end
+
   it "should have an anchor" do
     expect(@kind.anchor).to match /\w{34}/
   end

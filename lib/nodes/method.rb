@@ -7,10 +7,6 @@ module DoxyHaml
       @params = xpath %Q{param}
     end
 
-    def html_qualified_name_except_self
-      html_qualify_except_self self
-    end
-
     def definition
       @definition ||= (xpath_first_content(%Q{definition}) + xpath_first_content(%Q{argsstring})).squish
     end
