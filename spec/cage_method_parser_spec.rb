@@ -106,4 +106,14 @@ describe "DoxyHaml Cage Method Parser" do
     expect(types.map do |type| type.html_name end).to match @expected_types
   end
 
+  it "should have parameter description" do
+    expect(@setDimensions.parameters.first.has_description?).to be true
+    expect(@setDimensions.parameters.first.description).to eq "The width of the cage."
+  end
+
+  it "should have parameter html description" do
+    expect(@setDimensions.parameters.first.has_description?).to be true
+    expect(@setDimensions.parameters.first.html_description).to eq "The width of the cage."
+  end
+
 end

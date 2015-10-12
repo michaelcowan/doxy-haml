@@ -38,6 +38,19 @@ module DoxyHaml
     def html_definition
       "#{type.html_name} #{name}" + ("=#{default_value}" if has_default_value?).to_s
     end
+
+    def has_description?
+      not xpath_empty? %Q{parameterdescription/para}
+    end
+
+    def description
+      @description ||= (xpath_first_content %Q{parameterdescription/para}).squish
+    end
+
+    def html_description
+      @html_description ||= link_to_refs xpath_first %Q{parameterdescription/para}
+    end
+
   end
 
 end

@@ -119,4 +119,14 @@ describe "DoxyHaml Cage setAnimal Method Parser" do
     expect(@setAnimal.parameters[1].default_value).to eq "NULL"
   end
 
+  it "should have parameter description" do
+    expect(@setAnimal.parameters.first.has_description?).to be true
+    expect(@setAnimal.parameters.first.description).to eq "The Animal to put in this Cage."
+  end
+
+  it "should have parameter html description" do
+    expect(@setAnimal.parameters.first.has_description?).to be true
+    expect(@setAnimal.parameters.first.html_description).to eq "The <a href='classzoo_1_1_animal.html'>Animal</a> to put in this <a href='classzoo_1_1_cage.html'>Cage</a>."
+  end
+
 end
