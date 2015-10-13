@@ -73,4 +73,8 @@ describe "DoxyHaml Monkey Class Parser" do
     expect(public_super_classes_names).to eq @expected_public_super_classes
   end
 
+  it "should not have public derived class(es)" do
+    expect(@monkey.has_public_derived_classes?).to be false
+  end
+
 end

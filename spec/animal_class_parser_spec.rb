@@ -6,6 +6,8 @@ describe "DoxyHaml Animal Class Parser" do
     @expected_public_methods = ["Animal", "Animal", "~Animal", "canFly", "feed", "getNumberOfLegs"]
     @expected_public_static_methods = ["numberOfMonkeys"]
     @expected_public_enums = ["Kind"]
+    @expected_public_super_classes = ["Organism"]
+    @expected_public_derived_classes = ["Monkey"]
     parser = DoxyHaml::Parser.new "spec/doxygen/xml"
     namespace = namespace_by_name parser.index.namespaces, "zoo"
     @animal = class_by_name namespace.classes, "Animal"
@@ -97,6 +99,18 @@ describe "DoxyHaml Animal Class Parser" do
 
   it "should not have class(es)" do
     expect(@animal.has_classes?).to be false
+  end
+
+  it "should have public super class(es)" do
+    expect(@animal.has_public_super_classes?).to be true
+    public_super_classes_names = map_node @animal.public_super_classes do |clazz| clazz.name end
+    expect(public_super_classes_names).to eq @expected_public_super_classes
+  end
+
+  it "should have public derived class(es)" do
+    expect(@animal.has_public_derived_classes?).to be true
+    public_derived_classes_names = map_node @animal.public_derived_classes do |clazz| clazz.name end
+    expect(public_derived_classes_names).to eq @expected_public_derived_classes
   end
 
 end
