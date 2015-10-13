@@ -9,8 +9,11 @@ module DoxyHaml
     attr_reader :id
     attr_reader :parent
 
+    @@nodes = {}
+
     def initialize id, parent, xml = nil
       @parent, @id, @xml = parent, id, xml
+      @@nodes[id] = self
     end
 
     def name
@@ -23,6 +26,10 @@ module DoxyHaml
 
     def compound_parent
       return parent if has_compound_parent?
+    end
+
+    def find_node_by_id id
+      @@nodes[id]
     end
 
     private

@@ -5,6 +5,7 @@ describe "DoxyHaml Monkey Class Parser" do
   before(:all) do
     @expected_public_methods = ["getNumberOfLegs", "feed"]
     @expected_public_static_methods = ["numberOfMonkeys"]
+    @expected_public_super_classes = ["Animal"]
     parser = DoxyHaml::Parser.new "spec/doxygen/xml"
     namespace = namespace_by_name parser.index.namespaces, "zoo"
     @monkey = class_by_name namespace.classes, "Monkey"
@@ -64,6 +65,12 @@ describe "DoxyHaml Monkey Class Parser" do
     expect(@monkey.has_public_static_methods?).to be true
     public_static_method_names = map_node @monkey.public_static_methods do |method| method.name end
     expect(public_static_method_names).to match_array @expected_public_static_methods
+  end
+
+  it "should have public super class(es)" do
+    expect(@monkey.has_public_super_classes?).to be true
+    public_super_classes_names = map_node @monkey.public_super_classes do |clazz| clazz.name end
+    expect(public_super_classes_names).to eq @expected_public_super_classes
   end
 
 end

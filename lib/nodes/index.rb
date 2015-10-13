@@ -6,6 +6,7 @@ module DoxyHaml
       super 'index', nil
       parse_xml
       @global = Global.new 'global', self, xpath(%Q{doxygenindex})
+      create_all_nodes
     end
 
     def has_namespaces?
@@ -29,6 +30,11 @@ module DoxyHaml
     end
 
     private
+
+    def create_all_nodes
+      namespaces
+      classes
+    end
 
     def sort_by_name objects
       objects.sort_by { |o| o.name }

@@ -67,4 +67,8 @@ describe "DoxyHaml Cage Class Parser" do
     expect(@cage.has_public_static_methods?).to be false
   end
 
+  it "should not have public super class(es)" do
+    expect(@cage.has_public_super_classes?).to be false
+  end
+
 end
