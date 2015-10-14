@@ -82,7 +82,7 @@ module DoxyHaml
     end
 
     def html_reimplements
-      "#{@superclass.html_qualified_name}::#{link_to_refid xpath_first %Q{reimplements}}"
+      "#{@superclass.html_qualified_name}::#{link_to_refid_anchor xpath_first %Q{reimplements}}"
     end
 
   end

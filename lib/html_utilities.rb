@@ -43,6 +43,10 @@ module DoxyHaml
       link_to(node.content, id_to_href(node['refid']))
     end
 
+    def link_to_refid_anchor node
+      link_to(node.content, id_to_href_anchor(node['refid']))
+    end
+
   end
 
 end
