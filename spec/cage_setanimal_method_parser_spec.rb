@@ -130,4 +130,12 @@ describe "DoxyHaml Cage setAnimal Method Parser" do
     expect(@setAnimal.parameters.first.html_description).to eq "The <a href='classzoo_1_1_animal.html'>Animal</a> to put in this <a href='classzoo_1_1_cage.html'>Cage</a>."
   end
 
+  it "should not implement from parent" do
+    expect(@setAnimal.reimplements?).to be false
+  end
+
+  it "should not be reimplemented by" do
+    expect(@setAnimal.reimplementedby?).to be false
+  end
+
 end

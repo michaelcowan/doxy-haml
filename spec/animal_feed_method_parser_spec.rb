@@ -4,6 +4,7 @@ describe "DoxyHaml Animal feed Method Parser" do
 
   before(:all) do
     @expected_parameters = ["volume"]
+    @expected_reimplementedby = ["zoo::Monkey::feed"]
     parser = DoxyHaml::Parser.new "spec/doxygen/xml"
     namespace = namespace_by_name parser.index.namespaces, "zoo"
     animal = class_by_name namespace.classes, "Animal"
@@ -95,6 +96,12 @@ describe "DoxyHaml Animal feed Method Parser" do
 
   it "should not implement from parent" do
     expect(@feed.reimplements?).to be false
+  end
+
+  it "should be reimplemented by" do
+    expect(@feed.reimplementedby?).to be true
+    reimplementedby = map_node @feed.reimplementedby do |method| method.qualified_name end
+    expect(reimplementedby).to match @expected_reimplementedby
   end
 
 end

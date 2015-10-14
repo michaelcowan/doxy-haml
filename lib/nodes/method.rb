@@ -5,11 +5,6 @@ module DoxyHaml
     def initialize id, parent, xml
       super id, parent, xml
       @params = xpath %Q{param}
-
-      if reimplements?
-        refid = xpath_first_param %Q{reimplements}, "refid"
-        @reimplements = find_node_by_id refid
-      end
     end
 
     def definition
@@ -78,7 +73,32 @@ module DoxyHaml
     end
 
     def reimplements
-      @reimplements
+      @reimplements ||= parse_reimplements
+    end
+
+    def reimplementedby?
+      not xpath_empty? %Q{reimplementedby}
+    end
+
+    def reimplementedby
+      @reimplementedby ||= parse_reimplementedby
+    end
+
+    private
+
+    def parse_reimplements
+      if reimplements?
+        refid = xpath_first_param %Q{reimplements}, "refid"
+        @reimplements = find_node_by_id refid
+      end
+    end
+
+    def parse_reimplementedby
+      if reimplementedby?
+        @reimplementedby = map_xpath %Q{reimplementedby} do |method|
+          find_node_by_id method['refid']
+        end
+      end
     end
 
   end
