@@ -1,6 +1,8 @@
 #ifndef ZOO_ANIMAL_H
 #define ZOO_ANIMAL_H
 
+#include "organism.h"
+
 namespace zoo {
 
   /**
@@ -10,7 +12,7 @@ namespace zoo {
    *
    *  \author Michael Cowan
    */
-  class Animal {
+  class Animal : public Organism {
 
   public:
     

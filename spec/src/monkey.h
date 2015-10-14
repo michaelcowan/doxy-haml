@@ -43,6 +43,15 @@ namespace zoo {
      */
     static int numberOfMonkeys() const;
 
+    /**
+     *  \brief Indicates if the Monkey can see.
+     *
+     *  Returns true if the Monkey can see, else false.
+     *
+     *  \return True if the Monkey can see.
+     */
+    virtual bool canSee();
+
   };
 }
 

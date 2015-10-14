@@ -5,6 +5,11 @@ module DoxyHaml
     def initialize id, parent, xml
       super id, parent, xml
       @params = xpath %Q{param}
+
+      if reimplements?
+        refid = xpath_first_param %Q{reimplements}, "refid"
+        @superclass = find_node_by_id refid_to_id(refid)
+      end
     end
 
     def definition
@@ -66,6 +71,18 @@ module DoxyHaml
       @parameters ||= map_xpath_with_index %Q{detaileddescription/para/parameterlist[@kind='param']/parameteritem} do |parameter, index|
         Parameter.new parameter['id'], self, parameter, @params[index]
       end
+    end
+
+    def reimplements?
+      not xpath_empty? %Q{reimplements}
+    end
+
+    def reimplements
+      "#{@superclass.qualified_name}::#{xpath_first_content %Q{reimplements}}"
+    end
+
+    def html_reimplements
+      "#{@superclass.html_qualified_name}::#{link_to_refid xpath_first %Q{reimplements}}"
     end
 
   end

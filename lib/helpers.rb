@@ -14,6 +14,11 @@ module DoxyHaml
       name.split("::").last
     end
 
+    def refid_to_id refid
+      *a, b = refid.split('_', -1)
+      a.join('_')
+    end
+
     def qualify node
       result = node.name
       unless node.parent.is_a? DoxyHaml::Global or node.parent.is_a? DoxyHaml::Index

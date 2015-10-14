@@ -75,15 +75,15 @@ describe "DoxyHaml Monkey feed Method Parser" do
     expect(@feed.return_type.html_name).to eq "void"
   end
 
-  it "should be pure virtual" do
+  it "should not be pure virtual" do
     expect(@feed.pure_virtual?).to be false
   end
 
-  it "should not be virtual" do
+  it "should be virtual" do
     expect(@feed.virtual?).to be true
   end
 
-  it "should be const" do
+  it "should not be const" do
     expect(@feed.const?).to be false
   end
 
@@ -91,6 +91,16 @@ describe "DoxyHaml Monkey feed Method Parser" do
     expect(@feed.has_parameters?).to be true
     parameters = map_node @feed.parameters do |parameter| parameter.name end
     expect(parameters).to match @expected_parameters
+  end
+
+  it "should implement from parent" do
+    expect(@feed.reimplements?).to be true
+    expect(@feed.reimplements).to eq "zoo::Animal::feed"
+  end
+
+  it "should implement from parent with html name" do
+    expect(@feed.reimplements?).to be true
+    expect(@feed.html_reimplements).to match /<a href='namespacezoo.html'>zoo<\/a>::<a href='classzoo_1_1_animal.html'>Animal<\/a>::<a href='classzoo_1_1_animal_\w{34}.html'>feed<\/a>/
   end
 
 end

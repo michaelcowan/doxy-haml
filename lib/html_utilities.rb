@@ -20,7 +20,7 @@ module DoxyHaml
 
     def link_to_refs node
       list = map_node node.children do |child|
-        child = (!child.text? and child.name == "ref") ? link_to(child.content, id_to_href(child['refid'])) : child
+        child = (!child.text? and child.name == "ref") ? link_to_refid(child) : child
       end
       list.join.strip
     end
@@ -37,6 +37,10 @@ module DoxyHaml
     def id_to_a_id id
       raise "String does not contain an id" unless id =~ /[a-zA-Z0-9]{34}$/
       id.split('_').last
+    end
+
+    def link_to_refid node
+      link_to(node.content, id_to_href(node['refid']))
     end
 
   end

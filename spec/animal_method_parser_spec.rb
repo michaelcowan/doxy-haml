@@ -104,4 +104,8 @@ describe "DoxyHaml Animal getNumberOfLegs Method Parser" do
     expect(@getNumberOfLegs.has_parameters?).to be false
   end
 
+  it "should not implement from parent" do
+    expect(@getNumberOfLegs.reimplements?).to be false
+  end
+
 end

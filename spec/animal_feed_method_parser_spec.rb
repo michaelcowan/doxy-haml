@@ -93,4 +93,8 @@ describe "DoxyHaml Animal feed Method Parser" do
     expect(parameters).to match @expected_parameters
   end
 
+  it "should not implement from parent" do
+    expect(@feed.reimplements?).to be false
+  end
+
 end

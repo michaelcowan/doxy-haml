@@ -3,7 +3,7 @@ require 'spec_helper'
 describe "DoxyHaml Monkey Class Parser" do
 
   before(:all) do
-    @expected_public_methods = ["getNumberOfLegs", "feed"]
+    @expected_public_methods = ["canSee", "feed", "getNumberOfLegs"]
     @expected_public_static_methods = ["numberOfMonkeys"]
     @expected_public_super_classes = ["Animal"]
     parser = DoxyHaml::Parser.new "spec/doxygen/xml"
@@ -58,7 +58,7 @@ describe "DoxyHaml Monkey Class Parser" do
   it "should have public method(s)" do
     expect(@monkey.has_public_methods?).to be true
     public_method_names = map_node @monkey.public_methods do |method| method.name end
-    expect(public_method_names).to match_array @expected_public_methods
+    expect(public_method_names).to eq @expected_public_methods
   end
 
   it "should have public static method(s)" do
