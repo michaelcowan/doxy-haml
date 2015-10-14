@@ -8,7 +8,7 @@ module DoxyHaml
 
       if reimplements?
         refid = xpath_first_param %Q{reimplements}, "refid"
-        @superclass = find_node_by_id refid_to_id(refid)
+        @reimplements = find_node_by_id refid
       end
     end
 
@@ -78,11 +78,7 @@ module DoxyHaml
     end
 
     def reimplements
-      "#{@superclass.qualified_name}::#{xpath_first_content %Q{reimplements}}"
-    end
-
-    def html_reimplements
-      "#{@superclass.html_qualified_name}::#{link_to_refid_anchor xpath_first %Q{reimplements}}"
+      @reimplements
     end
 
   end

@@ -33,7 +33,13 @@ module DoxyHaml
 
     def create_all_nodes
       namespaces
-      classes
+      classes.each do |clazz|
+        clazz.public_methods
+        clazz.public_static_methods
+        clazz.public_enums
+        clazz.public_variables
+        clazz.public_static_variables
+      end
     end
 
     def sort_by_name objects

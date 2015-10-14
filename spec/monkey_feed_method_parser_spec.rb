@@ -95,12 +95,7 @@ describe "DoxyHaml Monkey feed Method Parser" do
 
   it "should implement from parent" do
     expect(@feed.reimplements?).to be true
-    expect(@feed.reimplements).to eq "zoo::Animal::feed"
-  end
-
-  it "should implement from parent with html name" do
-    expect(@feed.reimplements?).to be true
-    expect(@feed.html_reimplements).to match /<a href='namespacezoo.html'>zoo<\/a>::<a href='classzoo_1_1_animal.html'>Animal<\/a>::<a href='classzoo_1_1_animal.html#\w{34}'>feed<\/a>/
+    expect(@feed.reimplements.html_qualified_name).to match /<a href='namespacezoo.html'>zoo<\/a>::<a href='classzoo_1_1_animal.html'>Animal<\/a>::<a href='classzoo_1_1_animal.html#\w{34}'>feed<\/a>/
   end
 
 end
