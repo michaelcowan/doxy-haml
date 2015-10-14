@@ -17,6 +17,7 @@ module DoxyHaml
 
     def initialize xml_folder
       @@xml_folder = xml_folder
+      Node.clear
       @index = Index.new
     end
 

@@ -9,11 +9,16 @@ module DoxyHaml
     attr_reader :id
     attr_reader :parent
 
-    @@nodes = {}
+    def self.clear
+      @@nodes = {}
+    end
 
     def initialize id, parent, xml = nil
       @parent, @id, @xml = parent, id, xml
-      @@nodes[id] = self
+      unless id.nil? or id.empty?
+        raise "Node Id '#{id}' should be unique" if @@nodes.has_key? id
+        @@nodes[id] = self
+      end
     end
 
     def name
