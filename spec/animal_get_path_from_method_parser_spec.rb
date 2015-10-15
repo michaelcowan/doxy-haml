@@ -3,7 +3,7 @@ require 'spec_helper'
 describe "DoxyHaml Animal getPathFrom Method Parser" do
 
   before(:all) do
-    @expected_parameters = ["cage", "scenic"]
+    @expected_parameters = ["cage", ""]
     @expected_types = ["Cage *", "bool"]
     @expected_html_types = ["<a href='classzoo_1_1_cage.html'>Cage</a> *", "bool"]
     parser = DoxyHaml::Parser.new "spec/doxygen/xml"
@@ -37,11 +37,11 @@ describe "DoxyHaml Animal getPathFrom Method Parser" do
   end
 
   it "should have a definition" do
-    expect(@getPathFrom.definition).to eq "CagePath* zoo::Animal::getPathFrom(Cage *cage, bool scenic)"
+    expect(@getPathFrom.definition).to eq "CagePath* zoo::Animal::getPathFrom(Cage *cage, bool)"
   end
 
   it "should have an html definition" do
-    expect(@getPathFrom.html_definition).to eq "<a href='structzoo_1_1_cage_path.html'>CagePath</a> * <a href='namespacezoo.html'>zoo</a>::<a href='classzoo_1_1_animal.html'>Animal</a>::getPathFrom(<a href='classzoo_1_1_cage.html'>Cage</a> * cage, bool scenic)"
+    expect(@getPathFrom.html_definition).to eq "<a href='structzoo_1_1_cage_path.html'>CagePath</a> * <a href='namespacezoo.html'>zoo</a>::<a href='classzoo_1_1_animal.html'>Animal</a>::getPathFrom(<a href='classzoo_1_1_cage.html'>Cage</a> * cage, bool)"
   end
 
   it "should not have a brief" do

@@ -68,6 +68,7 @@ module DoxyHaml
     end
 
     def xpath_first_content xml=@xml, xpath
+      return "" if xpath(xml, xpath).empty?
       xpath_first(xml, xpath).content unless xml.nil?
     end
 

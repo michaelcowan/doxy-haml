@@ -75,7 +75,7 @@ namespace zoo {
      */
     bool canFly() const;
 
-    CagePath * getPathFrom(Cage * cage, bool scenic);
+    CagePath * getPathFrom(Cage * cage, bool);
 
     /**
      *  \brief Feed the Animal.

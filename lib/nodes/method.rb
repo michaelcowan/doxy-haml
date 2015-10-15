@@ -12,7 +12,7 @@ module DoxyHaml
     end
 
     def html_definition
-      p = parameters.map { |p| p.html_definition }.join(', ')
+      p = parameters.map { |p| p.html_definition }.join(', ').squish
       s = "#{return_type.html_name} #{html_qualified_name_except_self}(#{p})"
       s.prepend "virtual " if virtual? or pure_virtual?
       s += (" const " if const?).to_s + ("=0" if pure_virtual?).to_s
