@@ -63,9 +63,7 @@ module DoxyHaml
     end
 
     def parameters
-      @parameters ||= map_xpath_with_index %Q{detaileddescription/para/parameterlist[@kind='param']/parameteritem} do |parameter, index|
-        Parameter.new parameter['id'], self, parameter, @params[index]
-      end
+      @parameters ||= parse_parameters
     end
 
     def reimplements?
@@ -97,6 +95,18 @@ module DoxyHaml
       if reimplementedby?
         @reimplementedby = map_xpath %Q{reimplementedby} do |method|
           find_node_by_id method['refid']
+        end
+      end
+    end
+
+    def parse_parameters
+      if has_parameters? and xpath_empty? %Q{detaileddescription/para/parameterlist[@kind='param']/parameteritem}
+        return @params.map do |param|
+          Parameter.new "", self, nil, param
+        end
+      else
+        return map_xpath_with_index %Q{detaileddescription/para/parameterlist[@kind='param']/parameteritem} do |parameter, index|
+          Parameter.new "", self, parameter, @params[index]
         end
       end
     end

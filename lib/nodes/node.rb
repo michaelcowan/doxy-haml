@@ -56,22 +56,23 @@ module DoxyHaml
     end
 
     def xpath xml=@xml, path
-      xml.xpath(path)
+      xml.xpath(path) unless xml.nil?
     end
 
     def xpath_first xml=@xml, xpath
-      xpath(xml, xpath).first
+      xpath(xml, xpath).first unless xml.nil?
     end
 
     def xpath_first_param xml=@xml, xpath, param
-      xpath_first(xml, xpath)[param]
+      xpath_first(xml, xpath)[param] unless xml.nil?
     end
 
     def xpath_first_content xml=@xml, xpath
-      xpath_first(xml, xpath).content
+      xpath_first(xml, xpath).content unless xml.nil?
     end
 
     def xpath_empty? xml=@xml, xpath
+      return true if xml.nil?
       xpath(xml, xpath).empty? or xpath_first_content(xml, xpath).empty?
     end
 
