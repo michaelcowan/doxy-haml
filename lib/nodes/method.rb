@@ -16,6 +16,7 @@ module DoxyHaml
       s = "#{return_type.html_name} #{html_qualified_name_except_self}(#{p})"
       s.prepend "virtual " if virtual? or pure_virtual?
       s += (" const " if const?).to_s + ("=0" if pure_virtual?).to_s
+      s.squish!
     end
 
     def has_return_brief?
@@ -56,6 +57,10 @@ module DoxyHaml
 
     def const?
       @const ||= (xpath_param 'const') == 'yes'
+    end
+
+    def static?
+      @static ||= (xpath_param 'static') == 'yes'
     end
 
     def has_parameters?

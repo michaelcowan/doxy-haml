@@ -87,6 +87,10 @@ describe "DoxyHaml Monkey feed Method Parser" do
     expect(@feed.const?).to be false
   end
 
+  it "should not be static" do
+    expect(@feed.static?).to be false
+  end
+
   it "should have parameters" do
     expect(@feed.has_parameters?).to be true
     parameters = map_node @feed.parameters do |parameter| parameter.name end
