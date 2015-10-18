@@ -1,0 +1,10 @@
+- if describable.has_brief?
+  %p.lead
+    = describable.html_brief
+- if describable.has_description?
+  %blockquote.small
+    %p
+      = describable.html_description
+    - if describable.has_author?
+      %footer
+        = describable.author

@@ -1,2 +1,49 @@
-%li
+= partial "templates/_anchor.html.haml", { anchor: method.anchor }
+= partial "templates/_member_title.html.haml", { member: method, labels: method_labels(method) }
+
+%small
+  - if method.reimplements?
+    Implements
+    = method.reimplements.html_qualified_name
+
+  - if method.reimplementedby?
+    Implemented by
+    = html_qualified_names_as_sentence method.reimplementedby
+
+%h5
+  - if method.virtual? or method.pure_virtual?
+    virtual
+  - unless method.constructor? or method.destructor?
+    = method.return_type.html_name
+  
   = method.name
+  %span> (
+  - method.parameters.each do |parameter|
+    = parameter.html_definition
+    - unless parameter == method.parameters.last
+      %span> ,&nbsp;
+  %span> )
+  - if method.const?
+    &nbsp;const
+
+- if method.has_description?
+  %h4 Description
+  %p
+    = method.html_description
+
+- if method.has_parameters?
+  %h4 Parameters
+  = partial 'templates/_parameters.html.haml', { parameters: method.parameters }
+
+- if method.has_return_type?
+  %h4 Returns
+  .table-responsive
+    %table.table.table-striped.table-hover
+      %tr
+        %td
+          = method.return_type.html_name
+        %td
+          - if method.has_return_brief?
+            = method.html_return_brief
+
+%hr

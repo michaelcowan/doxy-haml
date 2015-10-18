@@ -16,7 +16,7 @@ module DoxyHaml
     def renderToFile(template, locals, file)
       FileUtils.mkdir_p File.dirname(file)
       File.open(file, 'w') do |f|
-        f.write render(@layout) {
+        f.write render(@layout, locals) {
           render template, locals
         }
       end

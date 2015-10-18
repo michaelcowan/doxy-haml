@@ -1,0 +1,7 @@
+%h3
+  /= member.html_qualified_name_except_self
+  = "#{member.parent.html_name}::#{member.name}"
+  - labels.ensure_array.each do |label|
+    %small
+      %small
+        = partial "templates/_label.html.haml", { name: label }

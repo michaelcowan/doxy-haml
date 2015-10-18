@@ -1,0 +1,23 @@
+%li.dropdown
+  %a.dropdown-toggle{"data-toggle" => "dropdown", href: "#", role: "button"}
+    = namespace.qualified_name
+    %span.caret
+  %ul.dropdown-menu
+    %li.dropdown-header
+      = namespace.qualified_name
+    %li
+      = namespace.html_link "Summary"
+    %li.divider
+    - if namespace.has_namespaces?
+      %li.dropdown-header
+        Namespaces
+      - namespace.namespaces.each do |namespace|
+        %li
+          = namespace.html_name
+      %li.divider
+    - if namespace.has_classes?
+      %li.dropdown-header
+        Classes
+      - namespace.classes.each do |clazz|
+        %li
+          = clazz.html_name

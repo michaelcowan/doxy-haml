@@ -1,3 +1,18 @@
-%li
-  = enum.name
-  = enum.values.join(", ")
+= partial "templates/_anchor.html.haml", { anchor: enum.anchor }
+= partial "templates/_member_title.html.haml", { member: enum, labels: "enum" }
+
+- if enum.has_description?
+  %h4 Description
+  %p
+    = enum.html_description
+
+%h4 Values
+.table-responsive
+  %table.table.table-striped.table-hover
+    - enum.public_values.each do |value|
+      %tr
+        %td
+          = value.name
+        %td
+          - if value.has_brief?
+            = value.brief

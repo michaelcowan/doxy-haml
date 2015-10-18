@@ -18,33 +18,35 @@ end
 }
 
 def main
+  start_time = Time.now
+
+  puts "Generating Doxygen XML"
+  generator = DoxyHaml::Generator.new
+  generator.generate @options[:xml_folder], @options[:headers_folder], true
+
   puts "Parsing Doxygen XML"
   parser = DoxyHaml::Parser.new File.join(@options[:xml_folder], "xml")
 
   puts "Rendering"
+  renderer = DoxyHaml::Renderer.new parser.index, "templates/_layout.html.haml", {title: "The Zoo"}
+
   parser.index.namespaces.each do |namespace|
-    render_namespace namespace
-    namespace.classes.each do |clazz|
-      render_class clazz
-    end
+    render renderer, "templates/_namespace.html.haml", {namespace: namespace, compound: namespace}, output_full_path(namespace)
   end
 
+  parser.index.classes.each do |clazz|
+    render renderer, "templates/_clazz.html.haml", {clazz: clazz, compound: clazz}, output_full_path(clazz)
+  end
+
+  puts "Finished in #{(Time.now - start_time).round(1)} seconds!"
 end
 
-def render_namespace namespace
-  render "templates/_namespace.html.haml", {namespace: namespace}, output_full_path(namespace)
+def render renderer, template, locals, file
+  renderer.renderToFile(template, locals, file)
 end
 
-def render_class clazz
-  render "templates/_clazz.html.haml", {clazz: clazz}, output_full_path(clazz)
-end
-
-def render template, locals, file
-  DoxyHaml::Renderer.new(template, locals).writeToFile file
-end
-
-def output_full_path node
-  File.join(@options[:output_folder], node.html_filename)
+def output_full_path compound
+  File.join(@options[:output_folder], compound.filename)
 end
 
 opt_parser = OptionParser.new do |opts|

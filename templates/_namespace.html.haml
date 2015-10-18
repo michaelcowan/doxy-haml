@@ -1,5 +1,11 @@
-= namespace.name
-%ul
-- namespace.classes.each do |clazz|
-  %li
-    = clazz.html_name
+%h2
+  = namespace.html_qualified_name
+
+= partial "templates/_description.html.haml", { describable: namespace }
+
+- if namespace.has_namespaces?
+  = partial 'templates/_table.html.haml', { heading: "Namespaces", items: namespace.namespaces }
+
+- if namespace.has_classes?
+  = partial 'templates/_table.html.haml', { heading: "Classes", items: namespace.classes }
+

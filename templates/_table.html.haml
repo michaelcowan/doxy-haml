@@ -1,0 +1,7 @@
+%h3
+  = heading
+.table-responsive
+  %table.table.table-striped.table-hover
+    - items.each do |item|
+      %tr
+        = partial 'templates/_table_row.html.haml', { item: item }
