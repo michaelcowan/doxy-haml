@@ -58,14 +58,14 @@ describe "DoxyHaml Struct Parser" do
     expect(@cage_path.has_public_variables?).to be true
     public_variable_names = map_node @cage_path.public_variables do |variable| variable.name end
     expect(public_variable_names).to eq @expected_public_variables
-    @cage_path.public_variables do |variable| expect(variable.static?).to be false end
+    expect(@cage_path.public_variables.all? { |v| v.static? }).to be false
   end
 
   it "should have public static variable(s)" do
     expect(@cage_path.has_public_static_variables?).to be true
     public_static_variable_names = map_node @cage_path.public_static_variables do |variable| variable.name end
     expect(public_static_variable_names).to match_array @expected_public_static_variables
-    @cage_path.public_static_variables do |variable| expect(variable.static?).to be true end
+    expect(@cage_path.public_static_variables.all? { |v| v.static? }).to be true
   end
 
 end
