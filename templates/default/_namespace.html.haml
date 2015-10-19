@@ -1,11 +1,11 @@
 %h2
   = namespace.html_qualified_name
 
-= partial "_description.html.haml", { describable: namespace }
+= partial "_description", { describable: namespace }
 
 - if namespace.has_namespaces?
-  = partial '_table.html.haml', { heading: "Namespaces", items: namespace.namespaces }
+  = partial '_table', { heading: "Namespaces", items: namespace.namespaces }
 
 - if namespace.has_classes?
-  = partial '_table.html.haml', { heading: "Classes", items: namespace.classes }
+  = partial '_table', { heading: "Classes", items: namespace.classes }
 

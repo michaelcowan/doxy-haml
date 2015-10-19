@@ -41,7 +41,7 @@
         .collapse.navbar-collapse#collapse
           %ul.nav.navbar-nav
             - namespaces.each do |namespace|
-              = partial "_namespace_dropdown.html.haml", {namespace: namespace}
+              = partial "_namespace_dropdown", {namespace: namespace}
 
     .container-fluid
       .row
@@ -58,5 +58,5 @@
                 %hr
         .col-sm-8.col-sm-offset-4.col-md-9.col-md-offset-3.main
           %ol.breadcrumb
-            = partial "_breadcrumb.html.haml", { compound: compound }
+            = partial "_breadcrumb", { compound: compound }
           = yield 

@@ -4,4 +4,4 @@
   %table.table.table-striped.table-hover
     - items.each do |item|
       %tr
-        = partial '_table_row.html.haml', { item: item }
+        = partial '_table_row', { item: item }

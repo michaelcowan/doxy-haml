@@ -37,12 +37,21 @@ module DoxyHaml
     private
 
     def render(haml_file, locals = {}, &block)
-      haml = IO.read template_path(haml_file)
+      haml = IO.read template_file(haml_file)
       Haml::Engine.new(haml).render(binding, locals.merge(@props), &block)
     end
 
     def template_path file
       File.join @template_folder, file
+    end
+
+    def template_file file
+      path = template_path file
+      ["", ".html", ".haml", ".html.haml"].each do |ext|
+        filename = path + ext
+        return filename if File.exists? filename
+      end
+      nil
     end
 
   end

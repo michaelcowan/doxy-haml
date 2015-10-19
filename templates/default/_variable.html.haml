@@ -1,5 +1,5 @@
-= partial "_anchor.html.haml", { anchor: variable.anchor }
-= partial "_member_title.html.haml", { member: variable, labels: variable_labels(variable) }
+= partial "_anchor", { anchor: variable.anchor }
+= partial "_member_title", { member: variable, labels: variable_labels(variable) }
 
 - if variable.has_description?
   %h4 Description
