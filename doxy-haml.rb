@@ -11,7 +11,7 @@ $LOAD_PATH.unshift File.join(root_path, "lib")
   Dir["#{r}/*.rb"].each {|f| require_relative f}
 end
 
-@options = {
+@opt = {
   xml_folder: "tmp/doc/doxygen",
   headers_folder: "src/inc",
   output_folder: "doc/api",
