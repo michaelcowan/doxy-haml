@@ -12,9 +12,11 @@ $LOAD_PATH.unshift File.join(root_path, "lib")
 end
 
 @options = {
-  headers_folder: "src/inc",
   xml_folder: "tmp/doc/doxygen",
-  output_folder: "doc/api"
+  headers_folder: "src/inc",
+  output_folder: "doc/api",
+  template_folder: "templates/default",
+  name: "My Project"
 }
 
 def main
@@ -22,20 +24,23 @@ def main
 
   puts "Generating Doxygen XML"
   generator = DoxyHaml::Generator.new
-  generator.generate @options[:xml_folder], @options[:headers_folder], true
+  generator.generate @opt[:xml_folder], @opt[:headers_folder], true
 
   puts "Parsing Doxygen XML"
-  parser = DoxyHaml::Parser.new File.join(@options[:xml_folder], "xml")
+  parser = DoxyHaml::Parser.new File.join(@opt[:xml_folder], "xml")
 
   puts "Rendering"
-  renderer = DoxyHaml::Renderer.new parser.index, "templates/_layout.html.haml", {title: "The Zoo"}
+  renderer = DoxyHaml::Renderer.new parser.index, @opt[:template_folder],
+    "_layout.html.haml", {title: @opt[:name]}
 
   parser.index.namespaces.each do |namespace|
-    render renderer, "templates/_namespace.html.haml", {namespace: namespace, compound: namespace}, output_full_path(namespace)
+    render renderer, "_namespace.html.haml", {namespace: namespace, compound: namespace},
+      output_full_path(namespace)
   end
 
   parser.index.classes.each do |clazz|
-    render renderer, "templates/_clazz.html.haml", {clazz: clazz, compound: clazz}, output_full_path(clazz)
+    render renderer, "_clazz.html.haml", {clazz: clazz, compound: clazz},
+      output_full_path(clazz)
   end
 
   puts "Finished in #{(Time.now - start_time).round(1)} seconds!"
@@ -46,18 +51,24 @@ def render renderer, template, locals, file
 end
 
 def output_full_path compound
-  File.join(@options[:output_folder], compound.filename)
+  File.join @opt[:output_folder], compound.filename
 end
 
 opt_parser = OptionParser.new do |opts|
-  opts.banner = "Usage: #{ARGV[0]} [options]" # TODO Get command name
+  opts.banner = "Usage: #{ARGV[0]} [options]"
   opts.separator "Specific options:"
 
-  opts.on("-i FOLDER", "--in FOLDER", "C++ (input) folder. Default: #{@options[:headers_folder]}") do |v|
-    @options[:headers_folder] = v
+  opts.on("-i FOLDER", "--in FOLDER", "C++ (input) folder. Default: '#{@opt[:headers_folder]}'") do |v|
+    @opt[:headers_folder] = v
   end
-  opts.on("-o FOLDER", "--out FOLDER", "HTML (output) folder. Default: #{@options[:output_folder]}") do |v|
-    @options[:output_folder] = v
+  opts.on("-o FOLDER", "--out FOLDER", "HTML (output) folder. Default: '#{@opt[:output_folder]}'") do |v|
+    @opt[:output_folder] = v
+  end
+  opts.on("-t TEMPLATE", "--template", "Template (theme) folder. Default: '#{@opt[:template_folder]}'") do |v|
+    @opt[:template_folder] = v
+  end
+  opts.on("-n NAME", "--name", "The name of the project. Default: '#{@opt[:name]}'") do |v|
+    @opt[:name] = v
   end
 end
 

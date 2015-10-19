@@ -3,9 +3,9 @@
   %small
     %small
       - if clazz.is_struct?
-        = partial "templates/_label.html.haml", { name: "struct" }
+        = partial "_label.html.haml", { name: "struct" }
       - if clazz.abstract?
-        = partial "templates/_label.html.haml", { name: "abstract" }
+        = partial "_label.html.haml", { name: "abstract" }
 
 %p.small
   - if clazz.has_public_super_classes?
@@ -17,50 +17,50 @@
     Inherited by
     = html_qualified_names_as_sentence clazz.public_derived_classes
 
-= partial "templates/_description.html.haml", { describable: clazz }
+= partial "_description.html.haml", { describable: clazz }
 
 - if clazz.has_classes?
-  = partial 'templates/_table.html.haml',
+  = partial '_table.html.haml',
     { heading: "Classes", items: clazz.classes }
 
 - if clazz.has_public_variables?
-  = partial 'templates/_table.html.haml',
+  = partial '_table.html.haml',
     { heading: "Variables", items: clazz.public_variables }
 
 - if clazz.has_public_static_variables?
-  = partial 'templates/_table.html.haml',
+  = partial '_table.html.haml',
     { heading: "Static Variables", items: clazz.public_static_variables }
 
 - if clazz.has_public_methods?
-  = partial 'templates/_table.html.haml',
+  = partial '_table.html.haml',
     { heading: "Public Member Functions", items: clazz.public_methods }
 
 - if clazz.has_public_static_methods?
-  = partial 'templates/_table.html.haml',
+  = partial '_table.html.haml',
     { heading: "Static Public Member Functions", items: clazz.public_static_methods }
 
 - if clazz.has_public_enums?
-  = partial 'templates/_table.html.haml',
+  = partial '_table.html.haml',
     { heading: "Public Types", items: clazz.public_enums }
 
 %h2 Documentation
 
 - if clazz.has_public_variables?
   - clazz.public_variables.each do |variable|
-    = partial 'templates/_variable.html.haml', { variable: variable }
+    = partial '_variable.html.haml', { variable: variable }
 
 - if clazz.has_public_static_variables?
   - clazz.public_static_variables.each do |variable|
-    = partial 'templates/_variable.html.haml', { variable: variable }
+    = partial '_variable.html.haml', { variable: variable }
 
 - if clazz.has_public_methods?
   - clazz.public_methods.each do |method|
-    = partial 'templates/_method.html.haml', { method: method }
+    = partial '_method.html.haml', { method: method }
 
 - if clazz.has_public_static_methods?
   - clazz.public_static_methods.each do |method|
-    = partial 'templates/_method.html.haml', { method: method }
+    = partial '_method.html.haml', { method: method }
     
 - if clazz.has_public_enums?
   - clazz.public_enums.each do |enum|
-    = partial 'templates/_enum.html.haml', { enum: enum }
+    = partial '_enum.html.haml', { enum: enum }

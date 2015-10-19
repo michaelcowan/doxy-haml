@@ -1,6 +1,6 @@
 %td
   - if parameter.has_direction?
-    = partial "templates/_label.html.haml", { name: parameter.direction }
+    = partial "_label.html.haml", { name: parameter.direction }
   = parameter.name
 %td
   - if parameter.has_description?

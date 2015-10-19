@@ -1,5 +1,5 @@
-= partial "templates/_anchor.html.haml", { anchor: enum.anchor }
-= partial "templates/_member_title.html.haml", { member: enum, labels: "enum" }
+= partial "_anchor.html.haml", { anchor: enum.anchor }
+= partial "_member_title.html.haml", { member: enum, labels: "enum" }
 
 - if enum.has_description?
   %h4 Description

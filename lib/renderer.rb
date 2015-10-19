@@ -9,8 +9,8 @@ module DoxyHaml
     dynamic_requires.map! { |r| File.basename(r, ".*").split('_').map { |w| w.capitalize }.join }
     dynamic_requires.each { |r| include Object.const_get r }
 
-    def initialize(index, layout, props)
-      @index, @layout, @props = index, layout, props
+    def initialize(index, template_folder, layout, props)
+      @index, @template_folder, @layout, @props = index, template_folder, layout, props
     end
 
     def renderToFile(template, locals, file)
@@ -37,8 +37,12 @@ module DoxyHaml
     private
 
     def render(haml_file, locals = {}, &block)
-      haml = IO.read haml_file
+      haml = IO.read template_path(haml_file)
       Haml::Engine.new(haml).render(binding, locals.merge(@props), &block)
+    end
+
+    def template_path file
+      File.join @template_folder, file
     end
 
   end

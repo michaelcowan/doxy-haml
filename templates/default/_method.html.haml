@@ -1,5 +1,5 @@
-= partial "templates/_anchor.html.haml", { anchor: method.anchor }
-= partial "templates/_member_title.html.haml", { member: method, labels: method_labels(method) }
+= partial "_anchor.html.haml", { anchor: method.anchor }
+= partial "_member_title.html.haml", { member: method, labels: method_labels(method) }
 
 %small
   - if method.reimplements?
@@ -33,7 +33,7 @@
 
 - if method.has_parameters?
   %h4 Parameters
-  = partial 'templates/_parameters.html.haml', { parameters: method.parameters }
+  = partial '_parameters.html.haml', { parameters: method.parameters }
 
 - if method.has_return_type?
   %h4 Returns
