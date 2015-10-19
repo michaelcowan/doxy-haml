@@ -30,17 +30,14 @@ def main
   parser = DoxyHaml::Parser.new File.join(@opt[:xml_folder], "xml")
 
   puts "Rendering"
-  renderer = DoxyHaml::Renderer.new parser.index, @opt[:template_folder],
-    "_layout.html.haml", {title: @opt[:name]}
+  renderer = DoxyHaml::Renderer.new parser.index, @opt[:template_folder], "_layout", {title: @opt[:name]}
 
   parser.index.namespaces.each do |namespace|
-    render renderer, "_namespace.html.haml", {namespace: namespace, compound: namespace},
-      output_full_path(namespace)
+    render renderer, "_namespace", {namespace: namespace, compound: namespace}, output_full_path(namespace)
   end
 
   parser.index.classes.each do |clazz|
-    render renderer, "_clazz.html.haml", {clazz: clazz, compound: clazz},
-      output_full_path(clazz)
+    render renderer, "_clazz", {clazz: clazz, compound: clazz}, output_full_path(clazz)
   end
 
   puts "Finished in #{(Time.now - start_time).round(1)} seconds!"
