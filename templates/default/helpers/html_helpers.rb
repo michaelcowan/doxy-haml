@@ -1,5 +1,5 @@
 module HtmlHelpers
-
+  
   def method_labels method
     labels = []
     labels << "static" if method.static?

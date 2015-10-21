@@ -4,13 +4,11 @@ require 'fileutils'
 module DoxyHaml
 
   class Renderer
-    dynamic_requires = Dir[File.join(".", "helpers", "*.rb")]
-    dynamic_requires.each { |r| require r }
-    dynamic_requires.map! { |r| File.basename(r, ".*").split('_').map { |w| w.capitalize }.join }
-    dynamic_requires.each { |r| include Object.const_get r }
 
     def initialize(index, template_folder, layout, props)
       @index, @template_folder, @layout, @props = index, template_folder, layout, props
+
+      load_helpers @template_folder
     end
 
     def renderToFile(template, locals, file)
@@ -52,6 +50,13 @@ module DoxyHaml
         return filename if File.exists? filename
       end
       nil
+    end
+
+    def load_helpers path
+      dynamic_requires = Dir[File.join(".", path, "helpers", "*.rb")]
+      dynamic_requires.each { |r| require r }
+      dynamic_requires.map! { |r| File.basename(r, ".*").split('_').map { |w| w.capitalize }.join }
+      dynamic_requires.each { |r| extend Object.const_get r }
     end
 
   end
