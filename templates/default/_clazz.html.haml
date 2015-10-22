@@ -3,9 +3,9 @@
   %small
     %small
       - if clazz.is_struct?
-        = partial "_label", { name: "struct" }
+        = partial "label", { name: "struct" }
       - if clazz.abstract?
-        = partial "_label", { name: "abstract" }
+        = partial "label", { name: "abstract" }
 
 %p.small
   - if clazz.has_public_super_classes?
@@ -17,50 +17,50 @@
     Inherited by
     = html_qualified_names_as_sentence clazz.public_derived_classes
 
-= partial "_description", { describable: clazz }
+= partial "description", { describable: clazz }
 
 - if clazz.has_classes?
-  = partial '_table',
+  = partial 'table',
     { heading: "Classes", items: clazz.classes }
 
 - if clazz.has_public_variables?
-  = partial '_table',
+  = partial 'table',
     { heading: "Variables", items: clazz.public_variables }
 
 - if clazz.has_public_static_variables?
-  = partial '_table',
+  = partial 'table',
     { heading: "Static Variables", items: clazz.public_static_variables }
 
 - if clazz.has_public_methods?
-  = partial '_table',
+  = partial 'table',
     { heading: "Public Member Functions", items: clazz.public_methods }
 
 - if clazz.has_public_static_methods?
-  = partial '_table',
+  = partial 'table',
     { heading: "Static Public Member Functions", items: clazz.public_static_methods }
 
 - if clazz.has_public_enums?
-  = partial '_table',
+  = partial 'table',
     { heading: "Public Types", items: clazz.public_enums }
 
 %h2 Documentation
 
 - if clazz.has_public_variables?
   - clazz.public_variables.each do |variable|
-    = partial '_variable', { variable: variable }
+    = partial 'variable', { variable: variable }
 
 - if clazz.has_public_static_variables?
   - clazz.public_static_variables.each do |variable|
-    = partial '_variable', { variable: variable }
+    = partial 'variable', { variable: variable }
 
 - if clazz.has_public_methods?
   - clazz.public_methods.each do |method|
-    = partial '_method', { method: method }
+    = partial 'method', { method: method }
 
 - if clazz.has_public_static_methods?
   - clazz.public_static_methods.each do |method|
-    = partial '_method', { method: method }
+    = partial 'method', { method: method }
     
 - if clazz.has_public_enums?
   - clazz.public_enums.each do |enum|
-    = partial '_enum', { enum: enum }
+    = partial 'enum', { enum: enum }

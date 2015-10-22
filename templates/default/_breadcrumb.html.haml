@@ -1,4 +1,4 @@
 - if compound.has_compound_parent?
-  = partial "_breadcrumb", { compound: compound.compound_parent }
+  = partial "breadcrumb", { compound: compound.compound_parent }
 %li
   = compound.html_name

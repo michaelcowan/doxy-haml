@@ -1,5 +1,5 @@
-= partial "_anchor", { anchor: method.anchor }
-= partial "_member_title", { member: method, labels: method_labels(method) }
+= partial "anchor", { anchor: method.anchor }
+= partial "member_title", { member: method, labels: method_labels(method) }
 
 %small
   - if method.reimplements?
@@ -33,7 +33,7 @@
 
 - if method.has_parameters?
   %h4 Parameters
-  = partial '_parameters', { parameters: method.parameters }
+  = partial 'parameters', { parameters: method.parameters }
 
 - if method.has_return_type?
   %h4 Returns

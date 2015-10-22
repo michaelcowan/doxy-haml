@@ -21,7 +21,7 @@ module DoxyHaml
     end
 
     def partial haml_file, locals
-      render haml_file, locals
+      render partial_name(haml_file), locals
     end
 
     def method_missing method, *args
@@ -57,6 +57,11 @@ module DoxyHaml
       dynamic_requires.each { |r| require r }
       dynamic_requires.map! { |r| File.basename(r, ".*").split('_').map { |w| w.capitalize }.join }
       dynamic_requires.each { |r| extend Object.const_get r }
+    end
+
+    def partial_name name
+      name = "_#{name}" unless name.start_with?("_")
+      name
     end
 
   end
