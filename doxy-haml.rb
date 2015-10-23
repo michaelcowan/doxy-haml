@@ -31,6 +31,10 @@ def main
   puts "Rendering"
   renderer = DoxyHaml::Renderer.new parser.index, @opt[:template_folder], "_layout", {title: @opt[:name]}
 
+  static_pages(@opt[:template_folder]).each do |page|
+    renderer.render_to_file static_page_output_path(page), page, {index: parser.index}
+  end
+
   parser.index.namespaces.each do |namespace|
     renderer.render_to_file output_path(namespace.filename), "_namespace", {namespace: namespace, compound: namespace}
   end
@@ -44,6 +48,16 @@ end
 
 def output_path filename
   File.join @opt[:output_folder], filename
+end
+
+def static_pages folder
+  files = Dir[File.join(folder, "*")].select { |file| File.file? file }
+  files.map! { |file| Pathname.new(file).basename.to_s }
+  files.select { |file| not file.start_with?("_") }
+end
+
+def static_page_output_path page
+  output_path File.basename(page, ".*")
 end
 
 opt_parser = OptionParser.new do |opts|
