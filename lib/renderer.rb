@@ -27,8 +27,6 @@ module DoxyHaml
     def method_missing method, *args
       if @index.respond_to? method
         @index.send method, *args
-      else
-        super
       end
     end
 
