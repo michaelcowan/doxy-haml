@@ -32,22 +32,18 @@ def main
   renderer = DoxyHaml::Renderer.new parser.index, @opt[:template_folder], "_layout", {title: @opt[:name]}
 
   parser.index.namespaces.each do |namespace|
-    render renderer, "_namespace", {namespace: namespace, compound: namespace}, output_full_path(namespace)
+    renderer.render_to_file output_path(namespace.filename), "_namespace", {namespace: namespace, compound: namespace}
   end
 
   parser.index.classes.each do |clazz|
-    render renderer, "_clazz", {clazz: clazz, compound: clazz}, output_full_path(clazz)
+    renderer.render_to_file output_path(clazz.filename), "_clazz", {clazz: clazz, compound: clazz}
   end
 
   puts "Finished in #{(Time.now - start_time).round(1)} seconds!"
 end
 
-def render renderer, template, locals, file
-  renderer.renderToFile(template, locals, file)
-end
-
-def output_full_path compound
-  File.join @opt[:output_folder], compound.filename
+def output_path filename
+  File.join @opt[:output_folder], filename
 end
 
 opt_parser = OptionParser.new do |opts|
