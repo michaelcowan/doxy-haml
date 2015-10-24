@@ -3,7 +3,7 @@ require 'spec_helper'
 describe "DoxyHaml Global Namespace Parser" do
 
   before(:all) do
-    @expected_classes = ["Person"]
+    @expected_classes = ["Person", "Rect"]
     @expected_namespaces = ["bob", "zoo"]
 
     parser = DoxyHaml::Parser.new "spec/doxygen/xml"
