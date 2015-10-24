@@ -24,6 +24,10 @@ namespace zoo {
 
   public:
 
+    class Bar {
+
+    };
+
     /**
      *  \brief Sets the Animal.
      *

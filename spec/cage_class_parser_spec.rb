@@ -4,6 +4,7 @@ describe "DoxyHaml Cage Class Parser" do
 
   before(:all) do
     @expected_public_methods = ["setAnimal", "getAnimal", "setDimensions"]
+    @expected_classes = ["Bar"]
     parser = DoxyHaml::Parser.new "spec/doxygen/xml"
     namespace = namespace_by_name parser.index.namespaces, "zoo"
     @cage = class_by_name namespace.classes, "Cage"
@@ -69,6 +70,12 @@ describe "DoxyHaml Cage Class Parser" do
 
   it "should not have public super class(es)" do
     expect(@cage.has_public_super_classes?).to be false
+  end
+
+  it "should have class(es)" do
+    expect(@cage.has_classes?).to be true
+    class_names = map_node @cage.classes do |clazz| clazz.name end
+    expect(class_names).to match_array @expected_classes
   end
 
 end
