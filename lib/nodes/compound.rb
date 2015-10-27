@@ -7,10 +7,7 @@ module DoxyHaml
     
     def initialize id, parent, xml=nil
       super id, parent, xml
-      if xml.nil?
-        parse_xml
-        @xml = @xml.xpath(%Q{/doxygen/compounddef}).first
-      end
+      @xml = @xml.xpath(%Q{/doxygen/compounddef}).first if xml.nil?
     end
 
     def name
@@ -45,6 +42,14 @@ module DoxyHaml
       link_to link_name, filename
     end
 
+    def has_public_methods?
+      not public_methods.empty?
+    end
+
+    def public_methods
+      @public_methods ||= sort_methods parse_public_methods
+    end
+
     private
 
     def parse_classes
@@ -55,6 +60,25 @@ module DoxyHaml
 
     def sort_by_name objects
       objects.sort_by { |o| o.name }
+    end
+
+    def sort_methods methods
+      methods.sort_by { |m| [m.name, m.parameters.count] }.partition { |m| m.destructor? }.flatten.partition { |m| m.constructor? }.flatten
+    end
+
+    def xpath_or_attributes kind
+      kind = kind.join "' or '" if kind.is_a? Array
+      return kind
+    end
+
+    def memberdef_xpath access_level, kind, static
+      "sectiondef[@kind='#{xpath_or_attributes(access_level)}']/memberdef[@kind='#{kind}' and @static='#{static}']"
+    end
+
+    def parse_public_methods
+      map_xpath memberdef_xpath(["public-func", "func"], "function", "no") do |method|
+        Method.new method['id'], self, method
+      end
     end
 
   end

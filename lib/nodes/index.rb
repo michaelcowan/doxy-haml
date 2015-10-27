@@ -4,7 +4,6 @@ module DoxyHaml
 
     def initialize
       super 'index', nil
-      parse_xml
       @global = Global.new 'global', self, xpath(%Q{doxygenindex})
       create_all_nodes
     end

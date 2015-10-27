@@ -6,14 +6,6 @@ module DoxyHaml
       @abstract ||= (xpath_param 'abstract') == 'yes'
     end
 
-    def has_public_methods?
-      not public_methods.empty?
-    end
-
-    def public_methods
-      @public_methods ||= sort_methods parse_public_methods
-    end
-
     def has_public_static_methods?
       not public_static_methods.empty?
     end

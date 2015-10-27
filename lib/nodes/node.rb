@@ -18,6 +18,7 @@ module DoxyHaml
       unless id.nil? or id.empty?
         raise "Node Id '#{id}' should be unique" if @@nodes.has_key? id
         @@nodes[id] = self
+        parse_xml if xml.nil?
       end
     end
 
