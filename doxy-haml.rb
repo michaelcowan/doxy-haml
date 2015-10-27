@@ -32,7 +32,7 @@ def main
   renderer = DoxyHaml::Renderer.new parser.index, @opt[:template_folder], "_layout", {title: @opt[:name]}
 
   static_pages(@opt[:template_folder]).each do |page|
-    renderer.render_to_file static_page_output_path(page), page, {index: parser.index}
+    renderer.render_to_file static_page_output_path(page), page, {index: parser.index, title: @opt[:name]}
   end
 
   parser.index.namespaces.each do |namespace|
