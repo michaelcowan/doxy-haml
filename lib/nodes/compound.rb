@@ -50,6 +50,14 @@ module DoxyHaml
       @public_methods ||= sort_methods parse_public_methods
     end
 
+    def has_public_static_methods?
+      not public_static_methods.empty?
+    end
+
+    def public_static_methods
+      @public_static_methods ||= sort_methods parse_public_static_methods
+    end
+
     private
 
     def parse_classes
@@ -77,6 +85,12 @@ module DoxyHaml
 
     def parse_public_methods
       map_xpath memberdef_xpath(["public-func", "func"], "function", "no") do |method|
+        Method.new method['id'], self, method
+      end
+    end
+
+    def parse_public_static_methods
+      map_xpath memberdef_xpath(["public-static-func", "func"], "function", "yes") do |method|
         Method.new method['id'], self, method
       end
     end

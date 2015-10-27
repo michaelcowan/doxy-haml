@@ -41,6 +41,8 @@ namespace zoo {
 
   CagePath * emptyCagePath();
 
+  static Cage * emptyCage();
+
 }
 
 #endif // ZOO_CAGEPATH_H

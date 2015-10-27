@@ -4,6 +4,7 @@ describe "DoxyHaml Namespace Parser" do
 
   before(:all) do
     @expected_public_methods = ["emptyCagePath"]
+    @expected_public_static_methods = ["emptyCage"]
     @expected_classes = ["Animal", "Cage", "Monkey", "CagePath", "Organism"]
     @expected_namespaces = ["exhibit"]
 
@@ -68,6 +69,12 @@ describe "DoxyHaml Namespace Parser" do
     expect(@namespace.has_public_methods?).to be true
     public_method_names = map_node @namespace.public_methods do |method| method.name end
     expect(public_method_names).to eq @expected_public_methods
+  end
+
+  it "should have public static method(s)" do
+    expect(@namespace.has_public_static_methods?).to be true
+    public_static_method_names = map_node @namespace.public_static_methods do |method| method.name end
+    expect(public_static_method_names).to eq @expected_public_static_methods
   end
 
 end

@@ -6,14 +6,6 @@ module DoxyHaml
       @abstract ||= (xpath_param 'abstract') == 'yes'
     end
 
-    def has_public_static_methods?
-      not public_static_methods.empty?
-    end
-
-    def public_static_methods
-      @public_static_methods ||= sort_methods parse_public_static_methods
-    end
-
     def has_public_enums?
       not public_enums.empty?
     end
@@ -60,28 +52,12 @@ module DoxyHaml
 
     private
 
-    def memberdef_xpath access_level, kind, static
-      "sectiondef[@kind='#{access_level}']/memberdef[@kind='#{kind}' and @static='#{static}']"
-    end
-
     def basecompoundref_xpath prot
       "basecompoundref[@prot='#{prot}']"
     end
 
     def derivedcompoundref_xpath prot
       "derivedcompoundref[@prot='#{prot}']"
-    end
-
-    def parse_public_methods
-      map_xpath memberdef_xpath("public-func", "function", "no") do |method|
-        Method.new method['id'], self, method
-      end
-    end
-
-    def parse_public_static_methods
-      map_xpath memberdef_xpath("public-static-func", "function", "yes") do |method|
-        Method.new method['id'], self, method
-      end
     end
 
     def parse_public_enums
