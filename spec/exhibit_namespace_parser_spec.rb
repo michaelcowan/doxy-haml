@@ -10,9 +10,9 @@ describe "DoxyHaml Exhibit Namespace Parser" do
     @namespace = namespace.namespaces.first
   end
 
-  it "should have a compound parent" do
-    expect(@namespace.has_compound_parent?).to be true
-    expect(@namespace.compound_parent.name).to eq "zoo"
+  it "should have a qualifying parent" do
+    expect(@namespace.has_qualifying_parent?).to be true
+    expect(@namespace.qualifying_parent.name).to eq "zoo"
   end
 
   it "should have a name" do

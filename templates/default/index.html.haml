@@ -12,10 +12,10 @@
             %tr
               %td
                 = clazz.html_name
-                - if clazz.has_compound_parent?
+                - if clazz.has_qualifying_parent?
                   %small
                     %span>(
-                    = clazz.compound_parent.html_qualified_name
+                    = clazz.qualifying_parent.html_qualified_name
                     %span>)
               %td
                 - if clazz.has_brief?

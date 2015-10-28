@@ -26,12 +26,12 @@ module DoxyHaml
       raise "All nodes must declare a name method"
     end
 
-    def has_compound_parent?
-      parent != nil and parent.is_a? DoxyHaml::Compound
+    def has_qualifying_parent?
+      not parent.nil? and parent.is_a? DoxyHaml::Compound
     end
 
-    def compound_parent
-      return parent if has_compound_parent?
+    def qualifying_parent
+      return parent if has_qualifying_parent?
     end
 
     def find_node_by_id id

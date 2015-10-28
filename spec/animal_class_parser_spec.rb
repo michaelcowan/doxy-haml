@@ -14,9 +14,9 @@ describe "DoxyHaml Animal Class Parser" do
     @destructor = method_by_name @animal.public_methods, "~Animal"
   end
 
-  it "should have a compound parent" do
-    expect(@animal.has_compound_parent?).to be true
-    expect(@animal.compound_parent.name).to eq "zoo"
+  it "should have a qualifying parent" do
+    expect(@animal.has_qualifying_parent?).to be true
+    expect(@animal.qualifying_parent.name).to eq "zoo"
   end
 
   it "should have a name" do
