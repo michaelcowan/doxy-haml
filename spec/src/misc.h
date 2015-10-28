@@ -25,8 +25,14 @@ struct Rect {
   int height;
 };
 
+/**
+ *  \brief Create a Rect of 32x32 at origin.
+ */
 Rect * rect32();
 
+/**
+ *  \brief Create an empty Rect.
+ */
 static Rect * emptyRect();
 
 #endif // MISC_H
