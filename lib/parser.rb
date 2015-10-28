@@ -6,7 +6,7 @@ require 'nodes/definition'
 require 'nodes/namespace'
 
 %w(nodes).each do |r|
-  Dir[File.join(File.dirname(__FILE__), r, "*.rb")].each {|f| require f}
+  Dir[::File.join(::File.dirname(__FILE__), r, "*.rb")].each {|f| require f}
 end
 
 module DoxyHaml

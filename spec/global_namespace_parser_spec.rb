@@ -3,6 +3,7 @@ require 'spec_helper'
 describe "DoxyHaml Global Namespace Parser" do
 
   before(:all) do
+    @expected_public_methods = ["rect32"]
     @expected_classes = ["Person", "Rect"]
     @expected_namespaces = ["bob", "zoo"]
 
@@ -40,6 +41,12 @@ describe "DoxyHaml Global Namespace Parser" do
     expect(@namespace.has_namespaces?).to be true
     namespace_names = map_node @namespace.namespaces do |namespace| namespace.name end
     expect(namespace_names).to match_array @expected_namespaces
+  end
+
+  it "should have public method(s)" do
+    expect(@namespace.has_public_methods?).to be true
+    public_method_names = map_node @namespace.public_methods do |method| method.name end
+    expect(public_method_names).to eq @expected_public_methods
   end
 
 end

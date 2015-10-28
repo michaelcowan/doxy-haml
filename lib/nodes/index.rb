@@ -28,6 +28,10 @@ module DoxyHaml
       @grouped_classes ||= group_by_name classes
     end
 
+    def files
+      @files ||= sort_by_name parse_files
+    end
+
     private
 
     def create_all_nodes
@@ -39,6 +43,7 @@ module DoxyHaml
         clazz.public_variables
         clazz.public_static_variables
       end
+      files
     end
 
     def sort_by_name objects
@@ -74,6 +79,12 @@ module DoxyHaml
         end
       end
       return result
+    end
+
+    def parse_files
+      map_xpath %Q{doxygenindex/compound[@kind='file']} do |compound|
+        File.new compound['refid'], self
+      end
     end
 
   end

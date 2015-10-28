@@ -39,8 +39,8 @@ CASE_SENSE_NAMES = NO
 
     def write_doxyfile folder, contents
       FileUtils::mkdir_p folder
-      doxyfile = File.join folder, "Doxyfile"
-      File.open doxyfile, 'w' do |f|
+      doxyfile = ::File.join folder, "Doxyfile"
+      ::File.open doxyfile, 'w' do |f|
         f.write contents
       end
     end

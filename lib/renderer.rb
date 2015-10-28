@@ -12,8 +12,8 @@ module DoxyHaml
     end
 
     def render_to_file(file, template, locals)
-      FileUtils.mkdir_p File.dirname(file)
-      File.open(file, 'w') do |f|
+      FileUtils.mkdir_p ::File.dirname(file)
+      ::File.open(file, 'w') do |f|
         f.write render(@layout, locals) {
           render template, locals
         }
@@ -38,22 +38,22 @@ module DoxyHaml
     end
 
     def template_path file
-      File.join @template_folder, file
+      ::File.join @template_folder, file
     end
 
     def template_file file
       path = template_path file
       ["", ".html", ".haml", ".html.haml"].each do |ext|
         filename = path + ext
-        return filename if File.exists? filename
+        return filename if ::File.exists? filename
       end
       nil
     end
 
     def load_helpers path
-      dynamic_requires = Dir[File.join(".", path, "helpers", "*.rb")]
+      dynamic_requires = Dir[::File.join(".", path, "helpers", "*.rb")]
       dynamic_requires.each { |r| require r }
-      dynamic_requires.map! { |r| File.basename(r, ".*").split('_').map { |w| w.capitalize }.join }
+      dynamic_requires.map! { |r| ::File.basename(r, ".*").split('_').map { |w| w.capitalize }.join }
       dynamic_requires.each { |r| extend Object.const_get r }
     end
 

@@ -25,5 +25,7 @@ struct Rect {
   int height;
 };
 
+Rect * rect32();
+
 
 #endif // MISC_H

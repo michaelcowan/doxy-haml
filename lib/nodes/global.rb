@@ -33,6 +33,20 @@ module DoxyHaml
         end
       end).compact
     end
+
+    def public_methods
+      @public_methods ||= scrape_public_methods_from_files
+    end
+
+    private
+
+    def scrape_public_methods_from_files
+      result = []
+      parent.files.each do |file|
+        result.concat file.public_methods if file.has_public_methods?
+      end
+      return result
+    end
     
   end
 
