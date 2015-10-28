@@ -27,5 +27,6 @@ struct Rect {
 
 Rect * rect32();
 
+static Rect * emptyRect();
 
 #endif // MISC_H

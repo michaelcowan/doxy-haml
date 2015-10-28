@@ -4,6 +4,7 @@ describe "DoxyHaml Global Namespace Parser" do
 
   before(:all) do
     @expected_public_methods = ["rect32"]
+    @expected_public_static_methods = ["emptyRect"]
     @expected_classes = ["Person", "Rect"]
     @expected_namespaces = ["bob", "zoo"]
 
@@ -47,6 +48,12 @@ describe "DoxyHaml Global Namespace Parser" do
     expect(@namespace.has_public_methods?).to be true
     public_method_names = map_node @namespace.public_methods do |method| method.name end
     expect(public_method_names).to eq @expected_public_methods
+  end
+
+  it "should have public static method(s)" do
+    expect(@namespace.has_public_static_methods?).to be true
+    public_static_method_names = map_node @namespace.public_static_methods do |method| method.name end
+    expect(public_static_method_names).to match_array @expected_public_static_methods
   end
 
 end
