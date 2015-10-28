@@ -6,7 +6,7 @@ module DoxyHaml
   class Node
     include HtmlUtilities
 
-    attr_reader :id
+    attr_accessor :id
     attr_reader :parent
 
     def self.clear

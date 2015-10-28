@@ -44,12 +44,18 @@ module DoxyHaml
 
     private
 
+    def patch_nodes_ids! nodes
+      nodes.each do |method|
+        method.id = "global_#{id_to_a_id(method.id)}"
+      end
+    end
+
     def scrape_public_methods_from_files
       result = []
       parent.files.each do |file|
         result.concat file.public_methods if file.has_public_methods?
       end
-      return result
+      patch_nodes_ids! result
     end
 
     def scrape_public_static_methods_from_files
@@ -57,7 +63,7 @@ module DoxyHaml
       parent.files.each do |file|
         result.concat file.public_static_methods if file.has_public_static_methods?
       end
-      return result
+      patch_nodes_ids! result
     end
     
   end
