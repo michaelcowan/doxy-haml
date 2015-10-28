@@ -43,6 +43,10 @@ def main
     renderer.render_to_file output_path(clazz.filename), "_clazz", {clazz: clazz, compound: clazz}
   end
 
+  parser.index.files.each do |file|
+    renderer.render_to_file output_path(file.filename), "_file", {file: file, compound: file}
+  end
+
   puts "Finished in #{(Time.now - start_time).round(1)} seconds!"
 end
 
