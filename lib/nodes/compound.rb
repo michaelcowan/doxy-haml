@@ -24,10 +24,6 @@ module DoxyHaml
       @fully_qualified_name ||= xpath_first_content %Q{compoundname}
     end
 
-    def html_fully_qualified_name
-      html_qualify self
-    end
-
     def filename
       "#{@id}.html"
     end
