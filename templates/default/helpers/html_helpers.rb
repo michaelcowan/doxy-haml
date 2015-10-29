@@ -16,8 +16,8 @@ module HtmlHelpers
     labels
   end
 
-  def html_qualified_names_as_sentence objects
-    objects.map { |m| m.html_qualified_name }.to_sentence
+  def html_fully_qualified_names_as_sentence objects
+    objects.map { |m| m.html_fully_qualified_name }.to_sentence
   end
 
 end

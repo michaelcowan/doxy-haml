@@ -11,18 +11,18 @@ module DoxyHaml
     end
 
     def name
-      remove_namespace qualified_name
+      remove_namespace fully_qualified_name
     end
 
     def html_name
       html_link name
     end
 
-    def qualified_name
-      @qualified_name ||= xpath_first_content %Q{compoundname}
+    def fully_qualified_name
+      @fully_qualified_name ||= xpath_first_content %Q{compoundname}
     end
 
-    def html_qualified_name
+    def html_fully_qualified_name
       html_qualify self
     end
 

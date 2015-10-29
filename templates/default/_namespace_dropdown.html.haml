@@ -1,10 +1,10 @@
 %li.dropdown
   %a.dropdown-toggle{"data-toggle" => "dropdown", href: "#", role: "button"}
-    = namespace.qualified_name
+    = namespace.fully_qualified_name
     %span.caret
   %ul.dropdown-menu
     %li.dropdown-header
-      = namespace.qualified_name
+      = namespace.fully_qualified_name
     %li
       = namespace.html_link "Summary"
     %li.divider

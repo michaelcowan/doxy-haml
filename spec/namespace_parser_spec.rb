@@ -21,11 +21,11 @@ describe "DoxyHaml Namespace Parser" do
   end
 
   it "should have a qualified name" do
-    expect(@namespace.qualified_name).to eq "zoo"
+    expect(@namespace.fully_qualified_name).to eq "zoo"
   end
 
   it "should have an html qualified name" do
-    expect(@namespace.html_qualified_name).to eq "<a href='namespacezoo.html'>zoo</a>"
+    expect(@namespace.html_fully_qualified_name).to eq "<a href='namespacezoo.html'>zoo</a>"
   end
 
   it "should have class(es)" do

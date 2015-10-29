@@ -19,11 +19,11 @@ describe "DoxyHaml Monkey feed Method Parser" do
   end
 
   it "should have a fully qualified name" do
-    expect(@feed.qualified_name).to eq "zoo::Monkey::feed"
+    expect(@feed.fully_qualified_name).to eq "zoo::Monkey::feed"
   end
 
   it "should have an html fully qualified name" do
-    expect(@feed.html_qualified_name).to match /<a href='namespacezoo.html'>zoo<\/a>::<a href='classzoo_1_1_monkey.html'>Monkey<\/a>::<a href='classzoo_1_1_monkey.html#\w{34}'>feed<\/a>/
+    expect(@feed.html_fully_qualified_name).to match /<a href='namespacezoo.html'>zoo<\/a>::<a href='classzoo_1_1_monkey.html'>Monkey<\/a>::<a href='classzoo_1_1_monkey.html#\w{34}'>feed<\/a>/
   end
 
   it "should have an anchor" do
@@ -99,7 +99,7 @@ describe "DoxyHaml Monkey feed Method Parser" do
 
   it "should implement from parent" do
     expect(@feed.reimplements?).to be true
-    expect(@feed.reimplements.html_qualified_name).to match /<a href='namespacezoo.html'>zoo<\/a>::<a href='classzoo_1_1_animal.html'>Animal<\/a>::<a href='classzoo_1_1_animal.html#\w{34}'>feed<\/a>/
+    expect(@feed.reimplements.html_fully_qualified_name).to match /<a href='namespacezoo.html'>zoo<\/a>::<a href='classzoo_1_1_animal.html'>Animal<\/a>::<a href='classzoo_1_1_animal.html#\w{34}'>feed<\/a>/
   end
 
 end

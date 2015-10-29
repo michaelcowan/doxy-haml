@@ -4,11 +4,11 @@
 %small
   - if method.reimplements?
     Implements
-    = method.reimplements.html_qualified_name
+    = method.reimplements.html_fully_qualified_name
 
   - if method.reimplementedby?
     Implemented by
-    = html_qualified_names_as_sentence method.reimplementedby
+    = html_fully_qualified_names_as_sentence method.reimplementedby
 
 %h5
   - if method.virtual? or method.pure_virtual?

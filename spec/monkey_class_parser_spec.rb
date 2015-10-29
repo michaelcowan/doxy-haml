@@ -20,11 +20,11 @@ describe "DoxyHaml Monkey Class Parser" do
   end
 
   it "should have a qualified name" do
-    expect(@monkey.qualified_name).to eq "zoo::Monkey"
+    expect(@monkey.fully_qualified_name).to eq "zoo::Monkey"
   end
 
   it "should have an html qualified name" do
-    expect(@monkey.html_qualified_name).to eq "<a href='namespacezoo.html'>zoo</a>::<a href='classzoo_1_1_monkey.html'>Monkey</a>"
+    expect(@monkey.html_fully_qualified_name).to eq "<a href='namespacezoo.html'>zoo</a>::<a href='classzoo_1_1_monkey.html'>Monkey</a>"
   end
 
   it "should have a brief" do

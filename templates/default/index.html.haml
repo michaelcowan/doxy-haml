@@ -15,7 +15,7 @@
                 - if clazz.has_qualifying_parent?
                   %small
                     %span>(
-                    = clazz.qualifying_parent.html_qualified_name
+                    = clazz.qualifying_parent.html_fully_qualified_name
                     %span>)
               %td
                 - if clazz.has_brief?

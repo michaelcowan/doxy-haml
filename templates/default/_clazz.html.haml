@@ -1,7 +1,7 @@
 %ol.breadcrumb
   = partial "breadcrumb", { compound: clazz }
 %h2
-  = clazz.html_qualified_name
+  = clazz.html_fully_qualified_name
   %small
     %small
       - if clazz.is_struct?
@@ -12,12 +12,12 @@
 %p.small
   - if clazz.has_public_super_classes?
     Inherits from
-    = html_qualified_names_as_sentence clazz.public_super_classes
+    = html_fully_qualified_names_as_sentence clazz.public_super_classes
     - if clazz.has_public_derived_classes?
       %span.glyphicon.glyphicon-option-vertical
   - if clazz.has_public_derived_classes?
     Inherited by
-    = html_qualified_names_as_sentence clazz.public_derived_classes
+    = html_fully_qualified_names_as_sentence clazz.public_derived_classes
 
 = partial "description", { describable: clazz }
 

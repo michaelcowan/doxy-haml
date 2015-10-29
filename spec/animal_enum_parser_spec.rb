@@ -18,15 +18,15 @@ describe "DoxyHaml Animal Enum Parser" do
   end
 
   it "should have a fully qualified name" do
-    expect(@kind.qualified_name).to eq "zoo::Animal::Kind"
+    expect(@kind.fully_qualified_name).to eq "zoo::Animal::Kind"
   end
 
   it "should have an html fully qualified name" do
-    expect(@kind.html_qualified_name).to match /<a href='namespacezoo.html'>zoo<\/a>::<a href='classzoo_1_1_animal.html'>Animal<\/a>::<a href='classzoo_1_1_animal.html#\w{34}'>Kind<\/a>/
+    expect(@kind.html_fully_qualified_name).to match /<a href='namespacezoo.html'>zoo<\/a>::<a href='classzoo_1_1_animal.html'>Animal<\/a>::<a href='classzoo_1_1_animal.html#\w{34}'>Kind<\/a>/
   end
 
   it "should have an html fully qualified name without self" do
-    expect(@kind.html_qualified_name_except_self).to match /<a href='namespacezoo.html'>zoo<\/a>::<a href='classzoo_1_1_animal.html'>Animal<\/a>::Kind/
+    expect(@kind.html_fully_qualified_name_except_self).to match /<a href='namespacezoo.html'>zoo<\/a>::<a href='classzoo_1_1_animal.html'>Animal<\/a>::Kind/
   end
 
   it "should have an anchor" do

@@ -6,7 +6,7 @@ module DoxyHaml
       super id, parent, xml
     end
 
-    def qualified_name
+    def fully_qualified_name
       "global"
     end
 

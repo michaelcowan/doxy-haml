@@ -19,11 +19,11 @@ describe "DoxyHaml Monkey numberOfMonkeys Method Parser" do
   end
 
   it "should have a fully qualified name" do
-    expect(@numberOfMonkeys.qualified_name).to eq "zoo::Monkey::numberOfMonkeys"
+    expect(@numberOfMonkeys.fully_qualified_name).to eq "zoo::Monkey::numberOfMonkeys"
   end
 
   it "should have an html fully qualified name" do
-    expect(@numberOfMonkeys.html_qualified_name).to match /<a href='namespacezoo.html'>zoo<\/a>::<a href='classzoo_1_1_monkey.html'>Monkey<\/a>::<a href='classzoo_1_1_monkey.html#\w{34}'>numberOfMonkeys<\/a>/
+    expect(@numberOfMonkeys.html_fully_qualified_name).to match /<a href='namespacezoo.html'>zoo<\/a>::<a href='classzoo_1_1_monkey.html'>Monkey<\/a>::<a href='classzoo_1_1_monkey.html#\w{34}'>numberOfMonkeys<\/a>/
   end
 
   it "should have an anchor" do

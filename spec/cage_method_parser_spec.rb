@@ -20,11 +20,11 @@ describe "DoxyHaml Cage Method Parser" do
   end
 
   it "should have a fully qualified name" do
-    expect(@setDimensions.qualified_name).to eq "zoo::Cage::setDimensions"
+    expect(@setDimensions.fully_qualified_name).to eq "zoo::Cage::setDimensions"
   end
 
   it "should have an html fully qualified name" do
-    expect(@setDimensions.html_qualified_name).to match /<a href='namespacezoo.html'>zoo<\/a>::<a href='classzoo_1_1_cage.html'>Cage<\/a>::<a href='classzoo_1_1_cage.html#\w{34}'>setDimensions<\/a>/
+    expect(@setDimensions.html_fully_qualified_name).to match /<a href='namespacezoo.html'>zoo<\/a>::<a href='classzoo_1_1_cage.html'>Cage<\/a>::<a href='classzoo_1_1_cage.html#\w{34}'>setDimensions<\/a>/
   end
 
   it "should have an anchor" do
