@@ -14,13 +14,10 @@ module DoxyHaml
       name.split("::").last
     end
 
-    def is_namespaceable? node
-      not node.is_a? DoxyHaml::Global and not node.is_a? DoxyHaml::Index and not node.is_a? DoxyHaml::File
-    end
 
     def qualify node
       result = node.name
-      if is_namespaceable? node.parent
+      if node.has_qualifying_parent?
         p = qualify node.parent
         result = "#{p}::#{result}"
       end
@@ -29,7 +26,7 @@ module DoxyHaml
 
     def html_qualify node
       result = node.html_name
-      if is_namespaceable? node.parent
+      if node.has_qualifying_parent?
         p = html_qualify node.parent
         result = "#{p}::#{result}"
       end
@@ -38,7 +35,7 @@ module DoxyHaml
 
     def html_qualify_except_self node
       result = node.name
-      if is_namespaceable? node.parent
+      if node.has_qualifying_parent?
         p = html_qualify node.parent
         result = "#{p}::#{result}"
       end

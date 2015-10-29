@@ -1,6 +1,6 @@
 module DoxyHaml
 
-  class Variable < Member
+  class Variable < Definition
 
     def type
       @type ||= Type.new nil, self, xpath(%Q{type}).first

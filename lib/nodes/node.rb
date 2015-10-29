@@ -27,7 +27,7 @@ module DoxyHaml
     end
 
     def has_qualifying_parent?
-      not parent.nil? and parent.is_a? DoxyHaml::Compound
+      not parent.nil? and not parent.is_a? DoxyHaml::File and not parent.is_a? DoxyHaml::Global and parent.is_a? DoxyHaml::Compound
     end
 
     def qualifying_parent
