@@ -29,6 +29,18 @@ describe "DoxyHaml Public Variable Parser" do
     expect(@variable.html_fully_qualified_name_except_self).to match /<a href='namespacezoo.html'>zoo<\/a>::<a href='structzoo_1_1_cage_path.html'>CagePath<\/a>::current/
   end
 
+  it "should have a qualified name" do
+    expect(@variable.qualified_name).to eq "CagePath::current"
+  end
+
+  it "should have an html qualified name" do
+    expect(@variable.html_qualified_name).to match /<a href='structzoo_1_1_cage_path.html'>CagePath<\/a>::<a href='structzoo_1_1_cage_path.html#\w{34}'>current<\/a>/
+  end
+
+  it "should have an html qualified name without self" do
+    expect(@variable.html_qualified_name_except_self).to match /<a href='structzoo_1_1_cage_path.html'>CagePath<\/a>::current/
+  end
+
   it "should have a type" do
     expect(@variable.type.name).to eq "Cage *"
   end

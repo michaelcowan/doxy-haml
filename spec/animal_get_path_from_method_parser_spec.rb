@@ -28,6 +28,14 @@ describe "DoxyHaml Animal getPathFrom Method Parser" do
     expect(@getPathFrom.html_fully_qualified_name).to match /<a href='namespacezoo.html'>zoo<\/a>::<a href='classzoo_1_1_animal.html'>Animal<\/a>::<a href='classzoo_1_1_animal.html#\w{34}'>getPathFrom<\/a>/
   end
 
+  it "should have a qualified name" do
+    expect(@getPathFrom.qualified_name).to eq "Animal::getPathFrom"
+  end
+
+  it "should have an html qualified name" do
+    expect(@getPathFrom.html_qualified_name).to match /<a href='classzoo_1_1_animal.html'>Animal<\/a>::<a href='classzoo_1_1_animal.html#\w{34}'>getPathFrom<\/a>/
+  end
+
   it "should have an anchor" do
     expect(@getPathFrom.anchor).to match /\w{34}/
   end

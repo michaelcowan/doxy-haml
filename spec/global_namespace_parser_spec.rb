@@ -24,12 +24,20 @@ describe "DoxyHaml Global Namespace Parser" do
     expect(@namespace.html_name).to eq "<a href='global.html'>global</a>"
   end
 
-  it "should have a qualified name" do
+  it "should have a fully qualified name" do
     expect(@namespace.fully_qualified_name).to eq "global"
   end
 
-  it "should have an html qualified name" do
+  it "should have an html fully qualified name" do
     expect(@namespace.html_fully_qualified_name).to eq "<a href='global.html'>global</a>"
+  end
+
+  it "should have a qualified name" do
+    expect(@namespace.qualified_name).to eq "global"
+  end
+
+  it "should have an html qualified name" do
+    expect(@namespace.html_qualified_name).to eq "<a href='global.html'>global</a>"
   end
 
   it "should have class(es)" do

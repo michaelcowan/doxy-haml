@@ -1,9 +1,11 @@
 require 'nodes/mixins/describable'
+require 'nodes/mixins/qualifiable'
 
 module DoxyHaml
 
   class Compound < Node
     include Describable
+    include Qualifiable
     
     def initialize id, parent, xml=nil
       super id, parent, xml

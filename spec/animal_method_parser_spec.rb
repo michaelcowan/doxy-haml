@@ -25,6 +25,14 @@ describe "DoxyHaml Animal getNumberOfLegs Method Parser" do
     expect(@getNumberOfLegs.html_fully_qualified_name).to match /<a href='namespacezoo.html'>zoo<\/a>::<a href='classzoo_1_1_animal.html'>Animal<\/a>::<a href='classzoo_1_1_animal.html#\w{34}'>getNumberOfLegs<\/a>/
   end
 
+  it "should have a qualified name" do
+    expect(@getNumberOfLegs.qualified_name).to eq "Animal::getNumberOfLegs"
+  end
+
+  it "should have an html qualified name" do
+    expect(@getNumberOfLegs.html_qualified_name).to match /<a href='classzoo_1_1_animal.html'>Animal<\/a>::<a href='classzoo_1_1_animal.html#\w{34}'>getNumberOfLegs<\/a>/
+  end
+
   it "should have an anchor" do
     expect(@getNumberOfLegs.anchor).to match /\w{34}/
   end

@@ -22,12 +22,20 @@ describe "DoxyHaml Struct Parser" do
     expect(@cage_path.html_name).to eq "<a href='structzoo_1_1_cage_path.html'>CagePath</a>"
   end
 
-  it "should have a qualified name" do
+  it "should have a fully qualified name" do
     expect(@cage_path.fully_qualified_name).to eq "zoo::CagePath"
   end
 
-  it "should have an html qualified name" do
+  it "should have an html fully qualified name" do
     expect(@cage_path.html_fully_qualified_name).to eq "<a href='namespacezoo.html'>zoo</a>::<a href='structzoo_1_1_cage_path.html'>CagePath</a>"
+  end
+
+  it "should have a qualified name" do
+    expect(@cage_path.qualified_name).to eq "zoo::CagePath"
+  end
+
+  it "should have an html qualified name" do
+    expect(@cage_path.html_qualified_name).to eq "<a href='namespacezoo.html'>zoo</a>::<a href='structzoo_1_1_cage_path.html'>CagePath</a>"
   end
 
   it "should have a brief" do
