@@ -8,6 +8,8 @@ describe "DoxyHaml Global Namespace Parser" do
     @expected_classes = ["Person", "Rect"]
     @expected_namespaces = ["bob", "zoo"]
     @expected_public_enums = ["Direction"]
+    @expected_public_variables = ["pi"]
+    @expected_public_static_variables = ["e"]
 
     parser = DoxyHaml::Parser.new "spec/doxygen/xml"
     @namespace = namespace_by_name parser.index.namespaces, "global"
@@ -69,6 +71,20 @@ describe "DoxyHaml Global Namespace Parser" do
     expect(@namespace.has_public_enums?).to be true
     public_enum_names = map_node @namespace.public_enums do |enum| enum.name end
     expect(public_enum_names).to match_array @expected_public_enums
+  end
+
+  it "should have public variable(s)" do
+    expect(@namespace.has_public_variables?).to be true
+    public_variable_names = map_node @namespace.public_variables do |variable| variable.name end
+    expect(public_variable_names).to eq @expected_public_variables
+    expect(@namespace.public_variables.all? { |v| v.static? }).to be false
+  end
+
+  it "should have public static variable(s)" do
+    expect(@namespace.has_public_static_variables?).to be true
+    public_static_variable_names = map_node @namespace.public_static_variables do |variable| variable.name end
+    expect(public_static_variable_names).to match_array @expected_public_static_variables
+    expect(@namespace.public_static_variables.all? { |v| v.static? }).to be true
   end
 
 end

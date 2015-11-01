@@ -13,9 +13,28 @@ namespace zoo {
   namespace exhibit {
 
     /**
-     *  \brief Represents a Cage at the zoo.
+     *  \brief State of exhibits.
      *
-     *  The class Cage contains an Animal at the zoo.
+     *  Exhibit state.
+     */
+    enum State {
+      /**
+       *  \brief Open exhibit.
+       *
+       *  Exhibit is Open.
+       */
+      Open,
+      Closed
+    };
+
+    static int maxExhibits;
+
+    int minExhibits;
+
+    /**
+     *  \brief Represents a Tent at the zoo.
+     *
+     *  The class Tent represents a concrete exhibit at the zoo.
      *
      *  \author Michael Cowan
      */

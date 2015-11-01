@@ -46,6 +46,14 @@ module DoxyHaml
       @public_enums ||= sort_by_name scrape_public_enums_from_files
     end
 
+    def public_variables
+      @public_variables ||= sort_by_name scrape_public_variables
+    end
+
+    def public_static_variables
+      @public_static_variables ||= sort_by_name scrape_public_static_variables
+    end
+
     private
 
     def patch_nodes_ids! nodes
@@ -74,6 +82,22 @@ module DoxyHaml
       result = []
       parent.files.each do |file|
         result.concat file.public_enums if file.has_public_enums?
+      end
+      patch_nodes_ids! result
+    end
+
+    def scrape_public_variables
+      result = []
+      parent.files.each do |file|
+        result.concat file.public_variables if file.has_public_variables?
+      end
+      patch_nodes_ids! result
+    end
+
+    def scrape_public_static_variables
+      result = []
+      parent.files.each do |file|
+        result.concat file.public_static_variables if file.has_public_static_variables?
       end
       patch_nodes_ids! result
     end
