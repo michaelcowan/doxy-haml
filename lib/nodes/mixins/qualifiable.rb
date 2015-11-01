@@ -1,7 +1,7 @@
 module DoxyHaml
 
   module Qualifiable
-    
+
     def fully_qualified_name
       qualify self
     end
@@ -15,18 +15,15 @@ module DoxyHaml
     end
 
     def qualified_name
-      return "#{parent.name}::#{name}" if has_qualifying_parent?
-      name
+      qualify self, false
     end
 
     def html_qualified_name
-      return "#{parent.html_name}::#{html_name}" if has_qualifying_parent?
-      html_name
+      html_qualify self, false
     end
 
     def html_qualified_name_except_self
-      return "#{parent.html_name}::#{name}" if has_qualifying_parent?
-      name
+      html_qualify_except_self self, false
     end
 
   end

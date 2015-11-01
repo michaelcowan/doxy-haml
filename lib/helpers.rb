@@ -14,30 +14,34 @@ module DoxyHaml
       name.split("::").last
     end
 
+    def add_namespace namespace, name
+      "#{namespace}::#{name}"
+    end
 
-    def qualify node
+
+    def qualify node, recursive = true
       result = node.name
       if node.has_qualifying_parent?
-        p = qualify node.parent
-        result = "#{p}::#{result}"
+        p = recursive ? qualify(node.parent) : node.parent.name
+        result = add_namespace p, result
       end
       result
     end
 
-    def html_qualify node
+    def html_qualify node, recursive = true
       result = node.html_name
       if node.has_qualifying_parent?
-        p = html_qualify node.parent
-        result = "#{p}::#{result}"
+        p = recursive ? html_qualify(node.parent) : node.parent.html_name
+        result = add_namespace p, result
       end
       result
     end
 
-    def html_qualify_except_self node
+    def html_qualify_except_self node, recursive = true
       result = node.name
       if node.has_qualifying_parent?
-        p = html_qualify node.parent
-        result = "#{p}::#{result}"
+        p = recursive ? html_qualify(node.parent) : node.parent.html_name
+        result = add_namespace p, result
       end
       result
     end
