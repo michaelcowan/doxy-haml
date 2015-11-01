@@ -42,6 +42,10 @@ module DoxyHaml
       @public_static_methods ||= sort_methods scrape_public_static_methods_from_files
     end
 
+    def public_enums
+      @public_enums ||= sort_by_name scrape_public_enums_from_files
+    end
+
     private
 
     def patch_nodes_ids! nodes
@@ -62,6 +66,14 @@ module DoxyHaml
       result = []
       parent.files.each do |file|
         result.concat file.public_static_methods if file.has_public_static_methods?
+      end
+      patch_nodes_ids! result
+    end
+
+    def scrape_public_enums_from_files
+      result = []
+      parent.files.each do |file|
+        result.concat file.public_enums if file.has_public_enums?
       end
       patch_nodes_ids! result
     end

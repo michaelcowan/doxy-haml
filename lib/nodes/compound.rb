@@ -56,13 +56,15 @@ module DoxyHaml
       @public_static_methods ||= sort_methods parse_public_static_methods
     end
 
-    private
-
-    def parse_classes
-      map_xpath %Q{innerclass} do |clazz|
-        Class.new clazz['refid'], self
-      end
+    def has_public_enums?
+      not public_enums.empty?
     end
+
+    def public_enums
+      @public_enums ||= sort_by_name parse_public_enums
+    end
+
+    private
 
     def sort_by_name objects
       objects.sort_by { |o| o.name }
@@ -81,6 +83,12 @@ module DoxyHaml
       "sectiondef[@kind='#{xpath_or_attributes(access_level)}']/memberdef[@kind='#{kind}' and @static='#{static}']"
     end
 
+    def parse_classes
+      map_xpath %Q{innerclass} do |clazz|
+        Class.new clazz['refid'], self
+      end
+    end
+
     def parse_public_methods
       map_xpath memberdef_xpath(["public-func", "func"], "function", "no") do |method|
         Method.new method['id'], self, method
@@ -90,6 +98,12 @@ module DoxyHaml
     def parse_public_static_methods
       map_xpath memberdef_xpath(["public-static-func", "func"], "function", "yes") do |method|
         Method.new method['id'], self, method
+      end
+    end
+
+    def parse_public_enums
+      map_xpath memberdef_xpath(["public-type", "enum"], "enum", "no") do |enum|
+        Enum.new enum['id'], self, enum
       end
     end
 

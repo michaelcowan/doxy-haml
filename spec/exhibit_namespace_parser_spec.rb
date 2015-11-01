@@ -4,6 +4,7 @@ describe "DoxyHaml Exhibit Namespace Parser" do
 
   before(:all) do
     @expected_classes = ["Tent"]
+    @expected_public_enums = ["State"]
 
     parser = DoxyHaml::Parser.new "spec/doxygen/xml"
     namespace = namespace_by_name parser.index.namespaces, "zoo"
@@ -71,6 +72,12 @@ describe "DoxyHaml Exhibit Namespace Parser" do
 
   it "should not have namespace(s)" do
     expect(@namespace.has_namespaces?).to be false
+  end
+
+  it "should have public enum(s)" do
+    expect(@namespace.has_public_enums?).to be true
+    public_enum_names = map_node @namespace.public_enums do |enum| enum.name end
+    expect(public_enum_names).to match_array @expected_public_enums
   end
 
 end

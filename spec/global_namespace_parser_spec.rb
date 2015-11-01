@@ -7,6 +7,7 @@ describe "DoxyHaml Global Namespace Parser" do
     @expected_public_static_methods = ["emptyRect"]
     @expected_classes = ["Person", "Rect"]
     @expected_namespaces = ["bob", "zoo"]
+    @expected_public_enums = ["Direction"]
 
     parser = DoxyHaml::Parser.new "spec/doxygen/xml"
     @namespace = namespace_by_name parser.index.namespaces, "global"
@@ -62,6 +63,12 @@ describe "DoxyHaml Global Namespace Parser" do
     expect(@namespace.has_public_static_methods?).to be true
     public_static_method_names = map_node @namespace.public_static_methods do |method| method.name end
     expect(public_static_method_names).to match_array @expected_public_static_methods
+  end
+
+  it "should have public enum(s)" do
+    expect(@namespace.has_public_enums?).to be true
+    public_enum_names = map_node @namespace.public_enums do |enum| enum.name end
+    expect(public_enum_names).to match_array @expected_public_enums
   end
 
 end

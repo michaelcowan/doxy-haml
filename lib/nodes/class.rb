@@ -6,14 +6,6 @@ module DoxyHaml
       @abstract ||= (xpath_param 'abstract') == 'yes'
     end
 
-    def has_public_enums?
-      not public_enums.empty?
-    end
-
-    def public_enums
-      @public_enums ||= sort_by_name parse_public_enums
-    end
-
     def has_public_variables?
       not public_variables.empty?
     end
@@ -58,12 +50,6 @@ module DoxyHaml
 
     def derivedcompoundref_xpath prot
       "derivedcompoundref[@prot='#{prot}']"
-    end
-
-    def parse_public_enums
-      map_xpath memberdef_xpath("public-type", "enum", "no") do |enum|
-        Enum.new enum['id'], self, enum
-      end
     end
 
     def parse_public_variables
