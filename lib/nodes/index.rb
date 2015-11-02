@@ -32,6 +32,10 @@ module DoxyHaml
       @methods ||= sort_by_name(get_all("public_methods") + get_all("public_static_methods"))
     end
 
+    def grouped_methods
+      @grouped_methods ||= group_by_name methods
+    end
+
     def files
       @files ||= sort_by_name parse_files
     end

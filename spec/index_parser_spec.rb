@@ -7,6 +7,7 @@ describe "DoxyHaml Index Parser" do
     @expected_classes = ["Animal", "Bar", "Cage", "CagePath", "Monkey", "Organism", "Person", "Rect", "Tent"]
     @classes_beginning_with_c = ["Cage", "CagePath"]
     @expected_method_names = ["Animal", "Animal", "canFly", "canSee", "canSee", "emptyCage", "emptyCagePath", "emptyRect", "feed", "feed", "getAnimal", "getNumberOfLegs", "getNumberOfLegs", "getPathFrom", "numberOfMonkeys", "rect32", "setAnimal", "setDimensions", "setName", "setName", "~Animal"]
+    @methods_beginning_with_e = ["emptyCage", "emptyCagePath", "emptyRect"]
 
     parser = DoxyHaml::Parser.new "spec/doxygen/xml"
     @index = parser.index
@@ -32,6 +33,11 @@ describe "DoxyHaml Index Parser" do
   it "should have method(s)" do
     public_method_names = map_node @index.methods do |method| method.name end
     expect(public_method_names).to eq @expected_method_names
+  end
+
+  it "should have grouped methods" do
+    method_names_beginning_with_e = map_node @index.grouped_methods['e'] do |method| method.name end
+    expect(method_names_beginning_with_e).to eq @methods_beginning_with_e
   end
 
 end
