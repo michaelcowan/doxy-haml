@@ -28,12 +28,8 @@ module DoxyHaml
       @grouped_classes ||= group_by_name classes
     end
 
-    def public_methods
-      @public_methods ||= sort_by_name(get_all "public_methods")
-    end
-
-    def public_static_methods
-      @public_static_methods ||= sort_by_name(get_all "public_static_methods")
+    def methods
+      @methods ||= sort_by_name(get_all("public_methods") + get_all("public_static_methods"))
     end
 
     def files

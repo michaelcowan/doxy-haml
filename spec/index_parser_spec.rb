@@ -6,8 +6,7 @@ describe "DoxyHaml Index Parser" do
     @expected_namespaces = ["global", "bob", "bob::robert", "bob::robert::william", "zoo", "zoo::exhibit"]
     @expected_classes = ["Animal", "Bar", "Cage", "CagePath", "Monkey", "Organism", "Person", "Rect", "Tent"]
     @classes_beginning_with_c = ["Cage", "CagePath"]
-    @expected_method_names = ["Animal", "Animal", "canFly", "canSee", "canSee", "emptyCagePath", "feed", "feed", "getAnimal", "getNumberOfLegs", "getNumberOfLegs", "getPathFrom", "rect32", "setAnimal", "setDimensions", "setName", "setName", "~Animal"]
-    @expected_static_method_names = ["emptyCage", "emptyRect", "numberOfMonkeys"]
+    @expected_method_names = ["Animal", "Animal", "canFly", "canSee", "canSee", "emptyCage", "emptyCagePath", "emptyRect", "feed", "feed", "getAnimal", "getNumberOfLegs", "getNumberOfLegs", "getPathFrom", "numberOfMonkeys", "rect32", "setAnimal", "setDimensions", "setName", "setName", "~Animal"]
 
     parser = DoxyHaml::Parser.new "spec/doxygen/xml"
     @index = parser.index
@@ -30,14 +29,9 @@ describe "DoxyHaml Index Parser" do
     expect(class_names_beginning_with_c).to eq @classes_beginning_with_c
   end
 
-  it "should have public method(s)" do
-    public_method_names = map_node @index.public_methods do |method| method.name end
+  it "should have method(s)" do
+    public_method_names = map_node @index.methods do |method| method.name end
     expect(public_method_names).to eq @expected_method_names
-  end
-
-  it "should have public static method(s)" do
-    public_static_method_names = map_node @index.public_static_methods do |method| method.name end
-    expect(public_static_method_names).to eq @expected_static_method_names
   end
 
 end
