@@ -36,6 +36,14 @@ module DoxyHaml
       @grouped_methods ||= group_by_name methods
     end
 
+    def variables
+      @variables ||= sort_by_name(get_all "public_variables")
+    end
+
+    def grouped_variables
+      @grouped_variables ||= group_by_name variables
+    end
+
     def files
       @files ||= sort_by_name parse_files
     end

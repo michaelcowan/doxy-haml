@@ -8,6 +8,8 @@ describe "DoxyHaml Index Parser" do
     @classes_beginning_with_c = ["Cage", "CagePath"]
     @expected_method_names = ["Animal", "Animal", "canFly", "canSee", "canSee", "emptyCage", "emptyCagePath", "emptyRect", "feed", "feed", "getAnimal", "getNumberOfLegs", "getNumberOfLegs", "getPathFrom", "numberOfMonkeys", "rect32", "setAnimal", "setDimensions", "setName", "setName", "~Animal"]
     @methods_beginning_with_e = ["emptyCage", "emptyCagePath", "emptyRect"]
+    @expected_variable_names = ["current", "distance", "height", "minExhibits", "next", "pi", "width", "x", "y"]
+    @variables_beginning_with_d = ["distance"]
 
     parser = DoxyHaml::Parser.new "spec/doxygen/xml"
     @index = parser.index
@@ -38,6 +40,16 @@ describe "DoxyHaml Index Parser" do
   it "should have grouped methods" do
     method_names_beginning_with_e = map_node @index.grouped_methods['e'] do |method| method.name end
     expect(method_names_beginning_with_e).to eq @methods_beginning_with_e
+  end
+
+  it "should have variable(s)" do
+    public_variable_names = map_node @index.variables do |variable| variable.name end
+    expect(public_variable_names).to eq @expected_variable_names
+  end
+
+  it "should have grouped variables" do
+    variable_names_beginning_with_d = map_node @index.grouped_variables['d'] do |variable| variable.name end
+    expect(variable_names_beginning_with_d).to eq @variables_beginning_with_d
   end
 
 end
