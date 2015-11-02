@@ -28,6 +28,14 @@ module DoxyHaml
       @grouped_classes ||= group_by_name classes
     end
 
+    def public_methods
+      @public_methods ||= sort_by_name(get_all "public_methods")
+    end
+
+    def public_static_methods
+      @public_static_methods ||= sort_by_name(get_all "public_static_methods")
+    end
+
     def files
       @files ||= sort_by_name parse_files
     end
@@ -77,6 +85,17 @@ module DoxyHaml
         node.namespaces.each do |n|
           result += get_classes n
         end
+      end
+      return result
+    end
+
+    def get_all property
+      result = []
+      namespaces.each do |namespace|
+        result += namespace.send(property)
+      end
+      classes.each do |clazz|
+        result += clazz.send(property)
       end
       return result
     end
