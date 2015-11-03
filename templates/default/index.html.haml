@@ -6,7 +6,9 @@
     %li.active
       %a{"data-toggle" => "tab", href: "#methods", role: "tab"} Methods
     %li
-      %a{"data-toggle" => "tab", href: "#enums", role: "tab"} Enums
+      %a{"data-toggle" => "tab", href: "#enumerations", role: "tab"} Enumerations
+    %li
+      %a{"data-toggle" => "tab", href: "#enumerators", role: "tab"} Enumerators
     - if index.has_classes?
       %li
         %a{"data-toggle" => "tab", href: "#classes", role: "tab"} Classes
@@ -16,13 +18,16 @@
 
   .tab-content
     #methods.tab-pane.active{role: "tabpanel"}
-      = partial 'grouped_table', { group: index.grouped_methods } 
+      = partial 'grouped_table', { group: index.grouped_methods }
 
-    #enums.tab-pane{role: "tabpanel"}
-      = partial 'grouped_table', { group: index.grouped_enums } 
+    #enumerations.tab-pane{role: "tabpanel"}
+      = partial 'grouped_table', { group: index.grouped_enumerations }
+
+    #enumerators.tab-pane{role: "tabpanel"}
+      = partial 'grouped_table', { group: index.grouped_enumerators }
 
     #classes.tab-pane{role: "tabpanel"}
-      = partial 'grouped_table', { group: index.grouped_classes } 
+      = partial 'grouped_table', { group: index.grouped_classes }
 
     #namespaces.tab-pane{role: "tabpanel"}
-      = partial 'grouped_table', { group: index.grouped_namespaces } 
+      = partial 'grouped_table', { group: index.grouped_namespaces }
