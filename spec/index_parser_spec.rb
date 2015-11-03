@@ -10,6 +10,7 @@ describe "DoxyHaml Index Parser" do
     @methods_beginning_with_e = ["emptyCage", "emptyCagePath", "emptyRect"]
     @expected_variable_names = ["current", "distance", "height", "minExhibits", "next", "pi", "width", "x", "y"]
     @variables_beginning_with_d = ["distance"]
+    @expected_public_enums = ["Direction", "Kind", "State"]
 
     parser = DoxyHaml::Parser.new "spec/doxygen/xml"
     @index = parser.index
@@ -52,4 +53,8 @@ describe "DoxyHaml Index Parser" do
     expect(variable_names_beginning_with_d).to eq @variables_beginning_with_d
   end
 
+  it "should have public enum(s)" do
+    public_enum_names = map_node @index.enums do |enum| enum.name end
+    expect(public_enum_names).to match_array @expected_public_enums
+  end
 end

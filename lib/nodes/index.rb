@@ -44,6 +44,10 @@ module DoxyHaml
       @grouped_variables ||= group_by_name variables
     end
 
+    def enums
+      @enums ||= sort_by_name(get_all "public_enums")
+    end
+
     def files
       @files ||= sort_by_name parse_files
     end
