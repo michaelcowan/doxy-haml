@@ -11,8 +11,10 @@ describe "DoxyHaml Index Parser" do
     @methods_beginning_with_e = ["emptyCage", "emptyCagePath", "emptyRect"]
     @expected_variable_names = ["current", "distance", "height", "minExhibits", "next", "pi", "width", "x", "y"]
     @variables_beginning_with_d = ["distance"]
-    @expected_public_enums = ["Direction", "Kind", "State"]
-    @public_enum_names_beginning_with_k = ["Kind"]
+    @expected_enumerations = ["Direction", "Kind", "State"]
+    @enumerations_names_beginning_with_k = ["Kind"]
+    @expected_enumerators = ["Amphibian", "Bird", "Closed", "Down", "Fish", "Left", "Mammal", "Open", "Reptile", "Right", "Up"]
+    @enumerators_names_beginning_with_r = ["Reptile", "Right"]
 
     parser = DoxyHaml::Parser.new "spec/doxygen/xml"
     @index = parser.index
@@ -60,13 +62,24 @@ describe "DoxyHaml Index Parser" do
     expect(variable_names_beginning_with_d).to eq @variables_beginning_with_d
   end
 
-  it "should have public enum(s)" do
-    public_enum_names = map_node @index.enums do |enum| enum.name end
-    expect(public_enum_names).to match_array @expected_public_enums
+  it "should have enumerations" do
+    enumerations_names = map_node @index.enumerations do |enum| enum.name end
+    expect(enumerations_names).to match_array @expected_enumerations
   end
 
-  it "should have grouped public enum(s)" do
-    public_enum_names_beginning_with_k = map_node @index.grouped_enums['k'] do |enum| enum.name end
-    expect(public_enum_names_beginning_with_k).to eq @public_enum_names_beginning_with_k
+  it "should have grouped enumerations" do
+    enumerations_names_beginning_with_k = map_node @index.grouped_enumerations['k'] do |enum| enum.name end
+    expect(enumerations_names_beginning_with_k).to eq @enumerations_names_beginning_with_k
   end
+
+  it "should have enumerators" do
+    enumerators_names = map_node @index.enumerators do |value| value.name end
+    expect(enumerators_names).to match_array @expected_enumerators
+  end
+
+  it "should have grouped enumerators" do
+    enumerators_names_beginning_with_r = map_node @index.grouped_enumerators['r'] do |enum| enum.name end
+    expect(enumerators_names_beginning_with_r).to eq @enumerators_names_beginning_with_r
+  end
+
 end

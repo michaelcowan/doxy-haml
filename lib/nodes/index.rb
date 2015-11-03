@@ -48,12 +48,20 @@ module DoxyHaml
       @grouped_variables ||= group_by_name variables
     end
 
-    def enums
-      @enums ||= sort_by_name(get_all "public_enums")
+    def enumerations
+      @enumerations ||= sort_by_name(get_all "public_enums")
     end
 
-    def grouped_enums
-      @grouped_enums ||= group_by_name enums
+    def grouped_enumerations
+      @grouped_enumerations ||= group_by_name enumerations
+    end
+
+    def enumerators
+      @enumerators ||= sort_by_name(get_enumerators(enumerations))
+    end
+
+    def grouped_enumerators
+      @grouped_enumerators ||= group_by_name enumerators
     end
 
     def files
@@ -116,6 +124,14 @@ module DoxyHaml
       end
       classes.each do |clazz|
         result += clazz.send(property)
+      end
+      return result
+    end
+
+    def get_enumerators enumerations
+      result = []
+      enumerations.each do |e|
+        result += e.public_values
       end
       return result
     end
