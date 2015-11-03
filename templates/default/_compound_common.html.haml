@@ -1,0 +1,47 @@
+= partial "description", { describable: compound }
+
+- if compound.has_classes?
+  = partial 'table',
+    { heading: "Classes", items: compound.classes }
+
+- if compound.has_public_variables?
+  = partial 'table',
+    { heading: "Variables", items: compound.public_variables }
+
+- if compound.has_public_static_variables?
+  = partial 'table',
+    { heading: "Static Variables", items: compound.public_static_variables }
+
+- if compound.has_public_methods?
+  = partial 'table',
+    { heading: "Public Member Functions", items: compound.public_methods }
+
+- if compound.has_public_static_methods?
+  = partial 'table',
+    { heading: "Static Public Member Functions", items: compound.public_static_methods }
+
+- if compound.has_public_enums?
+  = partial 'table',
+    { heading: "Public Types", items: compound.public_enums }
+
+%h2 Documentation
+
+- if compound.has_public_variables?
+  - compound.public_variables.each do |variable|
+    = partial 'variable', { variable: variable }
+
+- if compound.has_public_static_variables?
+  - compound.public_static_variables.each do |variable|
+    = partial 'variable', { variable: variable }
+
+- if compound.has_public_methods?
+  - compound.public_methods.each do |method|
+    = partial 'method', { method: method }
+
+- if compound.has_public_static_methods?
+  - compound.public_static_methods.each do |method|
+    = partial 'method', { method: method }
+    
+- if compound.has_public_enums?
+  - compound.public_enums.each do |enum|
+    = partial 'enum', { enum: enum }

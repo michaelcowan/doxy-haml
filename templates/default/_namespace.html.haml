@@ -3,11 +3,7 @@
 %h2
   = namespace.html_fully_qualified_name
 
-= partial "description", { describable: namespace }
-
 - if namespace.has_namespaces?
   = partial 'table', { heading: "Namespaces", items: namespace.namespaces }
 
-- if namespace.has_classes?
-  = partial 'table', { heading: "Classes", items: namespace.classes }
-
+= partial "compound_common", { compound: namespace }
