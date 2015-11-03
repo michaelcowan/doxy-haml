@@ -16,6 +16,10 @@ module DoxyHaml
       @namespaces ||= (get_namespaces @global).unshift @global
     end
 
+    def grouped_namespaces
+      @grouped_namespaces ||= group_by_name namespaces
+    end
+
     def has_classes?
       not classes.empty?
     end

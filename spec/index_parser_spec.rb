@@ -4,6 +4,7 @@ describe "DoxyHaml Index Parser" do
 
   before(:all) do
     @expected_namespaces = ["global", "bob", "bob::robert", "bob::robert::william", "zoo", "zoo::exhibit"]
+    @namespaces_beginning_with_z = ["zoo"]
     @expected_classes = ["Animal", "Bar", "Cage", "CagePath", "Monkey", "Organism", "Person", "Rect", "Tent"]
     @classes_beginning_with_c = ["Cage", "CagePath"]
     @expected_method_names = ["Animal", "Animal", "canFly", "canSee", "canSee", "emptyCage", "emptyCagePath", "emptyRect", "feed", "feed", "getAnimal", "getNumberOfLegs", "getNumberOfLegs", "getPathFrom", "numberOfMonkeys", "rect32", "setAnimal", "setDimensions", "setName", "setName", "~Animal"]
@@ -21,6 +22,11 @@ describe "DoxyHaml Index Parser" do
     expect(@index.has_namespaces?).to be true
     namespace_names = map_node @index.namespaces do |namespace| namespace.fully_qualified_name end
     expect(namespace_names).to eq @expected_namespaces
+  end
+
+  it "should have grouped namespaces" do
+    namespaces_beginning_with_z = map_node @index.grouped_namespaces['z'] do |namespace| namespace.name end
+    expect(namespaces_beginning_with_z).to eq @namespaces_beginning_with_z
   end
 
   it "should have class(es)" do
