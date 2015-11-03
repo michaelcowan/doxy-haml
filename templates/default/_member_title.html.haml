@@ -1,6 +1,5 @@
 %h3
-  /= member.html_qualified_name_except_self
-  = "#{member.parent.html_name}::#{member.name}"
+  = member.html_qualified_name
   - labels.ensure_array.each do |label|
     %small
       %small
