@@ -1,23 +1,28 @@
-- if index.has_classes?
-  .table-responsive
-    %table.table.table-striped.table-hover
-      - ('a'..'z').each do |letter|
-        - if index.grouped_classes.has_key? letter
-          %tr
-            %td
-              %h3.label.label-default
-                = letter.upcase
-            %td
-          - index.grouped_classes[letter].each do |clazz|
-            %tr
-              %td
-                = clazz.html_name
-                - if clazz.has_qualifying_parent?
-                  %small
-                    %span>(
-                    = clazz.qualifying_parent.html_fully_qualified_name
-                    %span>)
-              %td
-                - if clazz.has_brief?
-                  %span.hidden-xs
-                    = clazz.html_brief
+%h2
+  Index
+
+%div
+  %ul.nav.nav-tabs{:role => "tablist"}
+    %li.active
+      %a{"data-toggle" => "tab", href: "#methods", role: "tab"} Methods
+    %li
+      %a{"data-toggle" => "tab", href: "#enums", role: "tab"} Enums
+    - if index.has_classes?
+      %li
+        %a{"data-toggle" => "tab", href: "#classes", role: "tab"} Classes
+    - if index.has_namespaces?
+      %li
+        %a{"data-toggle" => "tab", href: "#namespaces", role: "tab"} Namespaces
+
+  .tab-content
+    #methods.tab-pane.active{role: "tabpanel"}
+      = partial 'grouped_table', { group: index.grouped_methods } 
+
+    #enums.tab-pane{role: "tabpanel"}
+      = partial 'grouped_table', { group: index.grouped_enums } 
+
+    #classes.tab-pane{role: "tabpanel"}
+      = partial 'grouped_table', { group: index.grouped_classes } 
+
+    #namespaces.tab-pane{role: "tabpanel"}
+      = partial 'grouped_table', { group: index.grouped_namespaces } 

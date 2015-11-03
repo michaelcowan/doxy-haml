@@ -1,0 +1,21 @@
+.table-responsive
+  %table.table.table-striped.table-hover
+    - group.each do |letter, objects|
+      %tr
+        %td
+          %h3.label.label-default
+            = letter.upcase
+        %td
+      - objects.each do |object|
+        %tr
+          %td
+            = object.html_name
+            - if object.has_qualifying_parent?
+              %small
+                %span>(
+                = object.qualifying_parent.html_fully_qualified_name
+                %span>)
+          %td
+            - if object.has_brief?
+              %span.hidden-xs
+                = object.html_brief
