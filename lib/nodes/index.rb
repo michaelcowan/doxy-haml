@@ -48,6 +48,10 @@ module DoxyHaml
       @enums ||= sort_by_name(get_all "public_enums")
     end
 
+    def grouped_enums
+      @grouped_enums ||= group_by_name enums
+    end
+
     def files
       @files ||= sort_by_name parse_files
     end

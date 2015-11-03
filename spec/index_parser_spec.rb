@@ -11,6 +11,7 @@ describe "DoxyHaml Index Parser" do
     @expected_variable_names = ["current", "distance", "height", "minExhibits", "next", "pi", "width", "x", "y"]
     @variables_beginning_with_d = ["distance"]
     @expected_public_enums = ["Direction", "Kind", "State"]
+    @public_enum_names_beginning_with_k = ["Kind"]
 
     parser = DoxyHaml::Parser.new "spec/doxygen/xml"
     @index = parser.index
@@ -56,5 +57,10 @@ describe "DoxyHaml Index Parser" do
   it "should have public enum(s)" do
     public_enum_names = map_node @index.enums do |enum| enum.name end
     expect(public_enum_names).to match_array @expected_public_enums
+  end
+
+  it "should have grouped public enum(s)" do
+    public_enum_names_beginning_with_k = map_node @index.grouped_enums['k'] do |enum| enum.name end
+    expect(public_enum_names_beginning_with_k).to eq @public_enum_names_beginning_with_k
   end
 end
