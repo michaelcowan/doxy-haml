@@ -12,6 +12,7 @@
     - enum.public_values.each do |value|
       %tr
         %td
+          = partial "anchor", { anchor: value.anchor }
           = value.name
         %td
           - if value.has_brief?
