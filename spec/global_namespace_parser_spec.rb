@@ -73,6 +73,14 @@ describe "DoxyHaml Global Namespace Parser" do
     expect(public_enum_names).to match_array @expected_public_enums
   end
 
+  it "should have public enum(s) with html name" do
+    expect(@namespace.public_enums.first.html_name).to match /<a href='global.html#\w{34}'>Direction<\/a>/
+  end
+
+  it "should have public enumertor(s) with html name" do
+    expect(@namespace.public_enums.first.public_values.first.html_name).to match /<a href='global.html#\w{67}'>Up<\/a>/
+  end
+
   it "should have public variable(s)" do
     expect(@namespace.has_public_variables?).to be true
     public_variable_names = map_node @namespace.public_variables do |variable| variable.name end

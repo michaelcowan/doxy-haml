@@ -18,6 +18,10 @@ module DoxyHaml
       "#{namespace}::#{name}"
     end
 
+    def replace_file_in_id id, file
+      "#{file}_#{id_to_a_id id}"
+    end
+
 
     def qualify node, recursive = true
       result = node.name
