@@ -82,12 +82,8 @@ module DoxyHaml
       files
     end
 
-    def sort_by_name objects
-      objects.sort_by { |o| o.name }
-    end
-
     def group_by_name objects
-      objects.group_by { |o| /[^a-zA-Z]*([a-zA-Z]).*/.match(o.name)[1].downcase }
+      objects.group_by { |o| first_alpha_character(o.name).downcase }
     end
 
     def get_namespaces node

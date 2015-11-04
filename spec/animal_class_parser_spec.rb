@@ -3,7 +3,7 @@ require 'spec_helper'
 describe "DoxyHaml Animal Class Parser" do
 
   before(:all) do
-    @expected_public_methods = ["Animal", "Animal", "~Animal", "canFly", "feed", "getNumberOfLegs", "getPathFrom"]
+    @expected_public_methods = ["Animal", "Animal", "~Animal", "canFly", "feed", "getNumberOfLegs", "getPathFrom", "_kill"]
     @expected_public_enums = ["Kind"]
     @expected_public_super_classes = ["Organism"]
     @expected_public_derived_classes = ["Monkey"]

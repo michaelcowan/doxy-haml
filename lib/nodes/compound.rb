@@ -82,12 +82,8 @@ module DoxyHaml
 
     private
 
-    def sort_by_name objects
-      objects.sort_by { |o| o.name }
-    end
-
     def sort_methods methods
-      methods.sort_by { |m| [m.name, m.parameters.count] }.partition { |m| m.destructor? }.flatten.partition { |m| m.constructor? }.flatten
+      methods.sort_by { |m| [alpha_name(m.name), m.parameters.count] }.partition { |m| m.destructor? }.flatten.partition { |m| m.constructor? }.flatten
     end
 
     def xpath_or_attributes kind

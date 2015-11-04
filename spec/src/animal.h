@@ -86,6 +86,8 @@ namespace zoo {
      */
     virtual void feed(const int volume) = 0;
 
+    void _kill();
+
   };
 }
 

@@ -49,6 +49,18 @@ module DoxyHaml
       end
       result
     end
+
+    def first_alpha_character string
+      /[^a-zA-Z]*([a-zA-Z]).*/.match(string)[1]
+    end
+
+    def alpha_name string
+      /[^a-zA-Z]*([a-zA-Z]*).*/.match(string)[1]
+    end
+
+    def sort_by_name objects
+      objects.sort_by { |o| [alpha_name(o.name), o.name[0]] }
+    end
     
   end
 
