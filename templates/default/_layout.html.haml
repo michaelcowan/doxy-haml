@@ -37,7 +37,7 @@
       $(document).ready( function() {
         index = lunr(function () {
           this.field('name', {boost: 10})
-          this.field('brief', {boost: 5})
+          this.field('brief', {boost: 2})
           this.field('description')
           this.field('type')
           this.ref('id')
@@ -53,7 +53,10 @@
           index.add(document);
         });
 
-        $('.search-field').keyup(function() {
+        $('.search-field').keyup(function(e) {
+          if(e.which == 13) {
+            return;
+          }
           $('.search-results').empty();
 
           var query = $(this).val();
@@ -72,6 +75,7 @@
               }));
             }
             $('.search-results').show();
+            $("html, body").animate({ scrollTop: 0 }, "slow");
           }
         });
 
