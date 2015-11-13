@@ -31,8 +31,8 @@ def class_by_name classes, class_name
   classes.select { |clazz| clazz.name == class_name }.first
 end
 
-def method_by_name methods, method_name
-  methods.select { |method| method.name == method_name }.first
+def function_by_name functions, function_name
+  functions.select { |function| function.name == function_name }.first
 end
 
 def enum_by_name enums, enum_name
