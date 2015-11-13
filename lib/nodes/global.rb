@@ -34,12 +34,12 @@ module DoxyHaml
       end).compact
     end
 
-    def public_methods
-      @public_methods ||= sort_methods scrape_public_methods_from_files
+    def public_functions
+      @public_functions ||= sort_functions scrape_public_functions_from_files
     end
 
-    def public_static_methods
-      @public_static_methods ||= sort_methods scrape_public_static_methods_from_files
+    def public_static_functions
+      @public_static_functions ||= sort_functions scrape_public_static_functions_from_files
     end
 
     def public_enums
@@ -57,25 +57,25 @@ module DoxyHaml
     private
 
     def patch_nodes_ids! nodes
-      nodes.each do |method|
-        method.id = "global_#{id_to_a_id(method.id)}"
+      nodes.each do |function|
+        function.id = "global_#{id_to_a_id(function.id)}"
       end
     end
 
-    def scrape_from_files method, condition_method
+    def scrape_from_files function, condition_function
       result = []
       parent.files.each do |file|
-        result.concat file.send(method) if file.send(condition_method)
+        result.concat file.send(function) if file.send(condition_function)
       end
       patch_nodes_ids! result
     end
 
-    def scrape_public_methods_from_files
-      scrape_from_files "public_methods", "has_public_methods?"
+    def scrape_public_functions_from_files
+      scrape_from_files "public_functions", "has_public_functions?"
     end
 
-    def scrape_public_static_methods_from_files
-      scrape_from_files "public_static_methods", "has_public_static_methods?"
+    def scrape_public_static_functions_from_files
+      scrape_from_files "public_static_functions", "has_public_static_functions?"
     end
 
     def scrape_public_enums_from_files

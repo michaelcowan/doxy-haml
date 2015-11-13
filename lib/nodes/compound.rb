@@ -40,20 +40,20 @@ module DoxyHaml
       link_to link_name, filename
     end
 
-    def has_public_methods?
-      not public_methods.empty?
+    def has_public_functions?
+      not public_functions.empty?
     end
 
-    def public_methods
-      @public_methods ||= sort_methods parse_public_methods
+    def public_functions
+      @public_functions ||= sort_functions parse_public_functions
     end
 
-    def has_public_static_methods?
-      not public_static_methods.empty?
+    def has_public_static_functions?
+      not public_static_functions.empty?
     end
 
-    def public_static_methods
-      @public_static_methods ||= sort_methods parse_public_static_methods
+    def public_static_functions
+      @public_static_functions ||= sort_functions parse_public_static_functions
     end
 
     def has_public_enums?
@@ -82,8 +82,8 @@ module DoxyHaml
 
     private
 
-    def sort_methods methods
-      methods.sort_by { |m| [alpha_name(m.name), m.parameters.count] }.partition { |m| m.destructor? }.flatten.partition { |m| m.constructor? }.flatten
+    def sort_functions functions
+      functions.sort_by { |m| [alpha_name(m.name), m.parameters.count] }.partition { |m| m.destructor? }.flatten.partition { |m| m.constructor? }.flatten
     end
 
     def xpath_or_attributes kind
@@ -101,15 +101,15 @@ module DoxyHaml
       end
     end
 
-    def parse_public_methods
-      map_xpath memberdef_xpath(["public-func", "func"], "function", "no") do |method|
-        Method.new method['id'], self, method
+    def parse_public_functions
+      map_xpath memberdef_xpath(["public-func", "func"], "function", "no") do |function|
+        Function.new function['id'], self, function
       end
     end
 
-    def parse_public_static_methods
-      map_xpath memberdef_xpath(["public-static-func", "func"], "function", "yes") do |method|
-        Method.new method['id'], self, method
+    def parse_public_static_functions
+      map_xpath memberdef_xpath(["public-static-func", "func"], "function", "yes") do |function|
+        Function.new function['id'], self, function
       end
     end
 

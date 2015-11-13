@@ -3,8 +3,8 @@ require 'spec_helper'
 describe "DoxyHaml Monkey Class Parser" do
 
   before(:all) do
-    @expected_public_methods = ["canSee", "feed", "getNumberOfLegs"]
-    @expected_public_static_methods = ["numberOfMonkeys"]
+    @expected_public_functions = ["canSee", "feed", "getNumberOfLegs"]
+    @expected_public_static_functions = ["numberOfMonkeys"]
     @expected_public_super_classes = ["Animal"]
     parser = DoxyHaml::Parser.new "spec/doxygen/xml"
     namespace = namespace_by_name parser.index.namespaces, "zoo"
@@ -63,16 +63,16 @@ describe "DoxyHaml Monkey Class Parser" do
     expect(@monkey.abstract?).to be false
   end
 
-  it "should have public method(s)" do
-    expect(@monkey.has_public_methods?).to be true
-    public_method_names = map_node @monkey.public_methods do |method| method.name end
-    expect(public_method_names).to eq @expected_public_methods
+  it "should have public function(s)" do
+    expect(@monkey.has_public_functions?).to be true
+    public_function_names = map_node @monkey.public_functions do |function| function.name end
+    expect(public_function_names).to eq @expected_public_functions
   end
 
-  it "should have public static method(s)" do
-    expect(@monkey.has_public_static_methods?).to be true
-    public_static_method_names = map_node @monkey.public_static_methods do |method| method.name end
-    expect(public_static_method_names).to match_array @expected_public_static_methods
+  it "should have public static function(s)" do
+    expect(@monkey.has_public_static_functions?).to be true
+    public_static_function_names = map_node @monkey.public_static_functions do |function| function.name end
+    expect(public_static_function_names).to match_array @expected_public_static_functions
   end
 
   it "should have public super class(es)" do

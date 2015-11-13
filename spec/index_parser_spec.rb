@@ -7,8 +7,8 @@ describe "DoxyHaml Index Parser" do
     @namespaces_beginning_with_z = ["zoo"]
     @expected_classes = ["Animal", "Bar", "Cage", "CagePath", "Monkey", "Organism", "Person", "Rect", "Tent"]
     @classes_beginning_with_c = ["Cage", "CagePath"]
-    @expected_method_names = ["Animal", "Animal", "~Animal", "canFly", "canSee", "canSee", "emptyCage", "emptyCagePath", "emptyRect", "feed", "feed", "getAnimal", "getNumberOfLegs", "getNumberOfLegs", "getPathFrom", "_kill", "numberOfMonkeys", "rect32", "setAnimal", "setDimensions", "setName", "setName"]
-    @methods_beginning_with_e = ["emptyCage", "emptyCagePath", "emptyRect"]
+    @expected_function_names = ["Animal", "Animal", "~Animal", "canFly", "canSee", "canSee", "emptyCage", "emptyCagePath", "emptyRect", "feed", "feed", "getAnimal", "getNumberOfLegs", "getNumberOfLegs", "getPathFrom", "_kill", "numberOfMonkeys", "rect32", "setAnimal", "setDimensions", "setName", "setName"]
+    @functions_beginning_with_e = ["emptyCage", "emptyCagePath", "emptyRect"]
     @expected_variable_names = ["current", "distance", "height", "minExhibits", "next", "pi", "width", "x", "y"]
     @variables_beginning_with_d = ["distance"]
     @expected_enumerations = ["Direction", "Kind", "State"]
@@ -42,14 +42,14 @@ describe "DoxyHaml Index Parser" do
     expect(class_names_beginning_with_c).to eq @classes_beginning_with_c
   end
 
-  it "should have method(s)" do
-    public_method_names = map_node @index.methods do |method| method.name end
-    expect(public_method_names).to eq @expected_method_names
+  it "should have function(s)" do
+    public_function_names = map_node @index.functions do |function| function.name end
+    expect(public_function_names).to eq @expected_function_names
   end
 
-  it "should have grouped methods" do
-    method_names_beginning_with_e = map_node @index.grouped_methods['e'] do |method| method.name end
-    expect(method_names_beginning_with_e).to eq @methods_beginning_with_e
+  it "should have grouped functions" do
+    function_names_beginning_with_e = map_node @index.grouped_functions['e'] do |function| function.name end
+    expect(function_names_beginning_with_e).to eq @functions_beginning_with_e
   end
 
   it "should have variable(s)" do

@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe "DoxyHaml Animal getPathFrom Method Parser" do
+describe "DoxyHaml Animal getPathFrom Function Parser" do
 
   before(:all) do
     @expected_parameters = ["cage", ""]
@@ -9,7 +9,7 @@ describe "DoxyHaml Animal getPathFrom Method Parser" do
     parser = DoxyHaml::Parser.new "spec/doxygen/xml"
     namespace = namespace_by_name parser.index.namespaces, "zoo"
     animal = class_by_name namespace.classes, "Animal"
-    @getPathFrom = method_by_name animal.public_methods, "getPathFrom"
+    @getPathFrom = function_by_name animal.public_functions, "getPathFrom"
   end
 
   it "should have a name" do

@@ -4,7 +4,7 @@
 %div
   %ul.nav.nav-tabs{:role => "tablist"}
     %li.active
-      %a{"data-toggle" => "tab", href: "#methods", role: "tab"} Methods
+      %a{"data-toggle" => "tab", href: "#functions", role: "tab"} Functions
     %li
       %a{"data-toggle" => "tab", href: "#enumerations", role: "tab"} Enumerations
     %li
@@ -15,8 +15,8 @@
       %a{"data-toggle" => "tab", href: "#namespaces", role: "tab"} Namespaces
 
   .tab-content
-    #methods.tab-pane.active{role: "tabpanel"}
-      = partial 'grouped_table', { group: index.grouped_methods }
+    #functions.tab-pane.active{role: "tabpanel"}
+      = partial 'grouped_table', { group: index.grouped_functions }
 
     #enumerations.tab-pane{role: "tabpanel"}
       = partial 'grouped_table', { group: index.grouped_enumerations }

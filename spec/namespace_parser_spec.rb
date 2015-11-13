@@ -3,8 +3,8 @@ require 'spec_helper'
 describe "DoxyHaml Namespace Parser" do
 
   before(:all) do
-    @expected_public_methods = ["emptyCagePath"]
-    @expected_public_static_methods = ["emptyCage"]
+    @expected_public_functions = ["emptyCagePath"]
+    @expected_public_static_functions = ["emptyCage"]
     @expected_classes = ["Animal", "Cage", "Monkey", "CagePath", "Organism"]
     @expected_namespaces = ["exhibit"]
 
@@ -73,16 +73,16 @@ describe "DoxyHaml Namespace Parser" do
     expect(namespace_names).to match_array @expected_namespaces
   end
 
-  it "should have public method(s)" do
-    expect(@namespace.has_public_methods?).to be true
-    public_method_names = map_node @namespace.public_methods do |method| method.name end
-    expect(public_method_names).to eq @expected_public_methods
+  it "should have public function(s)" do
+    expect(@namespace.has_public_functions?).to be true
+    public_function_names = map_node @namespace.public_functions do |function| function.name end
+    expect(public_function_names).to eq @expected_public_functions
   end
 
-  it "should have public static method(s)" do
-    expect(@namespace.has_public_static_methods?).to be true
-    public_static_method_names = map_node @namespace.public_static_methods do |method| method.name end
-    expect(public_static_method_names).to eq @expected_public_static_methods
+  it "should have public static function(s)" do
+    expect(@namespace.has_public_static_functions?).to be true
+    public_static_function_names = map_node @namespace.public_static_functions do |function| function.name end
+    expect(public_static_function_names).to eq @expected_public_static_functions
   end
 
 end

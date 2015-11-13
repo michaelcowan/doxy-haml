@@ -3,11 +3,11 @@ require 'spec_helper'
 describe "DoxyHaml Parameter Parser" do
 
   before(:all) do
-    @expected_public_methods = ["setAnimal", "getAnimal", "setDimensions"]
+    @expected_public_functions = ["setAnimal", "getAnimal", "setDimensions"]
     parser = DoxyHaml::Parser.new "spec/doxygen/xml"
     namespace = namespace_by_name parser.index.namespaces, "zoo"
     cage = class_by_name namespace.classes, "Cage"
-    setAnimal = method_by_name cage.public_methods, "setAnimal"
+    setAnimal = function_by_name cage.public_functions, "setAnimal"
     @param = setAnimal.parameters[1]
   end
 

@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe "DoxyHaml Cage setAnimal Method Parser" do
+describe "DoxyHaml Cage setAnimal Function Parser" do
 
   before(:all) do
     @expected_parameters = ["animal", "mate"]
@@ -9,7 +9,7 @@ describe "DoxyHaml Cage setAnimal Method Parser" do
     parser = DoxyHaml::Parser.new "spec/doxygen/xml"
     namespace = namespace_by_name parser.index.namespaces, "zoo"
     cage = class_by_name namespace.classes, "Cage"
-    @setAnimal = method_by_name cage.public_methods, "setAnimal"
+    @setAnimal = function_by_name cage.public_functions, "setAnimal"
   end
 
   it "should have a name" do

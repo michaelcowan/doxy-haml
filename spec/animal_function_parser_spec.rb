@@ -1,12 +1,12 @@
 require 'spec_helper'
 
-describe "DoxyHaml Animal getNumberOfLegs Method Parser" do
+describe "DoxyHaml Animal getNumberOfLegs Function Parser" do
 
   before(:all) do
     parser = DoxyHaml::Parser.new "spec/doxygen/xml"
     namespace = namespace_by_name parser.index.namespaces, "zoo"
     animal = class_by_name namespace.classes, "Animal"
-    @getNumberOfLegs = method_by_name animal.public_methods, "getNumberOfLegs"
+    @getNumberOfLegs = function_by_name animal.public_functions, "getNumberOfLegs"
   end
 
   it "should have a name" do

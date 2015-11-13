@@ -3,13 +3,13 @@ require 'cgi'
 
 module HtmlHelpers
   
-  def method_labels method
+  def function_labels function
     labels = []
-    labels << "static" if method.static?
-    labels << "pure virtual" if method.pure_virtual?
-    labels << "virtual" if method.virtual?
-    labels << "constructor" if method.constructor?
-    labels << "destructor" if method.destructor?
+    labels << "static" if function.static?
+    labels << "pure virtual" if function.pure_virtual?
+    labels << "virtual" if function.virtual?
+    labels << "constructor" if function.constructor?
+    labels << "destructor" if function.destructor?
     labels
   end
 
@@ -27,7 +27,7 @@ module HtmlHelpers
     data =[]
     data = get_lunr_objects(classes, "class") 
     data += get_lunr_objects(namespaces, "namespace")
-    #data += get_lunr_objects(methods, "method")
+    data += get_lunr_objects(functions, "function")
     data += get_lunr_objects(variables, "variable")
     data += get_lunr_objects(enumerations, "enumeration")
     data += get_lunr_objects(enumerators, "enumerator")

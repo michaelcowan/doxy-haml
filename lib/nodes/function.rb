@@ -1,6 +1,6 @@
 module DoxyHaml
 
-  class Method < Definition
+  class Function < Definition
 
     def initialize id, parent, xml
       super id, parent, xml
@@ -98,8 +98,8 @@ module DoxyHaml
 
     def parse_reimplementedby
       if reimplementedby?
-        @reimplementedby = map_xpath %Q{reimplementedby} do |method|
-          find_node_by_id method['refid']
+        @reimplementedby = map_xpath %Q{reimplementedby} do |function|
+          find_node_by_id function['refid']
         end
       end
     end

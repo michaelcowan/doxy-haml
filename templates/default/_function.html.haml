@@ -1,0 +1,49 @@
+= partial "anchor", { anchor: function.anchor }
+= partial "member_title", { member: function, labels: function_labels(function) }
+
+%small
+  - if function.reimplements?
+    Implements
+    = function.reimplements.html_fully_qualified_name
+
+  - if function.reimplementedby?
+    Implemented by
+    = html_fully_qualified_names_as_sentence function.reimplementedby
+
+%h5
+  - if function.virtual? or function.pure_virtual?
+    virtual
+  - unless function.constructor? or function.destructor?
+    = function.return_type.html_name
+  
+  = function.name
+  %span> (
+  - function.parameters.each do |parameter|
+    = parameter.html_definition
+    - unless parameter == function.parameters.last
+      %span> ,&nbsp;
+  %span> )
+  - if function.const?
+    &nbsp;const
+
+- if function.has_description?
+  %h4 Description
+  %p
+    = function.html_description
+
+- if function.has_parameters?
+  %h4 Parameters
+  = partial 'parameters', { parameters: function.parameters }
+
+- if function.has_return_type?
+  %h4 Returns
+  .table-responsive
+    %table.table.table-striped.table-hover
+      %tr
+        %td
+          = function.return_type.html_name
+        %td
+          - if function.has_return_brief?
+            = function.html_return_brief
+
+%hr

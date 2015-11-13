@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe "DoxyHaml Animal feed Method Parser" do
+describe "DoxyHaml Animal feed Function Parser" do
 
   before(:all) do
     @expected_parameters = ["volume"]
@@ -8,7 +8,7 @@ describe "DoxyHaml Animal feed Method Parser" do
     parser = DoxyHaml::Parser.new "spec/doxygen/xml"
     namespace = namespace_by_name parser.index.namespaces, "zoo"
     animal = class_by_name namespace.classes, "Animal"
-    @feed = method_by_name animal.public_methods, "feed"
+    @feed = function_by_name animal.public_functions, "feed"
   end
 
   it "should have a name" do
@@ -108,7 +108,7 @@ describe "DoxyHaml Animal feed Method Parser" do
 
   it "should be reimplemented by" do
     expect(@feed.reimplementedby?).to be true
-    reimplementedby = map_node @feed.reimplementedby do |method| method.fully_qualified_name end
+    reimplementedby = map_node @feed.reimplementedby do |function| function.fully_qualified_name end
     expect(reimplementedby).to match @expected_reimplementedby
   end
 

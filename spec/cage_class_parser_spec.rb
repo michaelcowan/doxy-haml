@@ -3,7 +3,7 @@ require 'spec_helper'
 describe "DoxyHaml Cage Class Parser" do
 
   before(:all) do
-    @expected_public_methods = ["setAnimal", "getAnimal", "setDimensions"]
+    @expected_public_functions = ["setAnimal", "getAnimal", "setDimensions"]
     @expected_classes = ["Bar"]
     parser = DoxyHaml::Parser.new "spec/doxygen/xml"
     namespace = namespace_by_name parser.index.namespaces, "zoo"
@@ -66,14 +66,14 @@ describe "DoxyHaml Cage Class Parser" do
     expect(@cage.abstract?).to be false
   end
 
-  it "should have public method(s)" do
-    expect(@cage.has_public_methods?).to be true
-    public_method_names = map_node @cage.public_methods do |method| method.name end
-    expect(public_method_names).to match_array @expected_public_methods
+  it "should have public function(s)" do
+    expect(@cage.has_public_functions?).to be true
+    public_function_names = map_node @cage.public_functions do |function| function.name end
+    expect(public_function_names).to match_array @expected_public_functions
   end
 
-  it "should not have public static method(s)" do
-    expect(@cage.has_public_static_methods?).to be false
+  it "should not have public static function(s)" do
+    expect(@cage.has_public_static_functions?).to be false
   end
 
   it "should not have public super class(es)" do

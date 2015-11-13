@@ -3,15 +3,15 @@ require 'spec_helper'
 describe "DoxyHaml Animal Class Parser" do
 
   before(:all) do
-    @expected_public_methods = ["Animal", "Animal", "~Animal", "canFly", "feed", "getNumberOfLegs", "getPathFrom", "_kill"]
+    @expected_public_functions = ["Animal", "Animal", "~Animal", "canFly", "feed", "getNumberOfLegs", "getPathFrom", "_kill"]
     @expected_public_enums = ["Kind"]
     @expected_public_super_classes = ["Organism"]
     @expected_public_derived_classes = ["Monkey"]
     parser = DoxyHaml::Parser.new "spec/doxygen/xml"
     namespace = namespace_by_name parser.index.namespaces, "zoo"
     @animal = class_by_name namespace.classes, "Animal"
-    @constructor = method_by_name @animal.public_methods, "Animal"
-    @destructor = method_by_name @animal.public_methods, "~Animal"
+    @constructor = function_by_name @animal.public_functions, "Animal"
+    @destructor = function_by_name @animal.public_functions, "~Animal"
   end
 
   it "should have a qualifying parent" do
@@ -71,17 +71,17 @@ describe "DoxyHaml Animal Class Parser" do
     expect(@animal.abstract?).to be true
   end
 
-  it "should have public method(s)" do
-    expect(@animal.has_public_methods?).to be true
-    public_method_names = map_node @animal.public_methods do |method| method.name end
-    expect(public_method_names).to eq @expected_public_methods
+  it "should have public function(s)" do
+    expect(@animal.has_public_functions?).to be true
+    public_function_names = map_node @animal.public_functions do |function| function.name end
+    expect(public_function_names).to eq @expected_public_functions
   end
 
   it "should put default constructor before other constructors" do
-    expect(@animal.public_methods[0].name).to eq @animal.name
-    expect(@animal.public_methods[0].parameters.count).to be 0
-    expect(@animal.public_methods[1].name).to eq @animal.name
-    expect(@animal.public_methods[1].parameters.count).to be > 0
+    expect(@animal.public_functions[0].name).to eq @animal.name
+    expect(@animal.public_functions[0].parameters.count).to be 0
+    expect(@animal.public_functions[1].name).to eq @animal.name
+    expect(@animal.public_functions[1].parameters.count).to be > 0
   end
 
   it "should have a constructor" do
@@ -94,8 +94,8 @@ describe "DoxyHaml Animal Class Parser" do
     expect(@destructor.has_return_type?).to be false
   end
 
-  it "should not have public static method(s)" do
-    expect(@animal.has_public_static_methods?).to be false
+  it "should not have public static function(s)" do
+    expect(@animal.has_public_static_functions?).to be false
   end
 
   it "should have public enum(s)" do

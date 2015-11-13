@@ -32,12 +32,12 @@ module DoxyHaml
       @grouped_classes ||= group_by_name classes
     end
 
-    def methods
-      @methods ||= sort_by_name(get_all("public_methods") + get_all("public_static_methods"))
+    def functions
+      @functions ||= sort_by_name(get_all("public_functions") + get_all("public_static_functions"))
     end
 
-    def grouped_methods
-      @grouped_methods ||= group_by_name methods
+    def grouped_functions
+      @grouped_functions ||= group_by_name functions
     end
 
     def variables
@@ -73,8 +73,8 @@ module DoxyHaml
     def create_all_nodes
       namespaces
       classes.each do |clazz|
-        clazz.public_methods
-        clazz.public_static_methods
+        clazz.public_functions
+        clazz.public_static_functions
         clazz.public_enums
         clazz.public_variables
         clazz.public_static_variables

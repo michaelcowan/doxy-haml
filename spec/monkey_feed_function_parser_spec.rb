@@ -1,13 +1,13 @@
 require 'spec_helper'
 
-describe "DoxyHaml Monkey feed Method Parser" do
+describe "DoxyHaml Monkey feed Function Parser" do
 
   before(:all) do
     @expected_parameters = ["volume"]
     parser = DoxyHaml::Parser.new "spec/doxygen/xml"
     namespace = namespace_by_name parser.index.namespaces, "zoo"
     monkey = class_by_name namespace.classes, "Monkey"
-    @feed = method_by_name monkey.public_methods, "feed"
+    @feed = function_by_name monkey.public_functions, "feed"
   end
 
   it "should have a name" do
