@@ -1,3 +1,6 @@
+require 'json'
+require 'cgi'
+
 module HtmlHelpers
   
   def method_labels method
@@ -18,6 +21,33 @@ module HtmlHelpers
 
   def html_fully_qualified_names_as_sentence objects
     objects.map { |m| m.html_fully_qualified_name }.to_sentence
+  end
+
+  def lunr_data
+    data =[]
+    data = get_lunr_objects(classes, "class") 
+    data += get_lunr_objects(namespaces, "namespace")
+    #data += get_lunr_objects(methods, "method")
+    data += get_lunr_objects(variables, "variable")
+    data += get_lunr_objects(enumerations, "enumeration")
+    data += get_lunr_objects(enumerators, "enumerator")
+    data
+  end
+
+  def get_lunr_objects nodes, type
+    nodes.map do |node|
+      object_for_lunr node, type
+    end
+  end
+
+  def object_for_lunr node, type
+    {
+      id: CGI::escapeHTML(node.html_name),
+      name: node.name,
+      brief: node.brief,
+      description: node.description,
+      type: type,
+    }
   end
 
 end

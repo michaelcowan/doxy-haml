@@ -5,18 +5,20 @@ module DoxyHaml
 
   class Renderer
 
-    def initialize(index, template_folder, layout, props)
+    def initialize index, template_folder, layout, props
       @index, @template_folder, @layout, @props = index, template_folder, layout, props
 
       load_helpers @template_folder
     end
 
-    def render_to_file(file, template, locals)
+    def render_to_file file, template, locals
       FileUtils.mkdir_p ::File.dirname(file)
       ::File.open(file, 'w') do |f|
-        f.write render(@layout, locals) {
-          render template, locals
-        }
+        if file.end_with? ".html"
+          f.write render(@layout, locals) { render template, locals }
+        else
+          f.write render template, locals
+        end
       end
     end
 

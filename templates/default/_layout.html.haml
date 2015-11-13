@@ -7,6 +7,7 @@
     %link{href: "http://getbootstrap.com/examples/dashboard/dashboard.css", rel: "stylesheet"}
     %script{src: "https://code.jquery.com/jquery-2.1.4.min.js"}
     %script{src: "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"}
+    %script{src: "http://cdn.rawgit.com/olivernn/lunr.js/master/lunr.min.js"}
     :css
       h1 .label, h2 .label, h3 .label, h4 .label, h5 .label {
         vertical-align: top;
@@ -27,6 +28,64 @@
         top: -80px;
         visibility: hidden;
       }
+      .search-results {
+        display: none;
+        width: 100%;
+        z-index: 99;
+      }
+    :javascript
+      $(document).ready( function() {
+        index = lunr(function () {
+          this.field('name', {boost: 10})
+          this.field('brief', {boost: 5})
+          this.field('description')
+          this.field('type')
+          this.ref('id')
+        });
+
+        // TODO When hosted on a web server it would be better to load from search.json
+        // $.getJSON(search_json_url, function(json) {
+        //   documents = json;
+        // });
+        var documents = $.parseJSON('#{lunr_data.to_json}');
+
+        documents.forEach(function (document) {
+          index.add(document);
+        });
+
+        $('.search-field').keyup(function() {
+          $('.search-results').empty();
+
+          var query = $(this).val();
+          if(query === '') {
+            $('.search-results').hide();
+          }
+          else {
+            $('.search-results').append($('<h2/>').html("Search Results"));
+            var results = index.search(query);
+            if(results.length == 0) {
+              $('.search-results').append($('<p><strong>No results found</strong></p>'));
+            }
+            else {
+              $('.search-results').append(results.map(function(result) {
+                return $('<p/>').html($('<textarea/>').html(result.ref).text());
+              }));
+            }
+            $('.search-results').show();
+          }
+        });
+
+        $('.search-field').keypress(function(e) {
+          if(e.which == 13) {
+            e.preventDefault();
+            var first_hit = $(".search-results a:first");
+            if(first_hit.length !== 0) {
+              first_hit[0].click();
+            }
+          }
+        });
+
+      });
   %body
     %nav.navbar.navbar-default.navbar-fixed-top
       .container-fluid
@@ -39,11 +98,12 @@
           %a.navbar-brand{href: "index.html"}
             = title
         .collapse.navbar-collapse#collapse
-          %ul.nav.navbar-nav
-            - namespaces.each do |namespace|
-              = partial "namespace_dropdown", {namespace: namespace}
+          %form.navbar-form.navbar-right{:role => "search"}
+            .form-group
+              %input.form-control.search-field{placeholder: "Search", type: "text", autofocus: "autofocus"}
 
     .container-fluid
       .row
         .col-sm-12.main
-          = yield 
+          .jumbotron.search-results
+          = yield
