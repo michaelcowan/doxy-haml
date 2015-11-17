@@ -16,8 +16,8 @@ module DoxyHaml
       @namespaces ||= (get_namespaces @global).unshift @global
     end
 
-    def grouped_namespaces
-      @grouped_namespaces ||= group_by_name namespaces
+    def indexed_namespaces
+      @indexed_namespaces ||= index_by_name namespaces
     end
 
     def has_classes?
@@ -28,40 +28,40 @@ module DoxyHaml
       @classes ||= sort_by_name(get_classes @global)
     end
 
-    def grouped_classes
-      @grouped_classes ||= group_by_name classes
+    def indexed_classes
+      @indexed_classes ||= index_by_name classes
     end
 
     def functions
       @functions ||= sort_by_name(get_all("public_functions") + get_all("public_static_functions"))
     end
 
-    def grouped_functions
-      @grouped_functions ||= group_by_name functions
+    def indexed_functions
+      @indexed_functions ||= index_by_name functions
     end
 
     def variables
       @variables ||= sort_by_name(get_all "public_variables")
     end
 
-    def grouped_variables
-      @grouped_variables ||= group_by_name variables
+    def indexed_variables
+      @indexed_variables ||= index_by_name variables
     end
 
     def enumerations
       @enumerations ||= sort_by_name(get_all "public_enums")
     end
 
-    def grouped_enumerations
-      @grouped_enumerations ||= group_by_name enumerations
+    def indexed_enumerations
+      @indexed_enumerations ||= index_by_name enumerations
     end
 
     def enumerators
       @enumerators ||= sort_by_name(get_enumerators(enumerations))
     end
 
-    def grouped_enumerators
-      @grouped_enumerators ||= group_by_name enumerators
+    def indexed_enumerators
+      @indexed_enumerators ||= index_by_name enumerators
     end
 
     def files
@@ -82,7 +82,7 @@ module DoxyHaml
       files
     end
 
-    def group_by_name objects
+    def index_by_name objects
       objects.group_by { |o| first_alpha_character(o.name).downcase }
     end
 

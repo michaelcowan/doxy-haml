@@ -27,7 +27,7 @@ describe "DoxyHaml Index Parser" do
   end
 
   it "should have grouped namespaces" do
-    namespaces_beginning_with_z = map_node @index.grouped_namespaces['z'] do |namespace| namespace.name end
+    namespaces_beginning_with_z = map_node @index.indexed_namespaces['z'] do |namespace| namespace.name end
     expect(namespaces_beginning_with_z).to eq @namespaces_beginning_with_z
   end
 
@@ -38,7 +38,7 @@ describe "DoxyHaml Index Parser" do
   end
 
   it "should have grouped classes" do
-    class_names_beginning_with_c = map_node @index.grouped_classes['c'] do |clazz| clazz.name end
+    class_names_beginning_with_c = map_node @index.indexed_classes['c'] do |clazz| clazz.name end
     expect(class_names_beginning_with_c).to eq @classes_beginning_with_c
   end
 
@@ -48,7 +48,7 @@ describe "DoxyHaml Index Parser" do
   end
 
   it "should have grouped functions" do
-    function_names_beginning_with_e = map_node @index.grouped_functions['e'] do |function| function.name end
+    function_names_beginning_with_e = map_node @index.indexed_functions['e'] do |function| function.name end
     expect(function_names_beginning_with_e).to eq @functions_beginning_with_e
   end
 
@@ -58,7 +58,7 @@ describe "DoxyHaml Index Parser" do
   end
 
   it "should have grouped variables" do
-    variable_names_beginning_with_d = map_node @index.grouped_variables['d'] do |variable| variable.name end
+    variable_names_beginning_with_d = map_node @index.indexed_variables['d'] do |variable| variable.name end
     expect(variable_names_beginning_with_d).to eq @variables_beginning_with_d
   end
 
@@ -68,7 +68,7 @@ describe "DoxyHaml Index Parser" do
   end
 
   it "should have grouped enumerations" do
-    enumerations_names_beginning_with_k = map_node @index.grouped_enumerations['k'] do |enum| enum.name end
+    enumerations_names_beginning_with_k = map_node @index.indexed_enumerations['k'] do |enum| enum.name end
     expect(enumerations_names_beginning_with_k).to eq @enumerations_names_beginning_with_k
   end
 
@@ -78,7 +78,7 @@ describe "DoxyHaml Index Parser" do
   end
 
   it "should have grouped enumerators" do
-    enumerators_names_beginning_with_r = map_node @index.grouped_enumerators['r'] do |enum| enum.name end
+    enumerators_names_beginning_with_r = map_node @index.indexed_enumerators['r'] do |enum| enum.name end
     expect(enumerators_names_beginning_with_r).to eq @enumerators_names_beginning_with_r
   end
 

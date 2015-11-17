@@ -16,16 +16,16 @@
 
   .tab-content
     #functions.tab-pane.active{role: "tabpanel"}
-      = partial 'grouped_table', { group: index.grouped_functions }
+      = partial 'grouped_table', { group: index.indexed_functions }
 
     #enumerations.tab-pane{role: "tabpanel"}
-      = partial 'grouped_table', { group: index.grouped_enumerations }
+      = partial 'grouped_table', { group: index.indexed_enumerations }
 
     #enumerators.tab-pane{role: "tabpanel"}
-      = partial 'grouped_table', { group: index.grouped_enumerators }
+      = partial 'grouped_table', { group: index.indexed_enumerators }
 
     #classes.tab-pane{role: "tabpanel"}
-      = partial 'grouped_table', { group: index.grouped_classes }
+      = partial 'grouped_table', { group: index.indexed_classes }
 
     #namespaces.tab-pane{role: "tabpanel"}
-      = partial 'grouped_table', { group: index.grouped_namespaces }
+      = partial 'grouped_table', { group: index.indexed_namespaces }
