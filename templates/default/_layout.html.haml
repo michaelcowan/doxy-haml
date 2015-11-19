@@ -8,6 +8,7 @@
     %script{src: "https://code.jquery.com/jquery-2.1.4.min.js"}
     %script{src: "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"}
     %script{src: "http://cdn.rawgit.com/olivernn/lunr.js/master/lunr.min.js"}
+    %script{src: "search.json"}
     :css
       h1 .label, h2 .label, h3 .label, h4 .label, h5 .label {
         vertical-align: top;
@@ -43,11 +44,11 @@
           this.ref('id')
         });
 
-        // TODO When hosted on a web server it would be better to load from search.json
+        // TODO When hosted on a web server it would be better to load from search.json without usin JSONP
         // $.getJSON(search_json_url, function(json) {
         //   documents = json;
         // });
-        var documents = $.parseJSON('#{lunr_data.to_json}');
+        var documents = lunrData['entries'];
 
         documents.forEach(function (document) {
           index.add(document);
