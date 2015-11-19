@@ -42,7 +42,7 @@ module HtmlHelpers
 
   def object_for_lunr node, type
     {
-      id: CGI::escapeHTML(node.html_name),
+      id: CGI::escapeHTML(node.html_fully_qualified_name),
       name: CGI::escapeHTML(node.name),
       brief: CGI::escapeHTML(node.brief),
       description: CGI::escapeHTML(node.description),
