@@ -18,6 +18,14 @@ describe "DoxyHaml Animal Enum Value Parser" do
     expect(@value.html_name).to match /<a href='classzoo_1_1_animal.html#\w{67}'>Mammal<\/a>/
   end
 
+  it "should have a fully qualified name" do
+    expect(@value.fully_qualified_name).to eq "zoo::Animal::Kind::Mammal"
+  end
+
+  it "should have an html fully qualified name" do
+    expect(@value.html_fully_qualified_name).to match /<a href='namespacezoo.html'>zoo<\/a>::<a href='classzoo_1_1_animal.html'>Animal<\/a>::<a href='classzoo_1_1_animal.html#\w{34}'>Kind<\/a>::<a href='classzoo_1_1_animal.html#\w{67}'>Mammal<\/a>/
+  end
+
   it "should have an anchor" do
     expect(@value.anchor).to match /\w{67}/
   end

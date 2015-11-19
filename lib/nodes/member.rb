@@ -1,9 +1,11 @@
 require 'nodes/mixins/describable'
+require 'nodes/mixins/qualifiable'
 
 module DoxyHaml
 
   class Member < Node
     include Describable
+    include Qualifiable
 
     def name
       xpath_first_content %Q{name}
