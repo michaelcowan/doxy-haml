@@ -24,7 +24,7 @@ module HtmlHelpers
   end
 
   def lunr_data
-    data =[]
+    data = []
     data = get_lunr_objects(classes, "class") 
     data += get_lunr_objects(namespaces, "namespace")
     data += get_lunr_objects(functions, "function")
@@ -43,10 +43,10 @@ module HtmlHelpers
   def object_for_lunr node, type
     {
       id: CGI::escapeHTML(node.html_name),
-      name: node.name,
-      brief: node.brief,
-      description: node.description,
-      type: type,
+      name: CGI::escapeHTML(node.name),
+      brief: CGI::escapeHTML(node.brief),
+      description: CGI::escapeHTML(node.description),
+      type: CGI::escapeHTML(type),
     }
   end
 
