@@ -23,18 +23,18 @@ RSpec.configure do |config|
   }
 end
 
-def namespace_by_name namespaces, namespace_name
-  namespaces.select { |namespace| namespace.name == namespace_name }.first
+def namespace_by_name namespaces, namespace_name, number = 0
+  namespaces.select { |namespace| namespace.name == namespace_name }[number]
 end
 
-def class_by_name classes, class_name
-  classes.select { |clazz| clazz.name == class_name }.first
+def class_by_name classes, class_name, number = 0
+  classes.select { |clazz| clazz.name == class_name }[number]
 end
 
-def function_by_name functions, function_name
-  functions.select { |function| function.name == function_name }.first
+def function_by_name functions, function_name, number = 0
+  functions.select { |function| function.name == function_name }[number]
 end
 
-def enum_by_name enums, enum_name
-  enums.select { |enum| enum.name == enum_name }.first
+def enum_by_name enums, enum_name, number = 0
+  enums.select { |enum| enum.name == enum_name }[number]
 end

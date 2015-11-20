@@ -26,10 +26,7 @@ module DoxyHaml
     end
 
     def id_to_href id
-      "#{id}.html"
-    end
-
-    def id_to_href_anchor id
+      return "#{id}.html" unless /_[a-z0-9]{34,}/.match id
       *a, b = id.split('_', -1)
       "#{a.join('_')}.html##{b}"
     end

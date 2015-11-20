@@ -7,10 +7,13 @@ describe "DoxyHaml Animal Class Parser" do
     @expected_public_enums = ["Kind"]
     @expected_public_super_classes = ["Organism"]
     @expected_public_derived_classes = ["Monkey"]
+    @expected_constructor_types = ["Kind"]
+    @expected_constructor_html_types = [/<a href='classzoo_1_1_animal.html#\w{34}'>Kind<\/a>/]
     parser = DoxyHaml::Parser.new "spec/doxygen/xml"
     namespace = namespace_by_name parser.index.namespaces, "zoo"
     @animal = class_by_name namespace.classes, "Animal"
     @constructor = function_by_name @animal.public_functions, "Animal"
+    @constructor_with_argument = function_by_name @animal.public_functions, "Animal", 1
     @destructor = function_by_name @animal.public_functions, "~Animal"
   end
 
@@ -87,6 +90,12 @@ describe "DoxyHaml Animal Class Parser" do
   it "should have a constructor" do
     expect(@constructor.constructor?).to be true
     expect(@constructor.has_return_type?).to be false
+  end
+
+  it "should have a constructor with arguments" do
+    types = map_node @constructor_with_argument.parameters do |parameter| parameter.type end
+    expect(types.map do |type| type.name end).to match @expected_constructor_types
+    expect(types.map do |type| type.html_name end).to match @expected_constructor_html_types
   end
 
   it "should have a destructor" do

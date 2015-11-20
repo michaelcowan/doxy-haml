@@ -12,7 +12,7 @@ module DoxyHaml
     end
 
     def html_name
-      link_to name, id_to_href_anchor(id)
+      link_to name, id_to_href(id)
     end
 
     def anchor
