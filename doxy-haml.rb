@@ -52,7 +52,7 @@ def main
 
   unless @opt[:skip_validation]
     puts "Validating HTML".yellow.underline
-    HTML::Proofer.new(@opt[:output_folder], {verbosity: :error}).run
+    HTML::Proofer.new(@opt[:output_folder], {verbosity: :error, disable_external: true}).run
   end
 
   puts "Finished in #{(Time.now - start_time).round(1)} seconds!".green
