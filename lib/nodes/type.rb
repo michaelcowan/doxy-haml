@@ -7,7 +7,7 @@ module DoxyHaml
     end
 
     def html_name
-      link_to_refs @xml
+      doxygen_markup_to_html @xml
     end
 
   end

@@ -11,7 +11,7 @@ module DoxyHaml
     end
 
     def html_brief
-      @html_brief ||= link_to_refs xpath_first %Q{briefdescription/para}
+      @html_brief ||= doxygen_markup_to_html xpath_first %Q{briefdescription/para}
     end
 
     def has_description?
@@ -23,7 +23,7 @@ module DoxyHaml
     end
 
     def html_description
-      @html_description ||= link_to_refs xpath_first %Q{detaileddescription/para}
+      @html_description ||= doxygen_markup_to_html xpath_first %Q{detaileddescription/para}
     end
 
     def has_author?

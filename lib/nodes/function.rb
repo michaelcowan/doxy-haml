@@ -28,7 +28,7 @@ module DoxyHaml
     end
 
     def html_return_brief
-      @html_return_brief ||= link_to_refs xpath_first %Q{detaileddescription/para/simplesect[@kind='return']/para}
+      @html_return_brief ||= doxygen_markup_to_html xpath_first %Q{detaileddescription/para/simplesect[@kind='return']/para}
     end
 
     def has_return_type?

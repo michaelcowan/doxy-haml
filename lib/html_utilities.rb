@@ -18,13 +18,6 @@ module DoxyHaml
       "<a id='#{id}'/>"
     end
 
-    def link_to_refs node
-      list = map_node node.children do |child|
-        child = (!child.text? and child.name == "ref") ? link_to_refid(child) : child
-      end
-      list.join.strip
-    end
-
     def id_to_href id
       return "#{id}.html" unless /_[a-z0-9]{34,}/.match id
       *a, b = id.split('_', -1)
@@ -36,8 +29,30 @@ module DoxyHaml
       id.split('_').last
     end
 
-    def link_to_refid node
-      link_to(node.content, id_to_href(node['refid']))
+    def doxygen_markup_to_html doc
+      doc.css('programlisting').each { |n| n.name = 'pre'; n['class'] = 'source' }
+      doc.css('codeline').each { |n| n.name = 'span'; n['class'] = 'source_line' }
+      doc.css('highlight').each { |n| n.name = 'span'; n['class'] = "cpp_#{n['class']}" }
+      doc.css('sp').each { |n| n.replace(" ") }
+      # docMarkupType
+      doc.css('bold').each { |n| n.name = 'strong' }
+      doc.css('emphasis').each { |n| n.name = 'em' }
+      doc.css('computeroutput').each { |n| n.name = 'pre' }
+      doc.css('subscript').each { |n| n.name = 'sub' }
+      doc.css('superscript').each { |n| n.name = 'sup' }
+      doc.css('center').each { |n| n.name = 'center' }
+      doc.css('small').each { |n| n.name = 'small' }
+      # docURLLink
+      doc.css('ulink').each { |n| n.name = 'a'; n.attribute('url').name = 'href' }
+      # docRefTextType
+      doc.css('ref').each do |n|
+        n.name = 'a'
+        n.attribute('refid').name = 'href'
+        n['href'] = id_to_href n['href']
+        n.attribute('kindref').remove
+      end
+      # Generate HTML, remove extra spaces and substitute " for '
+      doc.inner_html.strip.gsub /"/, "'"
     end
 
 
