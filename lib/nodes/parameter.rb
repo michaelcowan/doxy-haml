@@ -48,7 +48,7 @@ module DoxyHaml
     end
 
     def html_description
-      @html_description ||= doxygen_markup_to_html xpath_first %Q{parameterdescription/para}
+      @html_description ||= doxygen_markup xpath_first %Q{parameterdescription/para}
     end
 
   end

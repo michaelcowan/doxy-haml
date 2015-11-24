@@ -29,7 +29,7 @@ module DoxyHaml
       id.split('_').last
     end
 
-    def doxygen_markup_to_html doc
+    def doxygen_markup doc, to_html = true
       doc.css('programlisting').each { |n| n.name = 'pre'; n['class'] = 'src' }
       doc.css('codeline').each { |n| n.name = 'span'; n['class'] = 'src-line' }
       doc.css('highlight').each { |n| n.name = 'span'; n['class'] = "src-#{n['class']}" }
@@ -51,8 +51,8 @@ module DoxyHaml
         n['href'] = id_to_href n['href']
         n.attribute('kindref').remove
       end
-      # Generate HTML, remove extra spaces and substitute " for '
-      doc.inner_html.strip.gsub /"/, "'"
+      # Generate text/HTML, remove extra spaces and substitute " for '
+      (to_html ? doc.inner_html : doc.inner_text).rstrip.gsub(/"/, "'")
     end
 
   end

@@ -7,7 +7,7 @@ module DoxyHaml
     end
 
     def html_name
-      doxygen_markup_to_html @xml
+      doxygen_markup @xml
     end
 
   end

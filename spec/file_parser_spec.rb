@@ -7,7 +7,7 @@ describe "DoxyHaml File Parser" do
     @file = file_by_name parser.index.files, "misc.h"
   end
 
-  it "should have a program listing" do
+  it "should have html source" do
     expected_source = [
       "<span class='src-preprocessor'>#ifndef MISC_H</span><span class='src-normal'></span>",
       "<span class='src-normal'></span><span class='src-preprocessor'>#define MISC_H</span><span class='src-normal'></span>",
@@ -36,8 +36,39 @@ describe "DoxyHaml File Parser" do
       "<span class='src-normal'></span>",
       "<span class='src-normal'></span><span class='src-preprocessor'>#endif // MISC_H</span>"
     ]
-    expect(@file.source).to eq expected_source
+    expect(@file.html_source).to eq expected_source
+  end
 
+  it "should have source" do
+    expected_source = [
+      "#ifndef MISC_H", 
+      "#define MISC_H", 
+      "",
+      "struct Rect {", 
+      "  int x;", 
+      "  int y;", 
+      "  int width;", 
+      "  int height;", 
+      "};", 
+      "",
+      "Rect * rect32();", 
+      "",
+      "static Rect * emptyRect();", 
+      "",
+      "enum Direction {", 
+      "  Up,", 
+      "  Down,", 
+      "  Left,", 
+      "  Right", 
+      "};", 
+      "",
+      "float pi;", 
+      "",
+      "static float e;", 
+      "",
+      "#endif // MISC_H"
+    ]
+    expect(@file.source).to eq expected_source
   end
 
 end
