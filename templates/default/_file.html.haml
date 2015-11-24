@@ -1,1 +1,4 @@
-= file.name
+= partial "member_title", { member: file, labels: nil }
+
+%pre
+  = file.source.join("<br/>")

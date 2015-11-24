@@ -30,9 +30,9 @@ module DoxyHaml
     end
 
     def doxygen_markup_to_html doc
-      doc.css('programlisting').each { |n| n.name = 'pre'; n['class'] = 'source' }
-      doc.css('codeline').each { |n| n.name = 'span'; n['class'] = 'source_line' }
-      doc.css('highlight').each { |n| n.name = 'span'; n['class'] = "cpp_#{n['class']}" }
+      doc.css('programlisting').each { |n| n.name = 'pre'; n['class'] = 'src' }
+      doc.css('codeline').each { |n| n.name = 'span'; n['class'] = 'src-line' }
+      doc.css('highlight').each { |n| n.name = 'span'; n['class'] = "src-#{n['class']}" }
       doc.css('sp').each { |n| n.replace(" ") }
       # docMarkupType
       doc.css('bold').each { |n| n.name = 'strong' }
@@ -54,7 +54,6 @@ module DoxyHaml
       # Generate HTML, remove extra spaces and substitute " for '
       doc.inner_html.strip.gsub /"/, "'"
     end
-
 
   end
 

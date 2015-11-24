@@ -52,8 +52,14 @@ enum Direction {
   Right
 };
 
-int pi;
+/**
+ *  Pi constant
+ */
+float pi;
 
-static int e;
+/**
+ *  e constant
+ */
+static float e;
 
 #endif // MISC_H

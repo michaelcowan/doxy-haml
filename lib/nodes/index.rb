@@ -68,6 +68,10 @@ module DoxyHaml
       @files ||= sort_by_name parse_files
     end
 
+    def indexed_files
+      @indexed_files ||= index_by_name files
+    end
+
     private
 
     def create_all_nodes

@@ -13,6 +13,8 @@
       %a{"data-toggle" => "tab", href: "#classes", role: "tab"} Classes
     %li
       %a{"data-toggle" => "tab", href: "#namespaces", role: "tab"} Namespaces
+    %li
+      %a{"data-toggle" => "tab", href: "#files", role: "tab"} Files
 
   .tab-content
     #functions.tab-pane.active{role: "tabpanel"}
@@ -29,3 +31,6 @@
 
     #namespaces.tab-pane{role: "tabpanel"}
       = partial 'grouped_table', { group: index.indexed_namespaces }
+
+    #files.tab-pane{role: "tabpanel"}
+      = partial 'grouped_table', { group: index.indexed_files }

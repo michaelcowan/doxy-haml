@@ -38,3 +38,7 @@ end
 def enum_by_name enums, enum_name, number = 0
   enums.select { |enum| enum.name == enum_name }[number]
 end
+
+def file_by_name files, file_name, number = 0
+  files.select { |file| file.name == file_name }[number]
+end
