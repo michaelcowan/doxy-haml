@@ -1,6 +1,7 @@
 require 'optparse'
 require 'html/proofer'
 require 'colored'
+require 'fileutils'
 
 def root_path
   File.expand_path File.dirname(__FILE__)
@@ -24,6 +25,8 @@ end
 def main
   start_time = Time.now
 
+  files = partition_files @opt[:template_folder]
+
   puts "Generating Doxygen XML".yellow.underline
   generator = DoxyHaml::Generator.new
   generator.generate @opt[:xml_folder], @opt[:headers_folder], true
@@ -31,11 +34,16 @@ def main
   puts "Parsing Doxygen XML".yellow.underline
   parser = DoxyHaml::Parser.new File.join(@opt[:xml_folder], "xml")
 
+  puts "Copying Static Files".yellow.underline
+  files[:regular].each do |file|
+    copy_with_path(File.join(@opt[:template_folder], file), output_path(file))
+  end
+
   puts "Rendering HAML".yellow.underline
   renderer = DoxyHaml::Renderer.new parser.index, @opt[:template_folder], "_layout", {title: @opt[:name]}
 
-  static_pages(@opt[:template_folder]).each do |page|
-    renderer.render_to_file static_page_output_path(page), page, {index: parser.index, title: @opt[:name]}
+  files[:haml].each do |file|
+    renderer.render_to_file haml_file_output_path(file), file, {index: parser.index, title: @opt[:name]}
   end
 
   parser.index.namespaces.each do |namespace|
@@ -58,18 +66,35 @@ def main
   puts "Finished in #{(Time.now - start_time).round(1)} seconds!".green
 end
 
+def partition_files folder
+  # Get all files in folder
+  files = Dir[File.join(folder, "**/*")].select { |file| File.file? file }
+  # Convert into Pathnames relative to folder
+  path = Pathname.new folder
+  files.map! { |file| Pathname.new(file).relative_path_from(path) }
+  # Only keep files that dont start with underscore
+  files.select! { |file| not file.basename.to_s.start_with?("_") }
+  # Remove special folders
+  files.select! { |file| not ["helpers"].include?(file.parent.to_s) }
+  # Split into files that require HAML parsing and those that dont
+  organised = files.partition { |file| file.extname == ".haml" }
+  # Convert Pathnames into Strings
+  organised.map! { |files| files.map { |file| file.to_s } }
+  return { haml: organised[0], regular: organised[1] }
+end
+
 def output_path filename
   File.join @opt[:output_folder], filename
 end
 
-def static_pages folder
-  files = Dir[File.join(folder, "*")].select { |file| File.file? file }
-  files.map! { |file| Pathname.new(file).basename.to_s }
-  files.select { |file| not file.start_with?("_") }
+def haml_file_output_path page
+  p = Pathname.new page
+  output_path p.sub_ext("").to_s
 end
 
-def static_page_output_path page
-  output_path File.basename(page, ".*")
+def copy_with_path src, dst
+  FileUtils.mkdir_p(File.dirname(dst))
+  FileUtils.cp(src, dst)
 end
 
 opt_parser = OptionParser.new do |opts|
