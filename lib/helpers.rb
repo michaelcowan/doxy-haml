@@ -84,6 +84,19 @@ module DoxyHaml
         n['href'] = id_to_href n['href']
         n.attribute('kindref').remove
       end
+
+      doc.css('table').each do |table|
+        table.attribute('cols').remove
+        table.attribute('rows').remove
+        table.css('row').each do |row|
+          row.css('entry').each do |entry|
+            entry.name = (entry['thead'] == 'yes' ? 'th' : 'td')
+            entry.attribute('thead').remove
+          end
+          row.name = 'tr'
+        end
+      end
+
       # Generate text/HTML, remove extra spaces and substitute " for '
       (to_html ? doc.inner_html : doc.inner_text).rstrip.gsub(/"/, "'")
     end
