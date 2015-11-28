@@ -57,4 +57,24 @@ describe "DoxyHaml Public Variable Parser" do
     expect(@variable.html_anchor).to match /<a id='\w{34}'\/>/
   end
 
+  it "should have a brief" do
+    expect(@variable.has_brief?).to be true
+    expect(@variable.brief).to eq "Current Cage."
+  end
+
+  it "should have an html brief" do
+    expect(@variable.has_brief?).to be true
+    expect(@variable.html_brief).to eq "Current <a href='classzoo_1_1_cage.html'>Cage</a>."
+  end
+
+  it "should have a description" do
+    expect(@variable.has_description?).to be true
+    expect(@variable.description).to eq "Cage to start path from."
+  end
+
+  it "should have an html description" do
+    expect(@variable.has_description?).to be true
+    expect(@variable.html_description).to eq "<a href='classzoo_1_1_cage.html'>Cage</a> to start path from."
+  end
+
 end
