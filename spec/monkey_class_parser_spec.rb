@@ -42,7 +42,7 @@ describe "DoxyHaml Monkey Class Parser" do
 
   it "should have an html brief" do
     expect(@monkey.has_brief?).to be true
-    expect(@monkey.html_brief).to eq "Represents a <a href='classzoo_1_1_monkey.html'>Monkey</a> in the zoo."
+    expect(@monkey.html_brief).to eq "<span class='para'>Represents a <a href='classzoo_1_1_monkey.html'>Monkey</a> in the zoo.</span>"
   end
 
   it "should have a description" do
@@ -52,7 +52,7 @@ describe "DoxyHaml Monkey Class Parser" do
 
   it "should have an html description" do
     expect(@monkey.has_description?).to be true
-    expect(@monkey.html_description).to eq "The class <a href='classzoo_1_1_monkey.html'>Monkey</a> extends <a href='classzoo_1_1_animal.html'>Animal</a> with specifics about monkeys in the zoo."
+    expect(@monkey.html_description).to eq "<span class='para'>The class <a href='classzoo_1_1_monkey.html'>Monkey</a> extends <a href='classzoo_1_1_animal.html'>Animal</a> with specifics about monkeys in the zoo.</span>"
   end
 
   it "should have an author" do

@@ -41,7 +41,7 @@ describe "DoxyHaml Animal Enum Value Parser" do
 
   it "should have an html brief" do
     expect(@value.has_brief?).to be true
-    expect(@value.html_brief).to eq "Mammal <a href='classzoo_1_1_animal.html'>Animal</a>."
+    expect(@value.html_brief).to eq "<span class='para'>Mammal <a href='classzoo_1_1_animal.html'>Animal</a>.</span>"
   end
 
   it "should have a description" do
@@ -51,7 +51,7 @@ describe "DoxyHaml Animal Enum Value Parser" do
 
   it "should have an html description" do
     expect(@value.has_description?).to be true
-    expect(@value.html_description).to eq "Mammal is a Kind of <a href='classzoo_1_1_animal.html'>Animal</a> in the zoo."
+    expect(@value.html_description).to eq "<span class='para'>Mammal is a Kind of <a href='classzoo_1_1_animal.html'>Animal</a> in the zoo.</span>"
   end
 
 end

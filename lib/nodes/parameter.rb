@@ -44,11 +44,11 @@ module DoxyHaml
     end
 
     def description
-      @description ||= (xpath_first_content %Q{parameterdescription/para}).squish
+      @description ||= parse_doxygen_description xpath_first %Q{parameterdescription}
     end
 
     def html_description
-      @html_description ||= doxygen_markup xpath_first %Q{parameterdescription/para}
+      @html_description ||= parse_doxygen_description_to_html xpath_first %Q{parameterdescription}
     end
 
   end

@@ -58,17 +58,17 @@ describe "DoxyHaml Animal feed Function Parser" do
 
   it "should have an html brief" do
     expect(@feed.has_brief?).to be true
-    expect(@feed.html_brief).to eq "Feed the <a href='classzoo_1_1_animal.html'>Animal</a>."
+    expect(@feed.html_brief).to eq "<span class='para'>Feed the <a href='classzoo_1_1_animal.html'>Animal</a>.</span>"
   end
 
   it "should have a description" do
     expect(@feed.has_description?).to be true
-    expect(@feed.description).to eq "Feeds the Animal."
+    expect(@feed.description).to eq "Feeds the Animal. The volume is specific to each Animal Kind.\nThis does not mean the Animal is eating."
   end
 
   it "should have an html description" do
     expect(@feed.has_description?).to be true
-    expect(@feed.html_description).to eq "Feeds the <a href='classzoo_1_1_animal.html'>Animal</a>."
+    expect(@feed.html_description).to eq "<span class='para'>Feeds the <a href='classzoo_1_1_animal.html'>Animal</a>. The volume is specific to each <a href='classzoo_1_1_animal.html'>Animal</a> Kind.</span><span class='para'>This does not mean the <a href='classzoo_1_1_animal.html'>Animal</a> is eating.</span>"
   end
 
   it "should not have a return brief" do

@@ -64,7 +64,7 @@ describe "DoxyHaml Public Variable Parser" do
 
   it "should have an html brief" do
     expect(@variable.has_brief?).to be true
-    expect(@variable.html_brief).to eq "Current <a href='classzoo_1_1_cage.html'>Cage</a>."
+    expect(@variable.html_brief).to eq "<span class='para'>Current <a href='classzoo_1_1_cage.html'>Cage</a>.</span>"
   end
 
   it "should have a description" do
@@ -74,7 +74,7 @@ describe "DoxyHaml Public Variable Parser" do
 
   it "should have an html description" do
     expect(@variable.has_description?).to be true
-    expect(@variable.html_description).to eq "<a href='classzoo_1_1_cage.html'>Cage</a> to start path from."
+    expect(@variable.html_description).to eq "<span class='para'><a href='classzoo_1_1_cage.html'>Cage</a> to start path from.</span>"
   end
 
 end

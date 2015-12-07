@@ -49,7 +49,7 @@ describe "DoxyHaml Exhibit Namespace Parser" do
 
   it "should have an html brief" do
     expect(@namespace.has_brief?).to be true
-    expect(@namespace.html_brief).to eq "Exhibit interfaces and implementations."
+    expect(@namespace.html_brief).to eq "<span class='para'>Exhibit interfaces and implementations.</span>"
   end
 
   it "should have a description" do
@@ -59,7 +59,7 @@ describe "DoxyHaml Exhibit Namespace Parser" do
 
   it "should have an html description" do
     expect(@namespace.has_description?).to be true
-    expect(@namespace.html_description).to eq "The exhibit namespace holds all interfaces and implementations related to exhibits at the zoo."
+    expect(@namespace.html_description).to eq "<span class='para'>The exhibit namespace holds all interfaces and implementations related to exhibits at the zoo.</span>"
   end
 
   it "should not have an author" do

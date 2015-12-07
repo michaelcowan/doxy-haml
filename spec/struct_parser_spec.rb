@@ -45,7 +45,7 @@ describe "DoxyHaml Struct Parser" do
 
   it "should have an html brief" do
     expect(@cage_path.has_brief?).to be true
-    expect(@cage_path.html_brief).to eq "Represents a path between <a href='classzoo_1_1_cage.html'>Cage</a> instances."
+    expect(@cage_path.html_brief).to eq "<span class='para'>Represents a path between <a href='classzoo_1_1_cage.html'>Cage</a> instances.</span>"
   end
 
   it "should have a description" do
@@ -55,7 +55,7 @@ describe "DoxyHaml Struct Parser" do
 
   it "should have an html description" do
     expect(@cage_path.has_description?).to be true
-    expect(@cage_path.html_description).to eq "The struct <a href='structzoo_1_1_cage_path.html'>CagePath</a> is used to create paths between instances of <a href='classzoo_1_1_cage.html'>Cage</a>."
+    expect(@cage_path.html_description).to eq "<span class='para'>The struct <a href='structzoo_1_1_cage_path.html'>CagePath</a> is used to create paths between instances of <a href='classzoo_1_1_cage.html'>Cage</a>.</span>"
   end
 
   it "should have an author" do

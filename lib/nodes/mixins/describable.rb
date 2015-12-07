@@ -7,11 +7,11 @@ module DoxyHaml
     end
 
     def brief
-      @brief ||= (xpath_first_content %Q{briefdescription/para}).squish
+      @brief ||= parse_doxygen_description xpath_first %Q{briefdescription}
     end
 
     def html_brief
-      @html_brief ||= doxygen_markup xpath_first %Q{briefdescription/para}
+      @html_brief ||= parse_doxygen_description_to_html xpath_first %Q{briefdescription}
     end
 
     def has_description?
@@ -19,11 +19,11 @@ module DoxyHaml
     end
 
     def description
-      @description ||= (xpath_first_content %Q{detaileddescription/para}).squish
+      @description ||= parse_doxygen_description xpath_first %Q{detaileddescription}
     end
 
     def html_description
-      @html_description ||= doxygen_markup xpath_first %Q{detaileddescription/para}
+      @html_description ||= parse_doxygen_description_to_html xpath_first %Q{detaileddescription}
     end
 
     def has_author?

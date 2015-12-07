@@ -57,7 +57,7 @@ describe "DoxyHaml Monkey numberOfMonkeys Function Parser" do
 
   it "should have an html brief" do
     expect(@numberOfMonkeys.has_brief?).to be true
-    expect(@numberOfMonkeys.html_brief).to eq "Get the <a href='classzoo_1_1_monkey.html'>Monkey</a> count."
+    expect(@numberOfMonkeys.html_brief).to eq "<span class='para'>Get the <a href='classzoo_1_1_monkey.html'>Monkey</a> count.</span>"
   end
 
   it "should have a description" do
@@ -67,7 +67,7 @@ describe "DoxyHaml Monkey numberOfMonkeys Function Parser" do
 
   it "should have an html description" do
     expect(@numberOfMonkeys.has_description?).to be true
-    expect(@numberOfMonkeys.html_description).to eq "Returns the <a href='classzoo_1_1_monkey.html'>Monkey</a> count for the entire zoo."
+    expect(@numberOfMonkeys.html_description).to eq "<span class='para'>Returns the <a href='classzoo_1_1_monkey.html'>Monkey</a> count for the entire zoo.</span>"
   end
 
   it "should have a return brief" do

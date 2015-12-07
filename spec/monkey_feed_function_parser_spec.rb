@@ -57,7 +57,7 @@ describe "DoxyHaml Monkey feed Function Parser" do
 
   it "should have an html brief" do
     expect(@feed.has_brief?).to be true
-    expect(@feed.html_brief).to eq "Feed the <a href='classzoo_1_1_monkey.html'>Monkey</a>."
+    expect(@feed.html_brief).to eq "<span class='para'>Feed the <a href='classzoo_1_1_monkey.html'>Monkey</a>.</span>"
   end
 
   it "should have a description" do
@@ -67,7 +67,7 @@ describe "DoxyHaml Monkey feed Function Parser" do
 
   it "should have an html description" do
     expect(@feed.has_description?).to be true
-    expect(@feed.html_description).to eq "Feeds the <a href='classzoo_1_1_monkey.html'>Monkey</a>."
+    expect(@feed.html_description).to eq "<span class='para'>Feeds the <a href='classzoo_1_1_monkey.html'>Monkey</a>.</span>"
   end
 
   it "should not have a return brief" do

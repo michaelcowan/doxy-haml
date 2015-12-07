@@ -59,7 +59,7 @@ describe "DoxyHaml Cage setAnimal Function Parser" do
 
   it "should have an html brief" do
     expect(@setAnimal.has_brief?).to be true
-    expect(@setAnimal.html_brief).to eq "Sets the <a href='classzoo_1_1_animal.html'>Animal</a>."
+    expect(@setAnimal.html_brief).to eq "<span class='para'>Sets the <a href='classzoo_1_1_animal.html'>Animal</a>.</span>"
   end
 
   it "should have a description" do
@@ -69,7 +69,7 @@ describe "DoxyHaml Cage setAnimal Function Parser" do
 
   it "should have an html description" do
     expect(@setAnimal.has_description?).to be true
-    expect(@setAnimal.html_description).to eq "Puts an <a href='classzoo_1_1_animal.html'>Animal</a> in this <a href='classzoo_1_1_cage.html'>Cage</a>."
+    expect(@setAnimal.html_description).to eq "<span class='para'>Puts an <a href='classzoo_1_1_animal.html'>Animal</a> in this <a href='classzoo_1_1_cage.html'>Cage</a>.</span>"
   end
 
   it "should have a return brief" do
@@ -79,7 +79,7 @@ describe "DoxyHaml Cage setAnimal Function Parser" do
 
   it "should have an html return brief" do
     expect(@setAnimal.has_return_brief?).to be true
-    expect(@setAnimal.html_return_brief).to eq "true if the <a href='classzoo_1_1_animal.html'>Animal</a> can be put in this cage."
+    expect(@setAnimal.html_return_brief).to eq "<span class='para'>true if the <a href='classzoo_1_1_animal.html'>Animal</a> can be put in this cage.</span>"
   end
 
   it "should have a return type" do
@@ -135,7 +135,7 @@ describe "DoxyHaml Cage setAnimal Function Parser" do
 
   it "should have parameter html description" do
     expect(@setAnimal.parameters.first.has_description?).to be true
-    expect(@setAnimal.parameters.first.html_description).to eq "The <a href='classzoo_1_1_animal.html'>Animal</a> to put in this <a href='classzoo_1_1_cage.html'>Cage</a>."
+    expect(@setAnimal.parameters.first.html_description).to eq "<span class='para'>The <a href='classzoo_1_1_animal.html'>Animal</a> to put in this <a href='classzoo_1_1_cage.html'>Cage</a>.</span>"
   end
 
   it "should not implement from parent" do

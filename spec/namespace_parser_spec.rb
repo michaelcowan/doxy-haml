@@ -49,7 +49,7 @@ describe "DoxyHaml Namespace Parser" do
 
   it "should have an html brief" do
     expect(@namespace.has_brief?).to be true
-    expect(@namespace.html_brief).to eq "Zoo interfaces and implementations."
+    expect(@namespace.html_brief).to eq "<span class='para'>Zoo interfaces and implementations.</span>"
   end
 
   it "should have a description" do
@@ -59,7 +59,7 @@ describe "DoxyHaml Namespace Parser" do
 
   it "should have an html description" do
     expect(@namespace.has_description?).to be true
-    expect(@namespace.html_description).to eq "The zoo namespace holds all interfaces and implementations related to the zoo. This includes <a href='classzoo_1_1_animal.html'>Animal</a>, <a href='classzoo_1_1_cage.html'>Cage</a> and <a href='classzoo_1_1_monkey.html'>Monkey</a>."
+    expect(@namespace.html_description).to eq "<span class='para'>The zoo namespace holds all interfaces and implementations related to the zoo. This includes <a href='classzoo_1_1_animal.html'>Animal</a>, <a href='classzoo_1_1_cage.html'>Cage</a> and <a href='classzoo_1_1_monkey.html'>Monkey</a>.</span>"
   end
 
   it "should have an author" do

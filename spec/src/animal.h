@@ -80,7 +80,9 @@ namespace zoo {
     /**
      *  \brief Feed the Animal.
      *
-     *  Feeds the Animal.
+     *  Feeds the Animal. The volume is specific to each Animal Kind.
+     *
+     *  This does not mean the Animal is eating.
      *
      *  \param [in] volume The number of portions to feed the Animal.
      */

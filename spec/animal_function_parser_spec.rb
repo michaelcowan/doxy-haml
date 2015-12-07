@@ -56,7 +56,7 @@ describe "DoxyHaml Animal getNumberOfLegs Function Parser" do
 
   it "should have an html brief" do
     expect(@getNumberOfLegs.has_brief?).to be true
-    expect(@getNumberOfLegs.html_brief).to eq "Get the leg count of this <a href='classzoo_1_1_animal.html'>Animal</a>."
+    expect(@getNumberOfLegs.html_brief).to eq "<span class='para'>Get the leg count of this <a href='classzoo_1_1_animal.html'>Animal</a>.</span>"
   end
 
   it "should have a description" do
@@ -66,7 +66,7 @@ describe "DoxyHaml Animal getNumberOfLegs Function Parser" do
 
   it "should have an html description" do
     expect(@getNumberOfLegs.has_description?).to be true
-    expect(@getNumberOfLegs.html_description).to eq "Returns how many legs this <a href='classzoo_1_1_animal.html'>Animal</a> has."
+    expect(@getNumberOfLegs.html_description).to eq "<span class='para'>Returns how many legs this <a href='classzoo_1_1_animal.html'>Animal</a> has.</span>"
   end
 
   it "should have a return brief" do
@@ -76,7 +76,7 @@ describe "DoxyHaml Animal getNumberOfLegs Function Parser" do
 
   it "should have an html return brief" do
     expect(@getNumberOfLegs.has_return_brief?).to be true
-    expect(@getNumberOfLegs.html_return_brief).to eq "the number of legs for this <a href='classzoo_1_1_animal.html'>Animal</a>."
+    expect(@getNumberOfLegs.html_return_brief).to eq "<span class='para'>the number of legs for this <a href='classzoo_1_1_animal.html'>Animal</a>.</span>"
   end
 
   it "should have a return type" do

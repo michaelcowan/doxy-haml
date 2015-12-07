@@ -24,11 +24,11 @@ module DoxyHaml
     end
 
     def return_brief
-      @return_brief ||= (xpath_first_content %Q{detaileddescription/para/simplesect[@kind='return']/para}).squish
+      @return_brief ||= parse_doxygen_description xpath_first %Q{detaileddescription/para/simplesect[@kind='return']}
     end
 
     def html_return_brief
-      @html_return_brief ||= doxygen_markup xpath_first %Q{detaileddescription/para/simplesect[@kind='return']/para}
+      @html_return_brief ||= parse_doxygen_description_to_html xpath_first %Q{detaileddescription/para/simplesect[@kind='return']}
     end
 
     def has_return_type?
