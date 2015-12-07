@@ -22,6 +22,9 @@ a.anchor {
   width: 100%;
   z-index: 99;
 }
+span.para {
+  display: block;
+}
 span.src-keyword {
   color: #008000
 }
