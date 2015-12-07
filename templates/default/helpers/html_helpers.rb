@@ -44,8 +44,8 @@ module HtmlHelpers
     {
       id: CGI::escapeHTML(node.html_fully_qualified_name),
       name: CGI::escapeHTML(node.name),
-      brief: CGI::escapeHTML(node.brief),
-      description: CGI::escapeHTML(node.description),
+      brief: CGI::escapeHTML(node.has_brief? ? node.brief : ""),
+      description: CGI::escapeHTML(node.has_description? ? node.description : ""),
       type: CGI::escapeHTML(type),
     }
   end
