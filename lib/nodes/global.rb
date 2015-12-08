@@ -29,7 +29,7 @@ module DoxyHaml
     def classes
       @classes ||= (map_xpath %Q{compound[@kind='class' or @kind='struct']} do |clazz|
         unless clazz.child.content.include? "::"
-          Class.new clazz['refid'], self
+          find_node_by_id(clazz['refid']) || Class.new(clazz['refid'], self)
         end
       end).compact
     end

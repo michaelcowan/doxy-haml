@@ -5,7 +5,8 @@ module DoxyHaml
     def initialize
       super 'index', nil
       @global = Global.new 'global', self, xpath(%Q{doxygenindex})
-      create_all_nodes
+      # Class instances are referenced by other Compounds so much be instantiated first
+      create_all_classes
     end
 
     def has_namespaces?
@@ -74,8 +75,7 @@ module DoxyHaml
 
     private
 
-    def create_all_nodes
-      namespaces
+    def create_all_classes
       classes.each do |clazz|
         clazz.public_functions
         clazz.public_static_functions
@@ -83,7 +83,6 @@ module DoxyHaml
         clazz.public_variables
         clazz.public_static_variables
       end
-      files
     end
 
     def index_by_name objects

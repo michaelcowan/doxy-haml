@@ -97,7 +97,7 @@ module DoxyHaml
 
     def parse_classes
       map_xpath %Q{innerclass} do |clazz|
-        Class.new clazz['refid'], self
+        find_node_by_id(clazz['refid']) || Class.new(clazz['refid'], self)
       end
     end
 
