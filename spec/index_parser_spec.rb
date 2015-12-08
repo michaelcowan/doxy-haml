@@ -16,7 +16,7 @@ describe "DoxyHaml Index Parser" do
     @expected_enumerators = ["Amphibian", "Bird", "Closed", "Down", "Fish", "Left", "Mammal", "Open", "Reptile", "Right", "Up"]
     @enumerators_names_beginning_with_r = ["Reptile", "Right"]
 
-    parser = DoxyHaml::Parser.new "spec/doxygen/xml"
+    parser = DoxyHaml::Parser.new "spec/doxygen/xml", "spec/src"
     @index = parser.index
   end
 

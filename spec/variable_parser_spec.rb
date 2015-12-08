@@ -3,7 +3,7 @@ require 'spec_helper'
 describe "DoxyHaml Public Variable Parser" do
 
   before(:all) do
-    parser = DoxyHaml::Parser.new "spec/doxygen/xml"
+    parser = DoxyHaml::Parser.new "spec/doxygen/xml", "spec/src"
     namespace = namespace_by_name parser.index.namespaces, "zoo"
     cage_path = class_by_name namespace.classes, "CagePath"
     @variable = cage_path.public_variables.first

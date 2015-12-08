@@ -32,7 +32,7 @@ def main
   generator.generate @opt[:xml_folder], @opt[:headers_folder], true
 
   puts "Parsing Doxygen XML".yellow.underline
-  parser = DoxyHaml::Parser.new File.join(@opt[:xml_folder], "xml")
+  parser = DoxyHaml::Parser.new File.join(@opt[:xml_folder], "xml"), @opt[:headers_folder]
 
   puts "Copying Static Files".yellow.underline
   files[:regular].each do |file|
@@ -43,7 +43,7 @@ def main
   renderer = DoxyHaml::Renderer.new parser.index, @opt[:template_folder], "_layout", {title: @opt[:name]}
 
   files[:haml].each do |file|
-    renderer.render_to_file haml_file_output_path(file), file, {index: parser.index, title: @opt[:name]}
+    renderer.render_to_file haml_file_output_path(file), file, {index: parser.index}
   end
 
   parser.index.namespaces.each do |namespace|

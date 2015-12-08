@@ -8,7 +8,7 @@ describe "DoxyHaml Namespace Parser" do
     @expected_classes = ["Animal", "Cage", "Monkey", "CagePath", "Organism"]
     @expected_namespaces = ["exhibit"]
 
-    parser = DoxyHaml::Parser.new "spec/doxygen/xml"
+    parser = DoxyHaml::Parser.new "spec/doxygen/xml", "spec/src"
     @namespace = namespace_by_name parser.index.namespaces, "zoo"
   end
 

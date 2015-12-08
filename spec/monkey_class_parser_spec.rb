@@ -6,7 +6,7 @@ describe "DoxyHaml Monkey Class Parser" do
     @expected_public_functions = ["canSee", "feed", "getNumberOfLegs"]
     @expected_public_static_functions = ["numberOfMonkeys"]
     @expected_public_super_classes = ["Animal"]
-    parser = DoxyHaml::Parser.new "spec/doxygen/xml"
+    parser = DoxyHaml::Parser.new "spec/doxygen/xml", "spec/src"
     namespace = namespace_by_name parser.index.namespaces, "zoo"
     @monkey = class_by_name namespace.classes, "Monkey"
   end

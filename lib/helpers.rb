@@ -2,6 +2,12 @@ module DoxyHaml
 
   module Helpers
 
+    def relative_path path1, path2
+      path1 = Pathname.new(path1).realpath
+      path2 = Pathname.new(path2).realpath
+      path2.relative_path_from(path1).to_s
+    end
+
     def map_node node
       list = []
       node.each do |node|

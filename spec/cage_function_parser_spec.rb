@@ -5,7 +5,7 @@ describe "DoxyHaml Cage Function Parser" do
   before(:all) do
     @expected_parameters = ["width", "height", "hasRoof"]
     @expected_types = ["int", "int", "bool"]
-    parser = DoxyHaml::Parser.new "spec/doxygen/xml"
+    parser = DoxyHaml::Parser.new "spec/doxygen/xml", "spec/src"
     namespace = namespace_by_name parser.index.namespaces, "zoo"
     cage = class_by_name namespace.classes, "Cage"
     @setDimensions = function_by_name cage.public_functions, "setDimensions"

@@ -5,7 +5,7 @@ describe "DoxyHaml Cage Class Parser" do
   before(:all) do
     @expected_public_functions = ["setAnimal", "getAnimal", "setDimensions"]
     @expected_classes = ["Bar"]
-    parser = DoxyHaml::Parser.new "spec/doxygen/xml"
+    parser = DoxyHaml::Parser.new "spec/doxygen/xml", "spec/src"
     namespace = namespace_by_name parser.index.namespaces, "zoo"
     @cage = class_by_name namespace.classes, "Cage"
   end

@@ -3,8 +3,12 @@ require 'spec_helper'
 describe "DoxyHaml File Parser" do
 
   before(:all) do
-    parser = DoxyHaml::Parser.new "spec/doxygen/xml"
+    parser = DoxyHaml::Parser.new "spec/doxygen/xml", "spec/src"
     @file = file_by_name parser.index.files, "misc.h"
+  end
+
+  it "should have a location" do
+    expect(@file.location).to eq "/misc.h"
   end
 
   it "should have html source" do

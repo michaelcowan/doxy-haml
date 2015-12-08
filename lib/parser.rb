@@ -15,14 +15,18 @@ module DoxyHaml
 
     attr_reader :index
 
-    def initialize xml_folder
-      @@xml_folder = xml_folder
+    def initialize xml_folder, src_folder
+      @@xml_folder, @@src_folder = xml_folder, src_folder
       Node.clear
       @index = Index.new
     end
 
     def self.xml_folder
       @@xml_folder
+    end
+
+    def self.src_folder
+      @@src_folder
     end
   end
 

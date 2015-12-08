@@ -4,7 +4,7 @@ describe "DoxyHaml Monkey feed Function Parser" do
 
   before(:all) do
     @expected_parameters = ["volume"]
-    parser = DoxyHaml::Parser.new "spec/doxygen/xml"
+    parser = DoxyHaml::Parser.new "spec/doxygen/xml", "spec/src"
     namespace = namespace_by_name parser.index.namespaces, "zoo"
     monkey = class_by_name namespace.classes, "Monkey"
     @feed = function_by_name monkey.public_functions, "feed"

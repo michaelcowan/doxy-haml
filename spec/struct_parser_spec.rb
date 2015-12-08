@@ -5,7 +5,7 @@ describe "DoxyHaml Struct Parser" do
   before(:all) do
     @expected_public_variables = ["current", "distance", "next"]
     @expected_public_static_variables = ["first"]
-    parser = DoxyHaml::Parser.new "spec/doxygen/xml"
+    parser = DoxyHaml::Parser.new "spec/doxygen/xml", "spec/src"
     namespace = namespace_by_name parser.index.namespaces, "zoo"
     @cage_path = class_by_name namespace.classes, "CagePath"
   end

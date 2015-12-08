@@ -1,4 +1,8 @@
-= partial "member_title", { member: file, labels: nil }
-
+%h2
+  = file.html_fully_qualified_name
+  %p.lead
+    = file.location
+%h3
+  Source Listing
 %pre.src
   = file.html_source.join("<br>")

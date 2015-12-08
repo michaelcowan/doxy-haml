@@ -3,7 +3,7 @@ require 'spec_helper'
 describe "DoxyHaml Animal Enum Parser" do
 
   before(:all) do
-    parser = DoxyHaml::Parser.new "spec/doxygen/xml"
+    parser = DoxyHaml::Parser.new "spec/doxygen/xml", "spec/src"
     namespace = namespace_by_name parser.index.namespaces, "zoo"
     animal = class_by_name namespace.classes, "Animal"
     @kind = enum_by_name animal.public_enums, "Kind"

@@ -11,7 +11,7 @@ describe "DoxyHaml Global Namespace Parser" do
     @expected_public_variables = ["pi"]
     @expected_public_static_variables = ["e"]
 
-    parser = DoxyHaml::Parser.new "spec/doxygen/xml"
+    parser = DoxyHaml::Parser.new "spec/doxygen/xml", "spec/src"
     @namespace = namespace_by_name parser.index.namespaces, "global"
   end
 

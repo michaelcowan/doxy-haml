@@ -8,7 +8,7 @@ describe "DoxyHaml Exhibit Namespace Parser" do
     @expected_public_variables = ["minExhibits"]
     @expected_public_static_variables = ["maxExhibits"]
 
-    parser = DoxyHaml::Parser.new "spec/doxygen/xml"
+    parser = DoxyHaml::Parser.new "spec/doxygen/xml", "spec/src"
     namespace = namespace_by_name parser.index.namespaces, "zoo"
     @namespace = namespace.namespaces.first
   end

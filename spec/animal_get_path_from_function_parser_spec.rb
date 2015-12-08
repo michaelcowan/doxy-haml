@@ -6,7 +6,7 @@ describe "DoxyHaml Animal getPathFrom Function Parser" do
     @expected_parameters = ["cage", ""]
     @expected_types = ["Cage *", "bool"]
     @expected_html_types = ["<a href='classzoo_1_1_cage.html'>Cage</a> *", "bool"]
-    parser = DoxyHaml::Parser.new "spec/doxygen/xml"
+    parser = DoxyHaml::Parser.new "spec/doxygen/xml", "spec/src"
     namespace = namespace_by_name parser.index.namespaces, "zoo"
     animal = class_by_name namespace.classes, "Animal"
     @getPathFrom = function_by_name animal.public_functions, "getPathFrom"
