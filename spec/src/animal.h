@@ -9,6 +9,7 @@ namespace zoo {
    *  \brief Represents an Animal in the zoo.
    *
    *  The class Animal contains information and functions related to all animals in the zoo.
+   *  For **more** information on Animals, see [link](http://www.google.com)
    *
    *  \author Michael Cowan
    */

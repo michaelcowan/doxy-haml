@@ -81,8 +81,7 @@ module DoxyHaml
       
       # Changes should only affect this call, not the underlying parsed data
       doc = doc.dup
-      # If there is only one param, do not wrap in a span
-      #doc = doc.css('para') if doc.css('para').count == 1
+
       # These are parsed out to specific variables and must be removed e.g. author, param etc
       doc.css('simplesect').each { |n| n.remove }
       doc.css('parameterlist').each { |n| n.remove }
@@ -135,14 +134,11 @@ module DoxyHaml
         end
       end
 
-      # Strip trailing spaces inside tags
-      doc.xpath('//text()[last()]').each{ |t| t.content = t.content.rstrip }
-
       # Insert explicit spaces
       doc.css('sp').each { |n| n.replace(" ") }
 
       # Generate text/HTML, remove starting new lines, remove trailing spaces and substitute " for '
-      (to_html ? doc.inner_html : doc.inner_text).gsub(/^\n/, "").rstrip.gsub(/"/, "'")
+      (to_html ? doc.inner_html.gsub(/ <\/span>[ \t]*$/, "</span>") : doc.inner_text).gsub(/^\n/, "").rstrip.gsub(/"/, "'")
     end
     
   end
