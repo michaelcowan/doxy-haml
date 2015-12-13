@@ -61,12 +61,12 @@ describe "DoxyHaml Animal Enum Parser" do
 
   it "should have a description" do
     expect(@kind.has_description?).to be true
-    expect(@kind.description).to eq "The most common types of vertebrate Animal kept at the zoo."
+    expect(@kind.description).to eq "The most common types of vertebrate Animal kept at the zoo.\nKind Breathing  \nReptile Lungs \nAmphibian Gills and lungs"
   end
 
   it "should have an html description" do
     expect(@kind.has_description?).to be true
-    expect(@kind.html_description).to eq "<span class='para'>The most common types of vertebrate <a href='classzoo_1_1_animal.html'>Animal</a> kept at the zoo.</span>"
+    expect(@kind.html_description).to eq "<span class='para'>The most common types of vertebrate <a href='classzoo_1_1_animal.html'>Animal</a> kept at the zoo.</span><span class='para'><table>\n<tr>\n<th><span class='para'>Kind </span></th>\n<th><span class='para'>Breathing  </span></th>\n</tr>\n<tr>\n<td><span class='para'>Reptile </span></td>\n<td><span class='para'>Lungs </span></td>\n</tr>\n<tr>\n<td><span class='para'>Amphibian </span></td>\n<td><span class='para'>Gills and lungs </span></td>\n</tr>\n</table>\n</span>"
   end
 
   it "should have public values" do
