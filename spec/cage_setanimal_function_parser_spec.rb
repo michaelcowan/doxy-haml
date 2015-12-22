@@ -62,14 +62,14 @@ describe "DoxyHaml Cage setAnimal Function Parser" do
     expect(@setAnimal.html_brief).to eq "<span class='para'>Sets the <a href='classzoo_1_1_animal.html'>Animal</a>.</span>"
   end
 
-  it "should have a description" do
+  it "should have brief as a description" do
     expect(@setAnimal.has_description?).to be true
-    expect(@setAnimal.description).to eq "Puts an Animal in this Cage."
+    expect(@setAnimal.description).to eq @setAnimal.brief
   end
 
-  it "should have an html description" do
+  it "should have html brief as an html description" do
     expect(@setAnimal.has_description?).to be true
-    expect(@setAnimal.html_description).to eq "<span class='para'>Puts an <a href='classzoo_1_1_animal.html'>Animal</a> in this <a href='classzoo_1_1_cage.html'>Cage</a>.</span>"
+    expect(@setAnimal.html_description).to eq @setAnimal.html_brief
   end
 
   it "should have a return brief" do

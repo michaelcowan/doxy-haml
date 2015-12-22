@@ -14,15 +14,21 @@ module DoxyHaml
       @html_brief ||= parse_doxygen_description_to_html xpath_first %Q{briefdescription}
     end
 
+    def is_description_blank?
+      xpath_blank? %Q{detaileddescription/para/text()}
+    end
+
     def has_description?
-      not xpath_blank? %Q{detaileddescription/para/text()}
+      not is_description_blank? or has_brief?
     end
 
     def description
+      return brief if is_description_blank?
       @description ||= parse_doxygen_description xpath_first %Q{detaileddescription}
     end
 
     def html_description
+      return html_brief if is_description_blank?
       @html_description ||= parse_doxygen_description_to_html xpath_first %Q{detaileddescription}
     end
 

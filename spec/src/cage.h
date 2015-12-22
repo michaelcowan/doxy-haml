@@ -31,8 +31,6 @@ namespace zoo {
     /**
      *  \brief Sets the Animal.
      *
-     *  Puts an Animal in this Cage.
-     *
      *  \param animal The Animal to put in this Cage.
      *  \param mate An optional mate for the Animal.
      *  \return true if the Animal can be put in this cage.
