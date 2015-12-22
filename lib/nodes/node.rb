@@ -64,6 +64,10 @@ module DoxyHaml
       xpath(xml, xpath).first unless xml.nil?
     end
 
+    def xpath_or_first xml=@xml, xpath
+      xpath(xml, xpath).is_a?(Nokogiri::XML::NodeSet) ? xpath_first(xml, xpath) : xpath(xml, xpath)
+    end
+
     def xpath_first_param xml=@xml, xpath, param
       xpath_first(xml, xpath)[param] unless xml.nil?
     end
@@ -76,6 +80,12 @@ module DoxyHaml
     def xpath_empty? xml=@xml, xpath
       return true if xml.nil?
       xpath(xml, xpath).empty? or xpath_first_content(xml, xpath).empty?
+    end
+
+    def xpath_blank? xml=@xml, xpath
+      return true if xml.nil?
+      node = xpath_or_first xml, xpath
+      node.nil? ? true : node.blank?
     end
 
     def content

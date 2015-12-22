@@ -3,7 +3,7 @@ module DoxyHaml
   module Describable
 
     def has_brief?
-      not xpath_empty? %Q{briefdescription/para}
+      not xpath_blank? %Q{briefdescription/para/text()}
     end
 
     def brief
@@ -15,7 +15,7 @@ module DoxyHaml
     end
 
     def has_description?
-      not xpath_empty? %Q{detaileddescription/para}
+      not xpath_blank? %Q{detaileddescription/para/text()}
     end
 
     def description
