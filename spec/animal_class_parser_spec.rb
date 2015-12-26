@@ -58,12 +58,12 @@ describe "DoxyHaml Animal Class Parser" do
 
   it "should have a description" do
     expect(@animal.has_description?).to be true
-    expect(@animal.description).to eq "The class Animal contains information and functions related to all animals in the zoo. For more information on Animals, see Google"
+    expect(@animal.description).to eq "The class Animal contains information and functions related to all animals in the zoo. For more information on Animals, see Google. The source for this class can be seen in the animal.h header file."
   end
 
   it "should have an html description" do
     expect(@animal.has_description?).to be true
-    expect(@animal.html_description).to eq "<span class='para'>The class <a href='classzoo_1_1_animal.html'>Animal</a> contains information and functions related to all animals in the zoo. For <strong>more</strong> information on Animals, see <a href='http://www.google.com'>Google</a></span>"
+    expect(@animal.html_description).to eq "<span class='para'>The class <a href='classzoo_1_1_animal.html'>Animal</a> contains information and functions related to all animals in the zoo. For <strong>more</strong> information on Animals, see <a href='http://www.google.com'>Google</a>. The source for this class can be seen in the <a href='animal_8h.html'>animal.h</a> header file.</span>"
   end
 
   it "should have an author" do
