@@ -19,7 +19,7 @@ module DoxyHaml
     end
 
     def id_to_href id
-      id.slice! "_source"
+      id.slice! "_source" if id.end_with? "h_source"
       return "#{id}.html" unless /_[a-z0-9]{34,}/.match id
       *a, b = id.split('_', -1)
       "#{a.join('_')}.html##{b}"
