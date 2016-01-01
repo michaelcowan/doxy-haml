@@ -73,6 +73,14 @@ module DoxyHaml
       @indexed_files ||= index_by_name files
     end
 
+    def groups
+      @groups ||= sort_by_name parse_groups
+    end
+
+    def indexed_groups
+      @indexed_groups ||= index_by_name groups
+    end
+
     private
 
     def create_all_classes
@@ -137,7 +145,13 @@ module DoxyHaml
 
     def parse_files
       map_xpath %Q{doxygenindex/compound[@kind='file']} do |compound|
-        File.new compound['refid'], self
+        find_node_by_id(compound['refid']) || File.new(compound['refid'], self)
+      end
+    end
+
+    def parse_groups
+      map_xpath %Q{doxygenindex/compound[@kind='group']} do |compound|
+        find_node_by_id(compound['refid']) || Group.new(compound['refid'], self)
       end
     end
 

@@ -3,7 +3,7 @@ require 'spec_helper'
 describe "DoxyHaml Namespace Parser" do
 
   before(:all) do
-    @expected_public_functions = ["emptyCagePath"]
+    @expected_public_functions = ["createAnimal", "emptyCagePath"]
     @expected_public_static_functions = ["emptyCage"]
     @expected_classes = ["Animal", "Cage", "Monkey", "CagePath", "Organism"]
     @expected_namespaces = ["exhibit"]

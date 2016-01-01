@@ -5,6 +5,22 @@
 
 namespace zoo {
 
+    /**
+     *  \addtogroup ExternC
+     *  @{
+     */
+    
+    /**
+     *  \brief Creates an instance of Animal.
+     *
+     *  \return Animal instance.
+     */
+    extern "C" Animal * createAnimal();
+    
+    /**
+     *  @}
+     */
+
   /**
    *  \brief Represents an Animal in the zoo.
    *

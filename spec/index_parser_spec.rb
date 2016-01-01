@@ -7,7 +7,7 @@ describe "DoxyHaml Index Parser" do
     @namespaces_beginning_with_z = ["zoo"]
     @expected_classes = ["Animal", "Bar", "Cage", "CagePath", "Monkey", "Organism", "Person", "Rect", "Tent"]
     @classes_beginning_with_c = ["Cage", "CagePath"]
-    @expected_function_names = ["Animal", "Animal", "~Animal", "canFly", "canSee", "canSee", "emptyCage", "emptyCagePath", "emptyRect", "feed", "feed", "getAnimal", "getNumberOfLegs", "getNumberOfLegs", "getPathFrom", "_kill", "numberOfMonkeys", "rect32", "setAnimal", "setDimensions", "setName", "setName"]
+    @expected_function_names = ["Animal", "Animal", "~Animal", "canFly", "canSee", "canSee", "createAnimal", "emptyCage", "emptyCagePath", "emptyRect", "feed", "feed", "getAnimal", "getNumberOfLegs", "getNumberOfLegs", "getPathFrom", "_kill", "numberOfMonkeys", "rect32", "setAnimal", "setDimensions", "setName", "setName"]
     @functions_beginning_with_e = ["emptyCage", "emptyCagePath", "emptyRect"]
     @expected_variable_names = ["current", "distance", "height", "minExhibits", "next", "pi", "width", "x", "y"]
     @variables_beginning_with_d = ["distance"]

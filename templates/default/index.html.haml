@@ -15,6 +15,8 @@
       %a{"data-toggle" => "tab", href: "#namespaces", role: "tab"} Namespaces
     %li
       %a{"data-toggle" => "tab", href: "#files", role: "tab"} Files
+    %li
+      %a{"data-toggle" => "tab", href: "#groups", role: "tab"} Groups
 
   .tab-content
     #functions.tab-pane.active{role: "tabpanel"}
@@ -34,3 +36,6 @@
 
     #files.tab-pane{role: "tabpanel"}
       = partial 'grouped_table', { group: index.indexed_files }
+
+    #groups.tab-pane{role: "tabpanel"}
+      = partial 'grouped_table', { group: index.indexed_groups }

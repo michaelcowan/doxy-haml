@@ -103,31 +103,31 @@ module DoxyHaml
 
     def parse_public_functions
       map_xpath memberdef_xpath(["public-func", "func"], "function", "no") do |function|
-        Function.new function['id'], self, function
+        find_node_by_id(function['id']) || Function.new(function['id'], self, function)
       end
     end
 
     def parse_public_static_functions
       map_xpath memberdef_xpath(["public-static-func", "func"], "function", "yes") do |function|
-        Function.new function['id'], self, function
+        find_node_by_id(function['id']) || Function.new(function['id'], self, function)
       end
     end
 
     def parse_public_enums
       map_xpath memberdef_xpath(["public-type", "enum"], "enum", "no") do |enum|
-        Enum.new enum['id'], self, enum
+        find_node_by_id(enum['id']) || Enum.new(enum['id'], self, enum)
       end
     end
 
     def parse_public_variables
       map_xpath memberdef_xpath(["public-attrib", "var"], "variable", "no") do |variable|
-        Variable.new variable['id'], self, variable
+        find_node_by_id(variable['id']) || Variable.new(variable['id'], self, variable)
       end
     end
 
     def parse_public_static_variables
       map_xpath memberdef_xpath(["public-static-attrib", "var"], "variable", "yes") do |variable|
-        Variable.new variable['id'], self, variable
+        find_node_by_id(variable['id']) || Variable.new(variable['id'], self, variable)
       end
     end
 
