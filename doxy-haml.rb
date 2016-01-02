@@ -58,6 +58,10 @@ def main
     renderer.render_to_file output_path(file.filename), "_file", {file: file, compound: file}
   end
 
+  parser.index.groups.each do |group|
+    renderer.render_to_file output_path(group.filename), "_group", {group: group, compound: group}
+  end
+
   unless @opt[:skip_validation]
     puts "Validating HTML".yellow.underline
     HTML::Proofer.new(@opt[:output_folder], {verbosity: :error, disable_external: true}).run
